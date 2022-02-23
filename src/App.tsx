@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Test from "./Pages/Test";
-import Textfield from "./Components/Bidcard/Textfield/Textfield";
+import Textfield from "./Components/Textfield/TextField";
 
 const App: React.FC = () => {
   return (
