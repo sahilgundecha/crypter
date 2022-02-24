@@ -3,6 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Test from "./Pages/Test";
 import Textfield from "./Components/Textfield/TextField";
+import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Test />} />
         <Route path="/Textfield" element={<Textfield />} />
+        <Route path="followersCard" element={<FollowersCard/>}/>
       </Routes>
       
     </div>
