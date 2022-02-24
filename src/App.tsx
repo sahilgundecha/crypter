@@ -5,6 +5,7 @@ import Test from "./Pages/Test";
 import Textfield from "./Components/Textfield/TextField";
 import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 import SliderComponent from "./Components/Slider/Slider";
+import { UsersCard } from "./Components/UsersCard/UsersCard";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="followersCard" element={<FollowersCard/>}/>
+        <Route path="UsersCard" element={<UsersCard/>}/>
       </Routes>
     </div>
   );
