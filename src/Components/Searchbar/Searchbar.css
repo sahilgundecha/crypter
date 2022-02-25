@@ -1,0 +1,6 @@
+.search-input {
+  border: 2px solid #e6e8ec !important;
+}
+.SearchBar:hover {
+  border: 2px solid #777e90;
+}
