@@ -1,0 +1,4 @@
+<svg id="icons_Circle_and_Square_Filled" data-name="icons/Circle and Square/Filled" xmlns="http://www.w3.org/2000/svg" width="13.333" height="13.333" viewBox="0 0 13.333 13.333">
+  <path id="Shape" d="M6.667.667q0-.149-.007-.3A.35.35,0,0,1,7,0H8A1.333,1.333,0,0,1,9.333,1.333V8A1.333,1.333,0,0,1,8,9.333H1.333A1.333,1.333,0,0,1,0,8V7A.35.35,0,0,1,.371,6.66q.147.007.3.007A6,6,0,0,0,6.667.667Z" transform="translate(4 4)" fill="#23262f"/>
+  <path id="Shape-2" data-name="Shape" d="M4.667,9.333A4.667,4.667,0,1,1,9.333,4.667,4.667,4.667,0,0,1,4.667,9.333Z" fill="#23262f"/>
+</svg>
