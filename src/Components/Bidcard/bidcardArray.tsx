@@ -1,18 +1,19 @@
+import img1 from "../../Assets/images/bidImg.png";
+
 const Data = {
-  bidArray: [
+  cardIt: [
     {
       id: 1,
-      mainImg: "../../Assets/images/bidImg.png",
+      mainImg: img1,
       artName: "Sally Fadel",
       ETH: 161,
       inStock: 5,
       highestBid: 6,
-
       bidType: "ajscdsjc",
     },
     {
-      id: 1,
-      mainImg: "../../Assets/images/bidImg.png",
+      id: 2,
+      mainImg: img1,
       artName: "Sally Fadel",
       ETH: 161,
       inStock: 5,
