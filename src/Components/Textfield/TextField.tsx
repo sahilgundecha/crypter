@@ -54,8 +54,6 @@ export default function Textfield() {
   }
   return (
     <>
-   
-    
     <Box
       component="form"
       noValidate
@@ -100,17 +98,6 @@ export default function Textfield() {
         marginTop:'50px'
       }}
     >
-      {/* <FormControl variant="standard">
-      <InputLabel shrink htmlFor="bootstrap-input">
-          SIZE
-        </InputLabel>
-  <Select
-  value='10%'>
-    <MenuItem value={10}>Ten</MenuItem>
-    <MenuItem value={20}>Twenty</MenuItem>
-    <MenuItem value={30}>Thirty</MenuItem>
-  </Select>
-</FormControl> */}
  <FormControl sx={{ m: 1 }} variant="standard">
         <InputLabel htmlFor="demo-customized-select-native">ROYALTIES</InputLabel>
         <NativeSelect

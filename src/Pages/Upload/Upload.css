@@ -1,0 +1,28 @@
+.changeColor{
+    margin-top: 20px !important;
+    color:#777E90;
+}
+
+.updatFont{
+    font-size: 48px;
+    font-weight: bold;
+}
+.css-46bh2p-MuiCardContent-root {
+    text-align: center;
+}
+.lineStyle{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.imgFuild{
+    width:100%;
+}
+.cardHover:hover {
+         box-shadow: 0 10px 10px -10px #000000;
+  }
+@media (max-width:500px) and (min-width:300px){
+    .cardStyle{
+        margin-bottom: 30px;
+    }
+}
