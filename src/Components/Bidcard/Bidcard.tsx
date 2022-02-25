@@ -12,9 +12,8 @@ import { CardMedia, CardContent, CardHeader } from "@mui/material";
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { bidDataProp } from "./bidcardArray";
 
-const Bidcard = ({ bidData: bidDataProp }) => {
+const Bidcard = () => {
   const [pressed, setPressed] = useState<boolean>(false);
   const pressing = () => {
     setPressed(!pressed);
@@ -28,7 +27,7 @@ const Bidcard = ({ bidData: bidDataProp }) => {
         <Box className="boxwrap">
           <CardMedia
             component="img"
-            image={bidData.mainImg}
+            image={bidImg}
             alt="green iguana"
             className="cardmedia"
           />
