@@ -6,7 +6,7 @@ import { borderRadius } from '@mui/system';
 import twitterIcon from "../../Assets/images/twitterIcon.png";
 import fbIcon from "../../Assets/images/fbIcon.png";
 import instaIcon from "../../Assets/images/instaIcon.png";
-import shareIcon from "../../Assets/images/share icon.png";
+import shareIconUpload from "../../Assets/images/share icon.png";
 // import GlobeIcon from "../../Assets/images/globeIcon.png";
 import {userInfo} from "../../Components/FollowersCard/FollowersCardData";
 import smallCoin from "../../Assets/images/icons-Coins-Filled.svg";
@@ -58,6 +58,7 @@ const useStyles: any = makeStyles( () => ({
         paddingLeft: useTheme().spacing(2) + "!important",
         borderRadius: "16px !important",
         backgroundColor: "#3772FF",
+        marginBottom:"25px !important",
         '&:hover': {
             backgroundColor: '#63ADF7 !important',
         },
@@ -66,8 +67,8 @@ const useStyles: any = makeStyles( () => ({
     iconbox:{
         display:"flex",
         marginTop: useTheme().spacing(3),
-        marginBottom: useTheme().spacing(4),
-        
+        paddingBottom: useTheme().spacing(4),
+        borderBottom: "1.5px solid #E2E3E5",
 
     },
     iconStyle:{
@@ -98,15 +99,21 @@ const useStyles: any = makeStyles( () => ({
     GlobeIconStyle:{
         fontSize:"17px !important",
         marginRight:"8px",
-        marginBottom:"4px",
-        color:"474748"
+        marginBottom:"-3px",
+        color:"#474748",
     },
     linkStyles:{
         fontSize:"14px",
-        opacity:"0.9"
+        opacity:"0.9",
+       
     },
     linkMargin:{
-        marginBottom:"50px"
+        marginBottom:"50px",
+    },
+    linkColor:{
+        '&:hover': {
+            color:"#4C7AD7",
+        },
     }
 }))
 export const UsersCard = () => {
@@ -165,8 +172,7 @@ const FDescription = (props: userCardDetails) => {
 const LinkWithImg = (props:userCardDetails) => {
     return(
         <Grid container justifyContent="center" alignItems='center' className={useStyles().linkMargin}>
-           <Link href={props.user.link} sx={{color:"#5B5959"}} variant="body2" underline='none'> <LanguageSharpIcon
-            className={useStyles().GlobeIconStyle} /><span className={useStyles().linkStyles}>{props.user.link}</span></Link>
+           <Link href={props.user.link} className={useStyles().linkColor} sx={{color:"#5B5959"}} variant="body2" underline='none'> <LanguageSharpIcon className={useStyles().GlobeIconStyle} /><span className={useStyles().linkStyles}>{props.user.link}</span></Link>
         </Grid>
     )
 }
@@ -174,7 +180,7 @@ const UploadButtons = () => {
     return(
         <Grid>
         <Button disableElevation variant="contained" size="small" className={useStyles().uploadBtn} > Upload</Button>
-        <img src={shareIcon}  className={useStyles().ShareIcon}/>
+        <img src={shareIconUpload}  className={useStyles().ShareIcon}/>
         <img src={shareDotIcon} className={useStyles().ShareIcon}/>
 
         </Grid>
