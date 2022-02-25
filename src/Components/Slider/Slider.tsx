@@ -10,16 +10,18 @@ function valuetext(value: number) {
 interface sliderprops {
   value: number;
   children: string[];
+  title?: string;
+  ETH1?: string | number;
+  ETH2?: string | number;
 }
 
-const SliderComponent = () => {
+const SliderComponent = (props: sliderprops) => {
   return (
     <>
       <Container>
         <Box sx={{ width: "300px", padding: "10px 0px" }}>
           <Typography className="text">
-            {/* {props.title ? props.title : "PRICE RANGE"} */}
-            PRICE RANGE
+            {props.title ? props.title : "PRICE RANGE"}
           </Typography>
           <Slider
             sx={{
@@ -42,12 +44,10 @@ const SliderComponent = () => {
             }}
           >
             <Typography className="sliderText">
-              {/* {props.ETH1 ? props.ETH1 : "0.01ETH"} */}
-              0.01ETH
+              {props.ETH1 ? props.ETH1 : "0.01ETH"}
             </Typography>
             <Typography className="sliderText">
-              {/* {props.ETH2 ? props.ETH2 : "10ETH"} */}
-              10ETH
+              {props.ETH2 ? props.ETH2 : "10ETH"}
             </Typography>
           </Box>
         </Box>

@@ -1,0 +1,31 @@
+<svg id="Frame_1020" data-name="Frame 1020" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.002" height="40.002" viewBox="0 0 40.002 40.002">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Frame_1020_Background_Mask_" data-name="Frame 1020 (Background/Mask)" width="40.002" height="40.002" rx="20.001" fill="#45b26b"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="eth_1_Background_Mask_" data-name="eth 1 (Background/Mask)" width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Frame_1020_Background_Mask_2" data-name="Frame 1020 (Background/Mask)" width="40.002" height="40.002" rx="20.001" fill="#45b26b"/>
+  <g id="Frame_1020-2" data-name="Frame 1020" clip-path="url(#clip-path)">
+    <g id="eth_1" data-name="eth 1">
+      <rect id="eth_1_Background_Mask_2" data-name="eth 1 (Background/Mask)" width="40" height="40" fill="none"/>
+      <g id="eth_1-2" data-name="eth 1" clip-path="url(#clip-path-2)">
+        <g id="Group">
+          <g id="Group-2" data-name="Group">
+            <path id="Vector" d="M20,40A20,20,0,1,1,40,20,20,20,0,0,1,20,40Z" fill="#627eea"/>
+            <g id="Group-3" data-name="Group" transform="translate(12 7)">
+              <path id="Vector-2" data-name="Vector" d="M0,9.609l8.121,3.629L0,0Z" transform="translate(8.123)" fill="rgba(255,255,255,0.6)"/>
+              <path id="Vector-3" data-name="Vector" d="M0,13.238,8.123,9.609V0Z" fill="#fff"/>
+              <path id="Vector-4" data-name="Vector" d="M0,11.244,8.127,0,0,4.715Z" transform="translate(8.123 14.75)" fill="rgba(255,255,255,0.6)"/>
+              <path id="Vector-5" data-name="Vector" d="M8.123,4.713,0,0,8.123,11.244Z" transform="translate(0 14.75)" fill="#fff"/>
+              <path id="Vector-6" data-name="Vector" d="M8.121,3.627,0,0V8.343Z" transform="translate(8.123 9.611)" fill="rgba(255,255,255,0.2)"/>
+              <path id="Vector-7" data-name="Vector" d="M8.123,8.343V0L0,3.627Z" transform="translate(0 9.611)" fill="rgba(255,255,255,0.6)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
