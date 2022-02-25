@@ -3,18 +3,6 @@ import notify2 from '../../Assets/images/notify2.png';
 import notify3 from '../../Assets/images/notify3.png';
 import notify4 from '../../Assets/images/notify4.png';
 
-interface cardProps{
-colData:{
-  cardIt:{
-    id:number
-  mainImg:string
-  ethPrice:string
-  ethRecieved:string
-  days:string
-  }[]
-   }
-};
-
 export const cardData= { 
   cardIt : [
     {
@@ -46,5 +34,5 @@ export const cardData= {
         days:'8 days ago',
       },
 
-]
+  ]
 };

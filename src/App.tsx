@@ -6,6 +6,8 @@ import Textfield from "./Components/Textfield/TextField";
 import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 import SliderComponent from "./Components/Slider/Slider";
 import { NotificationD } from "./Components/Notification/NotificationD";
+import Upload from "./Pages/Upload/Upload";
+import { CradCollection } from "./Components/CardCollection/CradCollection";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,8 @@ const App: React.FC = () => {
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="followersCard" element={<FollowersCard/>}/>
         <Route path="/NotificationDisplay" element={<NotificationD />}/>
+        <Route path="/uploadPage" element={<Upload />}/>
+        <Route path="/CardCollection" element={<CradCollection />}/>
       </Routes>
     </div>
   );
