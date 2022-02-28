@@ -1,0 +1,17 @@
+.font1{
+    font-size: 12px !important;
+    color:#777E90 !important;
+ }
+ .imFluid{
+     width:40px;
+     margin-bottom: 5px;
+ }
+ .bgColor{
+     background-color: #F4F5F6;
+     border-radius: 16px;
+     padding: 20px;
+     height: 130px;
+ }
+ .paddingChange{
+     padding:20px 0px;
+ }

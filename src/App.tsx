@@ -8,10 +8,11 @@ import SliderComponent from "./Components/Slider/Slider";
 import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
 import { CradCollection } from "./Components/CardCollection/CradCollection";
+import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="">
       <Routes>
         <Route path="/" element={<Test />} />
         <Route path="/slider" element={<SliderComponent />} />
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/NotificationDisplay" element={<NotificationD />}/>
         <Route path="/uploadPage" element={<Upload />}/>
         <Route path="/CardCollection" element={<CradCollection />}/>
+        <Route path="/SingleCollectible" element={<SingleCollectible />}/>
       </Routes>
     </div>
   );
