@@ -3,7 +3,7 @@ import "./noresults.css";
 import noresultsImg from "../../Assets/images/noResultImg.png";
 import arrowIcon from "../../Assets/images/arrowIcon.jpg";
 import BoxContainer from "../../Components/BoxContainer.component"
-// import Searchbar from "../Searchbar/Searchbar";
+import Searchbar from "../../Components/Searchbar/Searchbar";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { textAlign } from "@mui/system";
 import Artwork from "../../Assets/images/ArtworkImg.png";
@@ -58,11 +58,11 @@ export default function NoResultsPage() {
       </p>
       <p className="grayatext">Maybe give one of these a try?</p>
       <div className="searchBarStyle">
-        {/* <Searchbar
+        <Searchbar
           borderRadius={"30px"}
           placeholder={"Enter your search..."}
           icon={<ArrowCircleRightIcon style={{ color: "#3772FF" }} />}
-        /> */}
+        />
       </div>
       <div>
         <h3 className="headingStyle">Explore more</h3>
