@@ -1,0 +1,9 @@
+<svg id="share" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="share_Background_Mask_" data-name="share (Background/Mask)" fill="none" stroke="#e6e8ec" stroke-width="2" stroke-dasharray="0 0">
+    <rect width="40" height="40" rx="20" stroke="none"/>
+    <rect x="1" y="1" width="38" height="38" rx="19" fill="none"/>
+  </g>
+  <g id="icons_Close_Line" data-name="icons/Close/Line" transform="translate(13 13)">
+    <path id="Shape" d="M1.707.293,7,5.586,12.293.293a1,1,0,0,1,1.414,1.414L8.414,7l5.293,5.293a1,1,0,0,1-1.414,1.414L7,8.414,1.707,13.707A1,1,0,0,1,.293,12.293L5.586,7,.293,1.707A1,1,0,0,1,1.707.293Z" fill="#23262f"/>
+  </g>
+</svg>

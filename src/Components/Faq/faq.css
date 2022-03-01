@@ -71,3 +71,13 @@
   font-family: "DMSans-Bold" !important;
   font-weight: bold !important;
 }
+/* modals code */
+.startnowbtn {
+  text-align: center;
+  width: 200px !important;
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  background-color: #3772ff !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}

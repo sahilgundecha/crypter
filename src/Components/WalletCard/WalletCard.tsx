@@ -15,8 +15,14 @@ import { Container, Switch } from "@mui/material";
 import frame from "../../Assets/images/frame.svg";
 import menu1 from "../../Assets/images/menu1.svg";
 import btn3icon from "../../Assets/images/btn3icon.svg";
+import pencil from "../../Assets/images/pencil.svg";
+
+import bag from "../../Assets/images/bag.svg";
+import cross from "../../Assets/images/cross.svg";
+import greentick from "../../Assets/images/greentick.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
+import upload from "../../Assets/images/upload.svg";
 // import blue_img1 from "../../Assets/images/blue_img1.svg";
 import { styled, Box } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
@@ -33,6 +39,7 @@ const styles1 = {
   borderRadius: "25px",
   border: "1px solid #3772FF",
 };
+//modals1
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
   z-index: 1300;
@@ -189,9 +196,9 @@ const WalletCard = (props: walletcardProps) => {
                       </Typography>
                       <img
                         className="blue_img"
-                        src={menu1}
+                        src={cross}
                         alt="img"
-                        width={"20px"}
+                        width={"35px"}
                       />
                     </Box>
                     <Box
@@ -200,7 +207,7 @@ const WalletCard = (props: walletcardProps) => {
                         marginTop: "35px",
                       }}
                     >
-                      <img src={frame} alt="img" width={"50px"} />
+                      <img src={upload} alt="img" width={"50px"} />
 
                       <Box
                         sx={{
@@ -239,7 +246,7 @@ const WalletCard = (props: walletcardProps) => {
                         marginTop: "35px",
                       }}
                     >
-                      <img src={frame} alt="img" width={"50px"} />
+                      <img src={pencil} alt="img" width={"50px"} />
 
                       <Box
                         sx={{
@@ -278,7 +285,7 @@ const WalletCard = (props: walletcardProps) => {
                         marginTop: "35px",
                       }}
                     >
-                      <img src={frame} alt="img" width={"50px"} />
+                      <img src={bag} alt="img" width={"50px"} />
 
                       <Box
                         sx={{

@@ -3,6 +3,7 @@ import "./faq.css";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
+import Button from "@mui/material/Button";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
@@ -15,7 +16,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { Grid } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
+
 // import { Icon } from "@material-ui/core";
 import blackimg1 from "../../Assets/images/blackimg1.svg";
 import home from "../../Assets/images/home.svg";
@@ -203,6 +204,9 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
+                    <Button className="px-4 me-3 rounded-pill startnowbtn">
+                      Load more
+                    </Button>
                     {/* <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
