@@ -12,6 +12,7 @@ import { CardMedia, CardContent, CardHeader } from "@mui/material";
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import Divider from "@mui/material/Divider";
 
 interface cardProps {
   colData: {
@@ -124,6 +125,7 @@ const Bidcard = (props: cardProps) => {
                   {props.inStock} in stock
                 </Typography>
               </CardContent>
+              <Divider sx={{ margin: "5px" }} />
               <CardContent
                 sx={{
                   display: "flex",
