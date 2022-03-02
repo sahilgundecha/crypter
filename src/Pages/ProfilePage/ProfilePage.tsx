@@ -9,6 +9,8 @@ import { UsersCard } from "../../Components/UsersCard/UsersCard";
 import { FollowersCard } from "../../Components/FollowersCard/FollowersCard";
 import { AppBar } from "@mui/material";
 // import { TabPanel } from "@mui/lab";
+import Carosel from "../../Components/Bidcard/Carosel";
+
 
 
 interface TabPanelProps {
@@ -112,16 +114,16 @@ export default function ProfilePage() {
             </Tabs>
             {/* </AppBar> */}
             <TabPanel value={value} index={0}>
-              
+              <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              
+            <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={2}>
-              
+            <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={3}>
-              
+            <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={4}>
             <FollowersCard/>
