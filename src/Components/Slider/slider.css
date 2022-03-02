@@ -6,3 +6,76 @@
   color: #b1b5c3;
   font-size: 12px;
 }
+/* modals code */
+.startnowbtn {
+  text-align: center;
+  width: 100% !important;
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  background-color: #3772ff !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+.startnowbtn3 {
+  text-align: center;
+  width: 100% !important;
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  background-color: #3772ff !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+.startnowbtn2 {
+  text-align: center;
+  width: 100% !important;
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  border: 1px solid #000000 !important;
+}
+.startnowbtn2:hover {
+  color: #ffffff !important;
+  background-color: #3772ff !important;
+  border: 1px solid #3772ff !important;
+}
+.displayflex {
+  display: flex !important;
+}
+.pinkText {
+  color: #ef466f;
+}
+.pinkBox {
+  text-align: center;
+}
+.blue_img1:hover {
+  /* filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
+    brightness(98%) contrast(109%); */
+
+  filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
+    brightness(98%) contrast(109%);
+  cursor: pointer;
+}
+.para1 {
+  margin: 10px !important;
+  font-weight: bold !important;
+}
+.buttonBox {
+  text-align: center;
+}
+.pinkimg {
+  margin: 10px 10px;
+}
+.modal3 {
+  text-align: center;
+  margin-top: 50px;
+}
+.blue_img3 {
+  float: right !important;
+}
+.cancelbtnbox {
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+}
