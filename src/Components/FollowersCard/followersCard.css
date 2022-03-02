@@ -1,7 +1,7 @@
 .rootStyle{
     padding: 20px;
    border-radius: 16px;
-   max-width: 870px;
+   /* max-width: 870px; */
    box-shadow: 0 8px 40px -12px rgba(0,0,0,0.05);
    }
    .followersCard_media{
@@ -13,7 +13,7 @@
     border-bottom: 1.5px solid rgba(236, 232, 232, 0.5);
 }
 .coverImgStyle{
-    margin-left: 80px;
+    margin-left: 60px;
 }
 .profileStyle{
     margin:10px;
@@ -25,18 +25,26 @@
        margin:5px ;
   }
 
-@media (max-width:820px)and (min-width:700px) {
-    .rootStyle{
+@media (max-width:1400px)and (min-width:1030px) {
+    /* .rootStyle{
         width:650px;
-    } 
+    }  */
+    .coverImgStyle{
+        margin-left: 20px;
+    }
 }
-   @media (max-width: 460px){
+@media (max-width: 1024px){
+    .coverImgStyle{
+        margin-left: 0px;
+    }
+}
+   @media (max-width: 1000px){
     .followersCardTopBlock{
         display: block;
     }
     .rootStyle{
        display: block;
-       width: 85%;
+       width: 70%;
        }
        .followersCard_media{
            display: flex;
@@ -45,8 +53,16 @@
         margin-left: 10px;
     }
    }
-   @media (max-width: 460px){
+   
+    @media (max-width: 460px){
     .rootStyle{
-       width: 100%;
+        width: 82%;
+        margin: auto;
        }
     }
+    @media (max-width: 360px){
+        .rootStyle{
+            width: 100%;
+            margin: auto;
+           }
+        }

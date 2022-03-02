@@ -1,5 +1,5 @@
 import img2 from "../../Assets/images/sally-profile-img.png";
-// import img1 from "../../Assets/images/enrieCole.png";
+import img1 from "../../Assets/images/enrieCole.png";
 import img3 from "../../Assets/images/program cover img-01.png";
 import imgA from "../../Assets/images/AniyaProfilePic.png";
 import imgE from "../../Assets/images/EdwardoProfilePic.png";
@@ -9,15 +9,18 @@ import programCover2 from "../../Assets/images/program cover img-02.png";
 import programCover3 from "../../Assets/images/program cover img-03.png"
 // import programCover4 from "../../Assets/images/program cover img-02.png"
 
-interface userDataProps{
-    userData:{
-        details:{img: unknown, name:string, followers:number, coverImg1: unknown, coverImg2: unknown, coverImg3: unknown,coverImg4: unknown}[];
-    }
+
+export const userInfo = 
+{
+    img: img1,
+    name:"Enrico Cole",
+    text:"0xc4c16a645...b21a",
+    description:"A wholesome farm owner in Montana. Upcoming gallery solo show in Germany",
+    link:"https://ui8.net",
+    memberShip:"Member since Mar 15, 2021"
 }
 
-
-export const Data={
-    details: [
+export const Data= [
         {
             id: 1,
             img: img2,
@@ -70,5 +73,5 @@ export const Data={
         }
     ]
 
-}
+
 

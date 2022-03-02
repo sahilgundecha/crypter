@@ -4,46 +4,27 @@ import { makeStyles } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import "./followersCard.css";
 import img1 from "../../Assets/images/sally-profile-img.png";
-// import img2 from "../../Assets/images/program cover img-01.png";
 import {Data} from "./FollowersCardData";
 import { grid } from '@mui/system';
 import img2 from "../../Assets/images/sally-profile-img.png";
-// import img1 from "../../Assets/images/enrieCole.png";
-
-
-// const useStyles:()=>any = makeStyles( () => ({
-//    profileStyle: {
-//     margin:"10px",
-//     textAlign:"center"
-//    },
-//    imgStyle:{
-//        width:"112px",height:"88px",margin:"5px"
-//     },
-    
-// }))
 
 interface userDataProps{
-    userData:{
         details:{id: number, img: string, name:string, followers:number, coverImg1: string, coverImg2: string, coverImg3: string,coverImg4: string}[];
-    }
+
 }
 
 export const FollowersCard = () => {
-    // const classes = useStyles();
-   
-    
   return (
     <Grid  className="rootStyle" >
-        <UsersCard userData ={Data}/>
+        <UsersCard details={Data}/>
     </Grid>
   )
 }
 
 const UsersCard = (props: userDataProps) => {
-    const {details} = props.userData;
 return(
     <div>{
-        details.map((x) =>{
+        props.details.map((x) =>{
           return(
             <Grid className='followersCardTopBlock' key={x.id}>
                 <Grid className='followersCard_media'>
