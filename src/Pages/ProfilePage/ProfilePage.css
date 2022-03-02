@@ -1,0 +1,35 @@
+.buttonStlye {
+    margin: 5px 10px;
+    padding: 4px 12px;
+  
+  }
+
+.userFollower{
+    display: flex;
+
+}
+.usercardGrid_Styling{
+  display: flex;
+  justify-content: end;
+  width:20%;
+  margin-top: -60px;
+}
+.navpill_Styling{
+  margin-top: 30px;
+width:80%;
+display: flex;
+justify-content: center;
+}
+@media (max-width:1020px){
+  .usercardGrid_Styling{
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  .userFollower{
+    display: block;
+}
+.navpill_Styling{
+  width:100%;
+  }
+}

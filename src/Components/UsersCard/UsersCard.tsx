@@ -13,6 +13,7 @@ import smallCoin from "../../Assets/images/icons-Coins-Filled.svg";
 import shareDotIcon from "../../Assets/images/share-icon.svg";
 import Link from '@mui/material/Link';
 import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
+import "./UsersCard.css";
 
 interface userCardDetails{
     
@@ -27,14 +28,18 @@ interface userCardDetails{
 }
 
 const useStyles: any = makeStyles( () => ({
-    root: {
-         border: `0.5px solid ${useTheme().palette.grey[300]}`,
-         padding: useTheme().spacing(2),
-        borderRadius: "16px",
-        maxWidth: 220,
-        boxShadow: "0 8px 40px -12px rgba(0,0,0,0.5)",
-        height: 600
-    },
+    // root: {
+    //      border: `0.5px solid ${useTheme().palette.grey[300]}`,
+    //      padding: useTheme().spacing(2),
+    //     borderRadius: "16px",
+    //     maxWidth: 220,
+    //     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.5)",
+    //     height: 600,
+    //     backgroundColor:"#fff",
+    //     ['@media(maxWidth: 1020px)' ]: {
+    //         width: '80%  !important',
+    //       }
+    // },
     avatar:{
         width: useTheme().spacing(14) + "!important",
         height: useTheme().spacing(14) + "!important"
@@ -47,7 +52,6 @@ const useStyles: any = makeStyles( () => ({
     descriptionStyle:{
         fontSize: "12px !important",
         color: "#777E90",
-        width: "160px",
         textAlign: 'center',
         marginTop: useTheme().spacing(3) + "!important",
         marginBottom: useTheme().spacing(2) + "!important"
@@ -121,7 +125,7 @@ export const UsersCard = () => {
   return (
     <Grid container direction="column"
     alignItems='center'
-    className={classes.root} >
+    className="root" >
         <FollowersPhoto  user={userInfo}/>
         <FollowersName  user={userInfo}/>
         <FolwersRandomText  user={userInfo}/>

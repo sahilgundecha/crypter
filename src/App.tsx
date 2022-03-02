@@ -13,6 +13,7 @@ import Carosel from "./Components/Bidcard/Carosel";
 import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
 import { CradCollection } from "./Components/CardCollection/CradCollection";
+import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 
 const App: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <Route path="/NotificationDisplay" element={<NotificationD />} />
         <Route path="/uploadPage" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
+        <Route path="/ProfilePage" element={<ProfilePage/>}/>
       </Routes>
     </div>
   );
