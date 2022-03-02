@@ -41,7 +41,7 @@
 /* modal styles */
 .startnowbtn {
   text-align: center;
-  width: 300px !important;
+  width: 100% !important;
   margin-top: 20px !important;
   border-radius: 25px !important;
   background-color: #3772ff !important;

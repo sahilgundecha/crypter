@@ -204,9 +204,7 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    <Button className="px-4 me-3 rounded-pill startnowbtn">
-                      Load more
-                    </Button>
+
                     {/* <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
