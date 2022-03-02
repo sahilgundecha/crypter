@@ -43,6 +43,7 @@ interface cardProps{
         authorImg:string
         authorName:string
         item:number
+       
       }[]
        }
     };
@@ -51,11 +52,9 @@ export const CradCollection = () => {
   return (
     <>
     <Container>
-        <Grid>
-     <Grid item xs={12} sm={6} md={4}>
+       
     <CardCollect colData={cardArray} />
-    </Grid>
-    </Grid>
+    
     </Container>
   </>
   )
@@ -65,8 +64,9 @@ const CardCollect = (props: cardProps) => {
     const {cardIt} = props.colData;
 return(
     <div>{
-        
-        cardIt.map((props) =>{
+        <Grid spacing={2} >
+        <Grid item xs={12} sm={6} md={4}>
+        {cardIt.map((props) =>{
           return(
             <>
                    
@@ -86,19 +86,19 @@ return(
                             justifyContent: "space-around",
                           }}
                         >
-                          <Carousel
+                          {/* <Carousel
                             className="diffClass"
                       
                          
                             
-                          >
+                          > */}
                             <img className="changeWidth1" src={props.img1} />
                             <img className="changeWidth1" src={props.img2} />
                             <img className="changeWidth1" src={props.img3} />
-                            <img className="changeWidth1" src={props.img1} />
+                            {/* <img className="changeWidth1" src={props.img1} />
                             <img className="changeWidth1" src={props.img2} />
-                            <img className="changeWidth1" src={props.img3} />
-                          </Carousel>
+                            <img className="changeWidth1" src={props.img3} /> */}
+                          {/* </Carousel> */}
                         </Box>
                         <Box>
                           <Typography
@@ -133,12 +133,14 @@ return(
                         </Box>
                       </Card>
                     
-                 
+                      
             
           </>
         )}
         )}
-        
+         </Grid></Grid>
+    }
+       
         </div>
 )
 }

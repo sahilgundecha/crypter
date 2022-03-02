@@ -1,0 +1,57 @@
+.font1{
+    font-size: 12px !important;
+    color:#777E90 !important;
+ }
+ .imFluid{
+     width:40px;
+     margin-bottom: 5px;
+ }
+ .bgColor{
+     background-color: #F4F5F6;
+     border-radius: 16px;
+     padding: 20px;
+     height: 130px;
+ }
+ .paddingChange{
+     padding:20px 0px;
+ }
+ .changePadding{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     padding:40px 0px !important;
+     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+
+ }
+.mRight{
+    margin-left: 5px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color:#777E90 ;
+
+}
+ .hoverOnclick:hover {
+     color:blue !important;
+     cursor: pointer;
+     
+ }
+ .mRight:hover{
+    color:blue !important;
+    cursor: pointer;
+ }
+ .iciELI {
+    margin:20px 0px;
+    max-width: 100% !important;
+    height: 100px !important;
+    border: 1px solid #F4F5F6 !important;
+    padding: 8px 16px 8px 8px;
+    border-radius: 15px !important;
+    background-color: #F4F5F6 !important;
+   
+}
+.ebdQkY .file-types {
+    overflow: unset !important;
+    white-space: unset!important;
+    text-overflow: unset!important;
+   max-width: unset !important;
+}
