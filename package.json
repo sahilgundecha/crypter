@@ -18,9 +18,12 @@
     "@types/react-dom": "^17.0.11",
     "material-ui-image": "^3.3.2",
     "react": "^17.0.2",
+    "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
+    "react-drag-drop-files": "^2.3.4",
     "react-elastic-carousel": "^0.11.5",
     "react-material-ui-carousel": "^3.2.0",
+    "react-multi-carousel": "^2.8.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.5",
@@ -49,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/styled-components": "^5.1.24"
   }
 }

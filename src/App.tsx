@@ -14,16 +14,21 @@ import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
 import { CradCollection } from "./Components/CardCollection/CradCollection";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
+import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
+import Activity from "./Pages/Activity/Activity";
+import CurrentBid from "./Components/CurrentBid/CurrentBid";
+import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="">
       <Routes>
         <Route path="/" element={<Test />} />
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard/>}/>
         <Route path="NoResultsPage" element={<NoResultsPage/>}/>
+        <Route path="/SingleCollectible" element={<SingleCollectible />}/>
         <Route path="searchbar" element={<Searchbar />} />
         <Route path="dropdown" element={<Dropdown />} />
         <Route path="carosel" element={<Carosel />} />
@@ -32,6 +37,9 @@ const App: React.FC = () => {
         <Route path="/uploadPage" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
         <Route path="/ProfilePage" element={<ProfilePage/>}/>
+        <Route path="/Activity" element={<Activity />} />
+        <Route path="/searchfilter" element={<SearchFilter />} />
+        <Route path="/currentbid" element={<CurrentBid />} />
       </Routes>
     </div>
   );

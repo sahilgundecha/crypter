@@ -1,0 +1,41 @@
+.greyText {
+  color: #777e90;
+  font-size: 12px !important;
+}
+.card {
+  width: max-content !important;
+  padding: 0px 50px;
+}
+@media (max-width: 1024px) {
+  .widthInPad {
+    width: 280px;
+  }
+  .homeImg {
+    width: 100%;
+  }
+  .card {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .widthInPad {
+    width: max-content;
+  }
+  .homeImg {
+    width: 100%;
+  }
+  .card {
+    padding: 0px 30px !important;
+  }
+  .ETH {
+    font-size: 35px !important;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    padding: 0px 50px !important;
+  }
+  .widthInPad {
+    width: 100%;
+  }
+}

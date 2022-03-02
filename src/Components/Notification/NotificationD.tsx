@@ -1,19 +1,20 @@
 import React from 'react';
 import { Box, Button, Card, Container, Typography } from '@mui/material'
 import './Notification.css';
-import dot from '../../Assets/images/dot.png';
+import Dot from '../../Assets/images/dot.png';
+import Right from '../../Assets/images/card.png';
 import { cardData } from './NotificationArray';
-
+import { useState } from 'react';
 const styleRow = {
     display:'flex',
     flexDirection:'row',
-    padding:'10px'
+    padding:'20px 0px'
 }
 const styleEnd = 
     {
     display:'flex',
-    justifyContent:'end',
-    marginLeft:'90px'
+    alignItems:'center',
+    marginRight:'40px'
 }
 const styleFlex = {
     display:'flex',
@@ -31,6 +32,10 @@ interface cardProps{
       }[]
        }
     };
+interface cardCss extends cardProps{
+  Padding?:string
+}
+
 
 export const NotificationD = () => {
   return (
@@ -46,13 +51,20 @@ export const NotificationD = () => {
   )
 }
 
-const Notification = (props: cardProps) => {
+
+export const Notification = (props: cardCss ) => {
     const {cardIt} = props.colData;
+    const [Image,setImage]=useState<boolean>(true);
+    const handleMouseOver = (event:any) => {
+      setImage(JSON.parse(event.target.src));
+    };
+   
 return(
     <div>{
         cardIt.map((props) =>{
           return(
             <>
+            <Box sx={styleFlex} className="impHover">
             <Box sx={styleRow} key={props.id}>
                 <img className="change1" src={props.mainImg} />
                 <Box sx={{marginLeft:'20px'}}>
@@ -61,8 +73,12 @@ return(
                 <Typography className='textDark'>{props.days}</Typography>
                 
                 </Box>
+                </Box>
                 <Box sx={styleEnd}>
-                    <img className="change" src={dot} />
+                    <img className="change" 
+                    src={Dot}
+                    
+                    />
             </Box>
             </Box>     
             </>
