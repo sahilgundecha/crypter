@@ -74,14 +74,14 @@ const SliderComponent = (props: sliderprops) => {
   return (
     <>
       <Container>
-        <Box sx={{ width: "300px", padding: "10px 0px" }}>
+        <Box sx={{ width: "100%", padding: "10px 0px" }}>
           <Typography className="text">
             {props.title ? props.title : "PRICE RANGE"}
           </Typography>
           <Slider
             sx={{
-              width: "290px",
-              height: "10px",
+              width: "100%",
+              height: "5px",
             }}
             defaultValue={50}
             aria-label="Default"
@@ -96,6 +96,7 @@ const SliderComponent = (props: sliderprops) => {
             sx={{
               display: "flex",
               justifyContent: "space-between",
+              width: "100%",
             }}
           >
             <Typography className="sliderText">
