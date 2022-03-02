@@ -12,6 +12,7 @@ import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
 import { CradCollection } from "./Components/CardCollection/CradCollection";
 import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
+import Activity from "./Pages/Activity/Activity";
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         <Route path="/NotificationDisplay" element={<NotificationD />} />
         <Route path="/uploadPage" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
+        <Route path="/Activity" element={<Activity />} />
       </Routes>
     </div>
   );
