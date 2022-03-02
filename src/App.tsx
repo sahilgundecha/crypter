@@ -13,6 +13,8 @@ import Upload from "./Pages/Upload/Upload";
 import { CradCollection } from "./Components/CardCollection/CradCollection";
 import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
+import CurrentBid from "./Components/CurrentBid/CurrentBid";
+import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
 
 const App: React.FC = () => {
   return (
@@ -30,6 +32,8 @@ const App: React.FC = () => {
         <Route path="/uploadPage" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
         <Route path="/Activity" element={<Activity />} />
+        <Route path="/searchfilter" element={<SearchFilter />} />
+        <Route path="/currentbid" element={<CurrentBid />} />
       </Routes>
     </div>
   );
