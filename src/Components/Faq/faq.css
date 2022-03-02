@@ -1,0 +1,83 @@
+.heading1 {
+  font-size: 12px !important;
+  color: #777e90;
+  font-weight: bold !important;
+}
+.heading2 {
+  font-size: 48px !important;
+  color: #000000;
+}
+.heading3 {
+  font-size: 16px !important;
+  color: #353945;
+  font-weight: bold !important;
+}
+.accordionText {
+  color: #777e90;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  /* font-style: Poppins-Regular !important; */
+  font-family: "Poppins-Regular" !important;
+}
+.blueText {
+  color: #3772ff;
+}
+.hoverText1:hover {
+  color: #3772ff;
+}
+.hoverText {
+  box-shadow: none !important;
+  font-weight: 600 !important;
+  font-family: "Poppins-Regular" !important;
+}
+.hoverText1 {
+  box-shadow: none !important;
+  border-top: 1px solid #dee2e6;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  min-height: 100px !important;
+}
+.css-10d9dml-MuiTabs-indicator {
+  display: none;
+}
+
+.css-n1j79u-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #23262f !important;
+}
+.css-n1j79u-MuiButtonBase-root-MuiTab-root:hover {
+  color: #23262f !important;
+}
+/* .rounded-pill {
+    height: 40px;
+  } */
+/* .blackimg:hover {
+  } */
+.css-n1j79u-MuiButtonBase-root-MuiTab-root:hover .blackimg {
+  opacity: 1 !important;
+}
+.blackimg {
+  opacity: 0.4 !important;
+}
+.learnmore {
+  margin: 20px 0px !important;
+  height: 45px;
+}
+.shadow {
+  box-shadow: none !important;
+}
+.css-n1j79u-MuiButtonBase-root-MuiTab-root {
+  font-size: 14px !important;
+  font-family: "DMSans-Bold" !important;
+  font-weight: bold !important;
+}
+/* modals code */
+.startnowbtn {
+  text-align: center;
+  width: 100% !important;
+  margin-top: 20px !important;
+  border-radius: 25px !important;
+  background-color: #3772ff !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
