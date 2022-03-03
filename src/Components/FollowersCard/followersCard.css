@@ -12,8 +12,11 @@
     border-bottom: 1.5px solid rgba(236, 232, 232, 0.5);
 }
 .coverImgStyle{
+    display: flex;
+    flex-direction: row !important;
     margin-left: 60px;
-}
+    
+    }
 .profileStyle{
     margin:10px;
     text-align:center;
@@ -24,7 +27,12 @@
        height:88px ;
        margin:5px ;
   }
-
+  @media (max-width:1024px) {
+    .coverImgStyle{
+        width: 60%;
+    overflow-x: scroll;
+    }
+  }
 @media (max-width:768px) {
     .coverImgStyle{
         margin-left: 20px;

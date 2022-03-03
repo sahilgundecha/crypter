@@ -97,13 +97,14 @@ export default function ProfilePage() {
         <Grid className="navpill_Styling">
           {/* <FollowersCard/> */}
           {/* <AppBar> */}
-          <Grid>
+          <Grid className="tabTopGrid_Styling">
             <Tabs
               value={value}
               onChange={handleChange}
-              // variant="scrollable"
-              // scrollButtons="auto"
+              variant="scrollable"
+              scrollButtons="auto"
               aria-label="scrollable auto tabs example"
+              className="tabs_Styling"
             >
               <Tab label="On Sales" {...allyProps(0)} sx={{textTransform:"none",color:"#777E90"}} />
               <Tab label="Collectibles" {...allyProps(1)} sx={{textTransform:"none",color:"#777E90"}} />
@@ -114,7 +115,10 @@ export default function ProfilePage() {
             </Tabs>
             {/* </AppBar> */}
             <TabPanel value={value} index={0}>
-              <Carosel/>
+              <Grid sx={{display:"flex"}} spacing={2}>
+              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
+              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
             <Carosel/>
@@ -126,10 +130,12 @@ export default function ProfilePage() {
             <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={4}>
-            <FollowersCard/>
+            {/* <FollowersCard/> */}<p>cfgvhnbj</p>
             </TabPanel>
             <TabPanel value={value} index={5}>
+              <Grid container className="FollowersCardGrid">
               <FollowersCard/>
+              </Grid>
             </TabPanel>
           </Grid>
         </Grid>
