@@ -11,14 +11,38 @@
 .usercardGrid_Styling{
   display: flex;
   justify-content: end;
-  width:20%;
+  width:30%;
   margin-top: -60px;
+  padding-right: 30px;
 }
 .navpill_Styling{
   margin-top: 30px;
-width:80%;
+width:70%;
 display: flex;
-justify-content: center;
+/* justify-content: center; */
+}
+.tabs_Styling{
+  margin-left: 35px;
+  width: 100%;
+  
+}
+.FollowersCardGrid{
+  width: 60%;
+}
+
+.tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff !important;
+  background-color: #353945 !important;
+  border-radius: 20px;
+    height: 40px !important;
+}
+
+.tabTopGrid_Styling .css-1aquho2-MuiTabs-indicator{
+  background: none !important;
+}
+.tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root{
+  font-weight: 600 !important;
+  min-height: 40px !important;
 }
 @media (max-width:1020px){
   .usercardGrid_Styling{
