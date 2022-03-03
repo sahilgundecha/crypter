@@ -21,7 +21,7 @@ const CurrentBid = () => {
   let interval: any = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("March 03, 2022").getTime();
+    const countdownDate = new Date("March 04, 2022").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();

@@ -6,14 +6,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Searchbar from "../Searchbar/Searchbar";
 import Divider from "@mui/material/Divider";
-import Grid from "@mui/material/Grid";
 import SliderComponent from "../Slider/Slider";
 import { typography } from "@mui/system";
 import reset from "../../Assets/images/resetFilter.svg";
+import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import Data from "../Bidcard/bidcardArray";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 import Bidcard from "../Bidcard/Bidcard";
+import SearchFilterCard from "./SearchFilterCard";
 interface cardProps {
   colData: {
     cardIt: {
@@ -29,6 +31,9 @@ interface cardProps {
   };
 }
 const SearchFilter = () => {
+  const arr = ["highest price", "average price", "lowest price"];
+  const arr2 = ["first price", "second price", "lowest price"];
+
   return (
     <Container sx={{ margin: "40px" }}>
       <Box
@@ -44,7 +49,19 @@ const SearchFilter = () => {
           </Typography>
         </Box>
         <Box>
-          <Searchbar />
+          <Searchbar
+            icon={
+              <SearchRoundedIcon
+                style={{
+                  color: "#fff",
+                  backgroundColor: "#3772ff",
+                  borderRadius: "20px",
+                  padding: "5px",
+                  fontSize: "medium",
+                }}
+              />
+            }
+          />
         </Box>
       </Box>
       <Divider sx={{ margin: "30px 0px" }} />
@@ -56,7 +73,11 @@ const SearchFilter = () => {
         }}
       >
         <Box>
-          <Dropdown />
+          <Dropdown
+            item1="Newest"
+            item2="Oldest"
+            // item3="Lowest Price"
+          />
         </Box>
         <Box>
           <p>Lorem ipsum dolor sit amet.</p>
@@ -69,13 +90,19 @@ const SearchFilter = () => {
           </Box>
           <Divider sx={{ margin: "10px 0px" }} />
           <Box>
-            <Dropdown />
+            <Dropdown item1="Most Liked" item2="Least Liked" />
           </Box>
           <Box>
-            <Dropdown />
+            <Dropdown
+              item1="All Colors"
+              item2="Black"
+              item3="Green"
+              item4="Pink"
+              item5="Purple"
+            />
           </Box>
           <Box>
-            <Dropdown />
+            <Dropdown item1="Verified olny" item2="All" item3="Most liked" />
           </Box>
           <Divider sx={{ margin: "10px 5px" }} />
 
@@ -94,11 +121,7 @@ const SearchFilter = () => {
         <Grid md={1}></Grid>
         <Grid item md={9}>
           <Grid container spacing={2}>
-            <Grid item md={4}>
-              <Paper sx={{ padding: "15px", borderRadius: "15px" }}>
-                <Bidcard colData={Data} />
-              </Paper>
-            </Grid>
+            <SearchFilterCard colData={Data} />
           </Grid>
         </Grid>
       </Grid>
