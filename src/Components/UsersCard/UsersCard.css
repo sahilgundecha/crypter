@@ -10,5 +10,7 @@
 @media (max-width: 1020px) {
        .root{
         width: 80% !important;
+        height: 570px;
+        padding: 10px;
        }
      }

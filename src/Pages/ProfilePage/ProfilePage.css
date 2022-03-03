@@ -3,7 +3,10 @@
     padding: 4px 12px;
   
   }
-
+.button_div{
+  padding-right: 80px;
+  margin-bottom: 20px;
+}
 .userFollower{
     display: flex;
 
@@ -23,12 +26,10 @@ display: flex;
 }
 .tabs_Styling{
   margin-left: 35px;
-  width: 100%;
-  
 }
-.FollowersCardGrid{
+/* .FollowersCardGrid{
   width: 60%;
-}
+} */
 
 .tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff !important;
@@ -41,10 +42,14 @@ display: flex;
   background: none !important;
 }
 .tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root{
-  font-weight: 600 !important;
+  /* font-weight: 600 !important; */
   min-height: 40px !important;
 }
+
 @media (max-width:1020px){
+  .button_div{
+    margin-bottom: 80px;
+  }
   .usercardGrid_Styling{
     display: flex;
     justify-content: center;
@@ -55,5 +60,10 @@ display: flex;
 }
 .navpill_Styling{
   width:100%;
+  }
+}
+@media (max-width:700px){
+  .tabs_Styling{
+    width:50%;
   }
 }
