@@ -8,7 +8,7 @@ interface Props {
   labelColor?: string;
   isDisabled?: boolean;
   styleType?: string;
-  customStyle?: Object;
+  customStyle?: object;
   buttonType?: 'submit' | 'reset' | 'button';
   classNames?: string;
 }
