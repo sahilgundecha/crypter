@@ -55,8 +55,8 @@ function valuetext(value: number) {
   return `${value}ETH`;
 }
 interface sliderprops {
-  value: number;
-  children: string[];
+  value?: number;
+  children?: string[];
   title?: string;
   ETH1?: string | number;
   ETH2?: string | number;
