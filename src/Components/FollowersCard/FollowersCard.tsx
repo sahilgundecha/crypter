@@ -33,9 +33,13 @@ return(
                         sx={{ width: "88px", height: "88px", margin: "14px 20px" }}
                         src={x.img} />
                     <Grid className="profileStyle">
-                        <Typography sx={{ fontSize: "16px", fontWeight: "600", width: "100px" }}>{x.name}</Typography>
+                        <Grid className="nameStyling">
+                        <Typography sx={{ fontSize: "16px", fontWeight: "600"}}>{x.name}</Typography>
                         <Typography sx={{ fontSize: "12px", color: "#777E90" }}>{x.followers} followers</Typography>
+                        </Grid>
+                        <Grid className='buttonin768'>
                         <Button disableElevation color="primary" variant="contained" sx={{ backgroundColor: "#3772FF", fontSize: "11px !important", width: "70px", height: "30px", borderRadius: "30px", marginTop: "12px" }}> Follow</Button>
+                    </Grid>
                     </Grid>
                 </Grid>
                 <div className="followersCardImg_style">

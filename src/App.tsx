@@ -20,6 +20,7 @@ import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
+import Item from "./Components/Item/Item";
 
 const App: React.FC = () => {
   return (
@@ -31,19 +32,20 @@ const App: React.FC = () => {
           element={<SliderComponent value={0} children={[]} />}
         />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/item" element={<Item />} />
         <Route path="/walletcard" element={<WalletCard ETH={10.78} />} />
         <Route path="/Textfield" element={<Textfield />} />
-        <Route path="UsersCard" element={<UsersCard/>}/>
-        <Route path="NoResultsPage" element={<NoResultsPage/>}/>
-        <Route path="/SingleCollectible" element={<SingleCollectible />}/>
+        <Route path="UsersCard" element={<UsersCard />} />
+        <Route path="NoResultsPage" element={<NoResultsPage />} />
+        <Route path="/SingleCollectible" element={<SingleCollectible />} />
         <Route path="searchbar" element={<Searchbar />} />
-        <Route path="dropdown" element={<Dropdown />} />
+        {/* <Route path="dropdown" element={<Dropdown />} /> */}
         <Route path="carosel" element={<Carosel />} />
         <Route path="followersCard" element={<FollowersCard />} />
         <Route path="/NotificationDisplay" element={<NotificationD />} />
         <Route path="/uploadPage" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
-        <Route path="/ProfilePage" element={<ProfilePage/>}/>
+        <Route path="/ProfilePage" element={<ProfilePage />} />
         <Route path="/Activity" element={<Activity />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
         <Route path="/currentbid" element={<CurrentBid />} />
