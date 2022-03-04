@@ -98,7 +98,7 @@ export default function SingleCollectible() {
     <>
     <Container>
       <Grid container spacing={10} className='mt-5'>
-        <Grid item sm={12} xs={6} md={8}>
+        <Grid item sm={12} xs={12} md={8}>
             <Box sx={styleDirection}>
             <Box>
             <Typography variant='h4'>Create single collectible</Typography>
@@ -183,8 +183,8 @@ export default function SingleCollectible() {
                 </Box>
                 
             </Box>
-            <Grid container columns={{ xs: 4, md: 12 }} spacing={2}>
-                <Grid item sm={12} md={3}>
+            <Grid container  spacing={2}>
+                <Grid item  sm={3} xs={6} md={3}>
 
             <Box sx={styleCol} className='bgColor' >
                 <img src={rod1} className='imFluid'/>
@@ -193,7 +193,7 @@ export default function SingleCollectible() {
                 </Typography>
             </Box> 
                 </Grid>
-                <Grid item md={3}>
+                <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
     <img src={rod2} className='imFluid'/>
@@ -202,7 +202,7 @@ export default function SingleCollectible() {
     </Typography>
 </Box> 
     </Grid>
-    <Grid item md={3}>
+    <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
     <img src={rod3} className='imFluid'/>
@@ -211,7 +211,7 @@ export default function SingleCollectible() {
     </Typography>
 </Box> 
     </Grid>
-    <Grid item md={3}>
+    <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
     <img src={rod4} className='imFluid'/>
@@ -234,7 +234,7 @@ export default function SingleCollectible() {
               </Box>
               </Box>
         </Grid>
-        <Grid item xs={6} md={4}>
+        <Grid item xs={12} md={4}>
          <Paper className='changePadding'>
            <Typography variant='h4'> 
              Preview
