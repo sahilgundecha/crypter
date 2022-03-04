@@ -26,19 +26,19 @@ const breakPoints = [
 ];
 
 const Carosel = () => {
-  function myArrow({ type, onClick, isEdge }: any) {
-    const pointer =
-      type === consts.PREV ? (
-        <img src={rightArrow} className="leftarrow" />
-      ) : (
-        <img src={leftArrow} className="rightarrow" />
-      );
-    return (
-      <Button onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </Button>
-    );
-  }
+  // function myArrow({ type, onClick, isEdge }: any) {
+  //   const pointer =
+  //     type === consts.PREV ? (
+  //       <img src={rightArrow} className="leftarrow" />
+  //     ) : (
+  //       <img src={leftArrow} className="rightarrow" />
+  //     );
+  //   return (
+  //     <Button onClick={onClick} disabled={isEdge}>
+  //       {pointer}
+  //     </Button>
+  //   );
+  // }
 
   // function chnageArrow() {
   //   const leftArrow: any = document.querySelector(".rec-arrow-left");
@@ -49,7 +49,7 @@ const Carosel = () => {
     <Carousel
       itemsToShow={4}
       // isRTL={false}
-      breakPoints={breakPoints}
+      // breakPoints={breakPoints}
       pagination={false}
       // renderArrow={myArrow}
     >
