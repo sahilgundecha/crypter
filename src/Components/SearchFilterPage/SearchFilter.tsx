@@ -13,9 +13,36 @@ import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import Data from "../Bidcard/bidcardArray";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 import Bidcard from "../Bidcard/Bidcard";
 import SearchFilterCard from "./SearchFilterCard";
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
 interface cardProps {
   colData: {
     cardIt: {
@@ -30,9 +57,21 @@ interface cardProps {
     }[];
   };
 }
+function allyProps(index: number) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 const SearchFilter = () => {
   const arr = ["highest price", "average price", "lowest price"];
   const arr2 = ["first price", "second price", "lowest price"];
+  const [value, setvalue] = React.useState(0);
+
+  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+    setvalue(newValue);
+  };
 
   return (
     <Container sx={{ margin: "40px" }}>
@@ -80,14 +119,75 @@ const SearchFilter = () => {
           />
         </Box>
         <Box>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <Grid className="navpill_Styling">
+            {/* <FollowersCard/> */}
+            {/* <AppBar> */}
+            <Grid className="tabTopGrid_Styling">
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
+                className="tabs_Styling"
+              >
+                <Tab
+                  label="All Items"
+                  {...allyProps(0)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+                <Tab
+                  label="Art"
+                  {...allyProps(1)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+                <Tab
+                  label="Game"
+                  {...allyProps(2)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+                <Tab
+                  label="Photography"
+                  {...allyProps(3)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+                <Tab
+                  label="Music"
+                  {...allyProps(4)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+                <Tab
+                  label="Video"
+                  {...allyProps(5)}
+                  sx={{ textTransform: "none", color: "#777E90" }}
+                />
+              </Tabs>
+              {/* </AppBar> */}
+              <TabPanel value={value} index={0}></TabPanel>
+              <TabPanel value={value} index={1}>
+                {/* <p>one</p> */}
+              </TabPanel>
+              <TabPanel value={value} index={2}>
+                {/* {" "}
+                <p>one</p> */}
+              </TabPanel>
+              <TabPanel value={value} index={3}>
+                {/* {" "}
+                <p>one</p> */}
+              </TabPanel>
+              <TabPanel value={value} index={4}>
+                {/* <p>cfgvhnbj</p> */}
+              </TabPanel>
+              <TabPanel value={value} index={5}>
+                {/* <p>one</p> */}
+              </TabPanel>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
       <Grid container>
         <Grid item md={2}>
-          <Box>
-            <SliderComponent />
-          </Box>
+          <Box>{/* <SliderComponent /> */}</Box>
           <Divider sx={{ margin: "10px 0px" }} />
           <Box>
             <Dropdown item1="Most Liked" item2="Least Liked" />
@@ -113,15 +213,16 @@ const SearchFilter = () => {
 
               alignItems: "center",
             }}
+            className="resetDiv"
           >
-            <img src={reset} alt="icon" />
+            <img src={reset} alt="icon" className="resetimg" />
             <Typography className="reset">reset filter</Typography>
           </Box>
         </Grid>
         <Grid md={1}></Grid>
         <Grid item md={9}>
           <Grid container spacing={2}>
-            <SearchFilterCard colData={Data} />
+            <Bidcard cardData={Data} />
           </Grid>
         </Grid>
       </Grid>

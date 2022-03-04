@@ -20,6 +20,7 @@ import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
+import Item from "./Components/Item/Item";
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
           element={<SliderComponent value={0} children={[]} />}
         />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/item" element={<Item />} />
         <Route path="/walletcard" element={<WalletCard ETH={10.78} />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard />} />
