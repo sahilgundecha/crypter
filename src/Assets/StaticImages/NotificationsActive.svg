@@ -1,0 +1,13 @@
+<svg id="Notification_New" data-name="Notification/New" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="30" viewBox="0 0 29 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Status_New_Background_Mask_" data-name="Status/New (Background/Mask)" width="12" height="12" rx="6" fill="#45b26b"/>
+    </clipPath>
+  </defs>
+  <g id="Status_New" data-name="Status/New" transform="translate(17)">
+    <rect id="Status_New_Background_Mask_2" data-name="Status/New (Background/Mask)" width="12" height="12" rx="6" fill="#45b26b"/>
+  </g>
+  <g id="icons_Burger_Line" data-name="icons/Burger/Line" transform="translate(0 11)">
+    <path id="Vector" d="M9,19a2.258,2.258,0,0,1-1.591-.647l-.073-.174a1,1,0,0,1,.922-1.389H9.743a1,1,0,0,1,.922,1.389l-.073.174A2.258,2.258,0,0,1,9,19Zm8.116-3.093H.884a.883.883,0,1,1,0-1.767H.9V7.981A8.05,8.05,0,0,1,9,0a8.05,8.05,0,0,1,8.1,7.981V14.14h.016a.883.883,0,1,1,0,1.767ZM9,1.768A6.264,6.264,0,0,0,2.7,7.981V14.14H15.3V7.981A6.264,6.264,0,0,0,9,1.768Z" transform="translate(0 0)" fill="#777e90"/>
+  </g>
+</svg>

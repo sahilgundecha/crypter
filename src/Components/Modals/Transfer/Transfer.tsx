@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import ButtonComponent from '../../ButtonComponent/ButtonComponent';
 import './Transfer.css';
 import TextField from '@mui/material/TextField';
+import cross from "../../../Assets/images/cross.svg";
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -35,6 +36,9 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+        <Box className="crossimg">
+                <img onClick={handleClose} width={27} src={cross} alt="img" />
+              </Box>
           <Typography id="modal-modal-title" variant="h5" >
           Transfer token
           </Typography>
@@ -48,7 +52,7 @@ export default function BasicModal() {
 
           <Box sx={{display:'flex',flexDirection:'column',margin:'20px 0px'}}>
           <ButtonComponent  btnColor={"#3772FF"} classNames='changeMar'>Continue</ButtonComponent>
-          <ButtonComponent styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>cancel</ButtonComponent>
+          <ButtonComponent handleClick={handleClose} styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>cancel</ButtonComponent>
           </Box>
         </Box>
       </Modal>

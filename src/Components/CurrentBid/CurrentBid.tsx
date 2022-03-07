@@ -12,8 +12,15 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Countdown from "react-countdown";
+import green from "../../Assets/images/greenSquare.svg";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
-const CurrentBid = () => {
+interface currentProps {
+  bidData: any;
+}
+
+const CurrentBid: React.FC<currentProps> = ({ bidData }) => {
+  const endDat = bidData.endDate;
   const [hrs, setHrs] = useState<string | number>("00");
   const [mins, setMins] = useState<string | number>("00");
   const [secs, setSecs] = useState<string | number>("00");
@@ -21,7 +28,7 @@ const CurrentBid = () => {
   let interval: any = useRef();
 
   const startTimer = () => {
-    const countdownDate = new Date("March 05, 2022").getTime();
+    const countdownDate = new Date(endDat).getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -48,10 +55,10 @@ const CurrentBid = () => {
   });
 
   return (
-    <Container sx={{ margin: "0px" }}>
+    <Container sx={{ margin: "0px 60px" }}>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
-          <img src={video} alt="homeImage" className="homeImg" />
+          <img src={bidData.headimg} alt="homeImage" className="homeImg" />
         </Grid>
         <Grid item xs={12} sm={2} md={2} lg={4} xl={4}>
           <Box
@@ -67,7 +74,7 @@ const CurrentBid = () => {
               component="div"
               sx={{ color: "#23262F", fontWeight: "normal" }}
             >
-              Marco carrillo&reg;
+              {bidData.name}
             </Typography>
             <Box
               sx={{
@@ -95,14 +102,14 @@ const CurrentBid = () => {
                     Creator
                   </Typography>
                   <Typography variant="caption" display="block" gutterBottom>
-                    Enrico Cole
+                    {bidData.name}
                   </Typography>
                 </Box>
               </Box>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <Box>
                   <img
-                    src={profile}
+                    src={green}
                     alt="profile"
                     style={{ marginRight: "5px" }}
                   />
@@ -117,7 +124,7 @@ const CurrentBid = () => {
                     Instant price
                   </Typography>
                   <Typography variant="caption" display="block" gutterBottom>
-                    3.5 ETH
+                    {bidData.ETHImg} ETH
                   </Typography>
                 </Box>
               </Box>
@@ -137,13 +144,13 @@ const CurrentBid = () => {
                     Current Bid
                   </Typography>
                   <Typography variant="h3" component="div" className="ETH">
-                    1.00 ETH
+                    {bidData.CurrentBidETH} ETH
                   </Typography>
                   <Typography
                     sx={{ color: "#777E90", fontSize: "24px" }}
                     gutterBottom
                   >
-                    $3,618.36
+                    ${bidData.Dollar}
                   </Typography>
                   <Typography variant="body2">Auction ending in</Typography>
                   <Box
@@ -229,16 +236,15 @@ const CurrentBid = () => {
                 </CardContent>
               </Card>
             </Box>
-            <Box
-              sx={{
-                textAlign: "center",
-                backgroundColor: "red",
-              }}
-            >
-              <Button>Upload</Button>
+            <Box sx={{ textAlign: "center" }}>
+              <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
+                UPLOAD
+              </ButtonComponent>
             </Box>
-            <Box>
-              <Button>Connect Wallet</Button>
+            <Box sx={{ textAlign: "center" }}>
+              <ButtonComponent styleType="outline" classNames="ButtonClass1">
+                Connect Wallet
+              </ButtonComponent>
             </Box>
           </Box>
         </Grid>

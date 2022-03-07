@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import ButtonComponent from '../../ButtonComponent/ButtonComponent';
 import './BurnToken.css';
+import cross from "../../../Assets/images/cross.svg";
 
 const style = {
   position: 'absolute' as 'absolute',
@@ -34,6 +35,9 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+        <Box className="crossimg">
+                <img onClick={handleClose} width={27} src={cross} alt="img" />
+              </Box>
           <Typography id="modal-modal-title" variant="h5" >
          Burn token
           </Typography>
@@ -42,7 +46,7 @@ export default function BasicModal() {
           </Typography>
           <Box sx={{display:'flex',flexDirection:'column',margin:'20px 0px'}}>
           <ButtonComponent  btnColor={"#EF466F"} classNames='changeMar'>Continue</ButtonComponent>
-          <ButtonComponent styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>Cancel</ButtonComponent>
+          <ButtonComponent handleClick={handleClose} styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>Cancel</ButtonComponent>
           </Box>
         </Box>
       </Modal>

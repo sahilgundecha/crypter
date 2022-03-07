@@ -14,3 +14,32 @@
     brightness(108%) contrast(101%);
   cursor: pointer;
 }
+
+.searchbarIcon:hover {
+  background-color: #044eff !important;
+}
+.searchDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .searchDiv {
+    flex-direction: column;
+  }
+  .widthSm {
+    width: 100%;
+  }
+  .widthSm .css-1869usk-MuiFormControl-root {
+    width: 100% !important;
+  }
+  .widthSm .css-0 {
+    width: 100% !important;
+  }
+  .widthSm
+    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    width: 100% !important;
+  }
+}
