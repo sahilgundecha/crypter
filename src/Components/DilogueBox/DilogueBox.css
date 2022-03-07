@@ -6,27 +6,6 @@
   background-color: #3772ff !important;
   color: #ffffff !important;
   font-weight: bold !important;
-  text-transform: none !important;
-}
-.mybtn {
-  width: 100% !important;
-  border-radius: 25px !important;
-  margin-top: 20px !important;
-
-  font-weight: bold !important;
-  background-color: rgb(192, 189, 189) !important;
-  color: #ffffff !important;
-  text-align: center;
-  border: none !important;
-}
-.crossimg {
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
-}
-.crossimg:hover {
-  filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
-    brightness(98%) contrast(109%);
 }
 
 .cancelbtn {
@@ -48,6 +27,12 @@
 .displayflex {
   display: flex !important;
 }
+.pinkText {
+  color: #ef466f;
+}
+.pinkBox {
+  text-align: center;
+}
 
 .para1 {
   margin: 10px !important;
@@ -56,25 +41,32 @@
 .buttonBox {
   text-align: center;
 }
-
+.pinkimg {
+  margin: 10px 10px;
+}
 .modal3 {
   text-align: center;
+  margin-top: 50px;
 }
-
+.blue_img3 {
+  float: right !important;
+  cursor: pointer;
+}
+.blue_img3:hover {
+  filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
+    brightness(98%) contrast(109%);
+}
+.blue_img4 {
+  float: right !important;
+  margin: 5px;
+}
+.blue_img4:hover {
+  filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
+    brightness(98%) contrast(109%);
+  cursor: pointer;
+}
 .cancelbtnbox {
   display: flex;
   justify-content: center;
   text-align: center !important;
-}
-.modalhead {
-  font-size: 32px !important;
-  opacity: 1;
-  font-weight: unset !important;
-}
-.subtext {
-  font-size: 12px !important;
-}
-.subhead {
-  font-size: 16px !important;
-  font-weight: 600 !important;
 }

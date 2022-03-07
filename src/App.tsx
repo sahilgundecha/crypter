@@ -21,6 +21,7 @@ import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
 import Modals from "./Components/Modals/Modals";
+import DilogueBox from "./Components/DilogueBox/DilogueBox";
 
 const App: React.FC = () => {
   return (
@@ -32,7 +33,7 @@ const App: React.FC = () => {
           element={<SliderComponent value={0} children={[]} />}
         />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/walletcard" element={<WalletCard ETH={10.78} />} />
+        <Route path="/walletcard" element={<WalletCard />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard />} />
         <Route path="NoResultsPage" element={<NoResultsPage />} />
@@ -48,7 +49,11 @@ const App: React.FC = () => {
         <Route path="/Activity" element={<Activity />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
         <Route path="/currentbid" element={<CurrentBid />} />
-        <Route path="/modals" element={<Modals />} />
+        <Route
+          path="/modals"
+          element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
+        />
+        <Route path="/DilogueBox" element={<DilogueBox />} />
       </Routes>
     </div>
   );
