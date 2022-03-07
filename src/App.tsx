@@ -20,6 +20,8 @@ import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
+import Modals from "./Components/Modals/BidModal/Modals";
+import DilogueBox from "./Components/Modals/DilogueBox/DilogueBox";
 import Item from "./Components/Item/Item";
 import Remove from "./Components/Modals/Remove/Remove";
 import Transfer from "./Components/Modals/Transfer/Transfer";
@@ -56,6 +58,11 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
+        <Route
+          path="/modals"
+          element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
+        />
+        <Route path="/DilogueBox" element={<DilogueBox />} />
       </Routes>
     </div>
   );

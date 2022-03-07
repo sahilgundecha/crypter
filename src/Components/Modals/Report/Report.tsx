@@ -46,6 +46,9 @@ export default function BasicModal() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
+            {/* <Box className="crossimg">
+                <img onClick={handleClose} src={cross} alt="img" />
+              </Box> */}
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h5" >
           Report
