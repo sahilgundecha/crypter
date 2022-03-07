@@ -68,7 +68,7 @@ return(
             <Box sx={styleRow} key={props.id}>
                 <img className="change1" src={props.mainImg} />
                 <Box sx={{marginLeft:'20px'}}>
-                <Typography>{props.ethPrice}</Typography>
+                <Typography className="fontInc">{props.ethPrice}</Typography>
                 <Typography className="ChangeFont">{props.ethRecieved}</Typography>
                 <Typography className='textDark'>{props.days}</Typography>
                 

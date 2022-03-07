@@ -1,0 +1,10 @@
+<svg id="share" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="share_Background_Mask_" data-name="share (Background/Mask)" fill="none" stroke="#e6e8ec" stroke-width="2" stroke-dasharray="0 0">
+    <rect width="48" height="48" rx="24" stroke="none"/>
+    <rect x="1" y="1" width="46" height="46" rx="23" fill="none"/>
+  </g>
+  <g id="Icons_Facebook_Line" data-name="Icons/Facebook/Line" transform="translate(14 14)">
+    <path id="Vector" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,2a8,8,0,1,0,8,8A8.009,8.009,0,0,0,10,2Z" transform="translate(0 0)" fill="#777e90"/>
+    <path id="Vector-2" data-name="Vector" d="M5,2H6A1,1,0,0,0,6,0H5A3,3,0,0,0,2,3V5H1A1,1,0,0,0,1,7H2v6a1,1,0,0,0,2,0V7H6A1,1,0,0,0,6,5H4V3A1,1,0,0,1,5,2Z" transform="translate(6 5)" fill="#777e90"/>
+  </g>
+</svg>

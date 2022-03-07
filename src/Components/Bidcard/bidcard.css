@@ -72,6 +72,7 @@
 .cardmedia1 {
   position: relative !important;
   overflow: hidden !important;
+  margin: 20px 10px !important;
 }
 .cardmedia {
   overflow: hidden !important;
@@ -149,10 +150,10 @@
   border-radius: 15px;
 }
 
-@media (max-width: 500px) {
-  /* .heartPurchase {
-    width: 220px;
-  } */
+@media (max-width: 768px) {
+  .cardmedia1 {
+    margin: 10px !important;
+  }
 }
 /* .temp {
   display: flex;

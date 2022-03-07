@@ -14,6 +14,8 @@ import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Divider from "@mui/material/Divider";
+import Data from "../Bidcard/bidcardArray";
+import { isTemplateTail } from "typescript";
 
 interface cardProps {
   colData: {
@@ -29,15 +31,14 @@ interface cardProps {
     }[];
   };
 }
-const SearchFilterCard = (props: cardProps) => {
-  const { cardIt } = props.colData;
+const SearchFilterCard = () => {
   const [pressed, setPressed] = useState<boolean>(false);
   const pressing = () => {
     setPressed(!pressed);
   };
   return (
     <>
-      {cardIt.map((props: any) => {
+      {Data.map((item) => {
         return (
           <>
             <Grid item md={4}>
@@ -52,7 +53,7 @@ const SearchFilterCard = (props: cardProps) => {
                   <Box className="boxwrap">
                     <CardMedia
                       component="img"
-                      image={props.mainImg}
+                      image={item.mainImg}
                       alt="green iguana"
                       className="cardmedia"
                     />
@@ -101,12 +102,12 @@ const SearchFilterCard = (props: cardProps) => {
                   >
                     <Box>
                       <Typography variant="h6" color="black">
-                        {props.artName}
+                        {item.artName}
                       </Typography>
                     </Box>
                     <Box>
                       <Typography variant="caption" className="greenText">
-                        {props.ETH} ETH
+                        {item.ETH} ETH
                       </Typography>
                     </Box>
                   </CardContent>
@@ -128,7 +129,7 @@ const SearchFilterCard = (props: cardProps) => {
                     <img src={creator} alt="" />
 
                     <Typography variant="caption" className="inStock">
-                      {props.inStock} in stock
+                      {item.inStock} in stock
                     </Typography>
                   </CardContent>
                   <Divider sx={{ margin: "5px" }} />
@@ -154,12 +155,12 @@ const SearchFilterCard = (props: cardProps) => {
                       />
                       <Typography variant="caption" className="bid">
                         Highest bid{" "}
-                        <span className="eth">{props.highestBid} ETH</span>
+                        <span className="eth">{item.highestBid} ETH</span>
                       </Typography>
                     </Box>
 
                     <Typography variant="caption" className="newBid">
-                      {props.bidType}
+                      {item.bidType}
                     </Typography>
                   </CardContent>
                 </Card>

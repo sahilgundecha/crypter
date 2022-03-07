@@ -13,8 +13,8 @@ import card32 from '../../Assets/images/cardimg32.png';
 import card33 from '../../Assets/images/cardimg33.png';
 import user1 from '../../Assets/images/user1.png';
 
-const cardArray = { 
-cardIt: [
+const cardArray = [
+
   {
     id:1,
     mainImg:card1,
@@ -45,6 +45,6 @@ cardIt: [
     authorName:"Cecilla Cornmier",
     item:28
   },
-]
-};
+];
+
 export default cardArray;
