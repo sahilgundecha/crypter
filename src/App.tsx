@@ -27,6 +27,9 @@ import Remove from "./Components/Modals/Remove/Remove";
 import Transfer from "./Components/Modals/Transfer/Transfer";
 import BurnToken from "./Components/Modals/BurnToken/BurnToken";
 import Report from "./Components/Modals/Report/Report";
+import FooterComponent from "./Components/FooterComponent/Footer";
+import PutOnScale from "./Components/Modals/PutOnScale/PutOnScale";
+
 const App: React.FC = () => {
   return (
     <div className="xyz">
@@ -58,12 +61,15 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
+        <Route path="/PutOnScale" element={<PutOnScale />} />
+
         <Route
           path="/modals"
           element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
         />
         <Route path="/DilogueBox" element={<DilogueBox />} />
       </Routes>
+      <FooterComponent />
     </div>
   );
 };

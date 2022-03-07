@@ -123,7 +123,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 {/* Checkout */}
               </Typography>
               <img
-                className="blue_img3"
+                className="crossimg"
                 onClick={handleClose}
                 src={cross}
                 alt="img"
@@ -254,7 +254,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 Folow steps
               </Typography>
               <img
-                className="blue_img3"
+                className="crossimg"
                 src={cross}
                 onClick={handleClose}
                 alt="img"
@@ -343,7 +343,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
         >
           <Box sx={style}>
             <img
-              className="blue_img3"
+              className="crossimg"
               src={cross}
               onClick={handleClose}
               alt="img"
@@ -411,30 +411,10 @@ const DilogueBox = (props: DilogueModalsprops) => {
                   justifyContent: "center",
                 }}
               >
-                <img
-                  className="blue_img4"
-                  src={facebook}
-                  alt="img"
-                  width={"35px"}
-                />
-                <img
-                  className="blue_img4"
-                  src={twitter}
-                  alt="img"
-                  width={"35px"}
-                />
-                <img
-                  className="blue_img4"
-                  src={insta}
-                  alt="img"
-                  width={"35px"}
-                />
-                <img
-                  className="blue_img4"
-                  src={pintrest}
-                  alt="img"
-                  width={"35px"}
-                />
+                <img className="blue_img" src={facebook} />
+                <img className="blue_img" src={twitter} />
+                <img className="blue_img" src={insta} />
+                <img className="blue_img" src={pintrest} />
               </Box>
             </Box>
           </Box>

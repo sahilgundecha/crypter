@@ -22,6 +22,7 @@ import blackimg1 from "../../Assets/images/blackimg1.svg";
 import home from "../../Assets/images/home.svg";
 import hosting from "../../Assets/images/hosting.svg";
 import blackimg2 from "../../Assets/images/blackimg2.svg";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 // import ButtonComponent from "../ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -197,13 +198,13 @@ export default function VerticalTabs() {
                       templates, all in light or dark mode."
                     </Typography>
 
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -226,13 +227,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -259,13 +260,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -292,13 +293,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -325,13 +326,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
               </TabPanel>
@@ -360,13 +361,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -391,13 +392,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -424,13 +425,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -457,13 +458,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -490,13 +491,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -523,13 +524,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
               </TabPanel>
@@ -558,13 +559,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -591,13 +592,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -624,13 +625,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -657,13 +658,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
               </TabPanel>
@@ -692,13 +693,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -725,13 +726,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -758,13 +759,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -791,13 +792,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
                 <Accordion className="hoverText1">
@@ -824,13 +825,13 @@ export default function VerticalTabs() {
                       layouts or hit the ground running with 10 pre-built
                       templates, all in light or dark mode."
                     </Typography>
-                    {/* <ButtonComponent
+                    <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
                       classNames={"px-4 rounded-pill learnmore"}
                     >
                       Learn more
-                    </ButtonComponent> */}
+                    </ButtonComponent>
                   </AccordionDetails>
                 </Accordion>
               </TabPanel>
