@@ -34,6 +34,7 @@ import PutOnScale from "./Components/Modals/PutOnScale/PutOnScale";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
+import BidCloned from "./Components/CurrentBid/BidCloned";
 
 const App: React.FC = () => {
   return (

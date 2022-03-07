@@ -168,14 +168,14 @@ const SearchFilter = () => {
       </Box>
       <Grid container>
         <Grid item md={2}>
-          <Box sx={{ width: "250px" }} className="widthSm">
+          <Box className="widthSm">
             <SliderComponent />
           </Box>
 
-          <Box className="widthSm">
+          <Box>
             <Dropdown item1="Most Liked" item2="Least Liked" />
           </Box>
-          <Box className="widthSm">
+          <Box>
             <Dropdown
               item1="All Colors"
               item2="Black"
@@ -184,7 +184,7 @@ const SearchFilter = () => {
               item5="Purple"
             />
           </Box>
-          <Box className="widthSm">
+          <Box>
             <Dropdown item1="Verified olny" item2="All" item3="Most liked" />
           </Box>
           <Divider sx={{ margin: "10px 5px" }} />
@@ -196,7 +196,7 @@ const SearchFilter = () => {
 
               alignItems: "center",
             }}
-            className="resetDiv widthSm"
+            className="resetDiv"
           >
             <img src={reset} alt="icon" className="resetimg" />
             <Typography className="reset">reset filter</Typography>

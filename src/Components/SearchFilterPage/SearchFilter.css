@@ -32,14 +32,9 @@
   .widthSm {
     width: 100%;
   }
-  .widthSm .css-1869usk-MuiFormControl-root {
-    width: 100% !important;
-  }
-  .widthSm .css-0 {
-    width: 100% !important;
-  }
-  .widthSm
-    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-    width: 100% !important;
+}
+@media (max-width: 500px) {
+  .widthSm .tabTopGrid_Styling {
+    width: 300px !important;
   }
 }

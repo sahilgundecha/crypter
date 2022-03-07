@@ -1,0 +1,25 @@
+.art {
+  color: #fcfcfd;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #23262f;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px !important;
+}
+.unlock {
+  color: #fcfcfd;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #9757d7;
+  border-radius: 5px;
+  padding: 5px;
+}
+.relativeDiv {
+  position: relative;
+}
+.artWrapper {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+}
