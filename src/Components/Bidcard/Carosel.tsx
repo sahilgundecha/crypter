@@ -1,48 +1,62 @@
 import React, { Component, useState } from "react";
 import Bidcard from "./Bidcard";
 import Data from "./bidcardArray";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import consts from "react-elastic-carousel";
+import Carousel from "react-elastic-carousel";
+import { Button } from "@mui/material";
+import leftArrow from "../../Assets/images/Left.svg";
+import rightArrow from "../../Assets/images/RightArrow.svg";
 
 interface cardProps {
-  colData: {
-    cardIt: {
-      id: number;
-      mainImg: string;
-      artName: string;
-      ETH: number;
-      inStock: number;
-      highestBid: number;
-      bidtype: string;
-      creatorList?: any;
-    }[];
-  };
+  id: number;
+  mainImg: string;
+  artName: string;
+  ETH: number;
+  inStock: number;
+  highestBid: number;
+  bidtype: string;
 }
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 480, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+  { width: 1500, itemsToShow: 4 },
+];
+
 const Carosel = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 4,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 4,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-  // const [bidArray, setBidArray] = useState(Data);
+  // function myArrow({ type, onClick, isEdge }: any) {
+  //   const pointer =
+  //     type === consts.PREV ? (
+  //       <img src={rightArrow} className="leftarrow" />
+  //     ) : (
+  //       <img src={leftArrow} className="rightarrow" />
+  //     );
+  //   return (
+  //     <Button onClick={onClick} disabled={isEdge}>
+  //       {pointer}
+  //     </Button>
+  //   );
+  // }
+
+  // function chnageArrow() {
+  //   const leftArrow: any = document.querySelector(".rec-arrow-left");
+  //   leftArrow.innerHTML = "<img src={leftArrow} className='rightarrow' />";
+  // }
+  // chnageArrow();
   return (
-    <div>
-      <Bidcard colData={Data} />;
-    </div>
+    <Carousel
+      itemsToShow={4}
+      isRTL={false}
+      // breakPoints={breakPoints}
+      pagination={false}
+      // renderArrow={myArrow}
+    >
+      {Data.map((item, index) => (
+        <Bidcard cardData={item} key={item.id} />
+      ))}
+    </Carousel>
   );
 };
 
