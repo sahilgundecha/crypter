@@ -5,12 +5,12 @@ import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
-import cross from "../../Assets/images/cross.svg";
-import pencil from "../../Assets/images/pencil.svg";
-import upload from "../../Assets/images/upload.svg";
-import purple_icon from "../../Assets/images/purple_icon.svg";
-import bag from "../../Assets/images/bag.svg";
-import greentick from "../../Assets/images/greentick.svg";
+import cross from "../../../Assets/images/cross.svg";
+import pencil from "../../../Assets/images/pencil.svg";
+import upload from "../../../Assets/images/upload.svg";
+import purple_icon from "../../../Assets/images/purple_icon.svg";
+import bag from "../../../Assets/images/bag.svg";
+import greentick from "../../../Assets/images/greentick.svg";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

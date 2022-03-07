@@ -33,13 +33,26 @@
  .hoverOnclick:hover {
      color:blue !important;
      cursor: pointer;
-     
+ }
+ .font2{
+     font-weight: bolder;
+     font-size: 20px;
+ }
+ .changeFont{
+     margin-top:40px !important;
+ }
+ .btnStyle1{
+     border-radius: 50px !important;
+     padding:15px 20px !important ;
  }
  .mRight:hover{
     color:blue !important;
     cursor: pointer;
  }
- .iciELI {
+ .marginR{
+     margin-right: 10px;
+ }
+ .gIfIEN {
     margin:20px 0px;
     max-width: 100% !important;
     height: 100px !important;

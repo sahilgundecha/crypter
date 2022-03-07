@@ -1,11 +1,18 @@
 .changeColor{
     margin-top: 20px !important;
     color:#777E90;
+    font-size: 18px !important;
 }
 
 .updatFont{
     font-size: 48px;
     font-weight: bold;
+}
+.homeStyle{
+    color:grey;
+}
+.homeStyle:hover{
+    color:blue;
 }
 .css-46bh2p-MuiCardContent-root {
     text-align: center;
@@ -15,12 +22,26 @@
     flex-direction: row;
     margin-top: 1rem;
 }
+.buttonStyle{
+    border-radius: 50px !important;
+    padding:10px 20px !important;
+}
+.buttonStyle1{
+    border-radius: 50px !important;
+    padding:17px 25px !important;
+}
 .imgFuild{
     width:100%;
 }
 .cardHover:hover {
          box-shadow: 0 10px 10px -10px #000000;
   }
+@media (max-width:1024px){
+    .changeColor{
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+}
 @media (max-width:500px) and (min-width:300px){
     .cardStyle{
         margin-bottom: 30px;

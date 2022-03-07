@@ -8,12 +8,16 @@
   }
   .ChangeFont{
     font-size:15px !important;
+    color:#353945;
   }
   .card{
     width:375px ;  
     padding:20px;
     border-radius: 20px;
   
+  }
+  .fontInc{
+    font-weight: bold !important;
   }
   .change1{
     width:80px;

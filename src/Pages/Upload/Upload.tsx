@@ -9,7 +9,7 @@ import card1 from '../../Assets/images/upload1.png';
 import card2 from '../../Assets/images/upload2.png';
 import './Upload.css';
 import { createRoutesFromChildren } from 'react-router-dom';
-
+import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent';
 declare module '@mui/material/Typography' {
     interface TypographyPropsVariantOverrides {
       p : true;
@@ -43,30 +43,31 @@ const cardStyle={
   padding:'15px',
   borderRadius:'8px'
 }
+
 const textStyle={
   textDecoration:'none',
-  color:'#777E90',
+  
   marginRight:'10px',
+  fontWeight:'bold',
   cursor:'pointer',
-  fontSize:'15px'
+  fontSize:'14px'
 }
-
 export default function () {
   return (
     <>
     
    <Box sx={boxStyle}>
          <Box>
-         {/* <ButtonComponent
+         <ButtonComponent
                 btnColor={"#23262F"}
                 styleType={"outline"}
-                classNames={"p-3 rounded-pill"}
+                classNames="buttonStyle"
               >
-                <KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home
-              </ButtonComponent> */}
+                <span><KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home</span>
+              </ButtonComponent>
          </Box>
          <Box className="lineStyle">
-             <Typography component="a" sx={textStyle}>
+             <Typography component="a" sx={textStyle} className='homeStyle'>
                  Home &gt;  
              </Typography>
              <Typography component="p" sx={textStyle}>
@@ -90,7 +91,13 @@ export default function () {
       <CardActionArea>
        <img className="imgFuild" src={card1} />
         <CardContent className="textCenter">
-      /
+        <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="buttonStyle1"
+              >
+               Create Single
+              </ButtonComponent>
         </CardContent>
       </CardActionArea>
     </Card>
@@ -98,7 +105,13 @@ export default function () {
       <CardActionArea>
        <img className="imgFuild" src={card2} />
         <CardContent>
-        /
+        <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="buttonStyle1"
+              >
+               Create Mutiple
+              </ButtonComponent>
         </CardContent>
       </CardActionArea>
     </Card>

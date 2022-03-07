@@ -7,15 +7,15 @@ import Button from "@mui/material/Button";
 import { borderBottom, styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 // import { useState } from "react";
-import cross from "../../Assets/images/cross.svg";
+import cross from "../../../Assets/images/cross.svg";
 import { ImportantDevices } from "@mui/icons-material";
-import pinkicon from "../../Assets/images/pinkicon.svg";
+import pinkicon from "../../../Assets/images/pinkicon.svg";
 import CircularProgress from "@mui/material/CircularProgress";
-import usersimg from "../../Assets/images/usersimg.png";
-import facebook from "../../Assets/images/facebook.svg";
-import insta from "../../Assets/images/insta.svg";
-import pintrest from "../../Assets/images/pintrest.svg";
-import twitter from "../../Assets/images/twitter.svg";
+import usersimg from "../../../Assets/images/usersimg.png";
+import facebook from "../../../Assets/images/facebook.svg";
+import insta from "../../../Assets/images/insta.svg";
+import pintrest from "../../../Assets/images/pintrest.svg";
+import twitter from "../../../Assets/images/twitter.svg";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
