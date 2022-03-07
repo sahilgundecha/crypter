@@ -23,7 +23,7 @@
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  width:30px;
+ 
 }
 .crossimg:hover {
   filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)

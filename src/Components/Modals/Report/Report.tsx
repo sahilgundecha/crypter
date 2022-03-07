@@ -51,7 +51,7 @@ export default function BasicModal() {
              
         <Box sx={style}>
         <Box className="crossimg">
-                <img onClick={handleClose} src={cross} alt="img" />
+                <img onClick={handleClose} width={27} src={cross} alt="img" />
               </Box>
           <Typography id="modal-modal-title" variant="h5" >
           Report
@@ -73,7 +73,7 @@ export default function BasicModal() {
          </Box>
           <Box sx={{display:'flex',flexDirection:'column',margin:'2px 0px'}}>
           <ButtonComponent  btnColor={"#3772FF"} classNames='changeMar'>Send now</ButtonComponent>
-          <ButtonComponent styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>cancel</ButtonComponent>
+          <ButtonComponent handleClick={handleClose} styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>cancel</ButtonComponent>
           </Box>
         </Box>
         

@@ -27,9 +27,13 @@ import Remove from "./Components/Modals/Remove/Remove";
 import Transfer from "./Components/Modals/Transfer/Transfer";
 import BurnToken from "./Components/Modals/BurnToken/BurnToken";
 import Report from "./Components/Modals/Report/Report";
+import FollowModal from "./Components/Modals/FollowModal/FollowModal";
+import NavbarComponent from "./Components/Navbar/NavbarComponent";
+import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
 const App: React.FC = () => {
   return (
     <div className="xyz">
+      <NavbarComponent/>
       <Routes>
         <Route path="/" element={<Test />} />
         <Route
@@ -58,11 +62,13 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
+        <Route path="/Follow" element={<FollowModal />} />
         <Route
           path="/modals"
           element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
         />
         <Route path="/DilogueBox" element={<DilogueBox />} />
+        <Route path="/Accept" element={<AcceptBid />   } />
       </Routes>
     </div>
   );

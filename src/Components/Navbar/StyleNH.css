@@ -1,0 +1,15 @@
+.styleUp{
+    padding:12px 18px !important;
+    margin-right: 10px !important;
+}
+.styleCw{
+    border-radius: 15px ;
+    padding:12px 18px !important;
+}
+
+
+@media (max-width:768px){
+    .styleUp{
+        margin-right: 40px !important;
+    }
+}
