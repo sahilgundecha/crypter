@@ -20,6 +20,8 @@ import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
+import Modals from "./Components/Modals/Modals";
+import DilogueBox from "./Components/DilogueBox/DilogueBox";
 import Item from "./Components/Item/Item";
 import BidCarousel from "./Components/CurrentBid/BidCarousel";
 import SearchfilterCloned from "./Components/SearchFilterPage/SearchfilterCloned";
@@ -49,8 +51,17 @@ const App: React.FC = () => {
         <Route path="/ProfilePage" element={<ProfilePage />} />
         <Route path="/Activity" element={<Activity />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
+<<<<<<< HEAD
         <Route path="/homepage" element={<BidCarousel />} />
         <Route path="/searchcloned" element={<SearchfilterCloned />} />
+=======
+        <Route path="/currentbid" element={<CurrentBid />} />
+        <Route
+          path="/modals"
+          element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
+        />
+        <Route path="/DilogueBox" element={<DilogueBox />} />
+>>>>>>> 414d839fd68a631cfe84a97e03fa2d3716ee1a43
       </Routes>
     </div>
   );

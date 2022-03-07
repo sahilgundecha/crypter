@@ -121,14 +121,6 @@ export default function VerticalTabs() {
                 <Tab
                   sx={{ textTransform: "none" }}
                   icon={<HomeIcon />}
-                  // icon={
-                  //   <img
-                  //     src={home}
-                  //     height={15}
-                  //     width={15}
-                  //     className="blackimg"
-                  //   />
-                  // }
                   iconPosition="start"
                   label="General"
                   {...a11yProps(0)}
