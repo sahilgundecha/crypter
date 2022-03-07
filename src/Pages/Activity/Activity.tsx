@@ -8,7 +8,9 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import buffer from "../../Assets/images/buffer.svg";
+import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent';
 
 
 const boxStyle={
@@ -75,13 +77,13 @@ export default function Activity() {
     <>
     <Box sx={boxStyle}>
          <Box>
-         {/* <ButtonComponent
+         <ButtonComponent
                 btnColor={"#23262F"}
                 styleType={"outline"}
-                classNames={"p-3 rounded-pill"}
+                classNames="btnStyle1"
               >
                 <KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home
-              </ButtonComponent> */}
+              </ButtonComponent>
          </Box>
          <Box className="lineStyle">
              <Typography component="a" sx={textStyle}>
@@ -116,7 +118,13 @@ export default function Activity() {
             <TabPanel value={value} index={0}>
             <Box sx={boxStyle1}>
                     <Typography variant='h4' sx={fBold}>Activity </Typography>
-                    <Button variant='outlined'>Mark all as read</Button>
+                    <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="btnStyle1"
+              >
+               Mark as all read
+              </ButtonComponent>
                 </Box>
                 <Box>
                 <Notification colData={cardData}  />
@@ -152,9 +160,21 @@ export default function Activity() {
                     <FormControlLabel control={<Checkbox defaultChecked />} label="Transfers" />
                     </FormGroup>
                     <Divider />
-                    <Box sx={{margin:'10px 10px'}}>
-                    <Button variant='outlined'>Select all</Button>
-                    <Button variant='outlined'>Unselect all</Button>
+                    <Box sx={{margin:'10px 20px'}}>
+                    <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="btnStyle2"
+              >
+               Select
+              </ButtonComponent>
+              <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="btnStyle2"
+              >
+              Unselect
+              </ButtonComponent>
                     </Box>
                 </Paper>
             </Grid>

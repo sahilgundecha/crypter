@@ -4,7 +4,7 @@ import React from 'react';
 import { useState } from "react";
 import Divider from '@mui/material/Divider';
 import img1 from "../../Assets/images/bidImg.png";
-// import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent';
+import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent';
 import Textfield from '../../Components/Textfield/TextField';
 import CancelTwoToneIcon from '@mui/icons-material/CancelTwoTone';
 import Card from "@mui/material/Card";
@@ -14,6 +14,11 @@ import rod1 from "../../Assets/images/rod1.svg";
 import rod2 from "../../Assets/images/rod2.svg";
 import rod3 from "../../Assets/images/rod3.svg";
 import rod4 from "../../Assets/images/rod4.svg";
+import plus1 from "../../Assets/images/plus1.svg";
+import plus2 from "../../Assets/images/plus2.svg";
+import plus3 from "../../Assets/images/plus3.svg";
+import plus4 from "../../Assets/images/plus4.svg";
+
 import buffer from "../../Assets/images/buffer.svg";
 import { styled } from '@mui/material/styles';
 import creator from "../../Assets/images/creatorImg.png";
@@ -28,9 +33,37 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { FileUploader } from "react-drag-drop-files";
 // import Newbidcard from '../../Components/Bidcard/Newbidcard';
 
+
+
 export default function SingleCollectible() {
-   
-    
+  const [Picture, setPicture] = useState(true);
+  const [Picture1, setPicture1] = useState(true);
+  const [Picture2, setPicture2] = useState(true);
+  const [Picture3, setPicture3] = useState(true);
+  const changeBackground = () =>{
+   setPicture(false)
+  }
+  const changeBackgroundOut = () => {
+    setPicture(true)
+  }
+  const changeBackground1 = () =>{
+    setPicture1(false)
+   }
+   const changeBackgroundOut1 = () => {
+     setPicture1(true)
+   }
+   const changeBackground2 = () =>{
+    setPicture2(false)
+   }
+   const changeBackgroundOut2 = () => {
+     setPicture2(true)
+   }
+   const changeBackground3 = () =>{
+    setPicture3(false)
+   }
+   const changeBackgroundOut3 = () => {
+     setPicture3(true)
+   }
     const AntSwitch = styled(Switch)(({ theme }) => ({
         width: 28,
         height: 16,
@@ -104,13 +137,13 @@ export default function SingleCollectible() {
             <Typography variant='h4'>Create single collectible</Typography>
             </Box>
             <Box>
-            {/* <ButtonComponent
+            <ButtonComponent
                 btnColor={"#23262F"}
                 styleType={"outline"}
-                classNames={"p-2 rounded-pill"}
+                classNames="btnStyle1"
               >
                Switch to Multiple
-              </ButtonComponent> */}
+              </ButtonComponent>
             </Box>
             </Box>
             <Box sx={styleCol}>
@@ -187,7 +220,7 @@ export default function SingleCollectible() {
                 <Grid item  sm={3} xs={6} md={3}>
 
             <Box sx={styleCol} className='bgColor' >
-                <img src={rod1} className='imFluid'/>
+            <img src={Picture?rod1:plus4} className='imFluid' onMouseOver={changeBackground} onMouseLeave={changeBackgroundOut}/> 
                 <Typography variant='p'>
                 Create collection
                 </Typography>
@@ -196,7 +229,7 @@ export default function SingleCollectible() {
                 <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
-    <img src={rod2} className='imFluid'/>
+<img src={Picture1?rod2:plus3} className='imFluid' onMouseOver={changeBackground1} onMouseLeave={changeBackgroundOut1}/> 
     <Typography variant='p'>
     Crypto Legend - Professor
     </Typography>
@@ -205,7 +238,7 @@ export default function SingleCollectible() {
     <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
-    <img src={rod3} className='imFluid'/>
+<img src={Picture2?rod3:plus2} className='imFluid' onMouseOver={changeBackground2} onMouseLeave={changeBackgroundOut2}/> 
     <Typography variant='p'>
     Crypto Legend - Professor
     </Typography>
@@ -214,7 +247,7 @@ export default function SingleCollectible() {
     <Grid item sm={3} xs={6} md={3}>
 
 <Box sx={styleCol} className='bgColor' >
-    <img src={rod4} className='imFluid'/>
+    <img src={Picture3?rod4:plus1} className='imFluid' onMouseOver={changeBackground3} onMouseLeave={changeBackgroundOut3}/>
     <Typography variant='p'>
     Legend Photography
     </Typography>
@@ -223,20 +256,20 @@ export default function SingleCollectible() {
             </Grid>
             <Box sx={styleDirection} className='paddingChange'>
             <Box>
-            {/* <ButtonComponent btnColor={"#3772FF"} classNames={"p-3"}>
-             Create Multiple <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
-              </ButtonComponent> */}
+            <ButtonComponent btnColor={"#3772FF"} classNames="btnStyle1">
+             Create item <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
+              </ButtonComponent>
               </Box>
               <Box>
                   <Typography variant='p'>
-                      Auto Saving<img src={buffer} />
+                      Auto Saving <img className='marginR' src={buffer} />
                   </Typography>
               </Box>
               </Box>
         </Grid>
         <Grid item xs={12} md={4}>
          <Paper className='changePadding'>
-           <Typography variant='h4'> 
+           <Typography variant='p' className="font2"> 
              Preview
            </Typography>
         <Card
