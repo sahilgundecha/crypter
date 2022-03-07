@@ -4,20 +4,19 @@ import Container from "@mui/material/Container";
 import Dropdown from "../Dropdown/Dropdown";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Searchbar from "../Searchbar/Searchbar";
 import Divider from "@mui/material/Divider";
 import SliderComponent from "../Slider/Slider";
-import { typography } from "@mui/system";
+// import { typography } from "@mui/system";
 import reset from "../../Assets/images/resetFilter.svg";
 import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import Data from "../Bidcard/bidcardArray";
+import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
-import Bidcard from "../Bidcard/Bidcard";
 import SearchFilterCard from "./SearchFilterCard";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -68,13 +67,18 @@ const SearchFilter = () => {
   const arr = ["highest price", "average price", "lowest price"];
   const arr2 = ["first price", "second price", "lowest price"];
   const [value, setvalue] = React.useState(0);
+  const [search, setSearch] = React.useState(true);
+
+  const chnageSearch = () => {
+    setSearch(false);
+  };
 
   const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
     setvalue(newValue);
   };
 
   return (
-    <Container sx={{ margin: "40px" }}>
+    <Container sx={{ marginTop: "30px" }}>
       <Box
         sx={{
           display: "flex",
@@ -96,7 +100,7 @@ const SearchFilter = () => {
                   backgroundColor: "#3772ff",
                   borderRadius: "20px",
                   padding: "5px",
-                  fontSize: "medium",
+                  fontSize: "large",
                 }}
               />
             }
@@ -162,33 +166,22 @@ const SearchFilter = () => {
                   sx={{ textTransform: "none", color: "#777E90" }}
                 />
               </Tabs>
-              {/* </AppBar> */}
-              <TabPanel value={value} index={0}></TabPanel>
-              <TabPanel value={value} index={1}>
-                {/* <p>one</p> */}
-              </TabPanel>
-              <TabPanel value={value} index={2}>
-                {/* {" "}
-                <p>one</p> */}
-              </TabPanel>
-              <TabPanel value={value} index={3}>
-                {/* {" "}
-                <p>one</p> */}
-              </TabPanel>
-              <TabPanel value={value} index={4}>
-                {/* <p>cfgvhnbj</p> */}
-              </TabPanel>
-              <TabPanel value={value} index={5}>
-                {/* <p>one</p> */}
-              </TabPanel>
+
+              {/* <TabPanel value={value} index={1}></TabPanel> */}
+              {/* <TabPanel value={value} index={2}></TabPanel> */}
+              {/* <TabPanel value={value} index={3}></TabPanel> */}
+              {/* <TabPanel value={value} index={4}></TabPanel> */}
+              {/* <TabPanel value={value} index={5}></TabPanel> */}
             </Grid>
           </Grid>
         </Box>
       </Box>
       <Grid container>
         <Grid item md={2}>
-          <Box>{/* <SliderComponent /> */}</Box>
-          <Divider sx={{ margin: "10px 0px" }} />
+          <Box>
+            <SliderComponent />
+          </Box>
+
           <Box>
             <Dropdown item1="Most Liked" item2="Least Liked" />
           </Box>
@@ -220,10 +213,43 @@ const SearchFilter = () => {
           </Box>
         </Grid>
         <Grid md={1}></Grid>
+
         <Grid item md={9}>
-          <Grid container spacing={2}>
-            <Bidcard cardData={Data} />
-          </Grid>
+          <TabPanel value={value} index={0}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={1}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={2}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={3}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={4}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={5}>
+            <Grid container spacing={2}>
+              <SearchFilterCard />
+            </Grid>
+          </TabPanel>
         </Grid>
       </Grid>
     </Container>

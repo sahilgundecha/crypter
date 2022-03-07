@@ -21,7 +21,8 @@ import Activity from "./Pages/Activity/Activity";
 import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
 import Item from "./Components/Item/Item";
-
+import BidCarousel from "./Components/CurrentBid/BidCarousel";
+import SearchfilterCloned from "./Components/SearchFilterPage/SearchfilterCloned";
 const App: React.FC = () => {
   return (
     <div className="xyz">
@@ -48,7 +49,8 @@ const App: React.FC = () => {
         <Route path="/ProfilePage" element={<ProfilePage />} />
         <Route path="/Activity" element={<Activity />} />
         <Route path="/searchfilter" element={<SearchFilter />} />
-        <Route path="/currentbid" element={<CurrentBid />} />
+        <Route path="/homepage" element={<BidCarousel />} />
+        <Route path="/searchcloned" element={<SearchfilterCloned />} />
       </Routes>
     </div>
   );

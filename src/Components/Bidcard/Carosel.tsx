@@ -1,7 +1,6 @@
 import React, { Component, useState } from "react";
 import Bidcard from "./Bidcard";
 import Data from "./bidcardArray";
-import consts from "react-elastic-carousel";
 import Carousel from "react-elastic-carousel";
 import { Button } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
@@ -19,39 +18,39 @@ interface cardProps {
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
+  { width: 550, itemsToShow: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
   { width: 1500, itemsToShow: 4 },
 ];
-
+interface forArrow {
+  type?: any;
+  onClick?: any;
+  isEdge?: any;
+}
 const Carosel = () => {
-  // function myArrow({ type, onClick, isEdge }: any) {
-  //   const pointer =
-  //     type === consts.PREV ? (
-  //       <img src={rightArrow} className="leftarrow" />
-  //     ) : (
-  //       <img src={leftArrow} className="rightarrow" />
-  //     );
-  //   return (
-  //     <Button onClick={onClick} disabled={isEdge}>
-  //       {pointer}
-  //     </Button>
-  //   );
-  // }
+  const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+    // console.log("test", consts);
+    const pointer: object =
+      type === "PREV" ? (
+        <img src={leftArrow} className="leftarrow" />
+      ) : (
+        <img src={rightArrow} className="rightarrow" />
+      );
+    return (
+      <Button onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </Button>
+    );
+  };
 
-  // function chnageArrow() {
-  //   const leftArrow: any = document.querySelector(".rec-arrow-left");
-  //   leftArrow.innerHTML = "<img src={leftArrow} className='rightarrow' />";
-  // }
-  // chnageArrow();
   return (
     <Carousel
       itemsToShow={4}
-      // isRTL={false}
-      // breakPoints={breakPoints}
+      isRTL={false}
+      breakPoints={breakPoints}
       pagination={false}
-      // renderArrow={myArrow}
+      renderArrow={myArrow}
     >
       {Data.map((item, index) => (
         <Bidcard cardData={item} key={item.id} />
