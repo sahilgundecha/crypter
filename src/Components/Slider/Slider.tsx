@@ -52,7 +52,7 @@ const SliderComponent = (props: sliderprops) => {
             }}
           >
             <Typography className="sliderText">
-              {props.ETH1 ? props.ETH1 : "0.01ETH"}
+              {props.ETH1 ? props.ETH1 : "0.01ETH"}{" "}
             </Typography>
             <Typography className="sliderText">
               {props.ETH2 ? props.ETH2 : "10ETH"}

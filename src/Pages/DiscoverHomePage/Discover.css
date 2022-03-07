@@ -1,0 +1,71 @@
+.navBox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0px 10px; */
+}
+.innerNavBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mybutton1 {
+  border-radius: 20px !important;
+  background-color: #3772ff !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+}
+.navpillStylingDiscover {
+  margin-top: 0px;
+  width: 70%;
+  display: flex;
+}
+.bigiImg1 {
+  margin-left: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .tabsStyling {
+    margin-left: 0px;
+    width: 560px;
+  }
+  .innerNavBox {
+    flex-direction: column;
+    /* align-items: baseline; */
+  }
+}
+@media (max-width: 768px) {
+  .tabsStyling {
+    margin-left: 0px;
+    width: 560px;
+  }
+  .widthTab {
+    width: 850px !important;
+  }
+}
+@media (max-width: 500px) {
+  .tabsStyling {
+    display: none;
+  }
+  .navpillStylingDiscover {
+    display: none;
+  }
+  .navBox {
+    flex-direction: column;
+  }
+  .overflowInSmall {
+    width: 310px;
+    overflow-x: scroll;
+  }
+}
