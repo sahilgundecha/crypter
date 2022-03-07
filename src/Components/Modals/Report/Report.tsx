@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import cross from "../../../Assets/images/cross.svg";
 import Modal from '@mui/material/Modal';
 import ButtonComponent from '../../ButtonComponent/ButtonComponent';
 import './Report.css'
@@ -46,10 +47,12 @@ export default function BasicModal() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-            {/* <Box className="crossimg">
-                <img onClick={handleClose} src={cross} alt="img" />
-              </Box> */}
+        
+             
         <Box sx={style}>
+        <Box className="crossimg">
+                <img onClick={handleClose} src={cross} alt="img" />
+              </Box>
           <Typography id="modal-modal-title" variant="h5" >
           Report
           </Typography>
@@ -73,6 +76,7 @@ export default function BasicModal() {
           <ButtonComponent styleType={"outline"}  btnColor={"#23262F"} classNames='changeMar'>cancel</ButtonComponent>
           </Box>
         </Box>
+        
       </Modal>
     </div>
   );
