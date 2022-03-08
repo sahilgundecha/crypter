@@ -3,7 +3,9 @@ import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Divider from "@mui/material/Divider";
 import IosShareIcon from "@mui/icons-material/IosShare";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -11,8 +13,6 @@ import Typography from "@mui/material/Typography";
 import headImg from "../../Assets/images/itemImg.png";
 import send from "../../Assets/images/popShare.svg";
 import Popover from "@mui/material/Popover";
-import like from "../../Assets/images/popLike.svg";
-import dots from "../../Assets/images/popDot.svg";
 import creatorProfile from "../../Assets/images/ProfileImage.jpg";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -20,6 +20,10 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import { Button } from "@mui/material";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ItemNavPill from "../ItemNavPill/ItemNavPill";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -57,6 +61,17 @@ const Item = () => {
   const [value, setvalue] = React.useState(0);
   const [search, setSearch] = React.useState(true);
   const [pink, setPink] = React.useState(false);
+  const [dotPopup, setDotPopup] = React.useState(false);
+  const [sharePopup, setSharePopup] = React.useState(false);
+
+  const opendotPopup = () => {
+    setDotPopup(!dotPopup);
+    setSharePopup(false);
+  };
+  const openSharePopup = () => {
+    setDotPopup(false);
+    setSharePopup(!sharePopup);
+  };
 
   const chnagePink = () => {
     setPink(!pink);
@@ -69,18 +84,6 @@ const Item = () => {
   const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
     setvalue(newValue);
   };
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = (event: any) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
 
   return (
     <Container>
@@ -97,17 +100,137 @@ const Item = () => {
               UNLOCKABLE
             </Typography>
           </Box>
+          {sharePopup ? (
+            <Box className="dotsPopup">
+              <Box sx={{ marginBottom: "15px" }}>
+                <Typography variant="subtitle2" gutterBottom component="div">
+                  Share link to this page
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  flexDirection: "row",
+                  marginBottom: "10px",
+                }}
+              >
+                <Box>
+                  <img src={send} alt="" className="sharepopupIcon" />
+                </Box>
+
+                <Box sx={{ marginLeft: "10px" }}>
+                  <img src={send} alt="" className="sharepopupIcon" />
+                </Box>
+              </Box>
+            </Box>
+          ) : null}
+          {dotPopup ? (
+            <Box className="dotsPopup">
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={send} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Change price
+                  </Typography>
+                </Box>
+              </Box>
+              <Divider light sx={{ margin: "5px 0px" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={send} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Transfer token
+                  </Typography>
+                </Box>
+              </Box>
+              <Divider light sx={{ margin: "5px 0px" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={send} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Remove from sale
+                  </Typography>
+                </Box>
+              </Box>
+              <Divider light sx={{ margin: "5px 0px" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={send} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Burn token
+                  </Typography>
+                </Box>
+              </Box>
+              <Divider light sx={{ margin: "5px 0px" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={send} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Remove
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          ) : null}
           <Box className="popoverWrapper">
             <Box>
               <IosShareIcon
                 sx={{
                   borderRadius: "35px",
                   padding: "5px",
-                  color: "#E6E8EC",
+                  color: "#777e90",
                   width: "25px",
                   height: "25px",
                 }}
                 className="heartIocn"
+                onClick={openSharePopup}
               ></IosShareIcon>
             </Box>
             <Box>
@@ -116,12 +239,12 @@ const Item = () => {
                   sx={{
                     borderRadius: "35px",
                     padding: "5px",
-                    color: "#E6E8EC",
+                    color: "#777e90",
                     width: "25px",
                     height: "25px",
                   }}
                   onClick={chnagePink}
-                  className="heartIocn"
+                  className="heartIocn3"
                 ></FavoriteBorderIcon>
               ) : (
                 <FavoriteIcon
@@ -134,7 +257,7 @@ const Item = () => {
                     color: "#EF466F",
                   }}
                   onClick={chnagePink}
-                  className="heartIocn"
+                  className="heartIocn2"
                 ></FavoriteIcon>
               )}
             </Box>
@@ -144,10 +267,11 @@ const Item = () => {
                 sx={{
                   borderRadius: "35px",
                   padding: "5px",
-                  color: "#E6E8EC",
+                  color: "#777e90",
                   width: "25px",
                   height: "25px",
                 }}
+                onClick={opendotPopup}
               ></MoreHorizIcon>
             </Box>
           </Box>
@@ -223,7 +347,9 @@ const Item = () => {
                   />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                  zero
+                  <ItemNavPill />
+                  <ItemNavPill />
+                  <ItemNavPill />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                   one

@@ -17,11 +17,12 @@
 }
 .relativeDiv {
   position: relative;
+  height: max-content;
 }
 .artWrapper {
   position: absolute;
   top: 3%;
-  left: 7%;
+  left: 5%;
 }
 .popoverWrapper {
   background-color: #fff;
@@ -36,6 +37,7 @@
   position: absolute;
   bottom: 4%;
   left: 34%;
+  cursor: pointer;
 }
 .send {
   border: 2px solid black;
@@ -144,11 +146,7 @@
   margin-left: 10px;
   margin-top: 20px;
 }
-@media (max-width: 500px) {
-  .itemBlueBtn {
-    margin-right: 0px;
-  }
-}
+
 .heartIocn {
   background-color: #fff;
   border: 2px solid #e6e8ec;
@@ -156,6 +154,7 @@
 .heartIocn:hover {
   background-color: rgb(55 114 255);
   border: 2px solid rgb(55 114 255);
+  color: #fff !important;
 }
 .heartIocn2 {
   background-color: #fff;
@@ -164,5 +163,124 @@
 .heartIocn2:hover {
   background-color: rgb(55 114 255);
   border: 2px solid rgb(55 114 255);
+}
+.heartIocn3 {
+  background-color: #fff;
+  border: 2px solid #e6e8ec;
+}
+.heartIocn3:hover {
+  background-color: rgb(55 114 255);
+  border: 2px solid rgb(55 114 255);
   color: #fff !important;
+}
+.sharePopup {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  position: absolute;
+  bottom: 14%;
+  left: 36%;
+}
+.dotsPopup {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 13%;
+  left: 33%;
+}
+.dotpopupIcon {
+  margin-right: 10px;
+}
+.hoverPink:hover .dotpopupIcon {
+  filter: invert(60%) sepia(96%) saturate(5560%) hue-rotate(323deg)
+    brightness(101%) contrast(87%);
+}
+.hoverPink:hover {
+  color: #ef466f;
+  cursor: pointer;
+}
+.sharepopupIcon {
+  background-color: #e6e8ec;
+  padding: 8px 10px;
+  border-radius: 25px;
+}
+.sharepopupIcon:hover {
+  background-color: #3772ff;
+}
+
+/* @media (max-width: 2650px) {
+  .artWrapper {
+    top: 21%;
+    left: 29%;
+  }
+  .popoverWrapper {
+    bottom: -23%;
+    left: 36%;
+  }
+  .dotsPopup {
+    bottom: -12%;
+    left: 36%;
+  }
+}
+@media (max-width: 1920px) {
+  .artWrapper {
+    top: 26%;
+    left: 22%;
+  }
+  .popoverWrapper {
+    bottom: -60%;
+    left: 32%;
+  }
+  .dotsPopup {
+    bottom: -45%;
+    left: 32%;
+  }
+}
+@media (max-width: 1440px) {
+  .artWrapper {
+    top: 35%;
+    left: 12%;
+  }
+  .popoverWrapper {
+    bottom: -60%;
+    left: 32%;
+  }
+  .dotsPopup {
+    bottom: -45%;
+    left: 32%;
+  }
+} */
+@media (max-width: 1024px) {
+  .popoverWrapper {
+    bottom: 10%;
+    left: 34%;
+  }
+  .dotsPopup {
+    bottom: 20%;
+    left: 33%;
+  }
+}
+@media (max-width: 768px) {
+  .popoverWrapper {
+    bottom: 5%;
+    left: 34%;
+  }
+  .dotsPopup {
+    bottom: 15%;
+    left: 33%;
+  }
+}
+@media (max-width: 500px) {
+  .itemBlueBtn {
+    margin-right: 0px;
+  }
+  .popoverWrapper {
+    bottom: 10%;
+    left: 21%;
+  }
+  .dotsPopup {
+    bottom: 28%;
+    left: 20%;
+  }
 }
