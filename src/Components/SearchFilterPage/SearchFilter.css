@@ -3,7 +3,9 @@
   font-weight: bold !important;
   font-size: 18px !important;
 }
-
+.customWidth {
+  width: 240px !important;
+}
 .resetDiv:hover .reset {
   color: #3772ff !important;
   /* width: 200px !important; */

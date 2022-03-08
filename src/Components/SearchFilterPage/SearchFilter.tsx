@@ -168,7 +168,7 @@ const SearchFilter = () => {
       </Box>
       <Grid container>
         <Grid item md={2}>
-          <Box className="widthSm">
+          <Box className="widthSm customWidth">
             <SliderComponent />
           </Box>
 
