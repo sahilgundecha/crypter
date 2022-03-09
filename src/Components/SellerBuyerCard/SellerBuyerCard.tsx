@@ -6,7 +6,7 @@ import SellerBuyerCarousel from "./SellerBuyerCarousel";
 
 function SellerBuyerCard() {
   return (
-    <div style={{ background: "#ecedf3", marginBottom: "50px" }}>
+    <Box sx={{ background: "#ecedf3", marginBottom: "50px" }}>
       <Box
         sx={{
           padding: "50px 30px",
@@ -33,10 +33,10 @@ function SellerBuyerCard() {
         </Box>
       </Box>
 
-      <Box>
+      <Box sx={{ padding: "60px 0px" }}>
         <SellerBuyerCarousel />
       </Box>
-    </div>
+    </Box>
   );
 }
 

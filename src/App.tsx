@@ -45,6 +45,9 @@ import WhiteCards from "./Components/WhiteCards/WhiteCards";
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 import Crypter from "./Pages/Crypter/Crypter";
+import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWalletModal";
+import PlaceaBidModals from "./Components/Modals/PlaceaBidModal/PlaceaBidModals";
+import FollowStep from "./Components/Modals/FollowStepModals/FollowStep";
 
 const App: React.FC = () => {
   return (
@@ -84,8 +87,10 @@ const App: React.FC = () => {
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />
         <Route path="/PutOnSale1" element={<PutOnSale1 />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
+        <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
+        <Route path="/placeabid" element={<PlaceaBidModals />} />
         <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
-
+        <Route path="/followstep" element={<FollowStep />} />
         <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
         <Route path="/Accept" element={<AcceptBid />} />
