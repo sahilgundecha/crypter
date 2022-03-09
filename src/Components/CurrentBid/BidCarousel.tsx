@@ -20,6 +20,9 @@ interface forArrow {
 }
 
 const BidCarousel = (props: any) => {
+  const handleDiscover = () => {
+    window.location.href = "/searchfilter";
+  }
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
     // console.log("test", consts);
     const pointer: object =
@@ -52,6 +55,7 @@ const BidCarousel = (props: any) => {
               styleType="outline"
               classNames="headButton"
               btnColor="#23262F"
+              handleClick={handleDiscover}
             >
               Start your search
             </ButtonComponent>

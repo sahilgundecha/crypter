@@ -91,7 +91,7 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
               </Box>
               <Box>
                 {" "}
-                <img src={arroww} className="plusimg" />
+                <img src={arroww} className="plusimg" onClick={()=>{window.location.href ='/profilepage'}}/>
               </Box>
             </Box>
           </Box>

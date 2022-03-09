@@ -44,6 +44,7 @@ import PutOnSale3 from "./Components/Modals/PutOnSale/PutOnSale3";
 import WhiteCards from "./Components/WhiteCards/WhiteCards";
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
+import Crypter from "./Pages/Crypter/Crypter";
 
 const App: React.FC = () => {
   return (
@@ -64,7 +65,7 @@ const App: React.FC = () => {
         <Route path="carosel" element={<Carosel />} />
         <Route path="followersCard" element={<FollowersCard />} />
         <Route path="/NotificationDisplay" element={<NotificationD />} />
-        <Route path="/uploadPage" element={<Upload />} />
+        <Route path="/Upload" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
         <Route path="/ProfilePage" element={<ProfilePage />} />
         <Route path="/Activity" element={<Activity />} />
@@ -77,7 +78,7 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
-
+        <Route path="/Crypter" element={<Crypter />} />
         <Route path="/ConnectWallet" element={<ConnectWallet />} />
         <Route path="/Follow" element={<FollowModal />} />
         <Route path="/Creators" element={<CreatorsBid />} />

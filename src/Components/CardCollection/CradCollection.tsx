@@ -65,6 +65,7 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
         boxShadow: "none",
         cursor:'pointer'
       }}
+      onClick={()=>{window.location.href ='/profilepage'}}
     >
       <img className="changeWidth1" src={cardData.mainImg} />
 
@@ -83,7 +84,7 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
           // renderArrow={myArrow}
 >
           <img className="changeWidth1" src={cardData.img1} />
-          <img className="changeWidth1" src={cardData.img2} />
+          <img className="changeWidth1" src={cardData.img2}  />
           <img className="changeWidth1" src={cardData.img3} />
           <img className="changeWidth1" src={cardData.img1} />
           <img className="changeWidth1" src={cardData.img2} />

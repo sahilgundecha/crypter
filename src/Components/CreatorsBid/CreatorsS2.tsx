@@ -26,8 +26,8 @@ const CreatorsS2: React.FC<Props> = ({ CreatorsArray }) => {
   return (
     <>
       <Box sx={styleStack} onMouseOver={handleMouseOver}
-          onMouseOut={handleMouseOut}>
-         
+          onMouseOut={handleMouseOut}
+           onClick={()=>{window.location.href='/item'}}>
           <Box>
             {show?<img className='widthmax' src={Home1}/> :<img className='widthmax' src={r}/>}
         
