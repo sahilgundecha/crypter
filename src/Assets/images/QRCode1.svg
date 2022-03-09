@@ -1,0 +1,50 @@
+<svg id="QR_Code" data-name="QR Code" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="448" height="448" viewBox="0 0 448 448">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="QR_Code_Background_Mask_" data-name="QR Code (Background/Mask)" width="448" height="448" rx="16" fill="#f4f5f6"/>
+    </clipPath>
+    <filter id="Frame_917_Background_" x="-14" y="50" width="476.667" height="476" filterUnits="userSpaceOnUse">
+      <feOffset dy="64" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="32" result="blur"/>
+      <feFlood flood-color="#1f2f46" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-2">
+      <rect id="barcode-qr_1_Background_Mask_" data-name="barcode-qr 1 (Background/Mask)" width="128" height="128" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="QR_Code_Background_Mask_2" data-name="QR Code (Background/Mask)" width="448" height="448" rx="16" fill="#f4f5f6"/>
+  <g id="QR_Code-2" data-name="QR Code" clip-path="url(#clip-path)">
+    <g id="Frame_917" data-name="Frame 917" transform="translate(83 83)">
+      <g transform="matrix(1, 0, 0, 1, -83, -83)" filter="url(#Frame_917_Background_)">
+        <g id="Frame_917_Background_2" data-name="Frame 917 (Background)" transform="translate(83 83)" fill="#fcfcfd" stroke="#e6e8ec" stroke-width="1" stroke-dasharray="0 0">
+          <rect width="282.667" height="282" rx="12" stroke="none"/>
+          <rect x="-0.5" y="-0.5" width="283.667" height="283" rx="12.5" fill="none"/>
+        </g>
+      </g>
+      <g id="barcode-qr_1" data-name="barcode-qr 1" transform="translate(77.333 77)">
+        <rect id="barcode-qr_1_Background_Mask_2" data-name="barcode-qr 1 (Background/Mask)" width="128" height="128" fill="none"/>
+        <g id="barcode-qr_1-2" data-name="barcode-qr 1" clip-path="url(#clip-path-2)">
+          <g id="Group" transform="translate(5.333 5.333)">
+            <path id="Vector" d="M37.333,37.334H0V0H37.333V37.333Zm-32-32V32H32V5.333Z" fill="#23262f"/>
+            <path id="Vector-2" data-name="Vector" d="M0,0V10.667H45.333V5.333h-40V0Z" transform="translate(72 106.667)" fill="#23262f"/>
+            <path id="Vector-3" data-name="Vector" d="M16,0V16H0V0Z" transform="translate(10.667 10.667)" fill="#23262f"/>
+            <path id="Vector-4" data-name="Vector" d="M37.333,37.334H0V0H37.333V37.333Zm-32-32V32H32V5.333Z" transform="translate(0 80)" fill="#23262f"/>
+            <path id="Vector-5" data-name="Vector" d="M16,0V16H0V0Z" transform="translate(10.667 90.667)" fill="#23262f"/>
+            <path id="Vector-6" data-name="Vector" d="M37.333,37.334H0V0H37.333V37.333Zm-32-32V32H32V5.333Z" transform="translate(80)" fill="#23262f"/>
+            <path id="Vector-7" data-name="Vector" d="M16,0V16H0V0Z" transform="translate(90.667 10.667)" fill="#23262f"/>
+            <path id="Vector-8" data-name="Vector" d="M10.667,0V10.667H0V0Z" transform="translate(106.667 42.667)" fill="#23262f"/>
+            <path id="Vector-9" data-name="Vector" d="M10.667,0V10.667H0V0Z" transform="translate(0 64)" fill="#23262f"/>
+            <path id="Vector-10" data-name="Vector" d="M0,42.667V48H26.667V32H32V21.333H16V10.667h5.333V16H40V0H34.667V10.667h-8V0h-16V26.667H21.333V32H10.667v5.333H21.333v5.333Z" transform="translate(34.667)" fill="#23262f"/>
+            <path id="Vector-11" data-name="Vector" d="M18.667,16h8v5.333H16v5.333H26.667V32H48V26.667H32v-16H24v-8H18.667v8H13.333V0H0V5.333H8V16Z" transform="translate(0 42.667)" fill="#23262f"/>
+            <path id="Vector-12" data-name="Vector" d="M16,10.667H5.333V0H0V16H10.667v8H0v5.333H10.667v5.333H24V29.333H16V10.667Z" transform="translate(42.667 82.667)" fill="#23262f"/>
+            <path id="Vector-13" data-name="Vector" d="M5.333,13.333V0H0V18.667H26.667V13.333H21.333V8h8V2.667H10.667V8H16v5.333Z" transform="translate(69.333 40)" fill="#23262f"/>
+            <path id="Vector-14" data-name="Vector" d="M48,48v5.333H58.667V34.667H48v8H40v-8H34.667v8H29.333V21.333H24V16H18.667V0H0V10.667H5.333V5.333h8V26.667H24V48H48Z" transform="translate(40 53.333)" fill="#23262f"/>
+            <path id="Vector-15" data-name="Vector" d="M29.333,8H10.667V18.667H5.333V8H0V24H16V13.333h8v8h5.333v-8h8v16h-8v16H42.667V40h-8V34.667h8V0H37.333V8Z" transform="translate(74.667 58.667)" fill="#23262f"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,14 +3,15 @@ import "./ProfilePage.css";
 import { Grid, Paper, Button, Box, Typography } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import coverDemoImg from "../../Assets/images/coverDemoImg.png";
+import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import CSS from "csstype";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
 import { FollowersCard } from "../../Components/FollowersCard/FollowersCard";
 import { AppBar } from "@mui/material";
 // import { TabPanel } from "@mui/lab";
 import Carosel from "../../Components/Bidcard/Carosel";
-
+import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
+import iconEdit from "../../Assets/images/icons-Edit-Line.png";
 
 
 interface TabPanelProps {
@@ -41,8 +42,10 @@ function TabPanel(props: TabPanelProps) {
 const styles = {
   paperContainer: {
     backgroundImage: `url(${coverDemoImg})`,
+    backgroundRepeat:"no-repeat",
+    backgroundSize:"cover",
     width: "100%",
-    height: "400px",
+    height:"350px",
     // position:"relative",
     display: "flex",
     justifyContent: "flex-end",
@@ -65,30 +68,36 @@ export default function ProfilePage() {
   return (
     <Grid>
       <Paper style={styles.paperContainer}>
+        <Box className="button_div">
         <Button
           sx={{
             textTransform: "none",
-            borderRadius: "15px",
+            borderRadius: "20px",
             color: "#fff",
-            border: "2px solid #fff",
+            border: "1.5px solid #fff",
             padding: "5px 12px",
             margin: "12px",
+            fontSize:"12px"
           }}
         >
           Edit cover photo
+          <span><img src={iconStar} style={{width:"12px", marginLeft:"8px"}}/></span>
         </Button>
         <Button
           sx={{
             textTransform: "none",
-            borderRadius: "15px",
+            borderRadius: "20px",
             color: "#fff",
-            border: "2px solid #fff",
+            border: "1.5px solid #fff",
             padding: "5px 12px",
             margin: "12px",
+            fontSize:"12px"
           }}
         >
           Edit profile
+          <span><img src={iconEdit} style={{width:"12px", marginLeft:"8px"}}/></span>
         </Button>
+        </Box>
       </Paper>
       <Grid container spacing={2}>
         <Grid className="usercardGrid_Styling">
@@ -115,10 +124,7 @@ export default function ProfilePage() {
             </Tabs>
             {/* </AppBar> */}
             <TabPanel value={value} index={0}>
-              <Grid sx={{display:"flex"}} spacing={2}>
-              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
-              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
-              </Grid>
+              <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={1}>
             <Carosel/>
@@ -130,10 +136,10 @@ export default function ProfilePage() {
             <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={4}>
-            {/* <FollowersCard/> */}<p>cfgvhnbj</p>
+            <FollowersCard/>
             </TabPanel>
             <TabPanel value={value} index={5}>
-              <Grid container className="FollowersCardGrid">
+              <Grid container>
               <FollowersCard/>
               </Grid>
             </TabPanel>
