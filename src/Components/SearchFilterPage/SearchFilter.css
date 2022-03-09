@@ -3,7 +3,9 @@
   font-weight: bold !important;
   font-size: 18px !important;
 }
-
+.customWidth {
+  width: 240px !important;
+}
 .resetDiv:hover .reset {
   color: #3772ff !important;
   /* width: 200px !important; */
@@ -32,14 +34,9 @@
   .widthSm {
     width: 100%;
   }
-  .widthSm .css-1869usk-MuiFormControl-root {
-    width: 100% !important;
-  }
-  .widthSm .css-0 {
-    width: 100% !important;
-  }
-  .widthSm
-    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-    width: 100% !important;
+}
+@media (max-width: 500px) {
+  .widthSm .tabTopGrid_Styling {
+    width: 300px !important;
   }
 }

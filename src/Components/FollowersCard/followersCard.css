@@ -2,6 +2,7 @@
     padding: 20px;
    border-radius: 16px;
    box-shadow: 0 8px 40px -12px rgba(0,0,0,0.05);
+   max-width: 750px;
    }
 .followersCard_media{
     display: flex;
@@ -27,12 +28,53 @@
        height:88px ;
        margin:5px ;
   }
-  @media (max-width:1024px) {
+  @media (max-width:1300px) and (min-width:1150px){
     .coverImgStyle{
-        width: 60%;
-    overflow-x: scroll;
+        overflow-x: auto;
+        margin-left: 30px;
+        
+        }
+        .followersCardImg_style{
+            width: 60%;
+        }
+  } 
+  @media (max-width:1150px) and (min-width:1020px){
+    .coverImgStyle{
+        overflow-x: auto;
+        margin-left: 10px;
     }
-  }
+        .followersCardImg_style{
+            width: 60%;
+        }
+        .rootStyle{
+            max-width: 650px;
+        }
+  } 
+  @media (max-width:1020px) and (min-width:900px){
+    .coverImgStyle{
+        overflow-x: auto;
+        margin-left: 10px;
+    }
+        .followersCardImg_style{
+            width: 85%;
+        }
+        .rootStyle{
+            max-width: 650px;
+        }
+  } 
+  @media (max-width:899px) and (min-width:769px){
+    .coverImgStyle{
+        overflow-x: auto;
+        margin-left: 20px;
+    }
+        .followersCardImg_style{
+            width: 70%;
+        }
+        .rootStyle{
+            max-width: 650px;
+        }
+  } 
+  
 @media (max-width:768px) {
     .coverImgStyle{
         margin-left: 20px;
@@ -42,9 +84,6 @@
     }
     .profileStyle{
         display: flex;
-    }
-    .rootStyle{
-        width: auto;
     }
     .profileStyle{
        width: 60%;
@@ -58,6 +97,11 @@
         width: 150px;
         align-items: center;
     }
+}
+@media (max-width:700px){
+.rootStyle{
+    width: 300px;
+}
 }
 
    

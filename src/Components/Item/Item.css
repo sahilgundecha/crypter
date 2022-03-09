@@ -1,0 +1,302 @@
+.art {
+  color: #fcfcfd;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #23262f;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px !important;
+}
+
+.unlock {
+  color: #fcfcfd;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #9757d7;
+  border-radius: 5px;
+  padding: 5px;
+}
+.relativeDiv {
+  position: relative;
+  height: max-content;
+}
+.artWrapper {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+}
+.popoverWrapper {
+  background-color: #fff;
+  padding: 10px 5px;
+  width: 160px;
+  padding-bottom: 5px !important;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 4%;
+  left: 34%;
+  cursor: pointer;
+}
+.send {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.send:hover {
+  background-color: blue !important;
+  border: none;
+}
+.greenEth {
+  color: #45b36b;
+  font-size: 15px !important;
+  font-weight: bold;
+  border: 2px solid #45b36b;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.dollar {
+  color: #777e90;
+  font-size: 15px !important;
+  font-weight: bold;
+  border: 2px solid #e6e8ec;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.inStock {
+  color: #777e90;
+  font-size: 15px !important;
+  font-weight: bold;
+}
+.linkText {
+  font-size: 16px;
+  color: #777e90;
+}
+.link a {
+  font-size: 16px;
+  color: #23262f;
+}
+.link a:hover {
+  text-decoration: none;
+}
+
+.navpillStylingItem {
+  width: 100% !important;
+  margin-left: 0px !important;
+  border: 1px solid #e6e8ec;
+  padding: 5px 2px 0px 2px;
+  border-radius: 25px;
+}
+.HighestBid {
+  color: #777e90;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+.BidderName {
+  color: #23262f;
+  font-size: 18px !important;
+  font-weight: bolder !important;
+  margin-left: 5px !important;
+}
+.ETH {
+  font-size: 24px !important;
+  color: #23262f !important;
+  margin-right: 5px !important;
+}
+.cardDollar {
+  font-size: 24px !important;
+  color: #777e90 !important;
+}
+.itemBlueBtn {
+  padding: 15px !important;
+  font-size: 16px !important;
+  color: #fcfcfd !important;
+  width: 80%;
+  margin-right: 20px;
+}
+.ItemWhiteBtn {
+  padding: 15px !important;
+  font-size: 16px !important;
+  border-radius: 30px;
+  color: #23262f;
+  width: 80%;
+}
+.serviceFee {
+  color: #777e90;
+  font-size: 14px !important;
+  margin-right: 7px !important;
+}
+.percent {
+  color: #23262f;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  margin-right: 7px !important;
+}
+.cardBottom {
+  font-size: 14px !important;
+  color: #777e90;
+  margin-right: 10px !important;
+}
+.bottomCard {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.heartIocn {
+  background-color: #fff;
+  border: 2px solid #e6e8ec;
+}
+.heartIocn:hover {
+  background-color: rgb(55 114 255);
+  border: 2px solid rgb(55 114 255);
+  color: #fff !important;
+}
+.heartIocn2 {
+  background-color: #fff;
+  border: 2px solid #e6e8ec;
+}
+.heartIocn2:hover {
+  background-color: rgb(55 114 255);
+  border: 2px solid rgb(55 114 255);
+}
+.heartIocn3 {
+  background-color: #fff;
+  border: 2px solid #e6e8ec;
+}
+.heartIocn3:hover {
+  background-color: rgb(55 114 255);
+  border: 2px solid rgb(55 114 255);
+  color: #fff !important;
+}
+.sharePopup {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  position: absolute;
+  bottom: 14%;
+  left: 36%;
+}
+.dotsPopup {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  position: absolute;
+  bottom: 13%;
+  left: 33%;
+}
+.dotpopupIcon {
+  margin-right: 7px;
+  width: 18px;
+}
+.hoverPink {
+  color: #777e90;
+}
+.hoverPink:hover .dotpopupIcon {
+  filter: invert(60%) sepia(96%) saturate(5560%) hue-rotate(323deg)
+    brightness(101%) contrast(87%);
+}
+.hoverPink:hover {
+  color: #ef466f;
+  cursor: pointer;
+}
+.sharepopupIcon {
+  background-color: #e6e8ec;
+  padding: 10px 10px;
+  border-radius: 25px;
+}
+.sharepopupIcon:hover {
+  background-color: #3772ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* @media (max-width: 2650px) {
+  .artWrapper {
+    top: 21%;
+    left: 29%;
+  }
+  .popoverWrapper {
+    bottom: -23%;
+    left: 36%;
+  }
+  .dotsPopup {
+    bottom: -12%;
+    left: 36%;
+  }
+}
+@media (max-width: 1920px) {
+  .artWrapper {
+    top: 26%;
+    left: 22%;
+  }
+  .popoverWrapper {
+    bottom: -60%;
+    left: 32%;
+  }
+  .dotsPopup {
+    bottom: -45%;
+    left: 32%;
+  }
+}
+@media (max-width: 1440px) {
+  .artWrapper {
+    top: 35%;
+    left: 12%;
+  }
+  .popoverWrapper {
+    bottom: -60%;
+    left: 32%;
+  }
+  .dotsPopup {
+    bottom: -45%;
+    left: 32%;
+  }
+} */
+@media (max-width: 1024px) {
+  .popoverWrapper {
+    bottom: 10%;
+    left: 34%;
+  }
+  .dotsPopup {
+    bottom: 20%;
+    left: 33%;
+  }
+}
+@media (max-width: 768px) {
+  .popoverWrapper {
+    bottom: 5%;
+    left: 34%;
+  }
+  .dotsPopup {
+    bottom: 15%;
+    left: 33%;
+  }
+  .itemCard {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .itemBlueBtn {
+    margin-right: 0px;
+  }
+  .popoverWrapper {
+    bottom: 10%;
+    left: 21%;
+  }
+  .dotsPopup {
+    bottom: 28%;
+    left: 20%;
+  }
+  .itemCard {
+    margin-right: 0px;
+  }
+  .ETH {
+    font-size: 25px !important;
+  }
+}

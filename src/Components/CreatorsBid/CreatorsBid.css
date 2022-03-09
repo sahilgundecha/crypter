@@ -1,0 +1,64 @@
+.changeM{
+    margin:10px 0px !important;
+} 
+.moveRight{
+    margin-right: 15px !important;
+}  
+.borderC{
+    border-radius: 33px;
+    padding: 12px 17px !important;
+}
+.widthmax{
+    width:100% !important;
+    height: 123px !important;
+    padding: 10px 0px;
+}
+.StyleDis{
+    border-radius: 27px;
+    padding: 16px 42px !important;
+    margin-top: 20px;
+}
+.priceBor{
+    border: 1px solid green;
+    color:green;
+    padding:1px 5px;
+    font-weight: bold !important;
+    border-radius: 5px ;
+    
+}
+.fontC4{
+    font-size: 14pxx !important;
+    font-weight: bold !important;
+}
+.fontC5{
+    color:#777E90;
+}
+.conatiner{
+    width:max-content;
+    position: relative;
+    height:fit-content;
+    
+}
+  .middle{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 23%;
+
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle{
+    display: inline;
+    opacity: 1;
+  }
+
+@media (max-width:1024px) {
+    .priceBor {
+        padding: 0px 0px; 
+        font-size:14px !important;
+    }
+}

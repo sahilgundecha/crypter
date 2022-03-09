@@ -1,0 +1,8 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect id="icon_Background_" data-name="icon (Background)" width="64" height="64" rx="32" fill="#45b26b"/>
+  <g id="icons_Wallet_Line" data-name="icons/Wallet/Line" transform="translate(21 23)">
+    <path id="Shape" d="M18,18H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H18a4,4,0,0,1,4,4V14A4,4,0,0,1,18,18ZM4,2A2,2,0,0,0,2,4V14a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" transform="translate(0)" fill="#fcfcfd"/>
+    <path id="Shape-2" data-name="Shape" d="M5,0H9A1,1,0,0,1,9,2H5A3,3,0,0,0,5,8H9a1,1,0,0,1,0,2H5A5,5,0,0,1,5,0Z" transform="translate(12 4)" fill="#fcfcfd"/>
+    <path id="Shape-3" data-name="Shape" d="M1,2A1,1,0,1,1,2,1,1,1,0,0,1,1,2Z" transform="translate(16 8)" fill="#fcfcfd"/>
+  </g>
+</svg>
