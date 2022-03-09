@@ -34,6 +34,9 @@ import PutOnScale from "./Components/Modals/PutOnScale/PutOnScale";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
+import { ConnectWallet } from "./Pages/ConnectWallet/ConnectWallet";
+import WalletName from "./Pages/ConnectWallet/WalletName";
+import CreatorsBid from "./Components/CreatorsBid/CreatorsBid";
 
 const App: React.FC = () => {
   return (
@@ -65,13 +68,15 @@ const App: React.FC = () => {
         <Route path="/homepage" element={<BidCarousel />} />
         <Route path="/currentbid" element={<BidCarousel />} />
         <Route path="/discover" element={<Discover />} />
+        <Route path="WalletName" element={<WalletName />} />
         <Route path="/Remove" element={<Remove />} />
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
         <Route path="/PutOnScale" element={<PutOnScale />} />
-
+        <Route path="/ConnectWallet" element={<ConnectWallet />} />
         <Route path="/Follow" element={<FollowModal />} />
+        <Route path="/Creators" element={<CreatorsBid />} />
         <Route
           path="/modals"
           element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}

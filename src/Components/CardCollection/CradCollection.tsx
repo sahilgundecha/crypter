@@ -54,7 +54,7 @@ export const CradCollection = () => {
   </>
   )
 }
-const CardCollect: React.FC<Props> = ({ cardData }) => {
+export const CardCollect: React.FC<Props> = ({ cardData }) => {
   return (
     <>
     <Container>

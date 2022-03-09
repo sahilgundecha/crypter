@@ -1,0 +1,9 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="icons_Check_Line" data-name="icons/Check/Line" transform="translate(22.667 25.333)">
+    <path id="check" d="M16.391.391a1.333,1.333,0,0,1,2,1.76l-.111.126L7.609,12.943a1.334,1.334,0,0,1-1.76.111l-.126-.111L.391,7.609a1.333,1.333,0,0,1,1.76-2l.126.111,4.391,4.389Z" fill="#3772ff"/>
+  </g>
+  <g id="Oval" fill="none" stroke="#3772ff" stroke-width="3">
+    <circle cx="32" cy="32" r="32" stroke="none"/>
+    <circle cx="32" cy="32" r="30.5" fill="none"/>
+  </g>
+</svg>
