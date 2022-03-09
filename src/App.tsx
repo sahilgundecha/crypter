@@ -51,13 +51,10 @@ const App: React.FC = () => {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<Test />} />
-        <Route
-          path="/slider"
-          element={<SliderComponent value={0} children={[]} />}
-        />
+        <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-        <Route path="/walletcard" element={<WalletCard ETH={10.78} />} />
+        <Route path="/walletcard" element={<WalletCard />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard />} />
         <Route path="NoResultsPage" element={<NoResultsPage />} />
@@ -89,10 +86,7 @@ const App: React.FC = () => {
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
         <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
 
-        <Route
-          path="/modals"
-          element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
-        />
+        <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
         <Route path="/Accept" element={<AcceptBid />} />
         <Route path="/EditProfilePage" element={<EditProfilePage />} />
