@@ -63,7 +63,6 @@ const App: React.FC = () => {
         <Route path="NoResultsPage" element={<NoResultsPage />} />
         <Route path="/SingleCollectible" element={<SingleCollectible />} />
         <Route path="searchbar" element={<Searchbar />} />
-        {/* <Route path="dropdown" element={<Dropdown />} /> */}
         <Route path="carosel" element={<Carosel />} />
         <Route path="followersCard" element={<FollowersCard />} />
         <Route path="/NotificationDisplay" element={<NotificationD />} />

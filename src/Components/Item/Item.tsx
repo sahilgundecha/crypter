@@ -24,7 +24,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
-import ItemsArray from "./ItemArray";
+import { Info, History, Bids, Owners } from "./ItemArray";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -320,8 +320,6 @@ const Item = () => {
           </Box>
           <Box className="itemNavPills">
             <Grid className="navpill_Styling">
-              {/* <FollowersCard/> */}
-              {/* <AppBar> */}
               <Grid className="tabTopGrid_Styling">
                 <Tabs
                   value={value}
@@ -350,22 +348,22 @@ const Item = () => {
                   />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                  {ItemsArray.map((item) => (
+                  {Info.map((item) => (
                     <ItemNavPill itemsDetails={item} key={item.id} />
                   ))}
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                  {ItemsArray.map((item) => (
+                  {Owners.map((item) => (
                     <ItemNavPill itemsDetails={item} key={item.id} />
                   ))}
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                  {ItemsArray.map((item) => (
+                  {History.map((item) => (
                     <ItemNavPill itemsDetails={item} key={item.id} />
                   ))}
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                  {ItemsArray.map((item) => (
+                  {Bids.map((item) => (
                     <ItemNavPill itemsDetails={item} key={item.id} />
                   ))}
                 </TabPanel>
