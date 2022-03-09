@@ -2,9 +2,11 @@ import React, { Component, useState } from "react";
 import Bidcard from "./Bidcard";
 import Data from "./bidcardArray";
 import Carousel from "react-elastic-carousel";
-import { Button } from "@mui/material";
+import { Button, Container, Grid } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 
 interface cardProps {
   id: number;
@@ -18,9 +20,9 @@ interface cardProps {
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
-  { width: 550, itemsToShow: 1 },
-  { width: 768, itemsToShow: 2 },
-  { width: 1200, itemsToShow: 3 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
   { width: 1500, itemsToShow: 4 },
 ];
 interface forArrow {
@@ -45,17 +47,31 @@ const Carosel = () => {
   };
 
   return (
-    <Carousel
-      itemsToShow={4}
-      isRTL={false}
-      breakPoints={breakPoints}
-      pagination={false}
-      renderArrow={myArrow}
-    >
-      {Data.map((item, index) => (
-        <Bidcard cardData={item} key={item.id} />
-      ))}
-    </Carousel>
+    <>
+      <Container maxWidth="xl">
+        <Box sx={{ marginY: "60px", marginLeft: "30px" }}>
+          <Typography
+            variant="h3"
+            gutterBottom
+            component="div"
+            sx={{ fontWeight: "bold" }}
+          >
+            Hot bid
+          </Typography>
+        </Box>
+      </Container>
+      <Carousel
+        itemsToShow={4}
+        isRTL={false}
+        breakPoints={breakPoints}
+        pagination={false}
+        renderArrow={myArrow}
+      >
+        {Data.map((item, index) => (
+          <Bidcard cardData={item} key={item.id} />
+        ))}
+      </Carousel>
+    </>
   );
 };
 

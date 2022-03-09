@@ -23,6 +23,7 @@ interface Props {
   // highestBid?: number;
   // bidType?: string;
   // key?: string | number;
+
   cardData: any;
 }
 
@@ -39,7 +40,7 @@ const Bidcard: React.FC<Props> = ({ cardData }) => {
           boxShadow: "none",
           width: "max-content",
         }}
-        className="cardmedia1"
+        className="withMargin"
       >
         <Box className="boxwrap">
           <CardMedia

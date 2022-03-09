@@ -24,19 +24,19 @@ const ItemNavPill: React.FC<navPill> = ({ itemsDetails }) => {
             alignItems: "center",
           }}
         >
-          <Box sx={{ marginRight: "4px" }}>
-            <img src={avatar} alt="" />
+          <Box sx={{ marginRight: "10px" }}>
+            <img src={itemsDetails.profile} alt="profile" width={45} />
           </Box>
           <Box>
-            {itemsDetails.isDesignation ? (
+            {itemsDetails.Designation ? (
               <Typography
                 variant="subtitle2"
                 component="div"
                 sx={{ color: "#777E90", fontSize: "14px" }}
               >
-                Owner
+                {itemsDetails.Designation}
               </Typography>
-            ) : itemsDetails.highBid ? (
+            ) : itemsDetails.highestBidETH ? (
               <Typography
                 variant="subtitle2"
                 component="div"
@@ -47,65 +47,78 @@ const ItemNavPill: React.FC<navPill> = ({ itemsDetails }) => {
                   style={{
                     fontSize: "14px",
                     color: "#23262F",
-                    fontWeight: "400",
+                    fontWeight: "600",
                   }}
                 >
                   {itemsDetails.highestBidETH} ETH
                 </span>
               </Typography>
-            ) : (
+            ) : itemsDetails.Name ? (
               <Typography
                 variant="subtitle2"
                 component="div"
-                sx={{ color: "#23262F", fontSize: "14px", fontWeight: "bold" }}
+                sx={{ color: "#23262F", fontSize: "14px", fontWeight: "600" }}
               >
-                Cole Fahey
+                {itemsDetails.Name}
               </Typography>
-            )}
+            ) : null}
 
-            {/* second Line */}
-
-            {itemsDetails.PutOnsale ? (
+            {itemsDetails.artName ? (
               <Typography
                 variant="subtitle2"
                 gutterBottom
                 component="div"
-                sx={{ fontSize: "14px", color: "#777E90" }}
+                sx={{ fontSize: "13px", color: "#777E90" }}
               >
-                Put {itemsDetails.artName} on sale
+                Put{" "}
+                <span style={{ color: "#23262F", fontWeight: "600" }}>
+                  {itemsDetails.artName}
+                </span>{" "}
+                on sale
               </Typography>
-            ) : itemsDetails.acceptedBid ? (
+            ) : itemsDetails.acceptedBidName ? (
               <Typography
                 variant="subtitle2"
                 gutterBottom
                 component="div"
                 sx={{ fontSize: "12px", color: "#777E90" }}
               >
-                Accepted {itemsDetails.bidFromName}'s bid
+                Accepted{" "}
+                <span style={{ color: "#23262F", fontWeight: "600" }}>
+                  {itemsDetails.acceptedBidName}{" "}
+                </span>
+                's bid
               </Typography>
-            ) : itemsDetails.placedBid ? (
+            ) : itemsDetails.PlaceBid_ETH ? (
               <Typography
                 variant="subtitle2"
                 gutterBottom
                 component="div"
-                sx={{ fontSize: "12px", color: "#23262F" }}
+                sx={{ fontSize: "14px", color: "#777E90" }}
               >
-                Place a bid: {itemsDetails.ETH} ETH
+                Place a bid:{" "}
+                <span style={{ color: "#45B26B", fontWeight: "600" }}>
+                  {itemsDetails.PlaceBid_ETH} ETH
+                </span>
               </Typography>
-            ) : (
+            ) : itemsDetails.Name ? (
               <Typography
                 variant="subtitle2"
                 gutterBottom
                 component="div"
-                sx={{ fontSize: "12px", color: "#23262F", fontWeight: "bold" }}
+                sx={{
+                  fontSize: "14px",
+                  color: "#23262F",
+                  fontWeight: "600",
+                }}
               >
-                Cole Fahey
+                {itemsDetails.Name}
               </Typography>
-            )}
+            ) : null}
           </Box>
         </Box>
         <Box>
-          {itemsDetails.isDate ? (
+          {itemsDetails.DateTime ? (
             <Typography
               variant="subtitle2"
               gutterBottom

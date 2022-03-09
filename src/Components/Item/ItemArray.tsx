@@ -1,57 +1,76 @@
-const ItemsArray = [
+import cole from "../../Assets/images/cole.jpg";
+import raquel from "../../Assets/images/raquel.jpg";
+import selina from "../../Assets/images/selina.jpg";
+import adah from "../../Assets/images/adah.jpg";
+import lady from "../../Assets/images/lady.jpg";
+import avatar from "../../Assets/images/avatar-2.jpg";
+const Info = [
   {
     id: 1,
-    isDesignation: false,
+    profile: avatar,
     Designation: "Owner",
-
     Name: "Raquel Will",
-
-    placedBid: false,
-    ETH: 1.46,
-    PutOnsale: true,
-    artName: "Awesome work",
-
-    acceptedBid: false,
-    bidFromName: "Raquel Will",
-
-    isDate: true,
-    DateTime: "Jun 14 - 4:12 PM",
-
-    highBid: false,
-    highestBidETH: 1.46,
   },
   {
     id: 2,
-    isDesignation: false,
-    Designation: "Owner",
-    Name: "Raquel Will",
-    placedBid: true,
-    ETH: 1.46,
-    PutOnsale: true,
-    artName: "Awesome work",
-    acceptedBid: true,
-    bidFromName: "Raquel Will",
-    isDate: false,
-    DateTime: "Jun 14 - 4:12 PM",
-    highBid: false,
-    highestBidETH: 1.46,
-  },
-  {
-    id: 2,
-    isDesignation: false,
-    Designation: "Owner",
-    Name: "Raquel Will",
-    placedBid: true,
-    ETH: 1.46,
-    PutOnsale: true,
-    artName: "Awesome work",
-    acceptedBid: true,
-    bidFromName: "Raquel Will",
-    isDate: true,
-    DateTime: "Jun 14 - 4:12 PM",
-    highBid: false,
-    highestBidETH: 1.46,
+    profile: selina,
+    Designation: "Creator",
+    Name: "Selina Mayert",
   },
 ];
 
-export default ItemsArray;
+const Owners = [
+  {
+    id: 1,
+    profile: selina,
+    Designation: "Owner",
+    Name: "Cole Mayret",
+  },
+];
+
+const History = [
+  {
+    id: 1,
+    profile: avatar,
+    Name: "Raquel Will",
+    PlaceBid_ETH: 1.46,
+    DateTime: "Jun 14 - 4:12 PM",
+  },
+  {
+    id: 2,
+    profile: cole,
+    Name: "Cole Fahey",
+    artName: "Awesome work",
+    DateTime: "Jun 14 - 4:12 PM",
+  },
+  {
+    id: 3,
+    profile: adah,
+    Name: "Adah Mitchell",
+    acceptedBidName: "Raquel Will",
+    DateTime: "Jun 14 - 4:12 PM",
+  },
+];
+
+const Bids = [
+  {
+    id: 1,
+    profile: avatar,
+    Name: "Raquel Will",
+    highestBidETH: 1.46,
+  },
+  {
+    id: 2,
+    profile: selina,
+    Designation: "#2",
+    Name: "Cole Fahey",
+  },
+  {
+    id: 3,
+    profile: lady,
+    Designation: "#3",
+    Name: "Selina Mayert",
+  },
+];
+
+export { Info, Owners, History, Bids };
