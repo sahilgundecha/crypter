@@ -137,7 +137,7 @@ const WalletCard = (props: walletcardProps) => {
                 marginTop: "15px",
               }}
             >
-              <img className="blue_img" src={menu1} alt="img" width={"20px"} />
+              <img src={menu1} alt="img" className="menu_img" />
 
               <Typography
                 color="text.secondary"
@@ -156,12 +156,7 @@ const WalletCard = (props: walletcardProps) => {
                 padding: "10px 0px",
               }}
             >
-              <img
-                className="blue_img"
-                src={btn2icon}
-                alt="img"
-                width={"20px"}
-              />
+              <img className="menu_img" src={btn2icon} alt="img" />
               <Typography
                 color="text.secondary"
                 component="div"
@@ -204,12 +199,7 @@ const WalletCard = (props: walletcardProps) => {
                 padding: "10px 0px",
               }}
             >
-              <img
-                className="blue_img"
-                src={btn4icon}
-                alt="img"
-                width={"20px"}
-              />
+              <img className="menu_img" src={btn4icon} alt="img" />
               <Typography
                 color="text.secondary"
                 component="div"
