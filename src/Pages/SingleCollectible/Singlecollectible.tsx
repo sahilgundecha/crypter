@@ -109,6 +109,7 @@ export default function SingleCollectible() {
     display:'flex',
     justifyContent:'space-between',
     alignItems:'center',
+
     }
     const styleCol={
         display:'flex',
@@ -130,7 +131,7 @@ export default function SingleCollectible() {
   return (
     <>
     <Container>
-      <Grid container spacing={10} className='mt-5'>
+      <Grid container spacing={10} className='marginChange'>
         <Grid item sm={12} xs={12} md={8}>
             <Box sx={styleDirection}>
             <Box>
