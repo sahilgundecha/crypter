@@ -39,7 +39,7 @@ export default function CreatorsBid() {
     <Container>
         <Grid container spacing={3} sx={{margin:'30px 0px '}}>
            <Grid item  md={4} sm={12}>
-           <Box className="container">
+           <Box className="container" onClick ={()=>{window.location.href='/item'}}>
              <Box className="birdImg">
              <img className="changeWidth1 image" src={card1} />
              </Box>
@@ -89,8 +89,9 @@ export default function CreatorsBid() {
                 btnColor={"#23262F"}
                 styleType={"outline"}
                 classNames="StyleDis"
+                handleClick={()=>{window.location.href ='/searchfilter'}}
               >
-               <span>Discover <img src={disIcon} /> </span>
+               <span>Discover more<img src={disIcon} /> </span>
               </ButtonComponent>
          </Grid>
         </Grid>

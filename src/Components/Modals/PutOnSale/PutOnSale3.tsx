@@ -107,12 +107,7 @@ const PutOnSale3 = () => {
   };
   return (
     <>
-      <Button
-        className="px-4 me-3 rounded-pill startnowbtn"
-        onClick={handleOpen}
-      >
-        open modal
-      </Button>
+     
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"

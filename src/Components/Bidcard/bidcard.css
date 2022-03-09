@@ -69,10 +69,14 @@
 .jRFJkP:hover {
   background-color: #dbd8d8;
 }
-.cardmedia1 {
+.withoutmargin {
   position: relative !important;
   overflow: hidden !important;
-  margin: 20px 10px !important;
+}
+.withMargin {
+  position: relative !important;
+  overflow: hidden !important;
+  /* margin: 20px 5px; */
 }
 .cardmedia {
   overflow: hidden !important;

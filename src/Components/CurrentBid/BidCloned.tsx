@@ -295,15 +295,17 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
                     classNames="ButtonClass"
                     btnColor={"#3772FF"}
                   >
-                    UPLOAD
+                    Place a Bid
                   </ButtonComponent>
                 </Box>
                 <Box sx={{ textAlign: "center" }}>
                   <ButtonComponent
                     styleType="outline"
+                    btnColor={"#000"}
                     classNames="ButtonClass1"
+                    handleClick={()=>{window.location.href='/item'}}
                   >
-                    Connect Wallet
+                    View item
                   </ButtonComponent>
                 </Box>
               </Box>

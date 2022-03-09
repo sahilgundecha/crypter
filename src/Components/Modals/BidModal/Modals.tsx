@@ -71,9 +71,9 @@ interface modalsprops {
   subhead1?: string;
   subhead2?: string;
   subhead3?: string;
-  smalltext1: string;
-  smalltext2: string;
-  smalltext3: string;
+  smalltext1?: string;
+  smalltext2?: string;
+  smalltext3?: string;
 }
 
 const Modals = (props: modalsprops) => {

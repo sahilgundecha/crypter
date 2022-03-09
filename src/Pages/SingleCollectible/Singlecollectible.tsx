@@ -18,7 +18,7 @@ import plus1 from "../../Assets/images/plus1.svg";
 import plus2 from "../../Assets/images/plus2.svg";
 import plus3 from "../../Assets/images/plus3.svg";
 import plus4 from "../../Assets/images/plus4.svg";
-
+import PutOnSale3 from '../../Components/Modals/PutOnSale/PutOnSale3';
 import buffer from "../../Assets/images/buffer.svg";
 import { styled } from '@mui/material/styles';
 import creator from "../../Assets/images/creatorImg.png";
@@ -110,6 +110,9 @@ export default function SingleCollectible() {
     justifyContent:'space-between',
     alignItems:'center',
 
+    }
+    const handleModal= () => {
+      window.location.href = "/PutOnSale3";
     }
     const styleCol={
         display:'flex',
@@ -257,7 +260,7 @@ export default function SingleCollectible() {
             </Grid>
             <Box sx={styleDirection} className='paddingChange'>
             <Box>
-            <ButtonComponent btnColor={"#3772FF"} classNames="btnStyle1">
+            <ButtonComponent btnColor={"#3772FF"} classNames="btnStyle1" handleClick={handleModal}>
              Create item <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
               </ButtonComponent>
               </Box>
