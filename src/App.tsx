@@ -44,6 +44,7 @@ import PutOnSale3 from "./Components/Modals/PutOnSale/PutOnSale3";
 import WhiteCards from "./Components/WhiteCards/WhiteCards";
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
+import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWalletModal";
 
 const App: React.FC = () => {
   return (
@@ -84,6 +85,7 @@ const App: React.FC = () => {
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />
         <Route path="/PutOnSale1" element={<PutOnSale1 />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
+        <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
         <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
 
         <Route path="/modals" element={<Modals />} />
