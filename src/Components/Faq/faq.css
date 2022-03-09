@@ -16,7 +16,7 @@
   color: #777e90;
   font-size: 16px !important;
   font-weight: 600 !important;
-  /* font-style: Poppins-Regular !important; */
+
   font-family: "Poppins-Regular" !important;
 }
 .blueText {
@@ -60,8 +60,9 @@
   opacity: 0.4 !important;
 }
 .learnmore {
-  margin: 20px 0px !important;
-  height: 45px;
+  border-radius: 25px !important;
+  font-weight: bold;
+  margin-top: 20px;
 }
 .shadow {
   box-shadow: none !important;
@@ -69,15 +70,5 @@
 .css-n1j79u-MuiButtonBase-root-MuiTab-root {
   font-size: 14px !important;
   font-family: "DMSans-Bold" !important;
-  font-weight: bold !important;
-}
-/* modals code */
-.startnowbtn {
-  text-align: center;
-  width: 100% !important;
-  margin-top: 20px !important;
-  border-radius: 25px !important;
-  background-color: #3772ff !important;
-  color: #ffffff !important;
   font-weight: bold !important;
 }

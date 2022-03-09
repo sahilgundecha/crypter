@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_415" data-name="Group 415" transform="translate(-24 -336)">
+    <rect id="Frame_1012_Background_Mask_" data-name="Frame 1012 (Background/Mask)" width="32" height="32" rx="16" transform="translate(24 336)" fill="#23262f"/>
+    <path id="Shape" d="M7.011,10.8V7H10.8c.663,0,1.2-.34,1.2-1s-.537-.992-1.2-.992H7.011V1.2C7.011.537,6.663,0,6,0S5,.537,5,1.2V5.008H1.2C.537,5.008,0,5.337,0,6S.537,7,1.2,7H5v3.8c0,.663.336,1.2,1,1.2S7.011,11.463,7.011,10.8Z" transform="translate(34 346)" fill="#fff"/>
+  </g>
+</svg>

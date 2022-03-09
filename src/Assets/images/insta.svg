@@ -1,0 +1,11 @@
+<svg id="share" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="share_Background_Mask_" data-name="share (Background/Mask)" fill="none" stroke="#e6e8ec" stroke-width="2" stroke-dasharray="0 0">
+    <rect width="48" height="48" rx="24" stroke="none"/>
+    <rect x="1" y="1" width="46" height="46" rx="23" fill="none"/>
+  </g>
+  <g id="Icons_Instagram_Line" data-name="Icons/Instagram/Line" transform="translate(14 14)">
+    <path id="Vector" d="M14,20H6a6.007,6.007,0,0,1-6-6V6A6.007,6.007,0,0,1,6,0h8a6.007,6.007,0,0,1,6,6v8A6.006,6.006,0,0,1,14,20ZM6,2A4.005,4.005,0,0,0,2,6v8a4,4,0,0,0,4,4h8a4,4,0,0,0,4-4V6a4,4,0,0,0-4-4Z" transform="translate(0 0)" fill="#777e90"/>
+    <path id="Vector-2" data-name="Vector" d="M2,1A1,1,0,1,0,1,2,1,1,0,0,0,2,1Z" transform="translate(14 4)" fill="#777e90"/>
+    <path id="Vector-3" data-name="Vector" d="M5,10a5,5,0,1,1,5-5A5.006,5.006,0,0,1,5,10ZM5,2A3,3,0,1,0,8,5,3,3,0,0,0,5,2Z" transform="translate(5 5)" fill="#777e90"/>
+  </g>
+</svg>

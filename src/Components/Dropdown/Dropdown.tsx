@@ -8,19 +8,31 @@ import FormHelperText from "@mui/material/FormHelperText";
 import "./Dropdown.css";
 
 import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";
-
-const Dropdown = () => {
+interface drop {
+  option?: string[];
+  item1?: string;
+  item2?: string;
+  item3?: string;
+  item4?: string;
+  item5?: string;
+  item6?: string;
+}
+const Dropdown = (props: drop) => {
   const [age, setAge] = useState<string>("1");
   const [Clicked, setClicked] = useState<boolean>(true);
-
+  const arr = ["highest price", "average price", "lowest price"];
   const isClicked = () => {
     setClicked(!Clicked);
   };
   const handleChange = (event: any) => {
     setAge(event.target.value);
   };
+
+  // console.log(typeof option);
+
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }}>
+      
       <Select
         value={age}
         onChange={handleChange}
@@ -32,9 +44,14 @@ const Dropdown = () => {
         )}
         sx={{ borderRadius: "12px" }}
       >
-        <MenuItem value={1}>Highest Price</MenuItem>
-        <MenuItem value={2}>Lowest Price</MenuItem>
-        <MenuItem value={3}>Average Price</MenuItem>
+        {props.item1 ? <MenuItem value={1}>{props.item1}</MenuItem> : null}
+        {props.item2 ? <MenuItem value={2}>{props.item2}</MenuItem> : null}
+        {props.item3 ? <MenuItem value={3}>{props.item3}</MenuItem> : null}
+        {props.item4 ? <MenuItem value={4}>{props.item4}</MenuItem> : null}
+        {props.item5 ? <MenuItem value={5}>{props.item5}</MenuItem> : null}
+        {/* {option.map((curr: any, index) => {
+          <MenuItem value={index}>{curr}</MenuItem>;
+        })} */}
       </Select>
     </FormControl>
   );

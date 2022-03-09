@@ -1,0 +1,15 @@
+<svg id="Frame_1064" data-name="Frame 1064" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Frame_1064_Background_Mask_" data-name="Frame 1064 (Background/Mask)" width="80" height="80" rx="40" fill="#9757d7"/>
+    </clipPath>
+  </defs>
+  <path id="Frame_1064_Background_Mask_2" data-name="Frame 1064 (Background/Mask)" d="M40,0A40,40,0,1,1,0,40,40,40,0,0,1,40,0Z" fill="#9757d7"/>
+  <g id="Frame_1064-2" data-name="Frame 1064" clip-path="url(#clip-path)">
+    <g id="icons_Wallet_Line" data-name="icons/Wallet/Line" transform="translate(29 31)">
+      <path id="Shape" d="M18,18H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0H18a4,4,0,0,1,4,4V14A4,4,0,0,1,18,18ZM4,2A2,2,0,0,0,2,4V14a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2Z" transform="translate(0)" fill="#fcfcfd"/>
+      <path id="Shape-2" data-name="Shape" d="M5,0H9A1,1,0,0,1,9,2H5A3,3,0,0,0,5,8H9a1,1,0,0,1,0,2H5A5,5,0,0,1,5,0Z" transform="translate(12 4)" fill="#fcfcfd"/>
+      <path id="Shape-3" data-name="Shape" d="M1,2A1,1,0,1,1,2,1,1,1,0,0,1,1,2Z" transform="translate(16 8)" fill="#fcfcfd"/>
+    </g>
+  </g>
+</svg>
