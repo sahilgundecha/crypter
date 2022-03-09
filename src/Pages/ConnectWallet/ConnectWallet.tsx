@@ -51,7 +51,7 @@ export const ConnectWallet:React.FC = () => {
       <Container>
           <Box>
               <Typography className="styleHead">
-              <span className="marginC1"><KeyboardBackspaceIcon></KeyboardBackspaceIcon></span>Connect your wallet
+              <span className="marginC1" onClick={()=>{window.location.href = './Crypter'}}> <KeyboardBackspaceIcon></KeyboardBackspaceIcon></span>Connect your wallet
               </Typography>
               <Divider />
           </Box>

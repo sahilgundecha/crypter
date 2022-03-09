@@ -31,7 +31,6 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
       <Card
         className="WhiteCard"
         sx={{
-          boxShadow: "2px 25px 30px 25px #0f0f0f1a",
           width: "200px",
 
           borderRadius: "15px",
@@ -91,7 +90,7 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
               </Box>
               <Box>
                 {" "}
-                <img src={arroww} className="plusimg" />
+                <img src={arroww} className="plusimg" onClick={()=>{window.location.href ='/profilepage'}}/>
               </Box>
             </Box>
           </Box>

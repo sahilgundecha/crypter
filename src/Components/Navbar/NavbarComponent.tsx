@@ -12,6 +12,9 @@ import {
 } from "@mui/material";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
+import Crypter from "../../Pages/Crypter/Crypter";
+import Upload from "../../Pages/Upload/Upload";
+import Discover from "../../Pages/DiscoverHomePage/Discover";
 import Searchbar from "../Searchbar/Searchbar";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
@@ -70,6 +73,9 @@ const NavbarComponent = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+   const handleUpload = () => {
+     window.location.href = "/Upload";
+   }
 
   const [anchorElWallet, setAnchorElWallet] = useState(null);
   const openConnectWallet = Boolean(anchorElWallet);
@@ -84,7 +90,7 @@ const NavbarComponent = () => {
     <AppBar position="static" sx={{ bgcolor: "white" }}>
       <Container>
         <Toolbar disableGutters>
-          <Link to="#">
+          <Link to="/Crypter">
             <img src={AppIcon} alt="logo" className={`${classes.logo}`} />
           </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -93,10 +99,10 @@ const NavbarComponent = () => {
               component="div"
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <Link to="#" className={`${classes.link} ${classes.linkMargin}`}>
+              <Link to="/Discover" className={`${classes.link} ${classes.linkMargin}`}>
                 Discover
               </Link>
-              <Link to="#" className={`${classes.link} ${classes.linkMargin}`}>
+              <Link to="/FAQ" className={`${classes.link} ${classes.linkMargin}`}>
                 How it works
               </Link>
             </Typography>
@@ -169,6 +175,7 @@ const NavbarComponent = () => {
               <ButtonComponent
                 btnColor={"#3772FF"}
                 classNames="styleUp"
+                handleClick={handleUpload}
               >
                 Upload
               </ButtonComponent>

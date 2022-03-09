@@ -44,6 +44,10 @@ import PutOnSale3 from "./Components/Modals/PutOnSale/PutOnSale3";
 import WhiteCards from "./Components/WhiteCards/WhiteCards";
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
+import Crypter from "./Pages/Crypter/Crypter";
+import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWalletModal";
+import PlaceaBidModals from "./Components/Modals/PlaceaBidModal/PlaceaBidModals";
+import FollowStep from "./Components/Modals/FollowStepModals/FollowStep";
 
 const App: React.FC = () => {
   return (
@@ -51,23 +55,19 @@ const App: React.FC = () => {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<Test />} />
-        <Route
-          path="/slider"
-          element={<SliderComponent value={0} children={[]} />}
-        />
+        <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-        <Route path="/walletcard" element={<WalletCard ETH={10.78} />} />
+        <Route path="/walletcard" element={<WalletCard />} />
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard />} />
         <Route path="NoResultsPage" element={<NoResultsPage />} />
         <Route path="/SingleCollectible" element={<SingleCollectible />} />
         <Route path="searchbar" element={<Searchbar />} />
-        {/* <Route path="dropdown" element={<Dropdown />} /> */}
         <Route path="carosel" element={<Carosel />} />
         <Route path="followersCard" element={<FollowersCard />} />
         <Route path="/NotificationDisplay" element={<NotificationD />} />
-        <Route path="/uploadPage" element={<Upload />} />
+        <Route path="/Upload" element={<Upload />} />
         <Route path="/CardCollection" element={<CradCollection />} />
         <Route path="/ProfilePage" element={<ProfilePage />} />
         <Route path="/Activity" element={<Activity />} />
@@ -80,19 +80,18 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
-
+        <Route path="/Crypter" element={<Crypter />} />
         <Route path="/ConnectWallet" element={<ConnectWallet />} />
         <Route path="/Follow" element={<FollowModal />} />
         <Route path="/Creators" element={<CreatorsBid />} />
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />
         <Route path="/PutOnSale1" element={<PutOnSale1 />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
+        <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
+        <Route path="/placeabid" element={<PlaceaBidModals />} />
         <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
-
-        <Route
-          path="/modals"
-          element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
-        />
+        <Route path="/followstep" element={<FollowStep />} />
+        <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
         <Route path="/Accept" element={<AcceptBid />} />
         <Route path="/EditProfilePage" element={<EditProfilePage />} />

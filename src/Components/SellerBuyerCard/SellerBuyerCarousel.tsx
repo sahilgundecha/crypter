@@ -13,7 +13,7 @@ interface cardProps {
   userimgg?: string;
   ETHnum: string | number;
 }
-const breakPoints = [
+const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
@@ -47,7 +47,7 @@ const SellerBuyerCarosel = () => {
     <Carousel
       itemsToShow={6}
       isRTL={false}
-      breakPoints={breakPoints}
+      breakPoints={breakPoints2}
       pagination={false}
       renderArrow={myArrow}
     >

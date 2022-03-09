@@ -43,7 +43,12 @@ const cardStyle={
   padding:'15px',
   borderRadius:'8px'
 }
-
+const handleCrypter = () => {
+  window.location.href = "/Crypter";
+}
+const handleSingle= () => {
+  window.location.href = "/SingleCollectible";
+}
 const textStyle={
   textDecoration:'none',
   
@@ -61,6 +66,7 @@ export default function () {
          <ButtonComponent
                 btnColor={"#23262F"}
                 styleType={"outline"}
+                handleClick={handleCrypter}
                 classNames="buttonStyle"
               >
                 <span><KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home</span>
@@ -95,6 +101,7 @@ export default function () {
                 btnColor={"#23262F"}
                 styleType={"outline"}
                 classNames="buttonStyle1"
+                handleClick={handleSingle}
               >
                Create Single
               </ButtonComponent>
@@ -109,6 +116,7 @@ export default function () {
                 btnColor={"#23262F"}
                 styleType={"outline"}
                 classNames="buttonStyle1"
+                handleClick={handleSingle}
               >
                Create Mutiple
               </ButtonComponent>
