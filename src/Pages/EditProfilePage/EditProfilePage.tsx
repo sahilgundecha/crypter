@@ -42,7 +42,7 @@ export default function EditProfilePage() {
         </Button>
       </Paper>
       <Grid className="headDiv">
-        <Grid>
+        <Grid className="ProfileSectionStyle">
           <p className="EditPageHeading">Edit profile</p>
           <p className="EditPagepara">
             You can set preferred display name, create your profile URL and
@@ -103,14 +103,6 @@ export default function EditProfilePage() {
             </Grid>
             
             </FormControl>
-
-            {/* <FormControl className="AccountInfoStyle">
-            <p style={{fontSize:"16px",fontWeight:"600",marginBottom:"0px"}}>Social</p>
-            <p className="labelStyling" style={{marginTop:"30px"}}>zy</p>
-            <TextField label="Enter your display name" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            <p className="labelStyling" style={{marginTop:"30px"}}>CUSTOM URL</p>
-            <TextField label="ui8.net/Your custom URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            </FormControl> */}
             
           </Grid>
         </Grid>
