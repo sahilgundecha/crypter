@@ -30,10 +30,15 @@ import Transfer from "./Components/Modals/Transfer/Transfer";
 import BurnToken from "./Components/Modals/BurnToken/BurnToken";
 import Report from "./Components/Modals/Report/Report";
 import FooterComponent from "./Components/FooterComponent/Footer";
-import PutOnScale from "./Components/Modals/PutOnScale/PutOnScale";
+import PutOnSale2 from "./Components/Modals/PutOnSale/PutOnSale2";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
+import PutOnSale1 from "./Components/Modals/PutOnSale/PutOnSale1";
+import PutOnSale3 from "./Components/Modals/PutOnSale/PutOnSale3";
+import WhiteCards from "./Components/WhiteCards/WhiteCards";
+import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
+import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 
 const App: React.FC = () => {
   return (
@@ -69,15 +74,19 @@ const App: React.FC = () => {
         <Route path="/Transfer" element={<Transfer />} />
         <Route path="/Burn" element={<BurnToken />} />
         <Route path="/Report" element={<Report />} />
-        <Route path="/PutOnScale" element={<PutOnScale />} />
-
+        <Route path="/PutOnSale2" element={<PutOnSale2 />} />
+        <Route path="/PutOnSale1" element={<PutOnSale1 />} />
+        <Route path="/PutOnSale3" element={<PutOnSale3 />} />
         <Route path="/Follow" element={<FollowModal />} />
+        <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
+
         <Route
           path="/modals"
           element={<Modals smalltext1={""} smalltext2={""} smalltext3={""} />}
         />
         <Route path="/DilogueBox" element={<DilogueBox />} />
         <Route path="/Accept" element={<AcceptBid />} />
+        <Route path="/SellerBuyerCarousel" element={<SellerBuyerCarousel />} />
       </Routes>
       <FooterComponent />
     </div>
