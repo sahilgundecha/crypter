@@ -7,6 +7,7 @@
   padding: 5px 10px;
   margin-right: 10px !important;
 }
+
 .unlock {
   color: #fcfcfd;
   font-size: 12px;
@@ -184,13 +185,17 @@
 .dotsPopup {
   background-color: #fff;
   border-radius: 15px;
-  padding: 15px 20px;
+  padding: 20px;
   position: absolute;
   bottom: 13%;
   left: 33%;
 }
 .dotpopupIcon {
-  margin-right: 10px;
+  margin-right: 7px;
+  width: 18px;
+}
+.hoverPink {
+  color: #777e90;
 }
 .hoverPink:hover .dotpopupIcon {
   filter: invert(60%) sepia(96%) saturate(5560%) hue-rotate(323deg)
@@ -202,11 +207,13 @@
 }
 .sharepopupIcon {
   background-color: #e6e8ec;
-  padding: 8px 10px;
+  padding: 10px 10px;
   border-radius: 25px;
 }
 .sharepopupIcon:hover {
   background-color: #3772ff;
+  color: white;
+  cursor: pointer;
 }
 
 /* @media (max-width: 2650px) {
@@ -270,6 +277,9 @@
     bottom: 15%;
     left: 33%;
   }
+  .itemCard {
+    margin-right: 30px;
+  }
 }
 @media (max-width: 500px) {
   .itemBlueBtn {
@@ -282,5 +292,11 @@
   .dotsPopup {
     bottom: 28%;
     left: 20%;
+  }
+  .itemCard {
+    margin-right: 0px;
+  }
+  .ETH {
+    font-size: 25px !important;
   }
 }

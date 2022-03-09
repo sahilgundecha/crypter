@@ -5,25 +5,26 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Divider from "@mui/material/Divider";
 import IosShareIcon from "@mui/icons-material/IosShare";
-
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import headImg from "../../Assets/images/itemImg.png";
 import send from "../../Assets/images/popShare.svg";
-import Popover from "@mui/material/Popover";
 import creatorProfile from "../../Assets/images/ProfileImage.jpg";
+import dollar from "../../Assets/images/dollar.svg";
+import report from "../../Assets/images/report.svg";
+import right from "../../Assets/images/itemRight.svg";
+import tweet from "../../Assets/images/twitter.svg";
+import cross from "../../Assets/images/itemCross.svg";
+import fb from "../../Assets/images/fb.svg";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import { Button } from "@mui/material";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
+import ItemsArray from "./ItemArray";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -75,6 +76,8 @@ const Item = () => {
 
   const chnagePink = () => {
     setPink(!pink);
+    setDotPopup(false);
+    setSharePopup(false);
   };
 
   const chnageSearch = () => {
@@ -117,11 +120,11 @@ const Item = () => {
                 }}
               >
                 <Box>
-                  <img src={send} alt="" className="sharepopupIcon" />
+                  <img src={tweet} alt="" className="sharepopupIcon" />
                 </Box>
 
                 <Box sx={{ marginLeft: "10px" }}>
-                  <img src={send} alt="" className="sharepopupIcon" />
+                  <img src={fb} alt="" className="sharepopupIcon" />
                 </Box>
               </Box>
             </Box>
@@ -137,7 +140,7 @@ const Item = () => {
                 className="hoverPink"
               >
                 <Box>
-                  <img src={send} alt="" className="dotpopupIcon" />
+                  <img src={dollar} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
@@ -155,7 +158,7 @@ const Item = () => {
                 className="hoverPink"
               >
                 <Box>
-                  <img src={send} alt="" className="dotpopupIcon" />
+                  <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
@@ -173,7 +176,7 @@ const Item = () => {
                 className="hoverPink"
               >
                 <Box>
-                  <img src={send} alt="" className="dotpopupIcon" />
+                  <img src={cross} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
@@ -191,7 +194,7 @@ const Item = () => {
                 className="hoverPink"
               >
                 <Box>
-                  <img src={send} alt="" className="dotpopupIcon" />
+                  <img src={cross} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
@@ -209,7 +212,7 @@ const Item = () => {
                 className="hoverPink"
               >
                 <Box>
-                  <img src={send} alt="" className="dotpopupIcon" />
+                  <img src={report} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
@@ -347,21 +350,25 @@ const Item = () => {
                   />
                 </Tabs>
                 <TabPanel value={value} index={0}>
-                  <ItemNavPill />
-                  <ItemNavPill />
-                  <ItemNavPill />
+                  {ItemsArray.map((item) => (
+                    <ItemNavPill itemsDetails={item} key={item.id} />
+                  ))}
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                  one
+                  {ItemsArray.map((item) => (
+                    <ItemNavPill itemsDetails={item} key={item.id} />
+                  ))}
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                  tow
+                  {ItemsArray.map((item) => (
+                    <ItemNavPill itemsDetails={item} key={item.id} />
+                  ))}
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                  three
+                  {ItemsArray.map((item) => (
+                    <ItemNavPill itemsDetails={item} key={item.id} />
+                  ))}
                 </TabPanel>
-
-                {/* <TabPanel value={value} index={5}></TabPanel> */}
               </Grid>
             </Grid>
           </Box>
@@ -369,6 +376,7 @@ const Item = () => {
           {/* CARD */}
           <Box>
             <Card
+              className="itemCard"
               sx={{
                 background: "#FCFCFD 0% 0% no-repeat padding-box",
                 boxShadow: "0px 64px 64px #1F2F461F",
@@ -408,7 +416,13 @@ const Item = () => {
                     >
                       Kohaku Tora
                     </Typography>
-                    <Box sx={{ display: "flex", flexDirection: "row" }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "row",
+                        alignItems: "center",
+                      }}
+                    >
                       <Typography
                         variant="subtitle2"
                         className="ETH"
