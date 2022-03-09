@@ -124,10 +124,7 @@ export default function ProfilePage() {
             </Tabs>
             {/* </AppBar> */}
             <TabPanel value={value} index={0}>
-              <Grid sx={{display:"flex"}} spacing={2}>
-              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
-              <Grid sx={{margin:"20px"}}><Carosel/></Grid>
-              </Grid>
+              <Carosel/>
             </TabPanel>
             <TabPanel value={value} index={1}>
             <Carosel/>

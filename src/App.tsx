@@ -34,6 +34,7 @@ import PutOnScale from "./Components/Modals/PutOnScale/PutOnScale";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
+import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage"
 
 const App: React.FC = () => {
   return (
@@ -78,6 +79,7 @@ const App: React.FC = () => {
         />
         <Route path="/DilogueBox" element={<DilogueBox />} />
         <Route path="/Accept" element={<AcceptBid />} />
+        <Route path="/EditProfilePage" element={<EditProfilePage/>} />
       </Routes>
       <FooterComponent />
     </div>
