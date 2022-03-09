@@ -33,7 +33,7 @@ function SellerBuyerCard() {
         </Box>
       </Box>
 
-      <Box>
+      <Box sx={{ padding: "60px 0px" }}>
         <SellerBuyerCarousel />
       </Box>
     </Box>

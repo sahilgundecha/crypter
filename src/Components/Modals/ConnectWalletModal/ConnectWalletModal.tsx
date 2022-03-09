@@ -44,7 +44,7 @@ const style = {
   backgroundColor: "#FCFCFD",
   borderRadius: "10px",
 };
-function ConnectWalletModal() {
+const ConnectWalletModal = () => {
   const [open, setOpen] = useState<boolean>(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -86,6 +86,6 @@ function ConnectWalletModal() {
       </StyledModal>
     </>
   );
-}
+};
 
 export default ConnectWalletModal;
