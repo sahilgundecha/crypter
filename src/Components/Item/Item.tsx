@@ -28,6 +28,8 @@ import { Info, History, Bids, Owners } from "./ItemArray";
 import Remove from '../Modals/Remove/Remove'
 import BurnToken from '../Modals/BurnToken/BurnToken'
 import Report  from '../Modals/Report/Report'
+import Transfer from "../Modals/Transfer/Transfer";
+import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -163,11 +165,12 @@ const Item = () => {
                 <Box>
                   <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
-                <Box>
+                {/* <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
                     Transfer token
                   </Typography>
-                </Box>
+                </Box> */}
+                <Transfer />
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
               <Box
@@ -450,12 +453,13 @@ const Item = () => {
                   >
                     Purchase now
                   </ButtonComponent>
-                  <ButtonComponent
+                  {/* <ButtonComponent
                     styleType="outline"
                     classNames="ItemWhiteBtn"
                   >
                     Place a bid
-                  </ButtonComponent>
+                  </ButtonComponent> */}
+                  <PlaceaBidModals />
                 </Box>
                 <Box
                   // sx={{
