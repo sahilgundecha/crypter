@@ -1,8 +1,9 @@
-import { Avatar, Box, Button, Grid, Paper, TextField } from "@mui/material";
+import { Avatar, Box, Button, FormControl, Grid, Paper, TextField } from "@mui/material";
 import React from "react";
 import "./EditProfilePage.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
 import { Link } from "react-router-dom";
 import img1 from "../../Assets/images/enrieCole.png";
 import { Label } from "@mui/icons-material";
@@ -26,28 +27,29 @@ export default function EditProfilePage() {
           </span>
           Back to profile
         </Button>
-        <Button sx={{ textTransform: "none", fontSize: "#777E90v" }}>
-          <Link
-            style={{ color: "#777E90", marginRight: "16px" }}
-            to={""}
+        <Grid style={{ textTransform: "none", fontSize: "#777E90v" }} className="profilespan">
+          <a
+            href="#"
+            style={{ marginRight: "16px" }}
+            // to={""}
             className="profileLink"
           >
             profile
-          </Link>
+          </a>
           <KeyboardArrowRightIcon fontSize="small" sx={{ color: "#777E90" }} />
           <span style={{ color: "#23262F", marginLeft: "16px" }}>
             Edit Profile
           </span>
-        </Button>
+        </Grid>
       </Paper>
       <Grid className="headDiv">
-        <Grid>
+        <Grid className="ProfileSectionStyle">
           <p className="EditPageHeading">Edit profile</p>
           <p className="EditPagepara">
             You can set preferred display name, create your profile URL and
             manage other personal settings.
           </p>
-          <Grid container>
+          <Grid className="EditPageContent">
             <Grid className="ProfileGrid">
               <Avatar src={img1} className="profilePicstyle" />
               <Grid>
@@ -69,16 +71,40 @@ export default function EditProfilePage() {
                 </Button>
               </Grid>
             </Grid>
-            <Grid className="AccountInfoStyle">
-            <p style={{fontSize:"16px",fontWeight:"600",marginBottom:"30px"}}>Account Info</p>
-            <p className="labelStyling" style={{marginTop:"20px"}}>DISPLAY NAME</p>
+            <FormControl className="AccountInfoStyle">
+                <Grid>
+            <p style={{fontSize:"16px",fontWeight:"600",marginBottom:"0px"}}>Account Info</p>
+            <p className="labelStyling" style={{marginTop:"30px"}}>DISPLAY NAME</p>
             <TextField label="Enter your display name" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            <p className="labelStyling" style={{marginTop:"20px"}}>CUSTOM URL</p>
+            <p className="labelStyling" style={{marginTop:"30px"}}>CUSTOM URL</p>
             <TextField label="ui8.net/Your custom URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            <p className="labelStyling" style={{marginTop:"20px"}}>BIO</p>
+            <p className="labelStyling" style={{marginTop:"30px"}}>BIO</p>
             <TextField label="About yourselt in a few words"  multiline rows={3} sx={{width:"95%",borderRadius:"20px !important"}}/>
-            
             </Grid>
+            <Grid>
+            <p style={{fontSize:"16px",fontWeight:"600",marginBottom:"0px", marginTop:"40px"}}>Social</p>
+            <p className="labelStyling" style={{marginTop:"30px"}}>PORTFOLIO OR WEBSITE</p>
+            <TextField label="Enter URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
+            <p className="labelStyling" style={{marginTop:"30px"}}>TWITTER</p>
+            <TextField label="@twitter username" sx={{width:"95%",borderRadius:"20px !important"}}/>
+            {/* <Grid className="idtextfield"><input></input></Grid> */}
+            <Button
+                  sx={{
+                    textTransform: "none",
+                    borderRadius: "20px",
+                    color: "#777E90",
+                    border: "2px solid #E6E8EC",
+                    padding: "5px 20px",
+                    marginTop:"20px",
+                    fontSize: "13px",
+                  }}
+                >
+                 <span ><AddCircleOutlineOutlinedIcon fontSize="small" sx={{marginTop:"7px",marginRight:"12px"}}/></span> Add more social account
+                </Button>
+                <p style={{color:"#777E90",fontSize:"14px",width:"80%"}}>To update your settings you should sign message through your wallet. Click 'Update profile' then sign the message</p>
+            </Grid>
+            
+            </FormControl>
             
           </Grid>
         </Grid>
