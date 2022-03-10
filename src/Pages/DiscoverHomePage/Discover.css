@@ -26,6 +26,15 @@
   text-transform: none !important;
   cursor: pointer !important;
 }
+.filterButton {
+  border-radius: 20px !important;
+  background-color: #3772ff !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  width: fit-content;
+}
 .navpillStylingDiscover {
   margin-top: 0px;
   width: 70%;
@@ -52,6 +61,19 @@
   }
   .widthTab {
     width: 850px !important;
+  }
+  .filterButton {
+    width: 100%;
+    margin: 10px;
+  }
+  .navBox {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdownWrapper {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 500px) {

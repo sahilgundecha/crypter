@@ -6,6 +6,12 @@
 .customWidth {
   width: 240px !important;
 }
+.dropdownWrapper {
+  width: 240px;
+}
+.sliderWrapper {
+  width: 200px;
+}
 .resetDiv:hover .reset {
   color: #3772ff !important;
   /* width: 200px !important; */
@@ -32,6 +38,12 @@
     flex-direction: column;
   }
   .widthSm {
+    width: 100%;
+  }
+  .dropdownWrapper {
+    width: 100%;
+  }
+  .sliderWrapper {
     width: 100%;
   }
 }

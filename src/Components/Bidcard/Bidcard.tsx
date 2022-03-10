@@ -86,6 +86,7 @@ const Bidcard: React.FC<Props> = ({ cardData }) => {
 
             justifyContent: "space-between",
             padding: "5px",
+            cursoe: "pointer",
           }}
         >
           <Box>

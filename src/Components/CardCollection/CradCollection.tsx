@@ -8,6 +8,8 @@ import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
+import leftArrow from "../../Assets/images/Left.svg";
+import rightArrow from "../../Assets/images/RightArrow.svg";
 import Data from "./CardArray";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -18,116 +20,127 @@ const breakPoints = [
   { width: 1500, itemsToShow: 4 },
 ];
 const styleRow = {
-    display:'flex',
-    flexDirection:'row',
-    padding:'10px'
-}
-const styleEnd = 
-    {
-    display:'flex',
-    justifyContent:'end',
-    marginLeft:'90px'
-}
+  display: "flex",
+  flexDirection: "row",
+  padding: "10px",
+};
+const styleEnd = {
+  display: "flex",
+  justifyContent: "end",
+  marginLeft: "90px",
+};
 const styleFlex = {
-    display:'flex',
-    justifyContent:"space-between"
-  }
+  display: "flex",
+  justifyContent: "space-between",
+};
 
-    interface Props { 
-      cardData: any;
-    }
+interface Props {
+  cardData: any;
+}
+interface forArrow {
+  type?: any;
+  onClick?: any;
+  isEdge?: any;
+}
+const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+  // console.log("test", consts);
+  const pointer: object =
+    type === "PREV" ? (
+      <img src={leftArrow} className="leftarrow" />
+    ) : (
+      <img src={rightArrow} className="rightarrow" />
+    );
+  return (
+    <Button onClick={onClick} disabled={isEdge}>
+      {pointer}
+    </Button>
+  );
+};
 export const CradCollection = () => {
   return (
     <>
-    <Carousel
-      itemsToShow={3}
-      isRTL={false}
-      breakPoints={breakPoints}
-      pagination={false}
-      // renderArrow={myArrow}
-    > 
-    {Data.map((item,index) => (
-        <CardCollect cardData={item} key={item.id} />
-
-      ))}
-  </Carousel>
-  </>
-  )
-}
+      <Carousel
+        itemsToShow={3}
+        isRTL={false}
+        breakPoints={breakPoints}
+        pagination={false}
+        renderArrow={myArrow}
+      >
+        {Data.map((item, index) => (
+          <CardCollect cardData={item} key={item.id} />
+        ))}
+      </Carousel>
+    </>
+  );
+};
 export const CardCollect: React.FC<Props> = ({ cardData }) => {
   return (
     <>
-    <Container>
-           
-    <Card  key={cardData.id}
-      sx={{
-        textAlign: "center",
-        boxShadow: "none",
-        cursor:'pointer'
-      }}
-      onClick={()=>{window.location.href ='/profilepage'}}
-    >
-      <img className="changeWidth1" src={cardData.mainImg} />
-
-      <Box
-        sx={{
-          marginY: "10px",
-          display: "flex",
-          justifyContent: "space-around",
-        }}
-      >
-        <Carousel
-          itemsToShow={3}
-          isRTL={false}
-            // breakPoints={breakPoints}
-          pagination={false}
-          // renderArrow={myArrow}
->
-          <img className="changeWidth1" src={cardData.img1} />
-          <img className="changeWidth1" src={cardData.img2}  />
-          <img className="changeWidth1" src={cardData.img3} />
-          <img className="changeWidth1" src={cardData.img1} />
-          <img className="changeWidth1" src={cardData.img2} />
-          <img className="changeWidth1" src={cardData.img3} /> 
-        </Carousel> 
-      </Box>
-      <Box>
-        <Typography
+      <Container>
+        <Card
+          key={cardData.id}
           sx={{
-            fontSize: "24px",
-            fontWeight: "bold",
-            textAlign: "left",
-            marginLeft: "10px",
+            textAlign: "center",
+            boxShadow: "none",
+            cursor: "pointer",
           }}
-          component="p"
+          onClick={() => {
+            window.location.href = "/profilepage";
+          }}
         >
-          Awesome collections
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          flexDirection: "row",
-          margin: "10px",
-        }}
-      >
-        <Typography
-          sx={{ fontSize: "14px" }}
-          variant="h5"
-          component="p"
-        >
-          <img style={{ marginRight: "10px" }} src={cardData.authorImg} />
-          By {cardData.authorName}
-        </Typography>
-        <Button variant="outlined">{cardData.item} items</Button>
-      </Box>
-    </Card>
-  
-   </Container>   
+          <img className="changeWidth1" src={cardData.mainImg} />
 
-</>
+          <Box
+            sx={{
+              marginY: "10px",
+              display: "flex",
+              justifyContent: "space-around",
+            }}
+          >
+            <Carousel
+              itemsToShow={3}
+              isRTL={false}
+              // breakPoints={breakPoints}
+              pagination={false}
+              renderArrow={myArrow}
+            >
+              <img className="changeWidth1" src={cardData.img1} />
+              <img className="changeWidth1" src={cardData.img2} />
+              <img className="changeWidth1" src={cardData.img3} />
+              <img className="changeWidth1" src={cardData.img1} />
+              <img className="changeWidth1" src={cardData.img2} />
+              <img className="changeWidth1" src={cardData.img3} />
+            </Carousel>
+          </Box>
+          <Box>
+            <Typography
+              sx={{
+                fontSize: "24px",
+                fontWeight: "bold",
+                textAlign: "left",
+                marginLeft: "10px",
+              }}
+              component="p"
+            >
+              Awesome collections
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              flexDirection: "row",
+              margin: "10px",
+            }}
+          >
+            <Typography sx={{ fontSize: "14px" }} variant="h5" component="p">
+              <img style={{ marginRight: "10px" }} src={cardData.authorImg} />
+              By {cardData.authorName}
+            </Typography>
+            <Button variant="outlined">{cardData.item} items</Button>
+          </Box>
+        </Card>
+      </Container>
+    </>
   );
 };
-
-
