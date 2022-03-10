@@ -25,6 +25,9 @@ import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "./ItemArray";
+import Remove from '../Modals/Remove/Remove'
+import BurnToken from '../Modals/BurnToken/BurnToken'
+import Report  from '../Modals/Report/Report'
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 import DilogueBox from "../Modals/DilogueBox/DilogueBox";
@@ -183,9 +186,7 @@ const Item = () => {
                   <img src={cross} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Remove from sale
-                  </Typography>
+                  <Remove />
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -201,9 +202,7 @@ const Item = () => {
                   <img src={cross} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Burn token
-                  </Typography>
+                  <BurnToken />
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -219,9 +218,7 @@ const Item = () => {
                   <img src={report} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Remove
-                  </Typography>
+                  <Report />
                 </Box>
               </Box>
             </Box>

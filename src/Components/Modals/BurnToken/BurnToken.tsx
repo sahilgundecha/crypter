@@ -27,14 +27,11 @@ export default function BasicModal() {
 
   return (
     <div>
-      <ButtonComponent
-        handleClick={handleOpen}
-        classNames="ButtonClass"
-        btnColor={"#3772FF"}
-      >
-        place a bid
-      </ButtonComponent>
-
+     <Box onClick={handleOpen}>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Burn Token
+                  </Typography>
+                </Box>
       <Modal
         open={open}
         onClose={handleClose}

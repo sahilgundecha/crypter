@@ -7,6 +7,7 @@ import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import React, { useState } from "react";
 import purple_icon from "../../../Assets/images/purple_icon.svg";
+import ButtonComponent from "../../../Components/ButtonComponent/ButtonComponent"
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     p: true;
@@ -50,7 +51,9 @@ const ConnectWalletModal = () => {
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Button onClick={handleOpen}>modal</Button>
+      <ButtonComponent handleClick={handleOpen} classNames="ButtonClass" btnColor={"#3772FF"}>
+                  Place a Bid
+                </ButtonComponent> 
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
@@ -73,7 +76,7 @@ const ConnectWalletModal = () => {
               </Typography>
 
               <Box className="buttonBox">
-                <Button className="px-4 me-3 rounded-pill startnowbtn">
+                <Button className="px-4 me-3 rounded-pill startnowbtn"  onClick={()=>{window.location.href = './ConnectWallet'}}>
                   Connect wallet
                 </Button>
                 <Box className="cancelbtnbox">
