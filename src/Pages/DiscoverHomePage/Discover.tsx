@@ -74,7 +74,7 @@ const Discover = () => {
           </Typography>
         </Box>
         <Box className="navBox">
-          <Box>
+          <Box className="dropdownWrapper">
             <Dropdown item1="Recently added" item2="Long added" />
           </Box>
           <Box>
@@ -119,19 +119,13 @@ const Discover = () => {
                     sx={{ textTransform: "none", color: "#777E90" }}
                   />
                 </Tabs>
-                {/* <TabPanel value={value} index={0}></TabPanel>
-              <TabPanel value={value} index={1}></TabPanel>
-              <TabPanel value={value} index={2}></TabPanel>
-              <TabPanel value={value} index={3}></TabPanel>
-              <TabPanel value={value} index={4}></TabPanel>
-              <TabPanel value={value} index={5}></TabPanel> */}
               </Grid>
             </Grid>
           </Box>
-          <Box>
+          <Box className="dropdownWrapper">
             <Button
               variant="contained"
-              className="mybutton1"
+              className="filterButton"
               onClick={HandleOpen}
             >
               Filter{" "}
@@ -149,23 +143,23 @@ const Discover = () => {
         <Container>
           <Divider sx={{ margin: "10px 8px" }} />
           <Box className="navBox">
-            <Box>
+            <Box className="dropdownWrapper">
               <Dropdown
                 item1="Highest price"
                 item2="The lowest price"
               ></Dropdown>
             </Box>
-            <Box>
+            <Box className="dropdownWrapper">
               <Dropdown item1="Most liked" item2="Least Liked"></Dropdown>
             </Box>
-            <Box>
+            <Box className="dropdownWrapper">
               <Dropdown
                 item1="Verified only"
                 item2="All"
                 item3="Most liked"
               ></Dropdown>
             </Box>
-            <Box sx={{ width: "200px" }}>
+            <Box className="sliderWrapper">
               <SliderComponent />
             </Box>
           </Box>

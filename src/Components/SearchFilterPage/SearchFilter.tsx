@@ -6,17 +6,15 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import SliderComponent from "../Slider/Slider";
-// import { typography } from "@mui/system";
 import reset from "../../Assets/images/resetFilter.svg";
 import Grid from "@mui/material/Grid";
-import { Paper } from "@mui/material";
 import Data from "../Bidcard/bidcardArray";
 import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import SearchFilterCard from "./SearchFilterCard";
 import Bidcard from "../Bidcard/Bidcard";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -69,6 +67,11 @@ const SearchFilter = () => {
   const arr2 = ["first price", "second price", "lowest price"];
   const [value, setvalue] = React.useState(0);
   const [search, setSearch] = React.useState(true);
+  const [loadmore, setLoadmore] = React.useState(true);
+
+  const LoadMore = () => {
+    setLoadmore(false);
+  };
 
   const chnageSearch = () => {
     setSearch(false);
@@ -105,7 +108,7 @@ const SearchFilter = () => {
       </Box>
       <Divider sx={{ margin: "30px 0px" }} />
       <Box className="searchDiv widthSm">
-        <Box>
+        <Box className="dropdownWrapper">
           <Dropdown
             item1="Newest"
             item2="Oldest"
@@ -167,15 +170,15 @@ const SearchFilter = () => {
         </Box>
       </Box>
       <Grid container>
-        <Grid item md={2}>
-          <Box className="widthSm customWidth">
+        <Grid item md={2} className="dropdownWrapper">
+          <Box className="dropdownWrapper">
             <SliderComponent />
           </Box>
 
-          <Box>
+          <Box className="dropdownWrapper">
             <Dropdown item1="Most Liked" item2="Least Liked" />
           </Box>
-          <Box>
+          <Box className="dropdownWrapper">
             <Dropdown
               item1="All Colors"
               item2="Black"
@@ -184,7 +187,7 @@ const SearchFilter = () => {
               item5="Purple"
             />
           </Box>
-          <Box>
+          <Box className="dropdownWrapper">
             <Dropdown item1="Verified olny" item2="All" item3="Most liked" />
           </Box>
           <Divider sx={{ margin: "10px 5px" }} />
@@ -207,50 +210,206 @@ const SearchFilter = () => {
         <Grid item md={9}>
           <TabPanel value={value} index={0}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
 
           <TabPanel value={value} index={1}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
 
           <TabPanel value={value} index={2}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
 
           <TabPanel value={value} index={3}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
 
           <TabPanel value={value} index={4}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
 
           <TabPanel value={value} index={5}>
             <Grid container spacing={2}>
-              {Data.map((item, index) => (
+              {Data.filter(function (cardData) {
+                return cardData.id <= 6;
+              }).map((item, index) => (
                 <Bidcard cardData={item} key={item.id} />
               ))}
             </Grid>
+            {loadmore ? (
+              <Grid
+                container
+                spacing={2}
+                sx={{ display: "flex", justifyContent: "center" }}
+              >
+                <ButtonComponent
+                  styleType="outline"
+                  classNames="headButton"
+                  btnColor="#23262F"
+                  handleClick={LoadMore}
+                >
+                  Load more
+                </ButtonComponent>
+              </Grid>
+            ) : (
+              <Grid container spacing={2}>
+                {Data.filter(function (cardData) {
+                  return cardData.id >= 7;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
+            )}
           </TabPanel>
         </Grid>
       </Grid>

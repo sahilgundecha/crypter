@@ -8,7 +8,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import "./CurrentBid.css";
+import "./BidCloned.css";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
 import BidCloned from "./BidCloned";
@@ -22,7 +22,7 @@ interface forArrow {
 const BidCarousel = (props: any) => {
   const handleDiscover = () => {
     window.location.href = "/searchfilter";
-  }
+  };
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
     // console.log("test", consts);
     const pointer: object =
@@ -41,7 +41,7 @@ const BidCarousel = (props: any) => {
     <>
       <Container
         maxWidth={false}
-        sx={{ margin: "50px 0px", textAlign: "center", width: "100%" }}
+        sx={{ margin: "60px 0px", textAlign: "center", width: "100%" }}
       >
         <Box sx={{ textAlign: "center" }}>
           <Typography variant="subtitle2" component="div" className="headOne">
