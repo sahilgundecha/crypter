@@ -76,7 +76,7 @@
 .withMargin {
   position: relative !important;
   overflow: hidden !important;
-  /* margin: 20px 5px; */
+  margin: 20px 7px;
 }
 .cardmedia {
   overflow: hidden !important;
@@ -113,13 +113,13 @@
   padding-left: 0px;
   display: none !important;
 }
-.cardmedia1:hover .mybutton {
+.withMargin:hover .mybutton {
   display: inline-flex !important;
 }
-.cardmedia1:hover .heartPurchase {
+.withMargin:hover .heartPurchase {
   display: flex !important;
 }
-.cardmedia1:hover .cardmedia {
+.withMargin:hover .cardmedia {
   transform: scale(1.1);
   overflow: hidden;
   transition: 0.7s !important;
@@ -155,7 +155,7 @@
 }
 
 @media (max-width: 768px) {
-  .cardmedia1 {
+  .withMargin {
     margin: 10px !important;
   }
 }
@@ -164,6 +164,6 @@
   flex-direction: row;
   margin: 20px 40px;
 }
-.temp .cardmedia1 {
+.temp .withMargin {
   margin: 0px 20px;
 } */

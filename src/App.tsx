@@ -86,6 +86,7 @@ const App: React.FC = () => {
         <Route path="/Creators" element={<CreatorsBid />} />
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />
         <Route path="/PutOnSale1" element={<PutOnSale1 />} />
+        <Route path="/dropdown" element={<Dropdown item1="test" />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
         <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
         <Route path="/placeabid" element={<PlaceaBidModals />} />
