@@ -25,6 +25,8 @@ import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "./ItemArray";
+import Transfer from "../Modals/Transfer/Transfer";
+import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -160,11 +162,12 @@ const Item = () => {
                 <Box>
                   <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
-                <Box>
+                {/* <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
                     Transfer token
                   </Typography>
-                </Box>
+                </Box> */}
+                <Transfer />
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
               <Box
@@ -453,12 +456,13 @@ const Item = () => {
                   >
                     Purchase now
                   </ButtonComponent>
-                  <ButtonComponent
+                  {/* <ButtonComponent
                     styleType="outline"
                     classNames="ItemWhiteBtn"
                   >
                     Place a bid
-                  </ButtonComponent>
+                  </ButtonComponent> */}
+                  <PlaceaBidModals />
                 </Box>
                 <Box
                   // sx={{

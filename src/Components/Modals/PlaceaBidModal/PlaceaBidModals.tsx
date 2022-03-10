@@ -6,7 +6,7 @@ import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import React, { useState } from "react";
-
+import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     p: true;
@@ -77,7 +77,13 @@ const PlaceaBidModals = (props: placeabidprops) => {
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Button onClick={handleOpen}>modal</Button>
+      <ButtonComponent
+        handleClick={handleOpen}
+        styleType="outline"
+        classNames="ItemWhiteBtn"
+      >
+        Place a bid
+      </ButtonComponent>
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"
