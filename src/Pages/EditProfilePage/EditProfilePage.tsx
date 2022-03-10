@@ -86,8 +86,20 @@ export default function EditProfilePage() {
             <p className="labelStyling" style={{marginTop:"30px"}}>PORTFOLIO OR WEBSITE</p>
             <TextField label="Enter URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
             <p className="labelStyling" style={{marginTop:"30px"}}>TWITTER</p>
-            <TextField label="@twitter username" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            {/* <Grid className="idtextfield"><input></input></Grid> */}
+            <Grid className="idtextfield"><input className="twitterInput" placeholder="@twitter username"/>
+            <Button
+                  className="verifyButton"
+                  sx={{
+                    textTransform: "none",
+                    borderRadius: "20px",
+                    color: "#777E90",
+                    border: "2px solid #E6E8EC",
+                    padding: "5px 10px",
+                    marginTop:"7px",
+                    fontSize: "13px",
+                  }}
+                >Verify account</Button>
+            </Grid>
             <Button
                   sx={{
                     textTransform: "none",
