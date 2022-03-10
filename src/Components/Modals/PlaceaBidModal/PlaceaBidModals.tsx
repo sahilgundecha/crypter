@@ -121,9 +121,20 @@ const PlaceaBidModals = (props: placeabidprops) => {
             <Typography variant="h6" component="div">
               {props.modalnum ? props.modalnum : "0.007"}
             </Typography>
-            <Typography variant="h6" component="div">
-              {props.totalETH ? props.totalETH : "ETH"}
-            </Typography>
+            <Box sx={{ display: "flex" }}>
+              <input
+                type="text"
+                style={{
+                  direction: "rtl",
+                  border: "none",
+                  fontWeight: "bold",
+                  outline: "none",
+                }}
+              />
+              <Typography variant="h6" component="div">
+                {props.totalETH ? props.totalETH : "ETH"}
+              </Typography>
+            </Box>
           </Box>
 
           <Box

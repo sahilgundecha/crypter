@@ -4,9 +4,9 @@ import cup from "../../Assets/images/cup.svg";
 import usser2 from "../../Assets/images/usser2.png";
 import usser3 from "../../Assets/images/usser3.png";
 import usser4 from "../../Assets/images/usser4.png";
-import iconsLightningLine from "../../Assets/images/iconsLightningLine.png";
+import iconsLightningLine from "../../Assets/images/iconsLightningLine.svg";
 import usser5 from "../../Assets/images/usser5.png";
-import iconsDoughnutLine from "../../Assets/images/iconsDoughnutLine.png";
+import iconsDoughnutLine from "../../Assets/images/iconsDoughnutLine.svg";
 
 const Data = [
   {
@@ -19,7 +19,7 @@ const Data = [
   },
   {
     name: "Payton Harris",
-    numbers: "#1",
+    numbers: "#2",
     userimgg: usser2,
     ETHnum: 2.456,
     img1: cup,
@@ -28,7 +28,7 @@ const Data = [
 
   {
     name: "Payton Harris",
-    numbers: "#1",
+    numbers: "#3",
     userimgg: usser3,
     ETHnum: 2.456,
     img1: iconsLightningLine,
@@ -36,7 +36,7 @@ const Data = [
   },
   {
     name: "Payton Harris",
-    numbers: "#1",
+    numbers: "#4",
     userimgg: usser4,
     ETHnum: 2.456,
     img1: iconsDoughnutLine,
@@ -44,7 +44,7 @@ const Data = [
   },
   {
     name: "Payton Harris",
-    numbers: "#1",
+    numbers: "#5",
     userimgg: usser5,
     ETHnum: 2.456,
     img1: cup,

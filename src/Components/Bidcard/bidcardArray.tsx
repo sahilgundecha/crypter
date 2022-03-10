@@ -57,6 +57,36 @@ const Data = [
     bidType: "new bid",
     creator: [creator1],
   },
+  {
+    id: 6,
+    mainImg: img3,
+    artName: "Sally Fadel",
+    ETH: 161,
+    inStock: 5,
+    highestBid: 6,
+    bidType: "new bid",
+    creator: [creator1, creator2, creator1],
+  },
+  {
+    id: 7,
+    mainImg: img4,
+    artName: "Sally Fadel",
+    ETH: 161,
+    inStock: 5,
+    highestBid: 6,
+    bidType: "new bid",
+    creator: [creator2],
+  },
+  {
+    id: 8,
+    mainImg: img5,
+    artName: "Sally Fadel",
+    ETH: 161,
+    inStock: 5,
+    highestBid: 6,
+    bidType: "new bid",
+    creator: [creator1],
+  },
 ];
 
 export default Data;

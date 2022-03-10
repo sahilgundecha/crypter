@@ -1,7 +1,7 @@
 import React from "react";
+import "./navpill.css";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import avatar from "../../Assets/images/avatar-2.jpg";
 import Divider from "@mui/material/Divider";
 interface navPill {
   itemsDetails: any;
@@ -27,6 +27,10 @@ const ItemNavPill: React.FC<navPill> = ({ itemsDetails }) => {
           <Box sx={{ marginRight: "10px" }}>
             <img src={itemsDetails.profile} alt="profile" width={45} />
           </Box>
+          {itemsDetails.badge ? (
+            <img src={itemsDetails.badge} alt="badge" className="badge" />
+          ) : null}
+
           <Box>
             {itemsDetails.Designation ? (
               <Typography
