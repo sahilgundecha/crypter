@@ -15,7 +15,8 @@ import usersimg from "../../../Assets/images/usersimg.png";
 import facebook from "../../../Assets/images/facebook.svg";
 import insta from "../../../Assets/images/insta.svg";
 import pintrest from "../../../Assets/images/pintrest.svg";
-import twitter from "../../../Assets/images/twitter.svg";
+import twiterrr from "../../../Assets/images/twiterrr.svg";
+import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -68,11 +69,14 @@ interface DilogueModalsprops {
 
 const DilogueBox = (props: DilogueModalsprops) => {
   const [open, setOpen] = React.useState<boolean>(true);
-  const [modal1, setModal1] = React.useState<boolean>(true);
+  const [modal1, setModal1] = React.useState<boolean>(false);
   const [modal2, setModal2] = React.useState<boolean>(false);
   const [modal3, setModal3] = React.useState<boolean>(false);
 
-  const handleOpen = () => setOpen(true);
+  const handleOpen = () => {
+    setOpen(true);
+    setModal1(true);
+  };
   const handleClose = () => setOpen(false);
 
   const handleOpenModal1 = () => {
@@ -92,12 +96,13 @@ const DilogueBox = (props: DilogueModalsprops) => {
 
   return (
     <>
-      <Button
-        className="px-4 me-3 rounded-pill startnowbtn"
-        onClick={handleOpen}
+      <ButtonComponent
+        handleClick={handleOpen}
+        classNames="itemBlueBtn"
+        btnColor={"#3772FF"}
       >
-        open modal
-      </Button>
+        Purchase now
+      </ButtonComponent>
       {modal1 ? (
         <StyledModal
           aria-labelledby="unstyled-modal-title"
@@ -412,7 +417,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 }}
               >
                 <img className="blue_img" src={facebook} />
-                <img className="blue_img" src={twitter} />
+                <img className="blue_img" src={twiterrr} />
                 <img className="blue_img" src={insta} />
                 <img className="blue_img" src={pintrest} />
               </Box>

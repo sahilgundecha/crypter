@@ -23,6 +23,7 @@
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  float: right;
 }
 .crossimg:hover {
   filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
@@ -37,7 +38,7 @@
   background-color: #ffffff !important;
   color: #000000 !important;
   font-weight: bold !important;
-  border: 1px solid #777e90 !important;
+  border: 1px solid #e6e8ec !important;
   text-transform: none !important;
 }
 .cancelbtn:hover {

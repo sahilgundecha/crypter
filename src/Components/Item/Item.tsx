@@ -27,6 +27,7 @@ import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "./ItemArray";
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
+import DilogueBox from "../Modals/DilogueBox/DilogueBox";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -450,12 +451,13 @@ const Item = () => {
                     margin: "10px",
                   }}
                 >
-                  <ButtonComponent
+                  {/* <ButtonComponent
                     classNames="itemBlueBtn"
                     btnColor={"#3772FF"}
                   >
                     Purchase now
-                  </ButtonComponent>
+                  </ButtonComponent> */}
+                  <DilogueBox />
                   {/* <ButtonComponent
                     styleType="outline"
                     classNames="ItemWhiteBtn"
