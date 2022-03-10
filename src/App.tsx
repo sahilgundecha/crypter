@@ -48,13 +48,14 @@ import Crypter from "./Pages/Crypter/Crypter";
 import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWalletModal";
 import PlaceaBidModals from "./Components/Modals/PlaceaBidModal/PlaceaBidModals";
 import FollowStep from "./Components/Modals/FollowStepModals/FollowStep";
+import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
 
 const App: React.FC = () => {
   return (
     <div className="xyz">
       <NavbarComponent />
       <Routes>
-        <Route path="/" element={<Test />} />
+        <Route path="/" element={<Crypter />} />
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
@@ -82,6 +83,7 @@ const App: React.FC = () => {
         <Route path="/Report" element={<Report />} />
         <Route path="/Crypter" element={<Crypter />} />
         <Route path="/ConnectWallet" element={<ConnectWallet />} />
+        <Route path="/CrypterEnd" element={<CrypterEnd />} />
         <Route path="/Follow" element={<FollowModal />} />
         <Route path="/Creators" element={<CreatorsBid />} />
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />

@@ -10,6 +10,8 @@ import profile from "../../Assets/images/creator1.png";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import BurnToken from "../Modals/BurnToken/BurnToken";
+import ConnectWalletModal from "../Modals/ConnectWalletModal/ConnectWalletModal";
 
 interface currentProps {
   bidData: any;
@@ -264,9 +266,10 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
             </Card>
             <Box sx={{ textAlign: "center" }}>
               <Box sx={{ textAlign: "center" }}>
-                <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
+               {/* <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
                   Place a Bid
-                </ButtonComponent>
+                </ButtonComponent>  */}
+                <ConnectWalletModal />
               </Box>
               <Box sx={{ textAlign: "center" }}>
                 <ButtonComponent

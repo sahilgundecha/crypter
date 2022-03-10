@@ -69,7 +69,10 @@ export default function () {
                 handleClick={handleCrypter}
                 classNames="buttonStyle"
               >
-                <span><KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home</span>
+                 <span style={{ marginRight: "8px", marginTop: "0px" }}>
+            <KeyboardBackspaceIcon fontSize="small" />
+          </span>
+          Back to Home
               </ButtonComponent>
          </Box>
          <Box className="lineStyle">

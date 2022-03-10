@@ -21,6 +21,7 @@ export default function EditProfilePage() {
             padding: "5px 20px",
             fontSize: "14px",
           }}
+          onClick={()=>{window.location.href = './ProfilePage'}}
         >
           <span style={{ marginRight: "8px", marginTop: "3px" }}>
             <KeyboardBackspaceIcon fontSize="small" />
@@ -29,7 +30,7 @@ export default function EditProfilePage() {
         </Button>
         <Grid style={{ textTransform: "none", fontSize: "#777E90v" }} className="profilespan">
           <a
-            href="#"
+            href="./ProfilePage"
             style={{ marginRight: "16px" }}
             // to={""}
             className="profileLink"
@@ -37,7 +38,7 @@ export default function EditProfilePage() {
             profile
           </a>
           <KeyboardArrowRightIcon fontSize="small" sx={{ color: "#777E90" }} />
-          <span style={{ color: "#23262F", marginLeft: "16px" }}>
+          <span style={{ color: "#23262F", marginLeft: "16px" }} >
             Edit Profile
           </span>
         </Grid>
@@ -86,8 +87,20 @@ export default function EditProfilePage() {
             <p className="labelStyling" style={{marginTop:"30px"}}>PORTFOLIO OR WEBSITE</p>
             <TextField label="Enter URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
             <p className="labelStyling" style={{marginTop:"30px"}}>TWITTER</p>
-            <TextField label="@twitter username" sx={{width:"95%",borderRadius:"20px !important"}}/>
-            {/* <Grid className="idtextfield"><input></input></Grid> */}
+            <Grid className="idtextfield"><input className="twitterInput" placeholder="@twitter username"/>
+            <Button
+                  className="verifyButton"
+                  sx={{
+                    textTransform: "none",
+                    borderRadius: "20px",
+                    color: "#777E90",
+                    border: "2px solid #E6E8EC",
+                    padding: "5px 10px",
+                    marginTop:"7px",
+                    fontSize: "13px",
+                  }}
+                >Verify account</Button>
+            </Grid>
             <Button
                   sx={{
                     textTransform: "none",

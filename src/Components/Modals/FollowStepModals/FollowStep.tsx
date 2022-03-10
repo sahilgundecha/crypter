@@ -6,12 +6,13 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
-
+import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
 import pencil from "../../../Assets/images/pencil.svg";
 import upload from "../../../Assets/images/upload.svg";
 import purple_icon from "../../../Assets/images/purple_icon.svg";
 import bag from "../../../Assets/images/bag.svg";
 import greentick from "../../../Assets/images/greentick.svg";
+import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -43,6 +44,7 @@ interface followStepsprops {
   smalltext1?: string;
   smalltext2?: string;
   smalltext3?: string;
+  viewItem?: boolean;
 }
 
 const StyledModal = styled(ModalUnstyled)`
@@ -111,7 +113,24 @@ const FollowStep = (props: followStepsprops) => {
   };
   return (
     <>
-      <Button onClick={handleOpen}>modal</Button>
+      {props.viewItem ? (
+        <ButtonComponent
+          customStyle={{ display: "flex", alignItem: "center" }}
+          handleClick={handleOpen}
+          btnColor={"#3772FF"}
+          classNames="btnStyle1"
+        >
+          Create item <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
+        </ButtonComponent>
+      ) : (
+        <Button
+          onClick={handleOpen}
+          className="px-4 me-3 rounded-pill startnowbtn"
+        >
+          I Understand ,continue
+        </Button>
+      )}
+
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"

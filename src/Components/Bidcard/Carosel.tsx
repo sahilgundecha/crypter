@@ -7,6 +7,7 @@ import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import BurnToken from "../Modals/BurnToken/BurnToken";
 
 interface cardProps {
   id: number;

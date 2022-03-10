@@ -25,6 +25,12 @@ import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "./ItemArray";
+import Remove from '../Modals/Remove/Remove'
+import BurnToken from '../Modals/BurnToken/BurnToken'
+import Report  from '../Modals/Report/Report'
+import Transfer from "../Modals/Transfer/Transfer";
+import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
+import DilogueBox from "../Modals/DilogueBox/DilogueBox";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -160,10 +166,27 @@ const Item = () => {
                 <Box>
                   <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
-                <Box>
+                {/* <Box>
                   <Typography variant="subtitle2" gutterBottom component="div">
                     Transfer token
                   </Typography>
+                </Box> */}
+                <Transfer />
+              </Box>
+              <Divider light sx={{ margin: "5px 0px" }} />
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+                className="hoverPink"
+              >
+                <Box>
+                  <img src={cross} alt="" className="dotpopupIcon" />
+                </Box>
+                <Box>
+                  <Remove />
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -179,27 +202,7 @@ const Item = () => {
                   <img src={cross} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Remove from sale
-                  </Typography>
-                </Box>
-              </Box>
-              <Divider light sx={{ margin: "5px 0px" }} />
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                }}
-                className="hoverPink"
-              >
-                <Box>
-                  <img src={cross} alt="" className="dotpopupIcon" />
-                </Box>
-                <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Burn token
-                  </Typography>
+                  <BurnToken />
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -215,9 +218,7 @@ const Item = () => {
                   <img src={report} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Remove
-                  </Typography>
+                  <Report />
                 </Box>
               </Box>
             </Box>
@@ -447,18 +448,20 @@ const Item = () => {
                     margin: "10px",
                   }}
                 >
-                  <ButtonComponent
+                  {/* <ButtonComponent
                     classNames="itemBlueBtn"
                     btnColor={"#3772FF"}
                   >
                     Purchase now
-                  </ButtonComponent>
-                  <ButtonComponent
+                  </ButtonComponent> */}
+                  <DilogueBox />
+                  {/* <ButtonComponent
                     styleType="outline"
                     classNames="ItemWhiteBtn"
                   >
                     Place a bid
-                  </ButtonComponent>
+                  </ButtonComponent> */}
+                  <PlaceaBidModals />
                 </Box>
                 <Box
                   // sx={{
