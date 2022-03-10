@@ -59,7 +59,8 @@ const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
 export const CradCollection = () => {
   return (
     <>
-      <Box sx={{ marginY: "60px", marginLeft: "30px" }}>
+   
+      <Box sx={{ marginY: "50px", marginLeft: "60px" }}>
           <Typography
             variant="h3"
             gutterBottom
@@ -80,6 +81,7 @@ export const CradCollection = () => {
           <CardCollect cardData={item} key={item.id} />
         ))}
       </Carousel>
+   
     </>
   );
 };

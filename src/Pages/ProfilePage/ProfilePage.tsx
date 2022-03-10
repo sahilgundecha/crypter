@@ -93,6 +93,7 @@ export default function ProfilePage() {
             margin: "12px",
             fontSize:"12px"
           }}
+          onClick={()=>{window.location.href = './EditProfilePage'}}
         >
           Edit profile
           <span><img src={iconEdit} style={{width:"12px", marginLeft:"8px"}}/></span>

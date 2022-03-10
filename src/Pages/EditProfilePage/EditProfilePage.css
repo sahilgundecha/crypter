@@ -12,11 +12,24 @@
 }
 .idtextfield{
     position:relative;
-    height: 48px;
+    height: 55px;
     padding: 0 14px;
-    width:90%;
-    border-radius: 16px;
+    width:95%;
+    border-radius: 14px;
+    border: 1.5px solid #c7c9ce;
 
+}
+.twitterInput{
+    height: 40px;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    width: 60%;
+}
+.verifyButton{
+    /* font-size: 18px;
+    color:#23262F; */
+    width: 37%;
 }
 .EditPageHeading{
     text-align: left;
@@ -27,7 +40,7 @@
     margin-bottom: 20px;
 }
 .EditPagepara{
-    color: #777E90;
+    color: #5a5d66;
     font-size: 14px;
 }
 .headDiv{
@@ -77,16 +90,16 @@
     border-radius: 15px !important;
 
 }
-@media (max-width:1100px){
+@media (max-width:1160px){
     .EditPageContent{
         display: block;
         
     }
     .ProfileGrid{
-        width:80%
+        width:100%
 
     }
-     .AccountInfoStyle{
-        display: flex;
+    .AccountInfoStyle{
+        width: 100%;
     } 
 }

@@ -27,7 +27,11 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+     <Box onClick={handleOpen}>
+                  <Typography variant="subtitle2" gutterBottom component="div">
+                    Burn Token
+                  </Typography>
+                </Box>
       <Modal
         open={open}
         onClose={handleClose}

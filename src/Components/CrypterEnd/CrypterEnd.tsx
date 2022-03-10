@@ -23,14 +23,14 @@ const CrypterEnd = () => {
     <Divider />
      <Container>
          <Grid container sx={{margin:'50px 0px'}}>
-             <Grid item md={6}>  
+             <Grid item md={6} sm={6}>  
          <Box>
              <Box  sx={alignBox}>
                  <Typography className="fontE1">
                  SAVE YOUR TIME WITH STACKS
                  </Typography>
                  <Typography className="fontE2">
-                 Earn free crypto with <br></br>Crypter
+                 Earn free crypto with Crypter
                  </Typography>
                  <Typography className="fontE3">
                  A creative agency that lead and inspire
@@ -52,7 +52,7 @@ const CrypterEnd = () => {
              </Box>
              </Box>
              </Grid>
-             <Grid item md={6}>
+             <Grid item md={6} sm={6}>
                  <Box sx={alignBox1}>
                      <img src={card1} />
                  </Box>
