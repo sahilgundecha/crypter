@@ -27,19 +27,20 @@ export default function EditProfilePage() {
           </span>
           Back to profile
         </Button>
-        <Button sx={{ textTransform: "none", fontSize: "#777E90v" }}>
-          <Link
-            style={{ color: "#777E90", marginRight: "16px" }}
-            to={""}
+        <Grid style={{ textTransform: "none", fontSize: "#777E90v" }} className="profilespan">
+          <a
+            href="#"
+            style={{ marginRight: "16px" }}
+            // to={""}
             className="profileLink"
           >
             profile
-          </Link>
+          </a>
           <KeyboardArrowRightIcon fontSize="small" sx={{ color: "#777E90" }} />
           <span style={{ color: "#23262F", marginLeft: "16px" }}>
             Edit Profile
           </span>
-        </Button>
+        </Grid>
       </Paper>
       <Grid className="headDiv">
         <Grid className="ProfileSectionStyle">
@@ -86,6 +87,7 @@ export default function EditProfilePage() {
             <TextField label="Enter URL" sx={{width:"95%",borderRadius:"20px !important"}}/>
             <p className="labelStyling" style={{marginTop:"30px"}}>TWITTER</p>
             <TextField label="@twitter username" sx={{width:"95%",borderRadius:"20px !important"}}/>
+            {/* <Grid className="idtextfield"><input></input></Grid> */}
             <Button
                   sx={{
                     textTransform: "none",

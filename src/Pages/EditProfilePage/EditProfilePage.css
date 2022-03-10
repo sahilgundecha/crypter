@@ -1,11 +1,23 @@
 .headContainer{
     padding: 20px;
+    /* display: flex; */
 
 }
-/* .profileLink{
-    
-} */
+.profileLink{
+    text-decoration: none;
+    color: #777E90;
+} 
+.profileLink:hover{
+    color:#3772FF;
+}
+.idtextfield{
+    position:relative;
+    height: 48px;
+    padding: 0 14px;
+    width:90%;
+    border-radius: 16px;
 
+}
 .EditPageHeading{
     text-align: left;
     letter-spacing: -0.96px;
@@ -39,6 +51,12 @@
     width: 50%;
     padding-left: 20px;
     display: flex;
+}
+.profilespan{
+    display: flex;
+    justify-content:end;
+    margin-top: -20px;
+    margin-right: 60px;
 }
 .labelStyling{
     margin-bottom: 12px;
