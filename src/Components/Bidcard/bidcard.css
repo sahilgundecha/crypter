@@ -76,7 +76,7 @@
 .withMargin {
   position: relative !important;
   overflow: hidden !important;
-  /* margin: 20px 5px; */
+  margin: 20px 7px;
 }
 .cardmedia {
   overflow: hidden !important;

@@ -39,6 +39,16 @@ const styleFlex = {
 export const CradCollection = () => {
   return (
     <>
+     <Box sx={{ marginY: "60px", marginLeft: "30px" }}>
+          <Typography
+            variant="h3"
+            gutterBottom
+            component="div"
+            sx={{ fontWeight: "bold" }}
+          >
+            Hot Collections
+          </Typography>
+        </Box>
     <Carousel
       itemsToShow={3}
       isRTL={false}
@@ -65,9 +75,9 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
         boxShadow: "none",
         cursor:'pointer'
       }}
-      onClick={()=>{window.location.href ='/profilepage'}}
+      
     >
-      <img className="changeWidth1" src={cardData.mainImg} />
+      <img className="changeWidth1" src={cardData.mainImg} onClick={()=>{window.location.href ='/profilepage'}}/>
 
       <Box
         sx={{
@@ -83,12 +93,12 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
           pagination={false}
           // renderArrow={myArrow}
 >
-          <img className="changeWidth1" src={cardData.img1} />
-          <img className="changeWidth1" src={cardData.img2}  />
-          <img className="changeWidth1" src={cardData.img3} />
-          <img className="changeWidth1" src={cardData.img1} />
-          <img className="changeWidth1" src={cardData.img2} />
-          <img className="changeWidth1" src={cardData.img3} /> 
+          <img className="changeWidth1" src={cardData.img1} onClick={()=>{window.location.href ='/profilepage'}}/>
+          <img className="changeWidth1" src={cardData.img2} onClick={()=>{window.location.href ='/profilepage'}} />
+          <img className="changeWidth1" src={cardData.img3} onClick={()=>{window.location.href ='/profilepage'}}/>
+          <img className="changeWidth1" src={cardData.img1} onClick={()=>{window.location.href ='/profilepage'}}/>
+          <img className="changeWidth1" src={cardData.img2} onClick={()=>{window.location.href ='/profilepage'}}/>
+          <img className="changeWidth1" src={cardData.img3} onClick={()=>{window.location.href ='/profilepage'}}/> 
         </Carousel> 
       </Box>
       <Box>
