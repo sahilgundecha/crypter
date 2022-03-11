@@ -49,6 +49,7 @@ import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWa
 import PlaceaBidModals from "./Components/Modals/PlaceaBidModal/PlaceaBidModals";
 import FollowStep from "./Components/Modals/FollowStepModals/FollowStep";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
+import SingleCollectible1 from "./Pages/SingleCollectible/SingleCollectible1";
 
 const App: React.FC = () => {
   return (
@@ -90,6 +91,7 @@ const App: React.FC = () => {
         <Route path="/PutOnSale1" element={<PutOnSale1 />} />
         <Route path="/dropdown" element={<Dropdown item1="test" />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
+        <Route path="/Single1" element={<SingleCollectible1 />} />
         <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
         <Route
           path="/placeabid"

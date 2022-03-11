@@ -17,3 +17,18 @@
 .mR{
     margin-right: 10px;
 }
+.endWidth{
+    width:100%;
+}
+.alignBox{
+    display:flex !important;
+    justify-content:center !important;
+    flex-direction:column !important;
+   padding:110px 0px !important;
+   /* align-items: center !important; */
+}
+@media (max-width:768px){
+    .alignBox{
+        padding:40px 0px !important;
+    }
+}
