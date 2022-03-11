@@ -271,7 +271,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
               }}
             >
               <Typography variant="h4" gutterBottom component="div">
-                {props.head ? props.head : "Folow steps"}
+                {props.head ? props.head : "Follow steps"}
               </Typography>
               <img
                 className="crossimg"
@@ -300,9 +300,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                 }}
               >
                 <Typography component="div" variant="h6" className="subhead">
-                  {props.subhead1
-                    ? props.subhead1
-                    : "Upload files & Mint token"}
+                  {props.subhead1 ? props.subhead1 : "Deposit ETH"}
                 </Typography>
                 <Typography
                   component="div"
@@ -312,7 +310,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                   {" "}
                   {props.smalltext1
                     ? props.smalltext1
-                    : "     Call contract method"}
+                    : "Send transaction with your wallet"}
                 </Typography>
               </Box>
             </Box>
@@ -343,7 +341,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                 }}
               >
                 <Typography component="div" variant="h6" className="subhead">
-                  {props.subhead1 ? props.subhead1 : "Sign sell order"}
+                  {props.subhead1 ? props.subhead1 : "Approve"}
                 </Typography>
                 <Typography
                   component="div"
@@ -353,7 +351,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                   {" "}
                   {props.smalltext2
                     ? props.smalltext2
-                    : "   Sign sell order using your wallet"}
+                    : " Checking balance and approving"}
                 </Typography>
               </Box>
             </Box>
@@ -381,7 +379,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                 }}
               >
                 <Typography component="div" variant="h6" className="subhead">
-                  {props.subhead1 ? props.subhead1 : " Sign lock order"}
+                  {props.subhead1 ? props.subhead1 : " Signature"}
                 </Typography>
                 <Typography
                   component="div"
@@ -390,7 +388,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
                 >
                   {props.smalltext3
                     ? props.smalltext3
-                    : " Sign sell order using your wallet"}
+                    : "Create a signature to place a bit"}
                 </Typography>
               </Box>
             </Box>
