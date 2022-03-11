@@ -1,4 +1,4 @@
-import { Container ,Box, Typography,Grid, Divider } from '@mui/material'
+import { Container ,Box, Typography,Grid, Divider,Button } from '@mui/material'
 // import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent'
 import React from 'react'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
@@ -9,6 +9,7 @@ import card1 from '../../Assets/images/upload1.png';
 import card2 from '../../Assets/images/upload2.png';
 import './Upload.css';
 import { createRoutesFromChildren } from 'react-router-dom';
+
 import ButtonComponent from '../../Components/ButtonComponent/ButtonComponent';
 declare module '@mui/material/Typography' {
     interface TypographyPropsVariantOverrides {
@@ -49,9 +50,19 @@ const handleCrypter = () => {
 const handleSingle= () => {
   window.location.href = "/SingleCollectible";
 }
+const handleSingle1= () => {
+  window.location.href = "/Single1";
+}
+const ButtonStyle = {
+  textTransform: "none",
+  borderRadius: "24px",
+  color: "#23262F",
+  border: "2px solid #E6E8EC",
+  padding: "5px 20px",
+  fontSize: "14px",
+}
 const textStyle={
   textDecoration:'none',
-  
   marginRight:'10px',
   fontWeight:'bold',
   cursor:'pointer',
@@ -63,17 +74,15 @@ export default function () {
     
    <Box sx={boxStyle}>
          <Box>
-         <ButtonComponent
-                btnColor={"#23262F"}
-                styleType={"outline"}
-                handleClick={handleCrypter}
-                classNames="buttonStyle"
-              >
-                 <span style={{ marginRight: "8px", marginTop: "0px" }}>
+         <Button
+          sx={ButtonStyle}
+          onClick={()=>{window.location.href = './Crypter'}}
+        >
+          <span style={{ marginRight: "8px", marginTop: "3px" }}>
             <KeyboardBackspaceIcon fontSize="small" />
           </span>
-          Back to Home
-              </ButtonComponent>
+          Back to profile
+        </Button>
          </Box>
          <Box className="lineStyle">
              <Typography component="a" sx={textStyle} className='homeStyle'>
@@ -119,7 +128,7 @@ export default function () {
                 btnColor={"#23262F"}
                 styleType={"outline"}
                 classNames="buttonStyle1"
-                handleClick={handleSingle}
+                handleClick={handleSingle1}
               >
                Create Mutiple
               </ButtonComponent>

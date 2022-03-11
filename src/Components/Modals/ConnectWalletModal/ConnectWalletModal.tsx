@@ -80,7 +80,7 @@ const ConnectWalletModal = () => {
                   Connect wallet
                 </Button>
                 <Box className="cancelbtnbox">
-                  <Button className=" rounded-pill cancelbtn">cancel</Button>
+                  <Button className="rounded-pill cancelbtn">cancel</Button>
                 </Box>
               </Box>
             </Box>
