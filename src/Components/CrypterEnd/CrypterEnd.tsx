@@ -1,21 +1,15 @@
 import { Container, Typography,Grid, Divider } from '@mui/material'
 import { Box } from '@mui/system'
-import card1 from '../../Assets/images/upload1.png';
+import card from '../../Assets/images/CrypterEnd.png';
 import React from 'react'
 import './CrypterEnd.css'
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
-const alignBox = {
-   display:'flex',
-   justifyContent:'center',
-   flexDirection:'column',
-  padding:'30px 0px'
 
-}
+
 const alignBox1 = {
     display:'flex',
     justifyContent:'center',
    
- 
  }
 const CrypterEnd = () => {
   return (
@@ -25,7 +19,7 @@ const CrypterEnd = () => {
          <Grid container sx={{margin:'50px 0px'}}>
              <Grid item md={6} sm={6}>  
          <Box>
-             <Box  sx={alignBox}>
+             <Box  className="alignBox">
                  <Typography className="fontE1">
                  SAVE YOUR TIME WITH STACKS
                  </Typography>
@@ -54,7 +48,7 @@ const CrypterEnd = () => {
              </Grid>
              <Grid item md={6} sm={6}>
                  <Box sx={alignBox1}>
-                     <img src={card1} />
+                     <img className="endWidth" src={card} />
                  </Box>
              </Grid>
          </Grid>

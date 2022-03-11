@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <filter id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_" x="0" y="0" width="96" height="96" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#0f0f0f" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_2" x="0" y="0" width="96" height="96" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur-2"/>
+      <feFlood flood-color="#0f0f0f" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Size_48_Theme_Neutral-Light_State_default_Background_Mask_)">
+        <rect id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_3" data-name="Size=48, Theme=Neutral-Light, State=default (Background/Mask)" width="48" height="48" rx="24" fill="none"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_Copy" data-name="Size=48, Theme=Neutral-Light, State=default (Background/Mask) Copy" width="48" height="48" rx="24" fill="#fcfcfd"/>
+    </clipPath>
+  </defs>
+  <g id="Size_48_Theme_Neutral-Light_State_default" data-name="Size=48, Theme=Neutral-Light, State=default" transform="translate(24 16)">
+    <g id="Size_48_Theme_Neutral-Light_State_default-2" data-name="Size=48, Theme=Neutral-Light, State=default">
+      <g transform="matrix(1, 0, 0, 1, -24, -16)" filter="url(#Size_48_Theme_Neutral-Light_State_default_Background_Mask_2)">
+        <rect id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_4" data-name="Size=48, Theme=Neutral-Light, State=default (Background/Mask)" width="48" height="48" rx="24" transform="translate(24 16)" fill="#fff"/>
+      </g>
+      <rect id="Size_48_Theme_Neutral-Light_State_default_Background_Mask_Copy-2" data-name="Size=48, Theme=Neutral-Light, State=default (Background/Mask) Copy" width="48" height="48" rx="24" fill="#fcfcfd"/>
+      <g id="Size_48_Theme_Neutral-Light_State_default-4" data-name="Size=48, Theme=Neutral-Light, State=default" clip-path="url(#clip-path-2)">
+        <g id="icons_Play_Filled" data-name="icons/Play/Filled" transform="translate(19.333 21)">
+          <path id="vector_Stroke_" data-name="vector (Stroke)" d="M7,.214,9.157,2.548a.667.667,0,0,1,0,.9L7,5.786a.667.667,0,0,1-.98-.9L7.144,3.667H.667a.667.667,0,1,1,0-1.333H7.144L6.023,1.119A.667.667,0,1,1,7,.214Z" transform="translate(0 0)" fill="#777e90"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

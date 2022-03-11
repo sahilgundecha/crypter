@@ -6,12 +6,14 @@ import Tab from "@mui/material/Tab";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import CSS from "csstype";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
-import { FollowersCard } from "../../Components/FollowersCard/FollowersCard";
+import { FollowersCard, FollowingCard } from "../../Components/FollowersCard/FollowersCard";
 import { AppBar } from "@mui/material";
 // import { TabPanel } from "@mui/lab";
 import Carosel from "../../Components/Bidcard/Carosel";
 import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";
+import Data from "../../Components/Bidcard/bidcardArray";
+import Bidcard from "../../Components/Bidcard/Bidcard";
 
 
 interface TabPanelProps {
@@ -125,19 +127,35 @@ export default function ProfilePage() {
             </Tabs>
             {/* </AppBar> */}
             <TabPanel value={value} index={0}>
-              <Carosel/>
+            <Grid container xl={4}>
+            {Data.map((item, index) => (
+          <Bidcard cardData={item} key={item.id} />
+        ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <Carosel/>
+            <Grid container xl={4}>
+            {Data.filter(function(cardData){return cardData.id<=4}).map((item, index) => (
+          <Bidcard cardData={item} key={item.id} />
+        ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <Carosel/>
+            <Grid container xl={4}>
+            {Data.map((item, index) => (
+          <Bidcard cardData={item} key={item.id} />
+        ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={3}>
-            <Carosel/>
+            <Grid container xl={4}>
+            {Data.map((item, index) => (
+          <Bidcard cardData={item} key={item.id} />
+        ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={4}>
-            <FollowersCard/>
+            <FollowingCard/>
             </TabPanel>
             <TabPanel value={value} index={5}>
               <Grid container>
