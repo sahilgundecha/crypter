@@ -102,6 +102,7 @@ export default function EditProfilePage() {
                 >Verify account</Button>
             </Grid>
             <Button
+                  className="AddMoreButton"
                   sx={{
                     textTransform: "none",
                     borderRadius: "20px",

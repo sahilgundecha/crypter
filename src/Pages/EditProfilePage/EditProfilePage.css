@@ -19,17 +19,33 @@
     border: 1.5px solid #c7c9ce;
 
 }
+.idtextfield:hover{
+    border: 1.5px solid #23262F;
+}
 .twitterInput{
-    height: 40px;
+    height: 98%;
     border: none;
     font-size: 17px;
     letter-spacing: 0.8px;
     width: 60%;
+    outline: none  !important;
 }
+/* .twitterInput:hover{
+    outline: none  !important;
+} */
 .verifyButton{
     /* font-size: 18px;
     color:#23262F; */
     width: 37%;
+    margin-top: -3px !important;
+}
+.verifyButton:hover{
+    color:#fff;
+    background-color: #3772ff !important;
+}
+.AddMoreButton:hover{
+    color:#fff;
+    background-color: #3772ff !important;
 }
 .EditPageHeading{
     text-align: left;
