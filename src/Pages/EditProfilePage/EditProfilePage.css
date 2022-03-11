@@ -39,6 +39,10 @@
     width: 37%;
     margin-top: -3px !important;
 }
+
+.updateBtnClass{
+    display: flex;
+}
 .verifyButton:hover{
     color:#fff;
     background-color: #3772ff !important;
