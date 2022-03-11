@@ -31,6 +31,7 @@ import Report  from '../Modals/Report/Report'
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 import DilogueBox from "../Modals/DilogueBox/DilogueBox";
+import ChangePrice from '../Modals/ChangePrice/ChangePrice';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -149,9 +150,8 @@ const Item = () => {
                   <img src={dollar} alt="" className="dotpopupIcon" />
                 </Box>
                 <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Change price
-                  </Typography>
+                  <ChangePrice />
+                 
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />

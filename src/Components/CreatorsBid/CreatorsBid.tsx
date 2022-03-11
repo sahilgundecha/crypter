@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import { Container,Divider } from "@mui/material";
 import card1 from '../../Assets/images/HomeImg.png';
 import disIcon from '../../Assets/images/disIcon.svg';
-import r from '../../Assets/images/plus1.svg';
+import plus from '../../Assets/images/rightImg.svg';
 import user1 from '../../Assets/images/user1.png';
 import CreatorsS2 from "./CreatorsS2";
 import data from './CreatorsArray';
@@ -40,12 +40,13 @@ export default function CreatorsBid() {
         <Grid container spacing={3} sx={{margin:'30px 0px '}}>
            <Grid item  md={4} sm={12}>
            <Box className="container" onClick ={()=>{window.location.href='/item'}}>
-             <Box className="birdImg">
+             <Box className="birdImg zoomDiv">
              <img className="changeWidth1 image" src={card1} />
-             </Box>
-               <Box className="middle">
-                 <img src={r} className="text"/>
+             <Box className="middle">
+                 <img src={plus} className="text"/>
                </Box>
+             </Box>
+            
              <Box sx={styleBT}>
                 <Box sx={styleBT}>
                   <Box>

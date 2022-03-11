@@ -32,7 +32,6 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
         className="WhiteCard"
         sx={{
           width: "200px",
-
           borderRadius: "15px",
         }}
       >

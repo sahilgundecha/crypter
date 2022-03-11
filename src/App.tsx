@@ -46,6 +46,7 @@ import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 import Crypter from "./Pages/Crypter/Crypter";
 import ConnectWalletModal from "./Components/Modals/ConnectWalletModal/ConnectWalletModal";
+import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
 import PlaceaBidModals from "./Components/Modals/PlaceaBidModal/PlaceaBidModals";
 import FollowStep from "./Components/Modals/FollowStepModals/FollowStep";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
@@ -101,6 +102,7 @@ const App: React.FC = () => {
         <Route path="/followstep" element={<FollowStep />} />
         <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
+        <Route path="/ChangePrice" element={<ChangePrice />  } />
         <Route path="/Accept" element={<AcceptBid />} />
         <Route path="/EditProfilePage" element={<EditProfilePage />} />
         <Route path="/SellerBuyerCarousel" element={<SellerBuyerCarousel />} />
