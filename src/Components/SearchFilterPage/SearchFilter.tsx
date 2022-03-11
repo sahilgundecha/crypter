@@ -176,7 +176,7 @@ const SearchFilter = () => {
           </Box>
 
           <Box className="dropdownWrapper">
-            <Dropdown item1="Most Liked" item2="Least Liked" />
+            <Dropdown item1="Most Liked" item2="Least Liked" label="PRICE" />
           </Box>
           <Box className="dropdownWrapper">
             <Dropdown
@@ -185,10 +185,16 @@ const SearchFilter = () => {
               item3="Green"
               item4="Pink"
               item5="Purple"
+              label="COLOR"
             />
           </Box>
           <Box className="dropdownWrapper">
-            <Dropdown item1="Verified olny" item2="All" item3="Most liked" />
+            <Dropdown
+              item1="Verified olny"
+              item2="All"
+              item3="Most liked"
+              label="CREATOR"
+            />
           </Box>
           <Divider sx={{ margin: "10px 5px" }} />
 

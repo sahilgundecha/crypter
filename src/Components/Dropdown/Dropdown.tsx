@@ -4,18 +4,18 @@ import Select from "@mui/material/Select";
 import downicon from "../../Assets/images/downArrow.svg";
 import upicon from "../../Assets/images/upArrow.svg";
 import { FormControl } from "@mui/material";
-import FormHelperText from "@mui/material/FormHelperText";
+import Typography from "@mui/material/Typography";
 import "./Dropdown.css";
 
 import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";
 interface drop {
-  option?: string[];
   item1?: string;
   item2?: string;
   item3?: string;
   item4?: string;
   item5?: string;
   item6?: string;
+  label?: string;
 }
 const Dropdown = (props: drop) => {
   const [age, setAge] = useState<string>("1");
@@ -32,7 +32,15 @@ const Dropdown = (props: drop) => {
 
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }}>
-      
+      {props.label ? (
+        <Typography
+          variant="subtitle2"
+          component="span"
+          className="dropdownLabel"
+        >
+          {props.label}
+        </Typography>
+      ) : null}
       <Select
         value={age}
         onChange={handleChange}
