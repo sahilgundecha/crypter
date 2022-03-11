@@ -51,5 +51,29 @@ const Data = [
     img1: cup,
     colr: "#000000",
   },
+  {
+    name: "Payton Harris",
+    numbers: "#3",
+    userimgg: usser3,
+    ETHnum: 2.456,
+    img1: iconsLightningLine,
+    colr: "#45B26B",
+  },
+  {
+    name: "Payton Harris",
+    numbers: "#5",
+    userimgg: usser5,
+    ETHnum: 2.456,
+    img1: cup,
+    colr: "#000000",
+  },
+  {
+    name: "Payton Harris",
+    numbers: "#3",
+    userimgg: usser3,
+    ETHnum: 2.456,
+    img1: iconsLightningLine,
+    colr: "#45B26B",
+  },
 ];
 export default Data;

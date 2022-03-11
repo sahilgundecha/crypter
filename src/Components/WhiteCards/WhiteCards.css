@@ -2,9 +2,11 @@
   text-align: center;
   margin: 50px 0px;
 }
-
+.userrcard2{
+  width:60px;
+}
 .WhiteCard:hover .userrcard2 {
-  width: 70px;
+  width: 80px;
 }
 .plusimg {
   margin-left: 10px;

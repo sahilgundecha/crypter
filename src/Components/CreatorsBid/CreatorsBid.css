@@ -40,25 +40,47 @@
     
 }
   .middle{
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 23%;
+     display:none;
+     position: absolute;
+     margin: -193px -26px -27px 124px;
 
   }
-  
-  .container:hover .image {
+  .zoomDiv{
+    overflow: hidden;
+  }
+  .zoomDiv:hover .image{
+      transform : scale(1.3) ; 
+      opacity: 0.9;
+  }
+  .image{
+      transition: transform 0.7s ;
+  }
+  /* .container:hover .image {
     opacity: 0.3;
+  }*/
+  .text{
+      width:100px
   }
   
-  .container:hover .middle{
+.container:hover .middle{
     display: inline;
     opacity: 1;
-  }
+  } 
 
 @media (max-width:1024px) {
     .priceBor {
         padding: 0px 0px; 
         font-size:14px !important;
+    }
+}
+@media (max-width : 768px) {
+    .middle {
+        margin: -193px -26px -27px 124px;
+    }
+    .changeWidth1{
+        width:100%;
+    }
+    .container{
+        width:96% !important;
     }
 }

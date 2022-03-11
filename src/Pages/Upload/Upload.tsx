@@ -85,7 +85,7 @@ export default function () {
         </Button>
          </Box>
          <Box className="lineStyle">
-             <Typography component="a" sx={textStyle} className='homeStyle'>
+             <Typography component="a" sx={textStyle} className='homeStyle'  onClick={()=>{window.location.href = './Crypter'}}>
                  Home &gt;  
              </Typography>
              <Typography component="p" sx={textStyle}>

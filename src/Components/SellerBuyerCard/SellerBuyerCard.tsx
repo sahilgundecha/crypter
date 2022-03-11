@@ -18,16 +18,30 @@ function SellerBuyerCard() {
   };
 
   return (
-    <Box sx={{ background: "#E6E8EC", marginBottom: "50px" }}>
+    <Box sx={{ background: "#E6E8EC", marginBottom: "50px",height:'640px' }}>
       <Box
         sx={{
-          padding: "50px 65px",
+          padding:'70px',
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <Box>
-          <Typography
+      <Typography
+            variant="h5"
+            style={{ color: "#777E90", marginLeft: "15px" }}
+            component="div"
+          >
+            Popular
+          </Typography> 
+          
+        <Dropdown
+        
+            item1="Seller"
+            item2="Buyers"
+           
+          />
+          {/* <Typography
             variant="h5"
             style={{ color: "#777E90", marginLeft: "20px" }}
             component="div"
@@ -79,18 +93,19 @@ function SellerBuyerCard() {
               </MenuItem>
             </Select>
           </FormControl>
-          {/* <Dropdown item1="Seller" item2="Buyers" /> */}
+          <Dropdown item1="Seller" item2="Buyers" /> */}
         </Box>
         <Box>
-          <Typography
+          {/* <Typography
             sx={{ fontWeight: "bold" }}
             variant="p"
             color="text.secondary"
             component="div"
           >
             TIME FRAME
-          </Typography>
+          </Typography> */}
           <Dropdown
+          label="TIME FRAME"
             item1="Today"
             item2="Morning"
             item3="Dinner"
@@ -99,7 +114,7 @@ function SellerBuyerCard() {
         </Box>
       </Box>
 
-      <Box sx={{ padding: "60px 0px" }}>
+      <Box >
         <SellerBuyerCarousel />
       </Box>
     </Box>
