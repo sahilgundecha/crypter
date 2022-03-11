@@ -13,6 +13,7 @@ import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Divider from "@mui/material/Divider";
+import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface Props {
   // id?: number;
@@ -51,9 +52,10 @@ const Bidcard: React.FC<Props> = ({ cardData }) => {
           />
         </Box>
         <Box>
-          <Button variant="contained" className="mybutton">
+          {/* <Button variant="contained" className="mybutton">
             Place a bid <img src={bidIcon} alt="icon" className="bigiImg" />
-          </Button>
+          </Button> */}
+          <PlaceaBidModals bidcard={true} logo={bidIcon} />
         </Box>
         <Box
           sx={{

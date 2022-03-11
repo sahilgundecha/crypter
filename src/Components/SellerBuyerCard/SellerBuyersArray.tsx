@@ -7,6 +7,7 @@ import usser4 from "../../Assets/images/usser4.png";
 import iconsLightningLine from "../../Assets/images/iconsLightningLine.svg";
 import usser5 from "../../Assets/images/usser5.png";
 import iconsDoughnutLine from "../../Assets/images/iconsDoughnutLine.svg";
+import userrr2 from "../../Assets/images/userrr2.png";
 
 const Data = [
   {
@@ -20,7 +21,7 @@ const Data = [
   {
     name: "Payton Harris",
     numbers: "#2",
-    userimgg: usser2,
+    userimgg: userrr2,
     ETHnum: 2.456,
     img1: cup,
     colr: "#9757D7",

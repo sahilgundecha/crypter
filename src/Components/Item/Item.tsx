@@ -30,6 +30,7 @@ import BurnToken from '../Modals/BurnToken/BurnToken'
 import Report  from '../Modals/Report/Report'
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
+import DilogueBox from "../Modals/DilogueBox/DilogueBox";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -447,12 +448,13 @@ const Item = () => {
                     margin: "10px",
                   }}
                 >
-                  <ButtonComponent
+                  {/* <ButtonComponent
                     classNames="itemBlueBtn"
                     btnColor={"#3772FF"}
                   >
                     Purchase now
-                  </ButtonComponent>
+                  </ButtonComponent> */}
+                  <DilogueBox />
                   {/* <ButtonComponent
                     styleType="outline"
                     classNames="ItemWhiteBtn"

@@ -21,13 +21,17 @@ function SellerBuyerCard() {
     <Box sx={{ background: "#E6E8EC", marginBottom: "50px" }}>
       <Box
         sx={{
-          padding: "50px 30px",
+          padding: "50px 65px",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <Box>
-          <Typography variant="h4" color="#777E90" component="div">
+          <Typography
+            variant="h5"
+            style={{ color: "#777E90", marginLeft: "20px" }}
+            component="div"
+          >
             Popular
           </Typography>
           <FormControl
@@ -41,10 +45,14 @@ function SellerBuyerCard() {
           >
             <Select
               sx={{
-                borderRadius: "35px",
-                fontSize: "30px",
+                borderRadius: "40px",
+                fontSize: "25px",
                 borderColor: "transparent",
                 background: "#E6E8EC",
+                outline: "0",
+                border: "0",
+                minWidth: 190,
+                m: 1,
               }}
               value={age}
               onChange={handleChange}
@@ -52,14 +60,21 @@ function SellerBuyerCard() {
               inputProps={{ "aria-label": "Without label" }}
             >
               <MenuItem
-                style={{ width: "170px !important", fontSize: "30px" }}
+                style={{
+                  minWidth: "max-content",
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  borderRadius: "40px",
+                }}
                 value=""
               >
                 {" "}
                 <em> Seller</em>
               </MenuItem>
 
-              <MenuItem style={{ width: "170px", fontSize: "30px" }}>
+              <MenuItem
+                style={{ width: "170px", fontSize: "30px", fontWeight: "bold" }}
+              >
                 Buyers
               </MenuItem>
             </Select>

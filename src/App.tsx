@@ -55,7 +55,7 @@ const App: React.FC = () => {
     <div className="xyz">
       <NavbarComponent />
       <Routes>
-        <Route path="/" element={<Test />} />
+        <Route path="/" element={<Crypter />} />
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
@@ -83,7 +83,7 @@ const App: React.FC = () => {
         <Route path="/Report" element={<Report />} />
         <Route path="/Crypter" element={<Crypter />} />
         <Route path="/ConnectWallet" element={<ConnectWallet />} />
-        <Route path="/CrypterEnd" element={<CrypterEnd />  } />
+        <Route path="/CrypterEnd" element={<CrypterEnd />} />
         <Route path="/Follow" element={<FollowModal />} />
         <Route path="/Creators" element={<CreatorsBid />} />
         <Route path="/PutOnSale2" element={<PutOnSale2 />} />
@@ -91,7 +91,10 @@ const App: React.FC = () => {
         <Route path="/dropdown" element={<Dropdown item1="test" />} />
         <Route path="/PutOnSale3" element={<PutOnSale3 />} />
         <Route path="/ConnectWalletModal" element={<ConnectWalletModal />} />
-        <Route path="/placeabid" element={<PlaceaBidModals />} />
+        <Route
+          path="/placeabid"
+          element={<PlaceaBidModals subhead1="depositeEth" />}
+        />
         <Route path="/SellerBuyerCard" element={<SellerBuyerCard />} />
         <Route path="/followstep" element={<FollowStep />} />
         <Route path="/modals" element={<Modals />} />
