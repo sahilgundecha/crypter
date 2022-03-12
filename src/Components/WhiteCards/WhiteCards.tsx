@@ -33,6 +33,9 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
         sx={{
           width: "200px",
           borderRadius: "15px",
+          background: "#FCFCFD 0% 0% no-repeat padding-box",
+          border: "unset",
+          boxShadow: "none",
         }}
       >
         <Box sx={{ padding: "10px 10px" }}>
@@ -56,7 +59,7 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
                 marginBottom: "10px",
               }}
             >
-              <img src={whitecardProps.img1} width="15px" />
+              <img src={whitecardProps.img1} width="14px" />
               <Typography variant="p" color="#ffffff" component="div">
                 {whitecardProps.numbers}
               </Typography>
@@ -89,7 +92,13 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
               </Box>
               <Box>
                 {" "}
-                <img src={arroww} className="plusimg" onClick={()=>{window.location.href ='/profilepage'}}/>
+                <img
+                  src={arroww}
+                  className="plusimg"
+                  onClick={() => {
+                    window.location.href = "/profilepage";
+                  }}
+                />
               </Box>
             </Box>
           </Box>
