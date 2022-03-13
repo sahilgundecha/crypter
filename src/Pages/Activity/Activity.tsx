@@ -43,7 +43,14 @@ const boxStyle={
       "aria-controls": `simple-tabpanel-${index}`,
     };
   }
-  
+  const ButtonStyle = {
+    textTransform: "none",
+    borderRadius: "24px",
+    color: "#23262F",
+    border: "2px solid #E6E8EC",
+    padding: "5px 20px",
+    fontSize: "14px",
+  }
   interface TabPanelProps {
     children?: React.ReactNode;
     index: number;
@@ -77,13 +84,15 @@ export default function Activity() {
     <>
     <Box sx={boxStyle}>
          <Box>
-         <ButtonComponent
-                btnColor={"#23262F"}
-                styleType={"outline"}
-                classNames="btnStyle1"
-              >
-                <KeyboardBackspaceIcon></KeyboardBackspaceIcon>Back to Home
-              </ButtonComponent>
+         <Button
+          sx={ButtonStyle}
+          onClick={()=>{window.location.href = './Crypter'}}
+        >
+          <span style={{ marginRight: "8px", marginTop: "3px" }}>
+            <KeyboardBackspaceIcon fontSize="small" />
+          </span>
+          Back to profile
+        </Button>
          </Box>
          <Box className="lineStyle">
              <Typography component="a" sx={textStyle}>

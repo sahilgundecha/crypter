@@ -43,7 +43,7 @@ export const NotificationD = () => {
     <Card className="card" sx={{ borderRadius:'25px'}}>
         <Box sx={styleFlex}>
             <Typography variant="h5">Notification</Typography>
-                <Button variant="contained">See All</Button>
+                <Button variant="contained" onClick={()=>window.location.href="./Activity"}>See All</Button>
         </Box>
            <Notification colData={cardData} /> 
     </Card>

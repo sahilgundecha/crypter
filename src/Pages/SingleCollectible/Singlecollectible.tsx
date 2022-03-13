@@ -34,7 +34,7 @@ import { FileUploader } from "react-drag-drop-files";
 // import Newbidcard from '../../Components/Bidcard/Newbidcard';
 import FollowStep from "../../Components/Modals/FollowStepModals/FollowStep";
 
-export default function SingleCollectible(props:any) {
+export default function SingleCollectible(props: any) {
   const [Picture, setPicture] = useState(true);
   const [Picture1, setPicture1] = useState(true);
   const [Picture2, setPicture2] = useState(true);
@@ -121,6 +121,7 @@ export default function SingleCollectible(props:any) {
   };
   interface stateProps {
     file: string;
+    tittle?: string;
   }
 
   const [pressed, setPressed] = useState<boolean>(false);
@@ -139,16 +140,18 @@ export default function SingleCollectible(props:any) {
           <Grid item sm={12} xs={12} md={8}>
             <Box sx={styleDirection}>
               <Box>
-                <Typography variant="h4">{props.tittle?props.tittle:"Create single collectible"}</Typography>
+                <Typography variant="h4">
+                  {props.tittle ? props.tittle : "Create single collectible"}
+                </Typography>
               </Box>
               <Box>
                 <ButtonComponent
                   btnColor={"#23262F"}
                   styleType={"outline"}
                   classNames="btnStyle1"
-                  handleClick={props.Click?props.Click:handleSwitch}
+                  handleClick={props.Click ? props.Click : handleSwitch}
                 >
-                  Switch to {props.switch?props.switch:"mutiple"}
+                  Switch to {props.switch ? props.switch : "mutiple"}
                 </ButtonComponent>
               </Box>
             </Box>
