@@ -68,7 +68,6 @@ function SellerBuyerCard() {
                 }}
                 value=""
               >
-                {" "}
                 <em> Seller</em>
               </MenuItem>
 
