@@ -416,10 +416,18 @@ const DilogueBox = (props: DilogueModalsprops) => {
                   justifyContent: "center",
                 }}
               >
-                <img className="blue_img" src={facebook} />
-                <img className="blue_img" src={twiterrr} />
-                <img className="blue_img" src={insta} />
-                <img className="blue_img" src={pintrest} />
+                <a href="https://www.facebook.com/ui8.net/">
+                  <img className="blue_img" src={facebook} />
+                </a>
+                <a href="https://twitter.com/ui8">
+                  <img className="blue_img" src={twiterrr} />
+                </a>
+                <a href="https://www.instagram.com/ui8net/">
+                  <img className="blue_img" src={insta} />
+                </a>
+                <a href="https://www.pinterest.com/ui8m/">
+                  <img className="blue_img" src={pintrest} />
+                </a>
               </Box>
             </Box>
           </Box>
