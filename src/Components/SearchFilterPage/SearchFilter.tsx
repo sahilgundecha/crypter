@@ -169,7 +169,7 @@ const SearchFilter = () => {
           </Grid>
         </Box>
       </Box>
-      <Grid container>
+      <Grid container sx={{ display: "flex", justifyContent: "space-between" }}>
         <Grid item md={2} className="dropdownWrapper">
           <Box className="dropdownWrapper">
             <SliderComponent />
@@ -211,7 +211,7 @@ const SearchFilter = () => {
             <Typography className="reset">reset filter</Typography>
           </Box>
         </Grid>
-        <Grid md={1} className="hidden"></Grid>
+        <Grid md={1} xl={1} className="hidden"></Grid>
 
         <Grid item md={9}>
           <TabPanel value={value} index={0}>
