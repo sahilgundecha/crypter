@@ -26,9 +26,7 @@ export default function BasicModal() {
   const handleOpen = () => setOpen(true);
   const [active1, setActive1] = React.useState<boolean>(true);
   const handleClose = () => setOpen(false);
-  const handleClick1 = () => {
-    setActive1(false);
-  };
+
   return (
     <div>
       <Button onClick={handleOpen}>Open modal</Button>

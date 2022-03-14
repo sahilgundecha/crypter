@@ -14,7 +14,7 @@ import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Divider from "@mui/material/Divider";
-import Data from "../Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import { isTemplateTail } from "typescript";
 
 interface cardProps {
@@ -119,13 +119,6 @@ const SearchFilterCard = () => {
                       padding: "5px",
                     }}
                   >
-                    {/* <Box>
-          {CardData.creator.map((cur) => {
-            return <img src={cur} className="icons" />;
-          })}
-        </Box> */}
-
-                    {/* for test */}
                     <img src={creator} alt="" />
 
                     <Typography variant="caption" className="inStock">

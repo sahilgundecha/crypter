@@ -42,7 +42,6 @@ const SliderComponent = (props: sliderprops) => {
             defaultValue={50}
             aria-label="Default"
             valueLabelDisplay="auto"
-            // getAriaValueText={valueLabelFormat}
             valueLabelFormat={valuetext}
             min={0}
             max={10}

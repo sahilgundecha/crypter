@@ -8,7 +8,7 @@ import Divider from "@mui/material/Divider";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
 import Grid from "@mui/material/Grid";
-import Data from "../Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Tabs from "@mui/material/Tabs";
@@ -159,12 +159,6 @@ const SearchFilter = () => {
                   sx={{ textTransform: "none", color: "#777E90" }}
                 />
               </Tabs>
-
-              {/* <TabPanel value={value} index={1}></TabPanel> */}
-              {/* <TabPanel value={value} index={2}></TabPanel> */}
-              {/* <TabPanel value={value} index={3}></TabPanel> */}
-              {/* <TabPanel value={value} index={4}></TabPanel> */}
-              {/* <TabPanel value={value} index={5}></TabPanel> */}
             </Grid>
           </Grid>
         </Box>

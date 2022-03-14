@@ -366,13 +366,6 @@ export default function SingleCollectible(props: any) {
                     padding: "13px 0px",
                   }}
                 >
-                  {/* <Box>
-          {CardData.creator.map((cur) => {
-            return <img src={cur} className="icons" />;
-          })}
-        </Box> */}
-
-                  {/* for test */}
                   <img src={creator} alt="" />
 
                   <Typography variant="caption" className="inStock">

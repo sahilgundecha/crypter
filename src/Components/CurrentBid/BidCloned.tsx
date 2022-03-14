@@ -249,30 +249,9 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
                   </Box>
                 </Box>
               </CardContent>
-              {/* <Box>
-                  <Box sx={{ textAlign: "center" }}>
-                    <ButtonComponent
-                      classNames="ButtonClass"
-                      btnColor={"#3772FF"}
-                    >
-                      UPLOAD
-                    </ButtonComponent>
-                  </Box>
-                  <Box sx={{ textAlign: "center" }}>
-                    <ButtonComponent
-                      styleType="outline"
-                      classNames="ButtonClass1"
-                    >
-                      Connect Wallet
-                    </ButtonComponent>
-                  </Box>
-                </Box> */}
             </Card>
             <Box sx={{ textAlign: "center" }}>
               <Box sx={{ textAlign: "center" }}>
-                {/* <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
-                  Place a Bid
-                </ButtonComponent>  */}
                 <ConnectWalletModal />
               </Box>
               <Box sx={{ textAlign: "center" }}>
