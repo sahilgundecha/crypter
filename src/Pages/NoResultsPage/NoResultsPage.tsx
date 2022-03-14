@@ -1,20 +1,18 @@
 import React from "react";
 import "./NoResultsPage.css";
 import noresultsImg from "../../Assets/images/noResultImg.png";
-import arrowIcon from "../../Assets/images/arrowIcon.jpg";
-import BoxContainer from "../../Components/BoxContainer.component"
+import BoxContainer from "../../Components/BoxContainer.component";
 import Searchbar from "../../Components/Searchbar/Searchbar";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
-import { textAlign } from "@mui/system";
 import Artwork from "../../Assets/images/ArtworkImg.png";
 import musicImg from "../../Assets/images/musicImg.png";
 import GameIcon from "../../Assets/images/gameImg.png";
 import PhotographyImg from "../../Assets/images/photographyImg.png";
-import { Avatar, Grid, ImageList } from "@mui/material";
-import Image from 'material-ui-image';
+import { Grid } from "@mui/material";
+import Image from "material-ui-image";
 
-export interface Array_type{
-    ArrProps:{id:number,name:string,itemCounts:string,itemImg:string}[];
+export interface Array_type {
+  ArrProps: { id: number; name: string; itemCounts: string; itemImg: string }[];
 }
 
 export default function NoResultsPage() {
@@ -47,12 +45,9 @@ export default function NoResultsPage() {
 
   return (
     <Grid>
-        <Grid className="ImageGrid">
-      <Image
-       aspectRatio={1.8}
-       src={noresultsImg} 
-       className="noResultImg"/>
-       </Grid>
+      <Grid className="ImageGrid">
+        <Image aspectRatio={1.8} src={noresultsImg} className="noResultImg" />
+      </Grid>
       <p className="noResults_Text">
         Sorry, we couldn’t find any results for this search.
       </p>
@@ -66,7 +61,7 @@ export default function NoResultsPage() {
       </div>
       <div>
         <h3 className="headingStyle">Explore more</h3>
-        <BoxContainer  ArrProps={ArrData} />
+        <BoxContainer ArrProps={ArrData} />
       </div>
     </Grid>
   );

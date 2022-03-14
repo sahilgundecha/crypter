@@ -1,16 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./BidCloned.css";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import {
+  Container,
+  Box,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+} from "@mui/material";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import video from "../../Assets/images/Video.png";
-import profile from "../../Assets/images/creator1.png";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import BurnToken from "../Modals/BurnToken/BurnToken";
 import ConnectWalletModal from "../Modals/ConnectWalletModal/ConnectWalletModal";
 
 interface currentProps {

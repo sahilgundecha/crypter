@@ -1,8 +1,6 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import { Container, Slider } from "@mui/material";
+
+import { Container, Slider, Typography, Box } from "@mui/material";
 import "./slider.css";
-import { Typography } from "@mui/material";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

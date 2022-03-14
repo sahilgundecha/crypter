@@ -25,7 +25,6 @@
     justify-content:center !important;
     flex-direction:column !important;
    padding:110px 0px !important;
-   /* align-items: center !important; */
 }
 @media (max-width:768px){
     .alignBox{

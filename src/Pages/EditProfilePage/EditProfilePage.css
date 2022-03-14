@@ -1,130 +1,124 @@
-.headContainer{
-    padding: 20px;
+.headContainer {
+  padding: 20px;
 }
-.profileLink{
-    text-decoration: none;
-    color: #777E90;
-} 
-.profileLink:hover{
-    color:#3772FF;
+.profileLink {
+  text-decoration: none;
+  color: #777e90;
 }
-.idtextfield{
-    position:relative;
-    height: 55px;
-    padding: 0 14px;
-    width:95%;
-    border-radius: 14px;
-    border: 1.5px solid #c7c9ce;
-
+.profileLink:hover {
+  color: #3772ff;
 }
-.idtextfield:hover{
-    border: 1.5px solid #23262F;
+.idtextfield {
+  position: relative;
+  height: 55px;
+  padding: 0 14px;
+  width: 95%;
+  border-radius: 14px;
+  border: 1.5px solid #c7c9ce;
 }
-.twitterInput{
-    height: 98%;
-    border: none;
-    font-size: 17px;
-    letter-spacing: 0.8px;
-    width: 60%;
-    outline: none  !important;
+.idtextfield:hover {
+  border: 1.5px solid #23262f;
 }
-
-.verifyButton{
-    width: 37%;
-    margin-top: -3px !important;
+.twitterInput {
+  height: 98%;
+  border: none;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  width: 60%;
+  outline: none !important;
 }
 
-.updateBtnClass{
-    display: flex;
+.verifyButton {
+  width: 37%;
+  margin-top: -3px !important;
 }
-.clearBtn:hover{
-    color: #3772ff ;
+
+.updateBtnClass {
+  display: flex;
 }
-.updateBtn:hover{
-    color: #fff;
-    background-color: #3772ff !important;
+.clearBtn:hover {
+  color: #3772ff;
 }
-.verifyButton:hover{
-    color:#fff;
-    background-color: #3772ff !important;
+.updateBtn:hover {
+  color: #fff;
+  background-color: #3772ff !important;
 }
-.AddMoreButton:hover{
-    color:#fff;
-    background-color: #3772ff !important;
+.verifyButton:hover {
+  color: #fff;
+  background-color: #3772ff !important;
 }
-.backToProfileBtn:hover{
-    color:#fff;
-    background-color: #3772ff !important;
+.AddMoreButton:hover {
+  color: #fff;
+  background-color: #3772ff !important;
 }
-.EditPageHeading{
-    text-align: left;
-    letter-spacing: -0.96px;
-    color: #23262F;
-    opacity: 1;
-    font-size: 40px;
-    margin-bottom: 20px;
+.backToProfileBtn:hover {
+  color: #fff;
+  background-color: #3772ff !important;
 }
-.EditPagepara{
-    color: #5a5d66;
-    font-size: 14px;
+.EditPageHeading {
+  text-align: left;
+  letter-spacing: -0.96px;
+  color: #23262f;
+  opacity: 1;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
-.headDiv{
-    display: flex;
-    justify-content: center;
-    width:60%;
-    margin: auto;
+.EditPagepara {
+  color: #5a5d66;
+  font-size: 14px;
 }
-.profilePicstyle{
-    width:140px !important;
-    height:140px !important;
-    margin-right: 20px;
-    
+.headDiv {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
 }
-.ProfileGrid{
-    display: flex;
-    width: 50%;
-    padding-right: 40px;
+.profilePicstyle {
+  width: 140px !important;
+  height: 140px !important;
+  margin-right: 20px;
 }
-.AccountInfoStyle{
-    width: 50%;
-    padding-left: 20px;
-    display: flex;
+.ProfileGrid {
+  display: flex;
+  width: 50%;
+  padding-right: 40px;
 }
-.profilespan{
-    display: flex;
-    justify-content:end;
-    margin-top: -20px;
-    margin-right: 60px;
+.AccountInfoStyle {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
 }
-.labelStyling{
-    margin-bottom: 12px;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #B1B5C3;
+.profilespan {
+  display: flex;
+  justify-content: end;
+  margin-top: -20px;
+  margin-right: 60px;
 }
-.EditPageContent{
-    display: flex;
-    
+.labelStyling {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+.EditPageContent {
+  display: flex;
 }
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-    border-radius: 15px !important ;
+  border-radius: 15px !important ;
 }
 .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-    border-radius: 15px !important;
-
+  border-radius: 15px !important;
 }
-@media (max-width:1160px){
-    .EditPageContent{
-        display: block;
-        
-    }
-    .ProfileGrid{
-        width:100%
-
-    }
-    .AccountInfoStyle{
-        width: 100%;
-    } 
+@media (max-width: 1160px) {
+  .EditPageContent {
+    display: block;
+  }
+  .ProfileGrid {
+    width: 100%;
+  }
+  .AccountInfoStyle {
+    width: 100%;
+  }
 }

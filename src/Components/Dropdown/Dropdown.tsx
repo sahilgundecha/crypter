@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
 import downicon from "../../Assets/images/downArrow.svg";
 import upicon from "../../Assets/images/upArrow.svg";
-import { FormControl } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { FormControl, MenuItem, Select, Typography } from "@mui/material";
 import "./Dropdown.css";
 
 import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";
@@ -37,7 +34,7 @@ const Dropdown = (props: drop) => {
         minWidth: "100%",
         background: "#ffffff",
         borderRadius: "14px",
-        cursor:"pointer",
+        cursor: "pointer",
       }}
     >
       {props.label ? (

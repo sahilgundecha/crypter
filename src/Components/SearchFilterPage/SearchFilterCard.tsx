@@ -1,21 +1,25 @@
 import React from "react";
 import { useState } from "react";
 import "../Bidcard/bidcard.css";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import {
+  Box,
+  Typography,
+  Divider,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Paper,
+  Button,
+} from "@mui/material";
+
 import bidImg from "../../Assets/images/bidImg.png";
 import creator from "../../Assets/images/creatorImg.png";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
-import { CardMedia, CardContent, CardHeader, Paper } from "@mui/material";
-import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Divider from "@mui/material/Divider";
 import Data from "../Bidcard/bidcardArray";
-import { isTemplateTail } from "typescript";
 
 interface cardProps {
   colData: {

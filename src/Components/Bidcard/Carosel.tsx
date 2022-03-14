@@ -2,12 +2,10 @@ import React, { Component, useState } from "react";
 import Bidcard from "./Bidcard";
 import Data from "./bidcardArray";
 import Carousel from "react-elastic-carousel";
-import { Button, Container, Grid } from "@mui/material";
+import { Button, Container, Typography , Box} from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import BurnToken from "../Modals/BurnToken/BurnToken";
+
 
 interface cardProps {
   id: number;

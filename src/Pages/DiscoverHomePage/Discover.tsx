@@ -1,23 +1,24 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Discover.css";
-import Divider from "@mui/material/Divider";
+import {
+  Divider,
+  Container,
+  Box,
+  Typography,
+  Button,
+  Tabs,
+  Tab,
+  Grid,
+} from "@mui/material";
 import SliderComponent from "../../Components/Slider/Slider";
-import bidIcon from "../../Assets/images/bidIcon.svg";
 import filter from "../../Assets/images/filter.svg";
 import cross from "../../Assets/images/filterCross.svg";
-import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import Dropdown from "../../Components/Dropdown/Dropdown";
-import Button from "@mui/material/Button";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Grid from "@mui/material/Grid";
 import Data from "../../Components/Bidcard/bidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
 
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   index: number;
   value: number;
 }

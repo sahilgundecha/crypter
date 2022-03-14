@@ -1,18 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import "./bidcard.css";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
-import bidImg from "../../Assets/images/bidImg.png";
-import creator from "../../Assets/images/creatorImg.png";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
-import { CardMedia, CardContent, CardHeader } from "@mui/material";
-import Button from "@mui/material/Button";
+import { CardMedia, CardContent, Box , Card , Typography , Divider  } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Divider from "@mui/material/Divider";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface Props {

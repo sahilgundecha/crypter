@@ -1,18 +1,20 @@
 import { useState } from "react";
-
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import "./WalletCard.css";
 import smallImg from "../../Assets/images/smallImg.svg";
-import { Container, Switch } from "@mui/material";
+import {
+  Container,
+  Switch,
+  Card,
+  CardContent,
+  Button,
+  Typography,
+  Box,
+} from "@mui/material";
 import frame from "../../Assets/images/frame.svg";
 import menu1 from "../../Assets/images/menu1.svg";
 import btn3icon from "../../Assets/images/btn3icon.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
-import { Box } from "@mui/system";
 
 const styles = {
   borderRadius: "25px",

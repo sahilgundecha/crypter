@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import Card from "@mui/material/Card";
+import { Card, Box, Typography } from "@mui/material";
 import "./WhiteCards.css";
-
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-
 import pluss from "../../../Assets/images/pluss.svg";
 import minuss from "../../../Assets/images/minuss.svg";
 import arroww from "../../../Assets/images/arroww.svg";
