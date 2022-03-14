@@ -25,13 +25,13 @@ import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "./ItemArray";
-import Remove from '../Modals/Remove/Remove'
-import BurnToken from '../Modals/BurnToken/BurnToken'
-import Report  from '../Modals/Report/Report'
+import Remove from "../Modals/Remove/Remove";
+import BurnToken from "../Modals/BurnToken/BurnToken";
+import Report from "../Modals/Report/Report";
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 import DilogueBox from "../Modals/DilogueBox/DilogueBox";
-import ChangePrice from '../Modals/ChangePrice/ChangePrice';
+import ChangePrice from "../Modals/ChangePrice/ChangePrice";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -151,7 +151,6 @@ const Item = () => {
                 </Box>
                 <Box>
                   <ChangePrice />
-                 
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -166,11 +165,7 @@ const Item = () => {
                 <Box>
                   <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
-                {/* <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Transfer token
-                  </Typography>
-                </Box> */}
+
                 <Transfer />
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -448,31 +443,11 @@ const Item = () => {
                     margin: "10px",
                   }}
                 >
-                  {/* <ButtonComponent
-                    classNames="itemBlueBtn"
-                    btnColor={"#3772FF"}
-                  >
-                    Purchase now
-                  </ButtonComponent> */}
                   <DilogueBox />
-                  {/* <ButtonComponent
-                    styleType="outline"
-                    classNames="ItemWhiteBtn"
-                  >
-                    Place a bid
-                  </ButtonComponent> */}
+
                   <PlaceaBidModals />
                 </Box>
-                <Box
-                  // sx={{
-                  //   disply: "flex",
-                  //   flexDirection: "row",
-                  //   alignItems: "center",
-                  //   justifyContent: "space-Between",
-                  //   padding: "10px",
-                  // }}
-                  className="bottomCard"
-                >
+                <Box className="bottomCard">
                   <Typography
                     variant="body2"
                     component="span"

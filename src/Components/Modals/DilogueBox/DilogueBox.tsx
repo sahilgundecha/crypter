@@ -118,14 +118,8 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography
-                variant="h4"
-                gutterBottom
-                component="div"
-                // className="modalhead"
-              >
+              <Typography variant="h4" gutterBottom component="div">
                 {props.modalhead1 ? props.modalhead1 : " Checkout"}
-                {/* Checkout */}
               </Typography>
               <img
                 className="crossimg"
@@ -250,12 +244,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography
-                variant="h4"
-                gutterBottom
-                component="div"
-                // className="modalhead"
-              >
+              <Typography variant="h4" gutterBottom component="div">
                 Folow steps
               </Typography>
               <img

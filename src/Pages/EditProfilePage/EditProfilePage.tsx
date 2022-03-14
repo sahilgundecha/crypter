@@ -47,7 +47,6 @@ export default function EditProfilePage() {
           <a
             href="./ProfilePage"
             style={{ marginRight: "16px" }}
-            // to={""}
             className="profileLink"
           >
             Profile
@@ -88,7 +87,7 @@ export default function EditProfilePage() {
                   }}
                 >
                   Upload
-                  <input type="file" hidden/>
+                  <input type="file" hidden />
                 </Button>
               </Grid>
             </Grid>

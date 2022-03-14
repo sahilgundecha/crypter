@@ -28,8 +28,6 @@ const Dropdown = (props: drop) => {
     setAge(event.target.value);
   };
 
-  // console.log(typeof option);
-
   return (
     <FormControl
       sx={{
@@ -37,7 +35,7 @@ const Dropdown = (props: drop) => {
         minWidth: "100%",
         background: "#ffffff",
         borderRadius: "14px",
-        cursor:"pointer",
+        cursor: "pointer",
       }}
     >
       {props.label ? (

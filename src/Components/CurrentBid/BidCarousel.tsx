@@ -22,7 +22,6 @@ const BidCarousel = (props: any) => {
     window.location.href = "/searchfilter";
   };
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
-    // console.log("test", consts);
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />
@@ -63,13 +62,11 @@ const BidCarousel = (props: any) => {
       <Carousel
         itemsToShow={1}
         isRTL={false}
-        // breakPoints={breakPoints}
         pagination={false}
         renderArrow={myArrow}
         className={props.className ? props.className : "carouselWrapper"}
       >
         {CurrentBidData.map((itm) => (
-          // <CurrentBid bidData={itm} key={itm.id} />
           <BidCloned bidData={itm} key={itm.id} />
         ))}
       </Carousel>
