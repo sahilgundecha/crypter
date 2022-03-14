@@ -13,7 +13,7 @@ import Button from "@mui/material/Button";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Grid from "@mui/material/Grid";
-import Data from "../../Components/Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
 
 interface TabPanelProps {

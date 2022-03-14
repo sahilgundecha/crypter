@@ -8,7 +8,7 @@ import Divider from "@mui/material/Divider";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
 import Grid from "@mui/material/Grid";
-import Data from "../Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Tabs from "@mui/material/Tabs";
