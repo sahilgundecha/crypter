@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { borderBottom, styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
-// import { useState } from "react";
+
 import cross from "../../../Assets/images/cross.svg";
 import { ImportantDevices } from "@mui/icons-material";
 import pinkicon from "../../../Assets/images/pinkicon.svg";

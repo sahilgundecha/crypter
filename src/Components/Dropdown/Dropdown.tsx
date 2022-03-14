@@ -31,7 +31,9 @@ const Dropdown = (props: drop) => {
   // console.log(typeof option);
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120 }}>
+    <FormControl
+      sx={{ m: 1, minWidth: 250, background: "#ffffff", borderRadius: "14px" }}
+    >
       {props.label ? (
         <Typography
           variant="subtitle2"

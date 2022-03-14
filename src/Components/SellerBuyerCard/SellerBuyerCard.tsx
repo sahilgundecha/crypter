@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import "./SellerBuyerCard.css";
 import Dropdown from "../Dropdown/Dropdown";
-import WhiteCards from "../WhiteCards/WhiteCards";
+import WhiteCards from "./WhiteCards/WhiteCards";
 import SellerBuyerCarousel from "./SellerBuyerCarousel";
 
 import InputLabel from "@mui/material/InputLabel";
@@ -18,54 +19,51 @@ function SellerBuyerCard() {
   };
 
   return (
-    <Box sx={{ background: "#E6E8EC", marginBottom: "50px",height:'640px' }}>
+    <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px" }}>
       <Box
         sx={{
-          padding:'70px',
+          padding: "25px",
           display: "flex",
           justifyContent: "space-between",
         }}
       >
         <Box>
-      <Typography
+          <Typography
             variant="h5"
             style={{ color: "#777E90", marginLeft: "15px" }}
             component="div"
           >
             Popular
-          </Typography> 
-          
-        <Dropdown
-        
-            item1="Seller"
-            item2="Buyers"
-           
-          />
-          {/* <Typography
+          </Typography>
+
+          {/* <Dropdown item1="Seller" item2="Buyers" />
+          <Typography
             variant="h5"
             style={{ color: "#777E90", marginLeft: "20px" }}
             component="div"
           >
             Popular
-          </Typography>
+          </Typography> */}
           <FormControl
+            className="formcontrol"
             sx={{
               m: 1,
               minWidth: 190,
-              backgroundColor: "#E6E8EC",
-              outline: "none",
-              border: "none",
             }}
           >
             <Select
+              className="select"
               sx={{
                 borderRadius: "40px",
                 fontSize: "25px",
                 borderColor: "transparent",
                 background: "#E6E8EC",
-                outline: "0",
-                border: "0",
+                borderStyle: "none",
+                outline: "none",
+                border: "none",
+                boxShadow: "none",
                 minWidth: 190,
+                appearance: "none",
                 m: 1,
               }}
               value={age}
@@ -92,19 +90,18 @@ function SellerBuyerCard() {
               </MenuItem>
             </Select>
           </FormControl>
-          <Dropdown item1="Seller" item2="Buyers" /> */}
+          {/* <Dropdown item1="Seller" item2="Buyers" /> */}
         </Box>
         <Box>
-          {/* <Typography
+          <Typography
             sx={{ fontWeight: "bold" }}
             variant="p"
             color="text.secondary"
             component="div"
           >
             TIME FRAME
-          </Typography> */}
+          </Typography>
           <Dropdown
-          label="TIME FRAME"
             item1="Today"
             item2="Morning"
             item3="Dinner"
@@ -113,7 +110,7 @@ function SellerBuyerCard() {
         </Box>
       </Box>
 
-      <Box >
+      <Box>
         <SellerBuyerCarousel />
       </Box>
     </Box>

@@ -1,26 +1,22 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import ButtonComponent from '../../ButtonComponent/ButtonComponent';
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 // import './Remove.css';
 import cross from "../../../Assets/images/cross.svg";
-
-import pencil from "../../../Assets/images/pencil.svg";
 import upload from "../../../Assets/images/upload.svg";
-import purple_icon from "../../../Assets/images/purple_icon.svg";
-import bag from "../../../Assets/images/bag.svg";
 import greentick from "../../../Assets/images/greentick.svg";
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 300,
-  bgcolor: 'background.paper',
-  border: '1px solid #1F2F461F',
-  borderRadius:'10px',
+  bgcolor: "background.paper",
+  border: "1px solid #1F2F461F",
+  borderRadius: "10px",
   boxShadow: 24,
   p: 3,
 };
@@ -43,46 +39,47 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-        <Box className="crossimg">
-                <img onClick={handleClose} width={27} src={cross} alt="img" />
-              </Box>
-          <Typography id="modal-modal-title" variant="h5" >
-          Follow Steps
+          <Box className="crossimg">
+            <img onClick={handleClose} width={27} src={cross} alt="img" />
+          </Box>
+          <Typography id="modal-modal-title" variant="h5">
+            Follow Steps
           </Typography>
           <Box
+            sx={{
+              display: "flex",
+              marginTop: "25px",
+            }}
+          >
+            {active1 ? (
+              <img src={upload} alt="img" />
+            ) : (
+              <img src={greentick} alt="img" />
+            )}
+
+            <Box
               sx={{
                 display: "flex",
-                marginTop: "25px",
+                flexDirection: "column",
+                marginLeft: "30px",
               }}
             >
-              {active1 ? (
-                <img src={upload} alt="img" />
-              ) : (
-                <img src={greentick} alt="img" />
-              )}
-
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  marginLeft: "30px",
-                }}
+              <Typography component="div" variant="h6" className="subhead">
+                Accept Bid
+              </Typography>
+              <Typography
+                component="div"
+                className="subtext"
+                color="text.secondary"
               >
-                <Typography component="div" variant="h6" className="subhead">
-                 Accept Bid
-                </Typography>
-                <Typography
-                  component="div"
-                  className="subtext"
-                  color="text.secondary"
-                >
-                 Send Transaction with your wallet
-                </Typography>
-              </Box>
+                Send Transaction with your wallet
+              </Typography>
             </Box>
-          <Box sx={{margin:'20px 0px'}}>
-          <ButtonComponent  btnColor={"#3772FF"} classNames='changeMar'>Start now</ButtonComponent>
-         
+          </Box>
+          <Box sx={{ margin: "20px 0px" }}>
+            <ButtonComponent btnColor={"#3772FF"} classNames="changeMar">
+              Start now
+            </ButtonComponent>
           </Box>
         </Box>
       </Modal>

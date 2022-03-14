@@ -4,12 +4,10 @@ import "./WhiteCards.css";
 
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import cup from "../../Assets/images/cup.svg";
-import pluss from "../../Assets/images/pluss.svg";
-import minuss from "../../Assets/images/minuss.svg";
-import arroww from "../../Assets/images/arroww.svg";
-import userimgg from "../../Assets/images/userimgg.png";
-import { borderBottom } from "@mui/system";
+
+import pluss from "../../../Assets/images/pluss.svg";
+import minuss from "../../../Assets/images/minuss.svg";
+import arroww from "../../../Assets/images/arroww.svg";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

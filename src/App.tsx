@@ -41,7 +41,7 @@ import WalletName from "./Pages/ConnectWallet/WalletName";
 import CreatorsBid from "./Components/CreatorsBid/CreatorsBid";
 import PutOnSale1 from "./Components/Modals/PutOnSale/PutOnSale1";
 import PutOnSale3 from "./Components/Modals/PutOnSale/PutOnSale3";
-import WhiteCards from "./Components/WhiteCards/WhiteCards";
+import WhiteCards from "./Components/SellerBuyerCard/WhiteCards/WhiteCards";
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 import Crypter from "./Pages/Crypter/Crypter";
@@ -61,7 +61,7 @@ const App: React.FC = () => {
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-        <Route path="/walletcard" element={<WalletCard />} />
+
         <Route path="/Textfield" element={<Textfield />} />
         <Route path="UsersCard" element={<UsersCard />} />
         <Route path="NoResultsPage" element={<NoResultsPage />} />
@@ -102,7 +102,7 @@ const App: React.FC = () => {
         <Route path="/followstep" element={<FollowStep />} />
         <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
-        <Route path="/ChangePrice" element={<ChangePrice />  } />
+        <Route path="/ChangePrice" element={<ChangePrice />} />
         <Route path="/Accept" element={<AcceptBid />} />
         <Route path="/EditProfilePage" element={<EditProfilePage />} />
         <Route path="/SellerBuyerCarousel" element={<SellerBuyerCarousel />} />
