@@ -29,7 +29,6 @@ const ImageFlex = {
   justifyContent:'center',
   alignItems:'center',
   marginTop:'80px'
-
 }
 const boxStyle={
   display:'flex',
