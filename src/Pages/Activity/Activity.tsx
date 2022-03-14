@@ -10,7 +10,7 @@ import {
   Paper,
 } from "@mui/material";
 import "./Activity.css";
-import { cardData } from "./ActivityArray";
+import { cardData } from "../../DB/Activity/ActivityArray";
 import { Notification } from "../../Components/Notification/NotificationD";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -131,7 +131,6 @@ export default function Activity() {
                   <Tab label="Following" {...allyProps(1)} sx={textChange} />
                   <Tab label="All Activity" {...allyProps(2)} sx={textChange} />
                 </Tabs>
-
                 <TabPanel value={value} index={0}>
                   <Box sx={boxStyle1}>
                     <Typography variant="h4" sx={fBold}>

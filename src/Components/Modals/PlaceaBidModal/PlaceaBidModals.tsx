@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 // import "../BidModal/Modals/modal.css";
+import "./PlaceaBidModals.css";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/system";

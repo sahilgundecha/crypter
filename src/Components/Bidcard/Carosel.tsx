@@ -1,6 +1,6 @@
 import React from "react";
 import Bidcard from "./Bidcard";
-import Data from "./bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Carousel from "react-elastic-carousel";
 import { Button, Container } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";

@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import "./CreatorsBid.css";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import card1 from "../../Assets/images/HomeImg.png";
 import disIcon from "../../Assets/images/disIcon.svg";
 import plus from "../../Assets/images/rightImg.svg";
 import user1 from "../../Assets/images/user1.png";
 import CreatorsS2 from "./CreatorsS2";
-import data from "./CreatorsArray";
-import Data from "./CreatorsArray3";
+import {
+  CreatorsArray,
+  LatestUpdates,
+} from "../../DB/CreatorsBid/CreatorsArray";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import CreatorsS3 from "./CreatorsS3";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const styleBT = {
   display: "flex",
   justifyContent: "space-between",
@@ -67,7 +71,7 @@ export default function CreatorsBid() {
             </Box>
           </Grid>
           <Grid item md={5}>
-            {data.map((item, index) => (
+            {CreatorsArray.map((item, index) => (
               <CreatorsS2 CreatorsArray={item} key={item.id} />
             ))}
           </Grid>
@@ -76,7 +80,7 @@ export default function CreatorsBid() {
               Latest upload from creators 🔥
             </Typography>
             <Box>
-              {Data.map((item) => (
+              {LatestUpdates.map((item) => (
                 <CreatorsS3 CreatorsArray3={item} key={item.id} />
               ))}
             </Box>

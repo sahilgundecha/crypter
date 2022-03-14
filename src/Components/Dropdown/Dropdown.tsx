@@ -22,7 +22,8 @@ const Dropdown = (props: drop) => {
   const [Clicked, setClicked] = useState<boolean>(true);
   const arr = ["highest price", "average price", "lowest price"];
   const isClicked = () => {
-    setClicked(!Clicked);
+    // setClicked(!Clicked);
+    console.log("touched");
   };
   const handleChange = (event: any) => {
     setAge(event.target.value);

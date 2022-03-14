@@ -14,7 +14,7 @@ import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Divider from "@mui/material/Divider";
-import Data from "../Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import { isTemplateTail } from "typescript";
 
 interface cardProps {

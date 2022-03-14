@@ -14,7 +14,7 @@ import { AppBar } from "@mui/material";
 import Carosel from "../../Components/Bidcard/Carosel";
 import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";
-import Data from "../../Components/Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
 
 interface TabPanelProps {

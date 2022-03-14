@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { Container } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-import Data from "./CardArray";
+import Data from "../../DB/CardCollection/CardCollectionArray";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },

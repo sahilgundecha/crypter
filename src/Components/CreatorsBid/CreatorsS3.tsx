@@ -2,6 +2,8 @@ import { Typography, Divider } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import homeS3 from "../../Assets/images/homeS3.png";
+import Home1 from "../../Assets/images/home1.png";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 interface Props {
   CreatorsArray3: any;
 }

@@ -1,0 +1,6 @@
+.crossimg {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  float: right !important;
+}
