@@ -31,7 +31,7 @@ const Dropdown = (props: drop) => {
   // console.log(typeof option);
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 250, cursor: "pointer" }}>
+    <FormControl sx={{ m: 1, minWidth: "100%", cursor: "pointer" }}>
       {props.label ? (
         <Typography
           variant="subtitle2"
