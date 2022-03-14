@@ -1,5 +1,5 @@
 import React from "react";
-import "./noresults.css";
+import "./NoResultsPage.css";
 import noresultsImg from "../../Assets/images/noResultImg.png";
 import arrowIcon from "../../Assets/images/arrowIcon.jpg";
 import BoxContainer from "../../Components/BoxContainer.component"
