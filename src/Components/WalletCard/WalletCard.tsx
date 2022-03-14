@@ -1,5 +1,4 @@
 import { useState } from "react";
-import React from "react";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -13,8 +12,7 @@ import menu1 from "../../Assets/images/menu1.svg";
 import btn3icon from "../../Assets/images/btn3icon.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
-import { styled, Box } from "@mui/system";
-import ModalUnstyled from "@mui/base/ModalUnstyled";
+import { Box } from "@mui/system";
 
 const styles = {
   borderRadius: "25px",

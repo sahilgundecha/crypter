@@ -7,6 +7,14 @@
    height: 620px;
    background-color: #fff;
 }
+.iconStyle{
+  margin: 10px;
+  cursor: default;
+  }
+.iconStyle:hover {
+    cursor: pointer;
+    filter: invert(63%) sepia(72%) saturate(7360%) hue-rotate(214deg) brightness(102%) contrast(100%);
+  }
 @media (max-width: 1020px) {
        .root{
         width: 80% !important;

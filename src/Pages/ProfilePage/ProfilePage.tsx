@@ -8,7 +8,6 @@ import CSS from "csstype";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
 import { FollowersCard, FollowingCard } from "../../Components/FollowersCard/FollowersCard";
 import { AppBar } from "@mui/material";
-// import { TabPanel } from "@mui/lab";
 import Carosel from "../../Components/Bidcard/Carosel";
 import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";
@@ -48,7 +47,6 @@ const styles = {
     backgroundSize:"cover",
     width: "100%",
     height:"350px",
-    // position:"relative",
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "flex-end",
@@ -107,8 +105,6 @@ export default function ProfilePage() {
           <UsersCard />
         </Grid>
         <Grid className="navpill_Styling">
-          {/* <FollowersCard/> */}
-          {/* <AppBar> */}
           <Grid className="tabTopGrid_Styling">
             <Tabs
               value={value}

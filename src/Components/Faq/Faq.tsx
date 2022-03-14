@@ -1,29 +1,22 @@
 import { Container } from "@mui/material";
 import "./faq.css";
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
-import Button from "@mui/material/Button";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import PhoneIcon from "@mui/icons-material/Phone";
 import HomeIcon from "@mui/icons-material/Home";
-import BoltIcon from "@mui/icons-material/Bolt";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { Grid } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
-// import { Icon } from "@material-ui/core";
 import blackimg1 from "../../Assets/images/blackimg1.svg";
-import home from "../../Assets/images/home.svg";
 import hosting from "../../Assets/images/hosting.svg";
 import blackimg2 from "../../Assets/images/blackimg2.svg";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-// import ButtonComponent from "../ButtonComponent/ButtonComponent";
+
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     p: true;
@@ -41,7 +34,6 @@ const styles1 = {
   borderRadius: "25px",
 };
 interface faqProps {
-  // children?: string | number;
   value?: number;
   index?: number;
   others?: string | number;

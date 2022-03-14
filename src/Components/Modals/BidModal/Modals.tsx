@@ -145,12 +145,17 @@ const Modals = (props: modalsprops) => {
           BackdropComponent={Backdrop}
         >
           <Box sx={style}>
-            <Box sx={{ width: "330px" }}>
-              <Box className="crossimg">
-                <img onClick={handleClose} src={cross} alt="img" />
+            <Box sx={{ width: "320px" }}>
+              <Box>
+                <img
+                  onClick={handleClose}
+                  src={cross}
+                  alt="img"
+                  className="crossimg"
+                />
               </Box>
 
-              <Box className="modal3">
+              <Box className="modal4">
                 <img onClick={handleClose} src={purple_icon} alt="img" />
 
                 <Typography variant="p" className="para1" component="div">

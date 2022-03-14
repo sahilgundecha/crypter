@@ -1,4 +1,4 @@
-import SellerBuyerCard from "./SellerBuyerCard";
+import SellerBuyerCard from "../../Components/SellerBuyerCard/SellerBuyerCard";
 import userimgg from "../../Assets/images/userimgg.png";
 import cup from "../../Assets/images/cup.svg";
 import usser2 from "../../Assets/images/usser2.png";

@@ -22,14 +22,10 @@
   margin-top: 30px;
 width:70%;
 display: flex;
-/* justify-content: center; */
 }
 .tabs_Styling{
   margin-left: 35px;
 }
-/* .FollowersCardGrid{
-  width: 60%;
-} */
 
 .tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff !important;
@@ -42,7 +38,6 @@ display: flex;
   background: none !important;
 }
 .tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root{
-  /* font-weight: 600 !important; */
   min-height: 40px !important;
 }
 

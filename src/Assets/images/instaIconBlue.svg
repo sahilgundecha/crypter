@@ -1,0 +1,5 @@
+<svg id="Icons_Instagram_Line" data-name="Icons/Instagram/Line" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="Vector" d="M11.667,16.667H5a5.006,5.006,0,0,1-5-5V5A5.006,5.006,0,0,1,5,0h6.667a5.006,5.006,0,0,1,5,5v6.667A5.005,5.005,0,0,1,11.667,16.667ZM5,1.666A3.338,3.338,0,0,0,1.666,5v6.667A3.337,3.337,0,0,0,5,15h6.667A3.337,3.337,0,0,0,15,11.667V5a3.337,3.337,0,0,0-3.333-3.334Z" transform="translate(1.667 1.667)" fill="#3772ff"/>
+  <path id="Vector-2" data-name="Vector" d="M1.667.833a.833.833,0,1,0-.833.833A.833.833,0,0,0,1.667.833Z" transform="translate(13.333 5)" fill="#3772ff"/>
+  <path id="Vector-3" data-name="Vector" d="M4.167,8.333A4.167,4.167,0,1,1,8.333,4.167,4.171,4.171,0,0,1,4.167,8.333Zm0-6.667a2.5,2.5,0,1,0,2.5,2.5A2.5,2.5,0,0,0,4.167,1.666Z" transform="translate(5.833 5.833)" fill="#3772ff"/>
+</svg>

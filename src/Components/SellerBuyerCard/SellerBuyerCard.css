@@ -1,1 +1,11 @@
-
+.select:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.formcontrol {
+  background-color: transparent;
+  outline: none !important;
+  border: none !important;
+  border-style: none;
+  box-shadow: none !important;
+}
