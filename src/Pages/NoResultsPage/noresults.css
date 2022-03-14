@@ -33,10 +33,13 @@ justify-content: center;
     display: flex;
     margin-top: 100px;
 }
-
-@media (min-width:1900px){
+.ImageGrid{
+    width: 70%;
+    margin:auto
+}
+@media (max-width: 820px){
     .ImageGrid{
-        width: 70%;
+        width: 100%;
         margin:auto
     }
 }
@@ -50,4 +53,5 @@ justify-content: center;
     .headingStyle{
         margin-top: 50px;
     }
+    
 }

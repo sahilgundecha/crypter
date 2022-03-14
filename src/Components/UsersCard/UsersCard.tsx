@@ -1,13 +1,11 @@
 import React from 'react'
-import {Grid,Button, Typography, Avatar} from "@mui/material";
+import {Grid,Button, Typography, Avatar, Box} from "@mui/material";
 import { makeStyles } from '@mui/styles';
 import { useTheme } from '@mui/material/styles';
-import { borderRadius } from '@mui/system';
-import twitterIcon from "../../Assets/images/twitterIcon.png";
-import fbIcon from "../../Assets/images/fbIcon.png";
-import instaIcon from "../../Assets/images/instaIcon.png";
+import twitterIcon from "../../Assets/images/twitterBlack.svg";
+import fbIcon from "../../Assets/images/fbBlackIcon.svg";
+import instaIcon from "../../Assets/images/instaBlackIcon.svg";
 import shareIconUpload from "../../Assets/images/share icon.png";
-// import GlobeIcon from "../../Assets/images/globeIcon.png";
 import {userInfo} from "../../Components/FollowersCard/FollowersCardData";
 import smallCoin from "../../Assets/images/icons-Coins-Filled.svg";
 import shareDotIcon from "../../Assets/images/share-icon.svg";
@@ -28,18 +26,6 @@ interface userCardDetails{
 }
 
 const useStyles: any = makeStyles( () => ({
-    // root: {
-    //      border: `0.5px solid ${useTheme().palette.grey[300]}`,
-    //      padding: useTheme().spacing(2),
-    //     borderRadius: "16px",
-    //     maxWidth: 220,
-    //     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.5)",
-    //     height: 600,
-    //     backgroundColor:"#fff",
-    //     ['@media(maxWidth: 1020px)' ]: {
-    //         width: '80%  !important',
-    //       }
-    // },
     avatar:{
         width: useTheme().spacing(14) + "!important",
         height: useTheme().spacing(14) + "!important"
@@ -73,25 +59,13 @@ const useStyles: any = makeStyles( () => ({
         marginTop: useTheme().spacing(3),
         paddingBottom: useTheme().spacing(4),
         borderBottom: "1.5px solid #E2E3E5",
-
-    },
-    iconStyle:{
-        width:"18px",
-        height:"18px",
-        margin: "10px",
-        cursor: "default",
-        '&:hover': {
-            opacity:"0.6",
-            cursor: "pointer",
-            
-        },
     },
     ShareIcon:{
         width:"35px",
         height:"35px",
         marginLeft: "10px",
         '&:hover': {
-            opacity:"0.6",
+            filter: "invert(63%) sepia(72%) saturate(7360%) hue-rotate(214deg) brightness(102%) contrast(100%)",
             cursor:"pointer",
         },
     },
@@ -122,6 +96,7 @@ const useStyles: any = makeStyles( () => ({
 }))
 export const UsersCard = () => {
     const classes = useStyles();
+    
   return (
     <Grid container direction="column"
     alignItems='center'
@@ -183,7 +158,7 @@ const LinkWithImg = (props:userCardDetails) => {
 const UploadButtons = () => {
     return(
         <Grid>
-        <Button disableElevation variant="contained" size="small" className={useStyles().uploadBtn} > Upload</Button>
+        <Button disableElevation variant="contained" size="small" sx={{textTransform: "none"}} className={useStyles().uploadBtn} > Upload</Button>
         <img src={shareIconUpload}  className={useStyles().ShareIcon}/>
         <img src={shareDotIcon} className={useStyles().ShareIcon}/>
 
@@ -193,9 +168,11 @@ const UploadButtons = () => {
 const SocialMediaIcon = () => {
     return(
         <Grid className={useStyles().iconbox} >
-            <img className={useStyles().iconStyle} src={twitterIcon}/>
-            <img className={useStyles().iconStyle} src={instaIcon}/>
-            <img className={useStyles().iconStyle} src={fbIcon}/> 
+          <Box>
+              <img src={twitterIcon} className="iconStyle"/>
+              <img src={instaIcon} className="iconStyle"/>
+              <img src={fbIcon} className="iconStyle"/>
+          </Box>
         </Grid>
     )
 }

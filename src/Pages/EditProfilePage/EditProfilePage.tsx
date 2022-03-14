@@ -22,6 +22,7 @@ export default function EditProfilePage() {
     <Grid>
       <Paper className="headContainer">
         <Button
+          className="backToProfileBtn"
           sx={{
             textTransform: "none",
             borderRadius: "24px",
@@ -49,7 +50,7 @@ export default function EditProfilePage() {
             // to={""}
             className="profileLink"
           >
-            profile
+            Profile
           </a>
           <KeyboardArrowRightIcon fontSize="small" sx={{ color: "#777E90" }} />
           <span style={{ color: "#23262F", marginLeft: "16px" }}>
@@ -76,6 +77,7 @@ export default function EditProfilePage() {
                 </p>
                 <Button
                   className="uploadBtn"
+                  component="label"
                   sx={{
                     textTransform: "none",
                     borderRadius: "20px",
@@ -86,7 +88,7 @@ export default function EditProfilePage() {
                   }}
                 >
                   Upload
-                  <input type="file" hidden />
+                  <input type="file" hidden/>
                 </Button>
               </Grid>
             </Grid>
@@ -207,7 +209,7 @@ export default function EditProfilePage() {
                   </Button>
 
                   <Button
-                    className="updateBtn"
+                    className="clearBtn"
                     sx={{
                       textTransform: "none",
                       border: "none",
