@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./BidCloned.css";
+import "./CurrentBid.css";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";

@@ -24,7 +24,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
-import { Info, History, Bids, Owners } from "./ItemArray";
+import { Info, History, Bids, Owners } from "../../DB/ItemsPage/ItemArray";
 import Remove from "../Modals/Remove/Remove";
 import BurnToken from "../Modals/BurnToken/BurnToken";
 import Report from "../Modals/Report/Report";
