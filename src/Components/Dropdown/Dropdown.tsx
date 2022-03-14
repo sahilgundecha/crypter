@@ -59,9 +59,6 @@ const Dropdown = (props: drop) => {
         {props.item3 ? <MenuItem value={3}>{props.item3}</MenuItem> : null}
         {props.item4 ? <MenuItem value={4}>{props.item4}</MenuItem> : null}
         {props.item5 ? <MenuItem value={5}>{props.item5}</MenuItem> : null}
-        {/* {option.map((curr: any, index) => {
-          <MenuItem value={index}>{curr}</MenuItem>;
-        })} */}
       </Select>
     </FormControl>
   );

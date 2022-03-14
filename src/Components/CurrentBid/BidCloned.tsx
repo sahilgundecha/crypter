@@ -154,7 +154,11 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
                 <Typography sx={{ fontSize: 14 }} gutterBottom>
                   Current Bid
                 </Typography>
-                <Typography variant="h3" component="div" className="ETH">
+                <Typography
+                  variant="h3"
+                  component="div"
+                  className="CurrentBid_ETH"
+                >
                   {bidData.CurrentBidETH} ETH
                 </Typography>
                 <Typography
@@ -266,7 +270,7 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
             </Card>
             <Box sx={{ textAlign: "center" }}>
               <Box sx={{ textAlign: "center" }}>
-               {/* <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
+                {/* <ButtonComponent classNames="ButtonClass" btnColor={"#3772FF"}>
                   Place a Bid
                 </ButtonComponent>  */}
                 <ConnectWalletModal />
