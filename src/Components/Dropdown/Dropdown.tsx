@@ -32,7 +32,12 @@ const Dropdown = (props: drop) => {
 
   return (
     <FormControl
-      sx={{ m: 1, minWidth: 250, background: "#ffffff", borderRadius: "14px" }}
+      sx={{
+        m: 1,
+        minWidth: "100%",
+        background: "#ffffff",
+        borderRadius: "14px",
+      }}
     >
       {props.label ? (
         <Typography

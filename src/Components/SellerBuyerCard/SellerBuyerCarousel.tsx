@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import WhiteCards from "./WhiteCards/WhiteCards";
-import Data from "./SellerBuyersArray";
+import Data from "../../DB/SellerBuyerCardArray/SellerBuyersArray";
 import Carousel from "react-elastic-carousel";
 import { Button } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
