@@ -18,7 +18,6 @@ import { CradCollection } from "./Components/CardCollection/CradCollection";
 import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
-import CurrentBid from "./Components/CurrentBid/CurrentBid";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
 import Modals from "./Components/Modals/BidModal/Modals";
 import DilogueBox from "./Components/Modals/DilogueBox/DilogueBox";
@@ -34,7 +33,6 @@ import PutOnSale2 from "./Components/Modals/PutOnSale/PutOnSale2";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
-import BidCloned from "./Components/CurrentBid/BidCloned";
 import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage";
 import { ConnectWallet } from "./Pages/ConnectWallet/ConnectWallet";
 import WalletName from "./Pages/ConnectWallet/WalletName";
@@ -102,7 +100,7 @@ const App: React.FC = () => {
         <Route path="/followstep" element={<FollowStep />} />
         <Route path="/modals" element={<Modals />} />
         <Route path="/DilogueBox" element={<DilogueBox />} />
-        <Route path="/ChangePrice" element={<ChangePrice />  } />
+        <Route path="/ChangePrice" element={<ChangePrice />} />
         <Route path="/Accept" element={<AcceptBid />} />
         <Route path="/EditProfilePage" element={<EditProfilePage />} />
         <Route path="/SellerBuyerCarousel" element={<SellerBuyerCarousel />} />

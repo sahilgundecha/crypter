@@ -27,7 +27,11 @@ const SliderComponent = (props: sliderprops) => {
     <>
       <Container>
         <Box sx={{ width: "100%", padding: "10px 0px" }}>
-          <Typography className="text">
+          <Typography
+            variant="subtitle2"
+            component="span"
+            className="dropdownLabel"
+          >
             {props.title ? props.title : "PRICE RANGE"}
           </Typography>
           <Slider
