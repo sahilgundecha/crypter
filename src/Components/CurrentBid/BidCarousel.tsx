@@ -1,11 +1,9 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import CurrentBidData from "./CurrentBidArray";
-import CurrentBid from "./CurrentBid";
 import { Button } from "@mui/material";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import "./BidCloned.css";
