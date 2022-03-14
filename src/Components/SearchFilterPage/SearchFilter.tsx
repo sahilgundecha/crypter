@@ -115,7 +115,7 @@ const SearchFilter = () => {
             // item3="Lowest Price"
           />
         </Box>
-        <Box className="widthSm">
+        <Box className="widthSm" sx={{ marginRight: "20px" }}>
           <Grid className="navpill_Styling">
             {/* <FollowersCard/> */}
             {/* <AppBar> */}
@@ -211,11 +211,19 @@ const SearchFilter = () => {
             <Typography className="reset">reset filter</Typography>
           </Box>
         </Grid>
-        <Grid md={1} xl={1} className="hidden"></Grid>
+        {/* <Grid md={1} xl={1} className="hidden"></Grid> */}
 
         <Grid item md={9}>
           <TabPanel value={value} index={0}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
@@ -249,7 +257,15 @@ const SearchFilter = () => {
           </TabPanel>
 
           <TabPanel value={value} index={1}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
@@ -283,7 +299,15 @@ const SearchFilter = () => {
           </TabPanel>
 
           <TabPanel value={value} index={2}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
@@ -317,7 +341,15 @@ const SearchFilter = () => {
           </TabPanel>
 
           <TabPanel value={value} index={3}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
@@ -340,7 +372,15 @@ const SearchFilter = () => {
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
@@ -351,7 +391,15 @@ const SearchFilter = () => {
           </TabPanel>
 
           <TabPanel value={value} index={4}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
@@ -385,7 +433,15 @@ const SearchFilter = () => {
           </TabPanel>
 
           <TabPanel value={value} index={5}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+              }}
+            >
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
