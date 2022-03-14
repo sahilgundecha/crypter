@@ -24,14 +24,14 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
-import { Info, History, Bids, Owners } from "./ItemArray";
-import Remove from '../Modals/Remove/Remove'
-import BurnToken from '../Modals/BurnToken/BurnToken'
-import Report  from '../Modals/Report/Report'
+import { Info, History, Bids, Owners } from "../../DB/ItemsPage/ItemArray";
+import Remove from "../Modals/Remove/Remove";
+import BurnToken from "../Modals/BurnToken/BurnToken";
+import Report from "../Modals/Report/Report";
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 import DilogueBox from "../Modals/DilogueBox/DilogueBox";
-import ChangePrice from '../Modals/ChangePrice/ChangePrice';
+import ChangePrice from "../Modals/ChangePrice/ChangePrice";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -151,7 +151,6 @@ const Item = () => {
                 </Box>
                 <Box>
                   <ChangePrice />
-                 
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />

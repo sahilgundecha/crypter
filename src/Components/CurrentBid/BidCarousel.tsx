@@ -1,15 +1,15 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import CurrentBidData from "./CurrentBidArray";
+import CurrentBidData from "../../DB/CurrentBid/CurrentBidArray";
 import { Button } from "@mui/material";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import "./BidCloned.css";
+import "./CurrentBid.css";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-import BidCloned from "./BidCloned";
+import CurrentBid from "./CurrentBid";
 
 interface forArrow {
   type?: any;
@@ -70,7 +70,7 @@ const BidCarousel = (props: any) => {
       >
         {CurrentBidData.map((itm) => (
           // <CurrentBid bidData={itm} key={itm.id} />
-          <BidCloned bidData={itm} key={itm.id} />
+          <CurrentBid bidData={itm} key={itm.id} />
         ))}
       </Carousel>
     </>
