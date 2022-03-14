@@ -1,20 +1,10 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-
-import { Typography } from "@mui/material";
-import Button from "@mui/material/Button";
-import { borderBottom, styled } from "@mui/system";
+import { Typography, Box, Button } from "@mui/material";
+import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
-import cross from "../../../Assets/images/cross.svg";
-import doller_img from "../../../Assets/images/doller_img.svg";
-import pencil from "../../../Assets/images/pencil.svg";
-import upload from "../../../Assets/images/upload.svg";
 import greentick from "../../../Assets/images/greentick.svg";
 import whiteTick from "../../../Assets/images/whiteTick.svg";
-import circle from "../../../Assets/images/circle.svg";
 import loading from "../../../Assets/images/loading.svg";
-import startnow from "../../../Assets/images/startnow.svg";
-import redtext from "../../../Assets/images/redtext.svg";
 import redcircle from "../../../Assets/images/redcircle.svg";
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -107,7 +97,6 @@ const PutOnSale3 = () => {
   };
   return (
     <>
-     
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"

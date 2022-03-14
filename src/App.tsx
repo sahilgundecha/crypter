@@ -18,7 +18,6 @@ import ProfilePage from "./Pages/ProfilePage/ProfilePage";
 import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
 import Activity from "./Pages/Activity/Activity";
 import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
-
 import Item from "./Components/Item/Item";
 import BidCarousel from "./Components/CurrentBid/BidCarousel";
 import Discover from "./Pages/DiscoverHomePage/Discover";
@@ -27,7 +26,6 @@ import Transfer from "./Components/Modals/Transfer/Transfer";
 import BurnToken from "./Components/Modals/BurnToken/BurnToken";
 import Report from "./Components/Modals/Report/Report";
 import FooterComponent from "./Components/FooterComponent/Footer";
-
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
 import NavbarComponent from "./Components/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
@@ -35,13 +33,10 @@ import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage";
 import { ConnectWallet } from "./Pages/ConnectWallet/ConnectWallet";
 import WalletName from "./Pages/ConnectWallet/WalletName";
 import CreatorsBid from "./Components/CreatorsBid/CreatorsBid";
-
 import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
 import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 import Crypter from "./Pages/Crypter/Crypter";
-
 import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
-
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
 import SingleCollectible1 from "./Pages/SingleCollectible/SingleCollectible1";
 
