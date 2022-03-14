@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
-import "./BurnToken.css";
+
 import cross from "../../../Assets/images/cross.svg";
 
 const style = {
@@ -27,11 +27,11 @@ export default function BasicModal() {
 
   return (
     <div>
-     <Box onClick={handleOpen}>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Burn Token
-                  </Typography>
-                </Box>
+      <Box onClick={handleOpen}>
+        <Typography variant="subtitle2" gutterBottom component="div">
+          Burn Token
+        </Typography>
+      </Box>
       <Modal
         open={open}
         onClose={handleClose}

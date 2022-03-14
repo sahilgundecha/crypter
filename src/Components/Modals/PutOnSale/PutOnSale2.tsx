@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { borderBottom, styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
-
 import doller_img from "../../../Assets/images/doller_img.svg";
 import { Switch } from "@mui/material";
 
@@ -78,12 +76,7 @@ const PutOnScale = (props: PutOnScaleprops) => {
               justifyContent: "space-between",
             }}
           >
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="div"
-              // className="modalhead"
-            >
+            <Typography variant="h4" gutterBottom component="div">
               Put on sale
             </Typography>
             <img

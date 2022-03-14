@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { borderBottom, styled } from "@mui/system";
@@ -77,12 +76,7 @@ const PutOnSale1 = () => {
               justifyContent: "space-between",
             }}
           >
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="div"
-              // className="modalhead"
-            >
+            <Typography variant="h4" gutterBottom component="div">
               Put on sale
             </Typography>
             <img

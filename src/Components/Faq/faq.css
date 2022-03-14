@@ -48,11 +48,7 @@
 .css-n1j79u-MuiButtonBase-root-MuiTab-root:hover {
   color: #23262f !important;
 }
-/* .rounded-pill {
-    height: 40px;
-  } */
-/* .blackimg:hover {
-  } */
+
 .css-n1j79u-MuiButtonBase-root-MuiTab-root:hover .blackimg {
   opacity: 1 !important;
 }
