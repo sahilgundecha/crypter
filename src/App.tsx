@@ -78,7 +78,7 @@ const App: FC = () => {
         <Route path="/creators" element={<CreatorsBid />} />
         <Route path="/drop-down" element={<Dropdown item1="test" />} />
 
-        <Route path="/single1" element={<SingleCollectible1 />} />
+        <Route path="/mutiple" element={<SingleCollectible1 />} />
 
         <Route path="/seller-buyer-card" element={<SellerBuyerCard />} />
 

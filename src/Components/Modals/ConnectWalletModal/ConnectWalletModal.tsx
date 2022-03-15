@@ -3,6 +3,7 @@ import { Typography,Button,Box } from "@mui/material";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
+import { Link } from "react-router-dom";
 import purple_icon from "../../../Assets/images/purple_icon.svg";
 import ButtonComponent from "../../../Components/ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
@@ -77,14 +78,13 @@ const ConnectWalletModal = () => {
               </Typography>
 
               <Box className="buttonBox">
+                <Link to="/connect-wallet" className="linkUnderline">
                 <Button
                   className="px-4 me-3 rounded-pill startnowbtn"
-                  onClick={() => {
-                    window.location.href = "./ConnectWallet";
-                  }}
                 >
                   Connect wallet
                 </Button>
+                </Link>
                 <Box className="cancelbtnbox">
                   <Button className="rounded-pill cancelbtn">cancel</Button>
                 </Box>

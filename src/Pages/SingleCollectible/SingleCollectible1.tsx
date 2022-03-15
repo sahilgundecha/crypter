@@ -3,7 +3,7 @@ import SingleCollectible from "./Singlecollectible";
 
 export default function SingleCollectible1() {
   const handleSwitch1 = () => {
-    window.location.href = "./SingleCollectible";
+    window.location.href = "./single-collectible";
   };
   return (
     <>
