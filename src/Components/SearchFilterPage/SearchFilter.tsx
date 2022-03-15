@@ -9,7 +9,7 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "../../Common/Dropdown/Dropdown";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
 import Data from "../../DB/BidCard/BidcardArray";

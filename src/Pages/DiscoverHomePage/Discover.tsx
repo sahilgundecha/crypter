@@ -1,4 +1,4 @@
-import React, { ReactNode,useState ,SetStateAction} from "react";
+import React, { ReactNode, useState, SetStateAction } from "react";
 import "./Discover.css";
 import {
   Divider,
@@ -13,7 +13,7 @@ import {
 import SliderComponent from "../../Components/Slider/Slider";
 import filter from "../../Assets/images/filter.svg";
 import cross from "../../Assets/images/filterCross.svg";
-import Dropdown from "../../Components/Dropdown/Dropdown";
+import Dropdown from "../../Common/Dropdown/Dropdown";
 import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
 
@@ -62,7 +62,7 @@ const Discover = () => {
     setSearch(false);
   };
 
-  const handleChange = (event: any, newValue:SetStateAction<number>) => {
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
 
