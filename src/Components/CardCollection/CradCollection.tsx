@@ -79,7 +79,7 @@ export const CradCollection = () => {
     </>
   );
 };
-export const CardCollect: React.FC<Props> = ({ cardData }) => {
+export const CardCollect: FC<Props> = ({ cardData }) => {
   return (
     <>
       <Container>

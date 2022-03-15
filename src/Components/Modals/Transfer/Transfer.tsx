@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Box, Button, Typography, Modal } from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 import "./Transfer.css";
@@ -19,7 +19,7 @@ const style = {
 };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 

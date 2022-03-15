@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,ChangeEvent } from "react";
 import "./Textfield.css";
 import {
   InputBase,
@@ -49,7 +49,7 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
 export default function Textfield() {
   const [value, setvalue] = useState<string>("10");
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setvalue(event.target.value);
   };
   return (

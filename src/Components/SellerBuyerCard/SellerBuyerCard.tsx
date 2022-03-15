@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SellerBuyerCard.css";
 import Dropdown from "../Dropdown/Dropdown";
 import SellerBuyerCarousel from "./SellerBuyerCarousel";
@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 
 function SellerBuyerCard() {
-  const [age, setAge] = React.useState("");
+  const [age, setAge] = useState("");
 
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
