@@ -15,12 +15,12 @@ export default function WalletName(props: any) {
     setShow(false);
   };
 
-  const handle3 = () => {
+  const handleBox = () => {
     setCImg(true);
   };
   return (
     <>
-      <Box onClick={props.onClick1 ? props.onClick1 : handle3}>
+      <Box onClick={props.onClickBox ? props.onClickBox : handleBox}>
         <Box
           sx={{
             display: "flex",

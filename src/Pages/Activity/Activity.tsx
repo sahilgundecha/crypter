@@ -93,14 +93,13 @@ export default function Activity() {
       <Box sx={boxStyle}>
         <Box>
           <Link to="/Crypter" className="linkUnderline">
-          <Button
-            sx={ButtonStyle}>
-            <span style={{ marginRight: "8px", marginTop: "3px" }}>
-              <KeyboardBackspaceIcon fontSize="small" />
-            </span>
-            Back to profile
-          </Button>
-          </Link> 
+            <Button sx={ButtonStyle}>
+              <span style={{ marginRight: "8px", marginTop: "3px" }}>
+                <KeyboardBackspaceIcon fontSize="small" />
+              </span>
+              Back to profile
+            </Button>
+          </Link>
         </Box>
         <Box className="lineStyle">
           <Typography component="a" sx={textStyle}>
