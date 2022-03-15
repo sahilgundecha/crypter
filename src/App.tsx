@@ -49,7 +49,6 @@ const App: FC = () => {
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-
         <Route path="/textfield" element={<Textfield />} />
         <Route path="/users-card" element={<UsersCard />} />
         <Route path="/no-results-page" element={<NoResultsPage />} />

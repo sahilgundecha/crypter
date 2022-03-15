@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Typography, Box, Button } from "@mui/material";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
@@ -7,8 +7,6 @@ import whiteTick from "../../../Assets/images/whiteTick.svg";
 import loading from "../../../Assets/images/loading.svg";
 import redcircle from "../../../Assets/images/redcircle.svg";
 import CircularProgress from "@mui/material/CircularProgress";
-
-import { Switch } from "@mui/material";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -47,10 +45,6 @@ const style = {
   backgroundColor: "#FCFCFD",
   borderRadius: "10px",
 };
-
-interface PutOnScaleprops {
-  children?: JSX.Element | JSX.Element[] | string[];
-}
 
 const PutOnSale3 = () => {
   const [open, setOpen] = useState<boolean>(true);

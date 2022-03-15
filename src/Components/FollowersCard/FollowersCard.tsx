@@ -1,12 +1,8 @@
-import React from "react";
 import { Avatar, Grid, Typography, Button } from "@mui/material";
-import { makeStyles } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+
 import "./followersCard.css";
-import img1 from "../../Assets/images/sally-profile-img.png";
+
 import { Data } from "../../DB/FollowersCard/FollowersCardArray";
-import { grid } from "@mui/system";
-import img2 from "../../Assets/images/sally-profile-img.png";
 
 interface userDataProps {
   details: {

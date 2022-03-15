@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Box,
@@ -17,7 +17,7 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
 import { Link } from "react-router-dom";
-import './StyleNH.css';
+import "./StyleNH.css";
 
 import WalletCard from "../WalletCard/WalletCard";
 
@@ -52,7 +52,7 @@ const NavbarComponent = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const handleOpenNavMenu = (event:any) => {
+  const handleOpenNavMenu = (event: any) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -62,7 +62,7 @@ const NavbarComponent = () => {
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  const showNotificationsMenu = (event:any) => {
+  const showNotificationsMenu = (event: any) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -71,7 +71,7 @@ const NavbarComponent = () => {
 
   const [anchorElWallet, setAnchorElWallet] = useState(null);
   const openConnectWallet = Boolean(anchorElWallet);
-  const showConnectWalletMenu = (event:any) => {
+  const showConnectWalletMenu = (event: any) => {
     setAnchorElWallet(event.currentTarget);
   };
   const handleCloseWalletMenu = () => {
@@ -91,10 +91,16 @@ const NavbarComponent = () => {
               component="div"
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              <Link to="/Discover" className={`${classes.link} ${classes.linkMargin}`}>
+              <Link
+                to="/Discover"
+                className={`${classes.link} ${classes.linkMargin}`}
+              >
                 Discover
               </Link>
-              <Link to="/FAQ" className={`${classes.link} ${classes.linkMargin}`}>
+              <Link
+                to="/FAQ"
+                className={`${classes.link} ${classes.linkMargin}`}
+              >
                 How it works
               </Link>
             </Typography>
@@ -156,22 +162,16 @@ const NavbarComponent = () => {
               transformOrigin={{ horizontal: "right", vertical: "top" }}
               anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
             >
-              <Box>
-               
-              </Box>
+              <Box></Box>
             </Menu>
             <Box
               component="span"
               sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
             >
               <Link to="/upload" className="lineUnderline">
-              <ButtonComponent
-                btnColor={"#3772FF"}
-                classNames="styleUp"
-               
-              >
-                Upload
-              </ButtonComponent>
+                <ButtonComponent btnColor={"#3772FF"} classNames="styleUp">
+                  Upload
+                </ButtonComponent>
               </Link>
             </Box>
 

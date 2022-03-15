@@ -1,4 +1,4 @@
-import React, { useState ,ReactNode ,SetStateAction} from "react";
+import React, { useState, ReactNode, SetStateAction } from "react";
 import "./SearchFilter.css";
 import {
   Container,
@@ -79,7 +79,7 @@ const SearchFilter = () => {
     setSearch(false);
   };
 
-  const handleChange = (event: any, newValue:SetStateAction<number>) => {
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
 
@@ -111,16 +111,10 @@ const SearchFilter = () => {
       <Divider sx={{ margin: "30px 0px" }} />
       <Box className="searchDiv widthSm">
         <Box className="dropdownWrapper">
-          <Dropdown
-            item1="Newest"
-            item2="Oldest"
-            // item3="Lowest Price"
-          />
+          <Dropdown item1="Newest" item2="Oldest" />
         </Box>
         <Box className="widthSm" sx={{ marginRight: "20px" }}>
           <Grid className="navpill_Styling">
-            {/* <FollowersCard/> */}
-            {/* <AppBar> */}
             <Grid className="tabTopGrid_Styling">
               <Tabs
                 value={value}
@@ -207,7 +201,6 @@ const SearchFilter = () => {
             <Typography className="reset">reset filter</Typography>
           </Box>
         </Grid>
-        {/* <Grid md={1} xl={1} className="hidden"></Grid> */}
 
         <Grid item md={9}>
           <TabPanel value={value} index={0}>

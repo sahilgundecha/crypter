@@ -1,4 +1,4 @@
-import React, { useState ,ReactNode ,SetStateAction } from "react";
+import React, { useState, ReactNode, SetStateAction } from "react";
 import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -16,7 +16,7 @@ import {
   CardContent,
 } from "@mui/material";
 import headImg from "../../Assets/images/itemImg.png";
-import send from "../../Assets/images/popShare.svg";
+
 import creatorProfile from "../../Assets/images/ProfileImage.jpg";
 import dollar from "../../Assets/images/dollar.svg";
 import report from "../../Assets/images/report.svg";
@@ -24,7 +24,6 @@ import right from "../../Assets/images/itemRight.svg";
 import tweet from "../../Assets/images/twitter.svg";
 import cross from "../../Assets/images/itemCross.svg";
 import fb from "../../Assets/images/fb.svg";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "../../DB/ItemsPage/ItemArray";
 import Remove from "../Modals/Remove/Remove";

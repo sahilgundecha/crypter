@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./DilogueBox.css";
-import { Typography ,Box ,Button } from "@mui/material";
-import { borderBottom, styled } from "@mui/system";
+import { Typography, Box, Button } from "@mui/material";
+import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import pinkicon from "../../../Assets/images/pinkicon.svg";

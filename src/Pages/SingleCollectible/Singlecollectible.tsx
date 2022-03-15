@@ -11,11 +11,9 @@ import {
   Switch,
   CardMedia,
   CardContent,
-  CardHeader,
   Card,
 } from "@mui/material";
 import Textfield from "../../Components/Textfield/TextField";
-import React from "react";
 import { useState } from "react";
 import img1 from "../../Assets/images/bidImg.png";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
@@ -30,12 +28,10 @@ import plus1 from "../../Assets/images/plus1.svg";
 import plus2 from "../../Assets/images/plus2.svg";
 import plus3 from "../../Assets/images/plus3.svg";
 import plus4 from "../../Assets/images/plus4.svg";
-import PutOnSale3 from "../../Components/Modals/PutOnSale/PutOnSale3";
 import buffer from "../../Assets/images/buffer.svg";
 import creator from "../../Assets/images/creatorImg.png";
 import "./SingleCollectible.css";
-import circle from "../../Assets/images/user1.png";
-import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
+
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -280,9 +276,6 @@ export default function SingleCollectible(props: any) {
             </Grid>
             <Box sx={styleDirection} className="paddingChange">
               <Box>
-                {/* <ButtonComponent btnColor={"#3772FF"} classNames="btnStyle1">
-             Create item <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
-              </ButtonComponent> */}
                 <FollowStep viewItem={true} />
               </Box>
               <Box>
@@ -349,7 +342,6 @@ export default function SingleCollectible(props: any) {
                   sx={{
                     display: "flex",
                     flexDirection: "row",
-
                     justifyContent: "space-between",
                     padding: "5px",
                   }}
