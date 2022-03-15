@@ -16,6 +16,7 @@ import {
 import "./Activity.css";
 import { cardData } from "../../DB/Activity/ActivityArray";
 import { Notification } from "../../Components/Notification/NotificationD";
+import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
@@ -91,17 +92,15 @@ export default function Activity() {
     <>
       <Box sx={boxStyle}>
         <Box>
+          <Link to="/Crypter" className="linkUnderline">
           <Button
-            sx={ButtonStyle}
-            onClick={() => {
-              window.location.href = "./Crypter";
-            }}
-          >
+            sx={ButtonStyle}>
             <span style={{ marginRight: "8px", marginTop: "3px" }}>
               <KeyboardBackspaceIcon fontSize="small" />
             </span>
             Back to profile
           </Button>
+          </Link> 
         </Box>
         <Box className="lineStyle">
           <Typography component="a" sx={textStyle}>

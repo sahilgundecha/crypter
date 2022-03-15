@@ -14,6 +14,7 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";
 import "./Upload.css";
+import { Link } from "react-router-dom";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -75,17 +76,16 @@ export default function () {
     <>
       <Box sx={boxStyle}>
         <Box>
+          <Link to="/Crypter" className="linkUnderline">
           <Button
             sx={ButtonStyle}
-            onClick={() => {
-              window.location.href = "./Crypter";
-            }}
           >
             <span style={{ marginRight: "8px", marginTop: "3px" }}>
               <KeyboardBackspaceIcon fontSize="small" />
             </span>
             Back to profile
           </Button>
+          </Link>
         </Box>
         <Box className="lineStyle">
           <Typography
@@ -120,14 +120,15 @@ export default function () {
             <CardActionArea>
               <img className="imgFuild" src={card1} />
               <CardContent className="textCenter">
+                <Link to="/single-collectible" className="linkUnderline">
                 <ButtonComponent
                   btnColor={"#23262F"}
                   styleType={"outline"}
                   classNames="buttonStyle1"
-                  handleClick={handleSingle}
                 >
                   Create Single
                 </ButtonComponent>
+                </Link>
               </CardContent>
             </CardActionArea>
           </Card>
@@ -135,14 +136,16 @@ export default function () {
             <CardActionArea>
               <img className="imgFuild" src={card2} />
               <CardContent>
+              <Link to="/mutiple" className="linkUnderline">
                 <ButtonComponent
                   btnColor={"#23262F"}
                   styleType={"outline"}
                   classNames="buttonStyle1"
-                  handleClick={handleSingle1}
+              
                 >
                   Create Mutiple
                 </ButtonComponent>
+              </Link>
               </CardContent>
             </CardActionArea>
           </Card>

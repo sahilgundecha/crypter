@@ -31,6 +31,15 @@
 }
 .fontC5 {
   color: #777e90;
+  
+}
+.firstSection{
+  text-decoration: none !important;
+  color:black !important;
+}
+.lineUnderlineS2{
+  text-decoration: none !important;
+  color:black !important;
 }
 .conatiner {
   width: max-content;

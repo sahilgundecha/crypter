@@ -27,7 +27,9 @@
   width: 60%;
   outline: none !important;
 }
-
+.linkUnderline{
+  text-decoration: none;
+}
 .verifyButton {
   width: 37%;
   margin-top: -3px !important;

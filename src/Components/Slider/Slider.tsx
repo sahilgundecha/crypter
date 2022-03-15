@@ -1,4 +1,3 @@
-
 import { Container, Slider, Typography, Box } from "@mui/material";
 import "./slider.css";
 
@@ -24,7 +23,7 @@ const SliderComponent = (props: sliderprops) => {
   return (
     <>
       <Container>
-        <Box sx={{ width: "100%", padding: "10px 0px" }}>
+        <Box sx={{ width: "100%", padding: "5px 0px" }}>
           <Typography
             variant="subtitle2"
             component="span"

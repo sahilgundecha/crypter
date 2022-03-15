@@ -1,9 +1,6 @@
-import React from 'react'
 import "../Pages/NoResultsPage/NoResultsPage.css"
-import arrowIcon from "../Assets/images/arrowIcon.jpg";
 import { Array_type } from '../Pages/NoResultsPage/NoResultsPage';
 import { Grid } from '@mui/material';
-import { height } from '@mui/system';
 
 const BoxContainer = (props:Array_type) => {
   const contStyle = {

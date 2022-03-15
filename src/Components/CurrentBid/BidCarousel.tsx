@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import CurrentBidData from "../../DB/CurrentBid/CurrentBidArray";
 import { Button, Container, Box, Typography } from "@mui/material";
@@ -45,14 +46,15 @@ const BidCarousel = (props: any) => {
             The new creative economy.
           </Typography>
           <Box>
-            <ButtonComponent
-              styleType="outline"
-              classNames="headButton"
-              btnColor="#23262F"
-              handleClick={handleDiscover}
-            >
-              Start your search
-            </ButtonComponent>
+            <Link to="/search-filter" className="linkUnderline">
+              <ButtonComponent
+                styleType="outline"
+                classNames="headButton"
+                btnColor="#23262F"
+              >
+                Start your search
+              </ButtonComponent>
+            </Link>
           </Box>
         </Box>
       </Container>

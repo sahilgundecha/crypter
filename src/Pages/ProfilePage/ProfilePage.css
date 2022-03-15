@@ -9,6 +9,9 @@
 .userFollower {
   display: flex;
 }
+.linkUnderline{
+  text-decoration: none;
+}
 .usercardGrid_Styling {
   display: flex;
   justify-content: end;

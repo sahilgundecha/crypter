@@ -6,7 +6,7 @@ import {
   Paper,
   TextField,
 } from "@mui/material";
-
+import { Link } from "react-router-dom";
 import "./EditProfilePage.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -18,28 +18,25 @@ export default function EditProfilePage() {
   return (
     <Grid>
       <Paper className="headContainer">
-        <Button
+        <Link to="/profile-page" className="linkUnderline"><Button
           className="backToProfileBtn"
-          onClick={() => {
-            window.location.href = "./ProfilePage";
-          }}
         >
           <span style={{ marginRight: "8px", marginTop: "3px" }}>
             <KeyboardBackspaceIcon fontSize="small" />
           </span>
           Back to profile
         </Button>
+        </Link>
         <Grid
           style={{ textTransform: "none", fontSize: "#777E90v" }}
           className="profilespan"
         >
-          <a
-            href="./ProfilePage"
+          <Link to="/profile-page"
             style={{ marginRight: "16px" }}
-            className="profileLink"
+            className="profileLink linkUnderline"
           >
             Profile
-          </a>
+          </Link>
           <KeyboardArrowRightIcon fontSize="small" sx={{ color: "#777E90" }} />
           <span style={{ color: "#23262F", marginLeft: "16px" }}>
             Edit Profile
