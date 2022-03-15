@@ -16,9 +16,6 @@ interface forArrow {
 }
 
 const BidCarousel = (props: any) => {
-  const handleDiscover = () => {
-    window.location.href = "/searchfilter";
-  };
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
     const pointer: object =
       type === "PREV" ? (

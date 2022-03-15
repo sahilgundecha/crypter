@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   Container,
   Grid,
@@ -118,9 +120,7 @@ export default function SingleCollectible(props: any) {
     justifyContent: "space-between",
     alignItems: "center",
   };
-  const handleSwitch = () => {
-    window.location.href = "/mutiple";
-  };
+
   const styleCol = {
     display: "flex",
     flexDirection: "column",
@@ -151,14 +151,15 @@ export default function SingleCollectible(props: any) {
                 </Typography>
               </Box>
               <Box>
-                <ButtonComponent
-                  btnColor={"#23262F"}
-                  styleType={"outline"}
-                  classNames="btnStyle1"
-                  handleClick={props.Click ? props.Click : handleSwitch}
-                >
-                  Switch to {props.switch ? props.switch : "mutiple"}
-                </ButtonComponent>
+                <Link to={props.link ? props.link : "/multiple-collectible"}>
+                  <ButtonComponent
+                    btnColor={"#23262F"}
+                    styleType={"outline"}
+                    classNames="btnStyle1"
+                  >
+                    Switch to {props.switch ? props.switch : "mutiple"}
+                  </ButtonComponent>
+                </Link>
               </Box>
             </Box>
             <Box sx={styleCol}>
