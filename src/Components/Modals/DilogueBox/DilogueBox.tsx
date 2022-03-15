@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-
 import "./DilogueBox.css";
-import { Typography } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Typography ,Box ,Button } from "@mui/material";
 import { borderBottom, styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
-
 import cross from "../../../Assets/images/cross.svg";
-import { ImportantDevices } from "@mui/icons-material";
 import pinkicon from "../../../Assets/images/pinkicon.svg";
 import CircularProgress from "@mui/material/CircularProgress";
 import usersimg from "../../../Assets/images/usersimg.png";
@@ -118,14 +113,8 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography
-                variant="h4"
-                gutterBottom
-                component="div"
-                // className="modalhead"
-              >
+              <Typography variant="h4" gutterBottom component="div">
                 {props.modalhead1 ? props.modalhead1 : " Checkout"}
-                {/* Checkout */}
               </Typography>
               <img
                 className="crossimg"
@@ -250,12 +239,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography
-                variant="h4"
-                gutterBottom
-                component="div"
-                // className="modalhead"
-              >
+              <Typography variant="h4" gutterBottom component="div">
                 Folow steps
               </Typography>
               <img

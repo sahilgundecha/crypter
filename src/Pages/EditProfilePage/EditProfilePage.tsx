@@ -1,20 +1,17 @@
 import {
   Avatar,
-  Box,
   Button,
   FormControl,
   Grid,
   Paper,
   TextField,
 } from "@mui/material";
-import React from "react";
+
 import "./EditProfilePage.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
-import { Link } from "react-router-dom";
 import img1 from "../../Assets/images/enrieCole.png";
-import { Label } from "@mui/icons-material";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 
 export default function EditProfilePage() {
@@ -23,14 +20,6 @@ export default function EditProfilePage() {
       <Paper className="headContainer">
         <Button
           className="backToProfileBtn"
-          sx={{
-            textTransform: "none",
-            borderRadius: "24px",
-            color: "#23262F",
-            border: "2px solid #E6E8EC",
-            padding: "5px 20px",
-            fontSize: "14px",
-          }}
           onClick={() => {
             window.location.href = "./ProfilePage";
           }}
@@ -47,7 +36,6 @@ export default function EditProfilePage() {
           <a
             href="./ProfilePage"
             style={{ marginRight: "16px" }}
-            // to={""}
             className="profileLink"
           >
             Profile
@@ -88,7 +76,7 @@ export default function EditProfilePage() {
                   }}
                 >
                   Upload
-                  <input type="file" hidden/>
+                  <input type="file" hidden />
                 </Button>
               </Grid>
             </Grid>

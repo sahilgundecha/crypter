@@ -3,12 +3,18 @@ import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import Divider from "@mui/material/Divider";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import {
+  Grid,
+  Container,
+  Divider,
+  Box,
+  Typography,
+  Tabs,
+  Tab,
+  Card,
+  CardContent,
+} from "@mui/material";
 import headImg from "../../Assets/images/itemImg.png";
 import send from "../../Assets/images/popShare.svg";
 import creatorProfile from "../../Assets/images/ProfileImage.jpg";
@@ -18,20 +24,16 @@ import right from "../../Assets/images/itemRight.svg";
 import tweet from "../../Assets/images/twitter.svg";
 import cross from "../../Assets/images/itemCross.svg";
 import fb from "../../Assets/images/fb.svg";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
-import { Info, History, Bids, Owners } from "./ItemArray";
-import Remove from '../Modals/Remove/Remove'
-import BurnToken from '../Modals/BurnToken/BurnToken'
-import Report  from '../Modals/Report/Report'
+import { Info, History, Bids, Owners } from "../../DB/ItemsPage/ItemArray";
+import Remove from "../Modals/Remove/Remove";
+import BurnToken from "../Modals/BurnToken/BurnToken";
+import Report from "../Modals/Report/Report";
 import Transfer from "../Modals/Transfer/Transfer";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 import DilogueBox from "../Modals/DilogueBox/DilogueBox";
-import ChangePrice from '../Modals/ChangePrice/ChangePrice';
+import ChangePrice from "../Modals/ChangePrice/ChangePrice";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -151,7 +153,6 @@ const Item = () => {
                 </Box>
                 <Box>
                   <ChangePrice />
-                 
                 </Box>
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -166,11 +167,7 @@ const Item = () => {
                 <Box>
                   <img src={right} alt="" className="dotpopupIcon" />
                 </Box>
-                {/* <Box>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                    Transfer token
-                  </Typography>
-                </Box> */}
+
                 <Transfer />
               </Box>
               <Divider light sx={{ margin: "5px 0px" }} />
@@ -448,31 +445,11 @@ const Item = () => {
                     margin: "10px",
                   }}
                 >
-                  {/* <ButtonComponent
-                    classNames="itemBlueBtn"
-                    btnColor={"#3772FF"}
-                  >
-                    Purchase now
-                  </ButtonComponent> */}
                   <DilogueBox />
-                  {/* <ButtonComponent
-                    styleType="outline"
-                    classNames="ItemWhiteBtn"
-                  >
-                    Place a bid
-                  </ButtonComponent> */}
+
                   <PlaceaBidModals />
                 </Box>
-                <Box
-                  // sx={{
-                  //   disply: "flex",
-                  //   flexDirection: "row",
-                  //   alignItems: "center",
-                  //   justifyContent: "space-Between",
-                  //   padding: "10px",
-                  // }}
-                  className="bottomCard"
-                >
+                <Box className="bottomCard">
                   <Typography
                     variant="body2"
                     component="span"

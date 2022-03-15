@@ -1,10 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+import { Box ,Divider ,Button,Typography ,Modal}  from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
-// import './Remove.css';
 import cross from "../../../Assets/images/cross.svg";
 import upload from "../../../Assets/images/upload.svg";
 import greentick from "../../../Assets/images/greentick.svg";
@@ -26,9 +22,7 @@ export default function BasicModal() {
   const handleOpen = () => setOpen(true);
   const [active1, setActive1] = React.useState<boolean>(true);
   const handleClose = () => setOpen(false);
-  const handleClick1 = () => {
-    setActive1(false);
-  };
+
   return (
     <div>
       <Button onClick={handleOpen}>Open modal</Button>

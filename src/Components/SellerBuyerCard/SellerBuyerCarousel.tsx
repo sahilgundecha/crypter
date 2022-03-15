@@ -29,7 +29,6 @@ interface forArrow {
 }
 const SellerBuyerCarosel = () => {
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
-    // console.log("test", consts);
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />

@@ -48,18 +48,6 @@
   margin-top: 80px;
 }
 
-/* .cNNJIt:disabled {
-  position: absolute;
-  top: 0;
-  right: 12%;
-}
-
-.jRFJkP:disabled {
-  position: absolute;
-  top: 0;
-  right: 8%;
-} */
-
 .jRFJkP:hover:enabled,
 .jRFJkP:focus:enabled {
   color: #fff;
@@ -123,7 +111,6 @@
   transform: scale(1.1);
   overflow: hidden;
   transition: 0.9s !important;
-  /* opacity: 0.9; */
 }
 
 .heart {
@@ -159,11 +146,3 @@
     margin: 10px !important;
   }
 }
-/* .temp {
-  display: flex;
-  flex-direction: row;
-  margin: 20px 40px;
-}
-.temp .withMargin {
-  margin: 0px 20px;
-} */

@@ -1,35 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import "./bidcard.css";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
-import bidImg from "../../Assets/images/bidImg.png";
-import creator from "../../Assets/images/creatorImg.png";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
-import { CardMedia, CardContent, CardHeader } from "@mui/material";
-import Button from "@mui/material/Button";
+import { CardMedia, CardContent, Box , Card , Typography , Divider  } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Divider from "@mui/material/Divider";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface Props {
-  // id?: number;
-  // // mainImg?: string;
-  // artName?: string;
-  // ETH?: number;
-  // inStock?: number;
-  // highestBid?: number;
-  // bidType?: string;
-  // key?: string | number;
-
   cardData: any;
 }
 
 const Bidcard: React.FC<Props> = ({ cardData }) => {
-  // const { cardIt } = props.colData;
   const [pressed, setPressed] = useState<boolean>(false);
   const pressing = () => {
     setPressed(!pressed);
@@ -52,9 +35,6 @@ const Bidcard: React.FC<Props> = ({ cardData }) => {
           />
         </Box>
         <Box>
-          {/* <Button variant="contained" className="mybutton">
-            Place a bid <img src={bidIcon} alt="icon" className="bigiImg" />
-          </Button> */}
           <PlaceaBidModals bidcard={true} logo={bidIcon} />
         </Box>
         <Box
@@ -111,16 +91,10 @@ const Bidcard: React.FC<Props> = ({ cardData }) => {
           }}
         >
           <Box>
-            {/* {CardData.creator.map((cur) => {
-              return <img src={cur} className="icons" />;
-            })} */}
             {cardData.creator.map((curr: any) => (
               <img src={curr} className="icons" />
             ))}
           </Box>
-
-          {/* for test */}
-          {/* <img src={creator} alt="" /> */}
 
           <Typography variant="caption" className="inStock">
             {cardData.inStock} in stock

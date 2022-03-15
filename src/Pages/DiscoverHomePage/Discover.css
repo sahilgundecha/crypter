@@ -10,7 +10,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0px 10px; */
 }
 .innerNavBox {
   display: flex;
@@ -51,7 +50,6 @@
   }
   .innerNavBox {
     flex-direction: column;
-    /* align-items: baseline; */
   }
   .overflowInSmall {
     width: 100% !important;

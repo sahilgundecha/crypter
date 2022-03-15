@@ -12,14 +12,12 @@
 }
 .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
   min-width: 240px !important;
-  /* height: 55px !important; */
   margin-left: 10px !important;
   border-radius: 10px !important;
 }
 
 .css-1869usk-MuiFormControl-root {
   min-width: 100% !important;
-  /* min-height: 55px !important; */
 }
 
 .css-j8hg7e-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
@@ -28,7 +26,6 @@
 @media (max-width: 768px) {
   .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
     min-width: 90% !important;
-    /* height: 55px !important; */
     margin-left: 10px !important;
     border-radius: 10px !important;
   }

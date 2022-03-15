@@ -1,15 +1,15 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import "./SellerBuyerCard.css";
 import Dropdown from "../Dropdown/Dropdown";
-import WhiteCards from "./WhiteCards/WhiteCards";
 import SellerBuyerCarousel from "./SellerBuyerCarousel";
-
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
-import Select, { SelectChangeEvent } from "@mui/material/Select";
+import {
+  MenuItem,
+  FormControl,
+  Box,
+  Typography,
+  Select,
+  SelectChangeEvent,
+} from "@mui/material";
 
 function SellerBuyerCard() {
   const [age, setAge] = React.useState("");

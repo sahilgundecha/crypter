@@ -1,11 +1,8 @@
-import * as React from "react";
+
 import { useState } from "react";
-import {Box , OutlinedInput , InputAdornment} from "@mui/material";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+import { Box, OutlinedInput, InputAdornment,Typography ,Modal} from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
-import './ChangePrice.css'
+import "./ChangePrice.css";
 
 import cross from "../../../Assets/images/cross.svg";
 
@@ -27,17 +24,17 @@ export default function BasicModal() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [Value, setValue] = useState("14.4");
-  const handleValue = (e:any) => {
-      setValue(e.target.value)
-  }
+  const handleValue = (e: any) => {
+    setValue(e.target.value);
+  };
 
   return (
     <div>
-     <Box onClick={handleOpen}>
-                  <Typography variant="subtitle2" gutterBottom component="div">
-                   Change Price
-                  </Typography>
-                </Box>
+      <Box onClick={handleOpen}>
+        <Typography variant="subtitle2" gutterBottom component="div">
+          Change Price
+        </Typography>
+      </Box>
       <Modal
         open={open}
         onClose={handleClose}
@@ -48,22 +45,26 @@ export default function BasicModal() {
           <Box className="crossimg">
             <img onClick={handleClose} width={27} src={cross} alt="img" />
           </Box>
-          <Typography  sx={{fontSize:'25px',margin:'15px 0px',fontWeight:'bolder'}} component="div">
-                    Change price
-                  </Typography>
-         <Box>
-             <Typography className="newStyle">NEW PRICE</Typography>
-             <Box>
-             <OutlinedInput
-            id="outlined-adornment-weight"
-            value={Value}
-            onChange={handleValue}
-            endAdornment={<InputAdornment position="end">ETH</InputAdornment>}
-            aria-describedby="outlined-weight-helper-text"
-            
-          />
-             </Box>
-         </Box>
+          <Typography
+            sx={{ fontSize: "25px", margin: "15px 0px", fontWeight: "bolder" }}
+            component="div"
+          >
+            Change price
+          </Typography>
+          <Box>
+            <Typography className="newStyle">NEW PRICE</Typography>
+            <Box>
+              <OutlinedInput
+                id="outlined-adornment-weight"
+                value={Value}
+                onChange={handleValue}
+                endAdornment={
+                  <InputAdornment position="end">ETH</InputAdornment>
+                }
+                aria-describedby="outlined-weight-helper-text"
+              />
+            </Box>
+          </Box>
           <Box
             sx={{
               display: "flex",

@@ -1,29 +1,27 @@
 .buttonStlye {
-    margin: 5px 10px;
-    padding: 4px 12px;
-  
-  }
-.button_div{
+  margin: 5px 10px;
+  padding: 4px 12px;
+}
+.button_div {
   padding-right: 80px;
   margin-bottom: 20px;
 }
-.userFollower{
-    display: flex;
-
+.userFollower {
+  display: flex;
 }
-.usercardGrid_Styling{
+.usercardGrid_Styling {
   display: flex;
   justify-content: end;
-  width:30%;
+  width: 30%;
   margin-top: -60px;
   padding-right: 30px;
 }
-.navpill_Styling{
+.navpill_Styling {
   margin-top: 30px;
-width:70%;
-display: flex;
+  width: 70%;
+  display: flex;
 }
-.tabs_Styling{
+.tabs_Styling {
   margin-left: 35px;
 }
 
@@ -31,34 +29,34 @@ display: flex;
   color: #fff !important;
   background-color: #353945 !important;
   border-radius: 20px;
-    height: 40px !important;
+  height: 40px !important;
 }
 
-.tabTopGrid_Styling .css-1aquho2-MuiTabs-indicator{
+.tabTopGrid_Styling .css-1aquho2-MuiTabs-indicator {
   background: none !important;
 }
-.tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root{
+.tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root {
   min-height: 40px !important;
 }
 
-@media (max-width:1020px){
-  .button_div{
+@media (max-width: 1020px) {
+  .button_div {
     margin-bottom: 80px;
   }
-  .usercardGrid_Styling{
+  .usercardGrid_Styling {
     display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
   }
-  .userFollower{
+  .userFollower {
     display: block;
-}
-.navpill_Styling{
-  width:100%;
+  }
+  .navpill_Styling {
+    width: 100%;
   }
 }
-@media (max-width:700px){
-  .tabs_Styling{
-    width:50%;
+@media (max-width: 700px) {
+  .tabs_Styling {
+    width: 50%;
   }
 }

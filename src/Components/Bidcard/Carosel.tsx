@@ -1,13 +1,11 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import Bidcard from "./Bidcard";
-import Data from "./bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 import Carousel from "react-elastic-carousel";
-import { Button, Container, Grid } from "@mui/material";
+import { Button, Container, Typography , Box} from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import BurnToken from "../Modals/BurnToken/BurnToken";
+
 
 interface cardProps {
   id: number;
@@ -33,7 +31,6 @@ interface forArrow {
 }
 const Carosel = () => {
   const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
-    // console.log("test", consts);
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />
