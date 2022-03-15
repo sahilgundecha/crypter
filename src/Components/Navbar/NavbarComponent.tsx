@@ -12,16 +12,11 @@ import {
 } from "@mui/material";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
-import Crypter from "../../Pages/Crypter/Crypter";
-import Upload from "../../Pages/Upload/Upload";
-import Discover from "../../Pages/DiscoverHomePage/Discover";
 import Searchbar from "../Searchbar/Searchbar";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
-// import Notifications from "../../Assets/StaticImages/Notifications.svg";
 import { Link } from "react-router-dom";
-// import "@fontsource/roboto/700.css";
 import './StyleNH.css';
 
 import WalletCard from "../WalletCard/WalletCard";
@@ -73,9 +68,6 @@ const NavbarComponent = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-   const handleUpload = () => {
-     window.location.href = "/Upload";
-   }
 
   const [anchorElWallet, setAnchorElWallet] = useState(null);
   const openConnectWallet = Boolean(anchorElWallet);
@@ -172,13 +164,15 @@ const NavbarComponent = () => {
               component="span"
               sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
             >
+              <Link to="/upload" className="lineUnderline">
               <ButtonComponent
                 btnColor={"#3772FF"}
                 classNames="styleUp"
-                handleClick={handleUpload}
+               
               >
                 Upload
               </ButtonComponent>
+              </Link>
             </Box>
 
             <Box

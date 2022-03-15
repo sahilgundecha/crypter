@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import styles from './buttoncomponent.module.css';
+import React, { useState, FC, ReactNode } from "react";
+import styles from "./buttoncomponent.module.css";
 
 interface Props {
-  children?: React.ReactNode;
+  children?: ReactNode;
   handleClick?: () => void;
   btnColor?: string;
   labelColor?: string;
   isDisabled?: boolean;
   styleType?: string;
   customStyle?: object;
-  buttonType?: 'submit' | 'reset' | 'button';
+  buttonType?: "submit" | "reset" | "button";
   classNames?: string;
 }
-const whiteColor = 'white';
+const whiteColor = "white";
 
-const ButtonComponent: React.FC<Props> = ({
+const ButtonComponent: FC<Props> = ({
   children,
   handleClick,
-  btnColor = 'teal',
+  btnColor = "teal",
   labelColor,
   isDisabled,
   styleType,
@@ -30,21 +30,21 @@ const ButtonComponent: React.FC<Props> = ({
     setHover(!hover);
   };
   const outlineStyles = {
-    boxShadow: '0 0 0 2px #e6e8ec inset',
+    boxShadow: "0 0 0 2px #e6e8ec inset",
     color: btnColor,
     backgroundColor: whiteColor,
   };
   const outlineHoverStyle = {
-    color: labelColor || 'white',
-    backgroundColor: '#3772FF',
+    color: labelColor || "white",
+    backgroundColor: "#3772FF",
   };
   const roundedStyle = {
     backgroundColor: btnColor,
     color: labelColor || whiteColor,
-    borderRadius: '25px',
+    borderRadius: "25px",
   };
   const disabledStyle = {
-    cursor: 'default',
+    cursor: "default",
     backgroundColor: btnColor,
     color: labelColor || whiteColor,
     opacity: 0.4,
@@ -55,10 +55,10 @@ const ButtonComponent: React.FC<Props> = ({
   };
   let btnStyle;
   switch (styleType) {
-    case 'normal':
+    case "normal":
       btnStyle = normalStyle;
       break;
-    case 'outline':
+    case "outline":
       if (hover) {
         btnStyle = outlineHoverStyle;
       } else {
@@ -84,7 +84,7 @@ const ButtonComponent: React.FC<Props> = ({
       className={`${styles.buttonStyles} ${classNames}`}
       disabled={isDisabled}
     >
-      {children || 'button'}
+      {children || "button"}
     </button>
   );
 };

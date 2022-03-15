@@ -48,7 +48,7 @@ interface PutOnScaleprops {
 }
 
 const PutOnSale1 = () => {
-  const [open, setOpen] = React.useState<boolean>(true);
+  const [open, setOpen] = useState<boolean>(true);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (

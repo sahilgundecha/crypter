@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import "./navpill.css";
 import { Divider, Typography, Box } from "@mui/material";
 interface navPill {
   itemsDetails: any;
 }
-const ItemNavPill: React.FC<navPill> = ({ itemsDetails }) => {
+const ItemNavPill: FC<navPill> = ({ itemsDetails }) => {
   return (
     <Box>
       <Box

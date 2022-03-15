@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState ,ReactNode ,SetStateAction} from "react";
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
@@ -14,7 +14,7 @@ import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
 
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   index: number;
   value: number;
 }
@@ -57,9 +57,9 @@ function allyProps(index: number) {
   };
 }
 export default function ProfilePage() {
-  const [value, setvalue] = React.useState(0);
+  const [value, setvalue] = useState(0);
 
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
 
@@ -87,25 +87,25 @@ export default function ProfilePage() {
             </span>
           </Button>
           <Link to="/edit-profile-page" className="linkUnderline">
-          <Button 
-            sx={{
-              textTransform: "none",
-              borderRadius: "20px",
-              color: "#fff",
-              border: "1.5px solid #fff",
-              padding: "5px 12px",
-              margin: "12px",
-              fontSize: "12px",
-            }}
-          >
-            Edit profile
-            <span>
-              <img
-                src={iconEdit}
-                style={{ width: "12px", marginLeft: "8px" }}
-              />
-            </span>
-          </Button>
+            <Button
+              sx={{
+                textTransform: "none",
+                borderRadius: "20px",
+                color: "#fff",
+                border: "1.5px solid #fff",
+                padding: "5px 12px",
+                margin: "12px",
+                fontSize: "12px",
+              }}
+            >
+              Edit profile
+              <span>
+                <img
+                  src={iconEdit}
+                  style={{ width: "12px", marginLeft: "8px" }}
+                />
+              </span>
+            </Button>
           </Link>
         </Box>
       </Paper>
@@ -156,72 +156,72 @@ export default function ProfilePage() {
             </Tabs>
 
             <TabPanel value={value} index={0}>
-            <Grid
-              container
-              spacing={2}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                marginLeft:"20px !important",
-              }}
-            >
-              {Data.filter(function (cardData) {
-                return cardData.id <= 5;
-              }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
-              ))}
-            </Grid>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  marginLeft: "20px !important",
+                }}
+              >
+                {Data.filter(function (cardData) {
+                  return cardData.id <= 5;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <Grid
-              container
-              spacing={2}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                marginLeft:"20px !important",
-              }}
-            >
-              {Data.filter(function (cardData) {
-                return cardData.id <= 4;
-              }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
-              ))}
-            </Grid>
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  marginLeft: "20px !important",
+                }}
+              >
+                {Data.filter(function (cardData) {
+                  return cardData.id <= 4;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <Grid
-              container
-              spacing={2}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                marginLeft:"20px !important",
-              }}
-            >
-              {Data.filter(function (cardData) {
-                return cardData.id <= 3;
-              }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
-              ))}
-            </Grid>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  marginLeft: "20px !important",
+                }}
+              >
+                {Data.filter(function (cardData) {
+                  return cardData.id <= 3;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={3}>
-            <Grid
-              container
-              spacing={2}
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                marginLeft:"20px !important",
-              }}
-            >
-              {Data.filter(function (cardData) {
-                return cardData.id <= 4;
-              }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
-              ))}
-            </Grid>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  marginLeft: "20px !important",
+                }}
+              >
+                {Data.filter(function (cardData) {
+                  return cardData.id <= 4;
+                }).map((item, index) => (
+                  <Bidcard cardData={item} key={item.id} />
+                ))}
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={4}>
               <FollowingCard />

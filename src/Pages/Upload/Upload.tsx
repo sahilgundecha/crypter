@@ -47,15 +47,6 @@ const cardStyle = {
   padding: "15px",
   borderRadius: "8px",
 };
-const handleCrypter = () => {
-  window.location.href = "/Crypter";
-};
-const handleSingle = () => {
-  window.location.href = "/SingleCollectible";
-};
-const handleSingle1 = () => {
-  window.location.href = "/Single1";
-};
 const ButtonStyle = {
   textTransform: "none",
   borderRadius: "24px",
@@ -88,16 +79,15 @@ export default function () {
           </Link>
         </Box>
         <Box className="lineStyle">
+          <Link to="/Crypter" className="lineUnderline">
           <Typography
             component="a"
             sx={textStyle}
             className="homeStyle"
-            onClick={() => {
-              window.location.href = "./Crypter";
-            }}
           >
             Home &gt;
           </Typography>
+          </Link>
           <Typography component="p" sx={textStyle}>
             Update Items
           </Typography>

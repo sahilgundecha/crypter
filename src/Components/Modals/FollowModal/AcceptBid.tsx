@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState ,FC } from "react";
 import { Box, Button, Typography, Modal, Divider } from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 import "./Style.css";
@@ -26,10 +26,10 @@ const spaceBet = {
 interface buttonProps {
   handleClose?: void;
 }
-export const AcceptBid: React.FC<buttonProps> = () => {
-  const [open, setOpen] = React.useState(false);
+export const AcceptBid: FC<buttonProps> = () => {
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  const [active1, setActive1] = React.useState<boolean>(true);
+  const [active1, setActive1] = useState<boolean>(true);
   const handleClose = () => setOpen(false);
   const handleClick1 = () => {
     setActive1(false);

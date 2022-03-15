@@ -3,6 +3,7 @@ import "./Notification.css";
 import Dot from "../../Assets/images/dot.png";
 import { cardData } from "../../DB/Notification/NotificationArray";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const styleRow = {
   display: "flex",
   flexDirection: "row",
@@ -39,12 +40,9 @@ export const NotificationD = () => {
       <Card className="card" sx={{ borderRadius: "25px" }}>
         <Box sx={styleFlex}>
           <Typography variant="h5">Notification</Typography>
-          <Button
-            variant="contained"
-            onClick={() => (window.location.href = "./Activity")}
-          >
-            See All
-          </Button>
+          <Link to="/Activity " className="lineUnderline">
+            <Button variant="contained">See All</Button>
+          </Link>
         </Box>
         <Notification colData={cardData} />
       </Card>
@@ -54,10 +52,6 @@ export const NotificationD = () => {
 
 export const Notification = (props: cardCss) => {
   const { cardIt } = props.colData;
-  const [Image, setImage] = useState<boolean>(true);
-  const handleMouseOver = (event: any) => {
-    setImage(JSON.parse(event.target.src));
-  };
 
   return (
     <div>
