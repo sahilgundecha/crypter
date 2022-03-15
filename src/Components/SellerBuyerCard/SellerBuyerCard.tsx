@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./SellerBuyerCard.css";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "../../Common/Dropdown/Dropdown";
 import SellerBuyerCarousel from "./SellerBuyerCarousel";
 import {
   MenuItem,

@@ -12,14 +12,14 @@ import {
 } from "@mui/material";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
-import Searchbar from "../../Common/Searchbar/Searchbar";
-import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
+import Searchbar from "../Searchbar/Searchbar";
+import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
 import { Link } from "react-router-dom";
 import "./StyleNH.css";
 
-import WalletCard from "../WalletCard/WalletCard";
+import WalletCard from "../../Components/WalletCard/WalletCard";
 
 const useStyles = makeStyles({
   logo: {

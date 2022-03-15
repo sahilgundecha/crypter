@@ -23,9 +23,9 @@ import Remove from "./Components/Modals/Remove/Remove";
 import Transfer from "./Components/Modals/Transfer/Transfer";
 import BurnToken from "./Components/Modals/BurnToken/BurnToken";
 import Report from "./Components/Modals/Report/Report";
-import FooterComponent from "./Components/FooterComponent/Footer";
+import FooterComponent from "./Common/FooterComponent/Footer";
 import FollowModal from "./Components/Modals/FollowModal/FollowModal";
-import NavbarComponent from "./Components/Navbar/NavbarComponent";
+import NavbarComponent from "./Common/Navbar/NavbarComponent";
 import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
 import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage";
 import { ConnectWallet } from "./Pages/ConnectWallet/ConnectWallet";
@@ -78,7 +78,10 @@ const App: FC = () => {
         <Route path="/change-price" element={<ChangePrice />} />
         <Route path="/accept" element={<AcceptBid />} />
         <Route path="/edit-profile-page" element={<EditProfilePage />} />
-        <Route path="/seller-buyer-carousel" element={<SellerBuyerCarousel />}/>
+        <Route
+          path="/seller-buyer-carousel"
+          element={<SellerBuyerCarousel />}
+        />
       </Routes>
       <FooterComponent />
     </div>
