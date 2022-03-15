@@ -36,7 +36,7 @@ export default function CreatorsBid() {
       <Container>
         <Grid container spacing={3} sx={{ margin: "30px 0px " }}>
           <Grid item md={4} sm={12}>
-            <Link to="/item" className="linkUnderline">
+            <Link to="/item" className="firstSection">
             <Box className="container">
               <Box className="birdImg zoomDiv">
                 <img className="changeWidth1 image" src={card1} />
