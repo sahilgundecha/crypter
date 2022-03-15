@@ -23,14 +23,6 @@ export default function EditProfilePage() {
       <Paper className="headContainer">
         <Button
           className="backToProfileBtn"
-          sx={{
-            textTransform: "none",
-            borderRadius: "24px",
-            color: "#23262F",
-            border: "2px solid #E6E8EC",
-            padding: "5px 20px",
-            fontSize: "14px",
-          }}
           onClick={() => {
             window.location.href = "./ProfilePage";
           }}
