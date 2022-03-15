@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import { useState } from "react";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import purple_icon from "../../Assets/images/purple_icon.svg";
 import Right from "../../Assets/images/Righticon.svg";

@@ -9,7 +9,6 @@ import {
   CardContent,
   CardActionArea,
 } from "@mui/material";
-import React from "react";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";

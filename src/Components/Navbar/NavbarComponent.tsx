@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
-import Searchbar from "../Searchbar/Searchbar";
+import Searchbar from "../../Common/Searchbar/Searchbar";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
