@@ -7,14 +7,14 @@ import disIcon from "../../Assets/images/disIcon.svg";
 import plus from "../../Assets/images/rightImg.svg";
 import { Link } from "react-router-dom";
 import user1 from "../../Assets/images/user1.png";
-import CreatorsS2 from "./CreatorsS2";
+import CreatorsItems from "./CreatorsItems";
 import {
   CreatorsArray,
-  LatestUpdates,
+  LatestUpdatesArray,
 } from "../../DB/CreatorsBid/CreatorsArray";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
-import CreatorsS3 from "./CreatorsS3";
-
+import LatestUpdates from "./LatestUpdates";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const styleBT = {
   display: "flex",
   justifyContent: "space-between",
@@ -71,7 +71,7 @@ export default function CreatorsBid() {
           </Grid>
           <Grid item md={5}>
             {CreatorsArray.map((item, index) => (
-              <CreatorsS2 CreatorsArray={item} key={item.id} />
+              <CreatorsItems CreatorsArray={item} key={item.id} />
             ))}
           </Grid>
           <Grid item md={3}>
@@ -79,8 +79,8 @@ export default function CreatorsBid() {
               Latest upload from creators 🔥
             </Typography>
             <Box>
-              {LatestUpdates.map((item) => (
-                <CreatorsS3 CreatorsArray3={item} key={item.id} />
+              {LatestUpdatesArray.map((item) => (
+                <LatestUpdates CreatorsArray3={item} key={item.id} />
               ))}
             </Box>
             <Link to="/search-filter" className="linkUnderline">

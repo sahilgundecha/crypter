@@ -38,13 +38,7 @@ import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarouse
 import Crypter from "./Pages/Crypter/Crypter";
 import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
-import SingleCollectible1 from "./Pages/SingleCollectible/SingleCollectible1";
-import PutOnSale1 from "./Components/Modals/PutOnSale/PutOnSale";
-import PutOnSale2 from "./Components/Modals/PutOnSale/InstantSalePrice";
-import PutOnSale3 from "./Components/Modals/PutOnSale/FollowStepsModal";
-import PutOnSale from "./Components/Modals/PutOnSale/PutOnSale";
-import InstantSalePrice from "./Components/Modals/PutOnSale/InstantSalePrice";
-import FollowStepsModal from "./Components/Modals/PutOnSale/FollowStepsModal";
+import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
 
 const App: FC = () => {
   return (
@@ -55,7 +49,6 @@ const App: FC = () => {
         <Route path="/slider" element={<SliderComponent />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-
         <Route path="/textfield" element={<Textfield />} />
         <Route path="/users-card" element={<UsersCard />} />
         <Route path="/no-results-page" element={<NoResultsPage />} />
@@ -84,7 +77,7 @@ const App: FC = () => {
         <Route path="/creators" element={<CreatorsBid />} />
         <Route path="/drop-down" element={<Dropdown item1="test" />} />
 
-        <Route path="/mutiple" element={<SingleCollectible1 />} />
+        <Route path="/multiple-collectible" element={<MultipleCollectible />} />
 
         <Route path="/seller-buyer-card" element={<SellerBuyerCard />} />
 
@@ -95,12 +88,6 @@ const App: FC = () => {
           path="/seller-buyer-carousel"
           element={<SellerBuyerCarousel />}
         />
-        <Route path="/putonsalemodal" element={<PutOnSale />} />
-        <Route
-          path="/instant-sale-price-modal"
-          element={<InstantSalePrice />}
-        />
-        <Route path="/folow-steps-modal" element={<FollowStepsModal />} />
       </Routes>
       <FooterComponent />
     </div>

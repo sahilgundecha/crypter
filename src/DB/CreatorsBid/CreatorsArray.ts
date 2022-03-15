@@ -30,7 +30,7 @@ export const CreatorsArray = [
   },
 ];
 
-export const LatestUpdates = [
+export const LatestUpdatesArray = [
   {
     id: 1,
     title: "payton harris",
