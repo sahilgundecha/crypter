@@ -19,7 +19,7 @@ import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Data from "../Bidcard/bidcardArray";
+import Data from "../../DB/BidCard/BidcardArray";
 
 interface cardProps {
   colData: {

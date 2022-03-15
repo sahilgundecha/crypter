@@ -7,7 +7,6 @@ import {
   FollowersCard,
   FollowingCard,
 } from "../../Components/FollowersCard/FollowersCard";
-import Carosel from "../../Components/Bidcard/Carosel";
 import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";
 import Data from "../../DB/BidCard/BidcardArray";
@@ -157,34 +156,68 @@ export default function ProfilePage() {
             </Tabs>
 
             <TabPanel value={value} index={0}>
-              <Grid container xl={4}>
-                {Data.map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              {Data.filter(function (cardData) {
+                return cardData.id <= 5;
+              }).map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <Grid container xl={4}>
-                {Data.filter(function (cardData) {
-                  return cardData.id <= 4;
-                }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+              <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              {Data.filter(function (cardData) {
+                return cardData.id <= 4;
+              }).map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={2}>
-              <Grid container xl={4}>
-                {Data.map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              {Data.filter(function (cardData) {
+                return cardData.id <= 3;
+              }).map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={3}>
-              <Grid container xl={4}>
-                {Data.map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+            <Grid
+              container
+              spacing={2}
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+              }}
+            >
+              {Data.filter(function (cardData) {
+                return cardData.id <= 4;
+              }).map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
             </TabPanel>
             <TabPanel value={value} index={4}>
               <FollowingCard />
