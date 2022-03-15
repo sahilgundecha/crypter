@@ -17,7 +17,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import blackimg1 from "../../Assets/images/blackimg1.svg";
 import hosting from "../../Assets/images/hosting.svg";
 import blackimg2 from "../../Assets/images/blackimg2.svg";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

@@ -12,7 +12,7 @@ import {
   CreatorsArray,
   LatestUpdatesArray,
 } from "../../DB/CreatorsBid/CreatorsArray";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import LatestUpdates from "./LatestUpdates";
 const styleBT = {
   display: "flex",

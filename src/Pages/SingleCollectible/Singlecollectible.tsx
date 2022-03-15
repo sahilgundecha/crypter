@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import {
   Container,
   Grid,
@@ -16,7 +15,7 @@ import {
 import Textfield from "../../Components/Textfield/TextField";
 import { useState } from "react";
 import img1 from "../../Assets/images/bidImg.png";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import CancelTwoToneIcon from "@mui/icons-material/CancelTwoTone";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
@@ -31,7 +30,6 @@ import plus4 from "../../Assets/images/plus4.svg";
 import buffer from "../../Assets/images/buffer.svg";
 import creator from "../../Assets/images/creatorImg.png";
 import "./SingleCollectible.css";
-
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";

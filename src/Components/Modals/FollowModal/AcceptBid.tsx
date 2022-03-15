@@ -1,6 +1,6 @@
 import { useState, FC } from "react";
 import { Box, Button, Typography, Modal, Divider } from "@mui/material";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 import "./Style.css";
 import cross from "../../../Assets/images/cross.svg";
 import upload from "../../../Assets/images/upload.svg";
