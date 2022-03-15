@@ -14,7 +14,7 @@ import {
   Paper,
 } from "@mui/material";
 import "./Activity.css";
-import { cardData } from "./ActivityArray";
+import { cardData } from "../../DB/Activity/ActivityArray";
 import { Notification } from "../../Components/Notification/NotificationD";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";

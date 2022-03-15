@@ -12,7 +12,7 @@ import twitterIcon from "../../Assets/images/twitterBlack.svg";
 import fbIcon from "../../Assets/images/fbBlackIcon.svg";
 import instaIcon from "../../Assets/images/instaBlackIcon.svg";
 import shareIconUpload from "../../Assets/images/share icon.png";
-import { userInfo } from "../../Components/FollowersCard/FollowersCardData";
+import { userInfo } from "../../DB/FollowersCard/FollowersCardArray";
 import smallCoin from "../../Assets/images/icons-Coins-Filled.svg";
 import shareDotIcon from "../../Assets/images/share-icon.svg";
 import LanguageSharpIcon from "@mui/icons-material/LanguageSharp";
