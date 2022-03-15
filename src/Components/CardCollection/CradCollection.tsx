@@ -15,20 +15,6 @@ const breakPoints = [
   { width: 1200, itemsToShow: 4 },
   { width: 1500, itemsToShow: 4 },
 ];
-const styleRow = {
-  display: "flex",
-  flexDirection: "row",
-  padding: "10px",
-};
-const styleEnd = {
-  display: "flex",
-  justifyContent: "end",
-  marginLeft: "90px",
-};
-const styleFlex = {
-  display: "flex",
-  justifyContent: "space-between",
-};
 
 interface Props {
   cardData: any;

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import "./CreatorsBid.css";
 import Typography from "@mui/material/Typography";
 import { Container, Box, Grid } from "@mui/material";
@@ -14,7 +14,7 @@ import {
 } from "../../DB/CreatorsBid/CreatorsArray";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import CreatorsS3 from "./CreatorsS3";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+
 const styleBT = {
   display: "flex",
   justifyContent: "space-between",
@@ -37,32 +37,36 @@ export default function CreatorsBid() {
         <Grid container spacing={3} sx={{ margin: "30px 0px " }}>
           <Grid item md={4} sm={12}>
             <Link to="/item" className="firstSection">
-            <Box className="container">
-              <Box className="birdImg zoomDiv">
-                <img className="changeWidth1 image" src={card1} />
-                <Box className="middle">
-                  <img src={plus} className="text" />
+              <Box className="container">
+                <Box className="birdImg zoomDiv">
+                  <img className="changeWidth1 image" src={card1} />
+                  <Box className="middle">
+                    <img src={plus} className="text" />
+                  </Box>
                 </Box>
-              </Box>
-            
-              <Box sx={styleBT}>
+
                 <Box sx={styleBT}>
+                  <Box sx={styleBT}>
+                    <Box>
+                      <img
+                        width={50}
+                        style={{ marginTop: "10px" }}
+                        src={user1}
+                      />
+                    </Box>
+                    <Box sx={{ padding: "0px 10px" }}>
+                      <Typography sx={{ fontSize: "14px" }}>
+                        The Future of ETH®
+                      </Typography>
+                      <Typography>18 in stock</Typography>
+                    </Box>
+                  </Box>
                   <Box>
-                    <img width={50} style={{ marginTop: "10px" }} src={user1} />
+                    <Typography>Highest bid</Typography>
+                    <Typography className="priceBor">1.124 ETH</Typography>
                   </Box>
-                  <Box sx={{ padding: "0px 10px" }}>
-                    <Typography sx={{ fontSize: "14px" }}>
-                      The Future of ETH®
-                    </Typography>
-                    <Typography>18 in stock</Typography>
-                  </Box>
-                </Box>
-                <Box>
-                  <Typography>Highest bid</Typography>
-                  <Typography className="priceBor">1.124 ETH</Typography>
                 </Box>
               </Box>
-            </Box>
             </Link>
           </Grid>
           <Grid item md={5}>
@@ -80,16 +84,15 @@ export default function CreatorsBid() {
               ))}
             </Box>
             <Link to="/search-filter" className="linkUnderline">
-            <ButtonComponent
-              btnColor={"#23262F"}
-              styleType={"outline"}
-              classNames="StyleDis"
-            >
-              <span>
-                Discover more {" "}
-                <img src={disIcon} />
-              </span>
-            </ButtonComponent>
+              <ButtonComponent
+                btnColor={"#23262F"}
+                styleType={"outline"}
+                classNames="StyleDis"
+              >
+                <span>
+                  Discover more <img src={disIcon} />
+                </span>
+              </ButtonComponent>
             </Link>
           </Grid>
         </Grid>
