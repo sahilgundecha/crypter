@@ -53,21 +53,21 @@ interface PutOnScaleprops {
 }
 
 const PutOnSale3 = () => {
-  const [open, setOpen] = React.useState<boolean>(true);
+  const [open, setOpen] = useState<boolean>(true);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const [style1, setStyle1] = useState("startnowbtn");
 
-  const [btn1, setbtn1] = React.useState<boolean>(true);
-  const [btn2, setbtn2] = React.useState<boolean>(false);
-  const [btn3, setbtn3] = React.useState<boolean>(false);
-  const [btn4, setbtn4] = React.useState<boolean>(false);
+  const [btn1, setbtn1] = useState<boolean>(true);
+  const [btn2, setbtn2] = useState<boolean>(false);
+  const [btn3, setbtn3] = useState<boolean>(false);
+  const [btn4, setbtn4] = useState<boolean>(false);
 
-  const [btn5, setbtn5] = React.useState<boolean>(true);
-  const [btn6, setbtn6] = React.useState<boolean>(false);
-  const [btn7, setbtn7] = React.useState<boolean>(false);
-  const [btn8, setbtn8] = React.useState<boolean>(false);
+  const [btn5, setbtn5] = useState<boolean>(true);
+  const [btn6, setbtn6] = useState<boolean>(false);
+  const [btn7, setbtn7] = useState<boolean>(false);
+  const [btn8, setbtn8] = useState<boolean>(false);
 
   const handleClick1 = () => {
     setbtn1(false);

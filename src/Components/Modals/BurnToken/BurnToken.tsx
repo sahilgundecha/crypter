@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Box, Button ,Typography ,Modal} from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button, Typography, Modal } from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 import cross from "../../../Assets/images/cross.svg";
 
@@ -17,7 +17,7 @@ const style = {
 };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 

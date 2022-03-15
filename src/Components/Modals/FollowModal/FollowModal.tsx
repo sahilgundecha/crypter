@@ -1,5 +1,5 @@
-import * as React from "react";
-import { Box ,Divider ,Button,Typography ,Modal}  from "@mui/material";
+import React, { useState } from "react";
+import { Box, Divider, Button, Typography, Modal } from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 import cross from "../../../Assets/images/cross.svg";
 import upload from "../../../Assets/images/upload.svg";
@@ -18,9 +18,9 @@ const style = {
 };
 
 export default function BasicModal() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  const [active1, setActive1] = React.useState<boolean>(true);
+  const [active1, setActive1] = useState<boolean>(true);
   const handleClose = () => setOpen(false);
 
   return (

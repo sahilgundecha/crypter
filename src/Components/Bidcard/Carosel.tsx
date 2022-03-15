@@ -1,11 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import Bidcard from "./Bidcard";
 import Data from "../../DB/BidCard/BidcardArray";
 import Carousel from "react-elastic-carousel";
-import { Button, Container, Typography , Box} from "@mui/material";
+import { Button, Container, Typography, Box } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-
 
 interface cardProps {
   id: number;
@@ -30,7 +29,7 @@ interface forArrow {
   isEdge?: any;
 }
 const Carosel = () => {
-  const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+  const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />

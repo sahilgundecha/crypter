@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import CurrentBidData from "../../DB/CurrentBid/CurrentBidArray";
@@ -16,7 +16,7 @@ interface forArrow {
 }
 
 const BidCarousel = (props: any) => {
-  const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+  const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />

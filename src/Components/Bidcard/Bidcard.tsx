@@ -1,9 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import { useState, FC } from "react";
 import "./bidcard.css";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
-import { CardMedia, CardContent, Box , Card , Typography , Divider  } from "@mui/material";
+import {
+  CardMedia,
+  CardContent,
+  Box,
+  Card,
+  Typography,
+  Divider,
+} from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
@@ -12,7 +18,7 @@ interface Props {
   cardData: any;
 }
 
-const Bidcard: React.FC<Props> = ({ cardData }) => {
+const Bidcard: FC<Props> = ({ cardData }) => {
   const [pressed, setPressed] = useState<boolean>(false);
   const pressing = () => {
     setPressed(!pressed);

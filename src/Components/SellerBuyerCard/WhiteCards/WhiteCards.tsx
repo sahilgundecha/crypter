@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,FC} from "react";
 import { Card, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./WhiteCards.css";
@@ -14,7 +14,7 @@ declare module "@mui/material/Typography" {
 interface cardProps {
   whitecardProps: any;
 }
-const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
+const WhiteCards: FC<cardProps> = ({ whitecardProps }) => {
   const [plusimg, changePlusimg] = useState<Boolean>(true);
 
   const onhandleclick = () => {

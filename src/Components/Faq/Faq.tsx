@@ -10,7 +10,7 @@ import {
   AccordionDetails,
 } from "@mui/material";
 import "./faq.css";
-import React, { useState } from "react";
+import React, { useState ,SetStateAction } from "react";
 import PropTypes from "prop-types";
 import HomeIcon from "@mui/icons-material/Home";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -75,9 +75,9 @@ function a11yProps(index: any) {
 }
 
 export default function VerticalTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setValue(newValue);
   };
   const [rows, setRowsOption] = useState(null);

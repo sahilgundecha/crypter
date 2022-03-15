@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, ReactNode ,SetStateAction } from "react";
 import {
   Container,
   Box,
@@ -60,7 +60,7 @@ const ButtonStyle = {
   fontSize: "14px",
 };
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   index: number;
   value: number;
 }
@@ -84,8 +84,8 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 export default function Activity() {
-  const [value, setvalue] = React.useState(0);
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+  const [value, setvalue] = useState(0);
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
   return (
