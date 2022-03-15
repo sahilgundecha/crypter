@@ -1,7 +1,7 @@
 import "./NoResultsPage.css";
 import noresultsImg from "../../Assets/images/noResultImg.png";
 import BoxContainer from "../../Components/BoxContainer.component";
-import Searchbar from "../../Components/Searchbar/Searchbar";
+import Searchbar from "../../Common/Searchbar/Searchbar";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 
 import { Grid } from "@mui/material";

@@ -8,7 +8,7 @@ import { UsersCard } from "./Components/UsersCard/UsersCard";
 import NoResultsPage from "./Pages/NoResultsPage/NoResultsPage";
 import WalletCard from "./Components/WalletCard/WalletCard";
 import Faq from "./Components/Faq/Faq";
-import Searchbar from "./Components/Searchbar/Searchbar";
+import Searchbar from "./Common/Searchbar/Searchbar";
 import Dropdown from "./Components/Dropdown/Dropdown";
 import Carosel from "./Components/Bidcard/Carosel";
 import { NotificationD } from "./Components/Notification/NotificationD";
