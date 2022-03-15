@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProfilePage.css";
+import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
@@ -85,7 +86,8 @@ export default function ProfilePage() {
               />
             </span>
           </Button>
-          <Button
+          <Link to="/edit-profile-page" className="linkUnderline">
+          <Button 
             sx={{
               textTransform: "none",
               borderRadius: "20px",
@@ -94,9 +96,6 @@ export default function ProfilePage() {
               padding: "5px 12px",
               margin: "12px",
               fontSize: "12px",
-            }}
-            onClick={() => {
-              window.location.href = "./EditProfilePage";
             }}
           >
             Edit profile
@@ -107,6 +106,7 @@ export default function ProfilePage() {
               />
             </span>
           </Button>
+          </Link>
         </Box>
       </Paper>
       <Grid container spacing={2}>
@@ -162,6 +162,7 @@ export default function ProfilePage() {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                marginLeft:"20px !important",
               }}
             >
               {Data.filter(function (cardData) {
@@ -178,6 +179,7 @@ export default function ProfilePage() {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                marginLeft:"20px !important",
               }}
             >
               {Data.filter(function (cardData) {
@@ -194,6 +196,7 @@ export default function ProfilePage() {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                marginLeft:"20px !important",
               }}
             >
               {Data.filter(function (cardData) {
@@ -210,6 +213,7 @@ export default function ProfilePage() {
               sx={{
                 display: "flex",
                 flexDirection: "row",
+                marginLeft:"20px !important",
               }}
             >
               {Data.filter(function (cardData) {
