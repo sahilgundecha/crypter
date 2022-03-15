@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Typography, Box, Button, Switch } from "@mui/material";
-import { borderBottom, styled } from "@mui/system";
+import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import doller_img from "../../../Assets/images/doller_img.svg";

@@ -6,7 +6,6 @@ import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 import SliderComponent from "./Components/Slider/Slider";
 import { UsersCard } from "./Components/UsersCard/UsersCard";
 import NoResultsPage from "./Pages/NoResultsPage/NoResultsPage";
-import WalletCard from "./Components/WalletCard/WalletCard";
 import Faq from "./Components/Faq/Faq";
 import Searchbar from "./Components/Searchbar/Searchbar";
 import Dropdown from "./Components/Dropdown/Dropdown";
