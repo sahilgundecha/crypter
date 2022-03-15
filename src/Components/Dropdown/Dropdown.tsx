@@ -5,7 +5,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { FormControl, MenuItem, Select, Typography } from "@mui/material";
 import "./Dropdown.css";
 
-import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";
 interface drop {
   item1?: string;
   item2?: string;

@@ -1,4 +1,4 @@
-import React, { useState ,FC } from "react";
+import { useState, FC } from "react";
 import { Box, Button, Typography, Modal, Divider } from "@mui/material";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
 import "./Style.css";

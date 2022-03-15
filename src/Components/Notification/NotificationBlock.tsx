@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  Box,
-  Button,
-  Card,
-  CardProps,
-  Container,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import dot from "../../Assets/images/dot.png";
 
 interface cardProps {

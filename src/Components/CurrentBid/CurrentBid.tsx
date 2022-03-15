@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, FC } from "react";
+import { useState, useEffect, useRef, FC } from "react";
 import { Link } from "react-router-dom";
 import "./CurrentBid.css";
 import {

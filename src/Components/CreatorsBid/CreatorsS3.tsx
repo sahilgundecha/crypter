@@ -1,5 +1,5 @@
 import { Typography, Divider, Box } from "@mui/material";
-import React, { FC } from "react";
+import { FC } from "react";
 import homeS3 from "../../Assets/images/homeS3.png";
 interface Props {
   CreatorsArray3: any;
@@ -10,14 +10,12 @@ const gridStyle = {
   flexDirection: "row",
   alignItems: "center",
   padding: "10px 0px",
-}
+};
 
 const CreatorsS3: FC<Props> = ({ CreatorsArray3 }) => {
   return (
     <>
-      <Box
-        sx={gridStyle}
-      >
+      <Box sx={gridStyle}>
         <Box>
           <img src={homeS3} />
         </Box>

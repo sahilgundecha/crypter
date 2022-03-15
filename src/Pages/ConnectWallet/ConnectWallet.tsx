@@ -1,4 +1,4 @@
-import React, { useState, FC } from "react";
+import { useState, FC } from "react";
 import {
   Container,
   Typography,
@@ -48,13 +48,11 @@ export const ConnectWallet: FC = () => {
       <Container>
         <Box>
           <Typography className="styleHead">
-            <Link to="/Crypter" className="linkUnderline" >
-            <span
-              className="marginC1"
-            >
-              {" "}
-              <KeyboardBackspaceIcon></KeyboardBackspaceIcon>
-            </span>
+            <Link to="/Crypter" className="linkUnderline">
+              <span className="marginC1">
+                {" "}
+                <KeyboardBackspaceIcon></KeyboardBackspaceIcon>
+              </span>
             </Link>
             Connect your wallet
           </Typography>

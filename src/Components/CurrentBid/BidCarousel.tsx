@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import CurrentBidData from "../../DB/CurrentBid/CurrentBidArray";
@@ -66,7 +66,6 @@ const BidCarousel = (props: any) => {
         className={props.className ? props.className : "carouselWrapper"}
       >
         {CurrentBidData.map((itm) => (
-          // <CurrentBid bidData={itm} key={itm.id} />
           <CurrentBid bidData={itm} key={itm.id} />
         ))}
       </Carousel>

@@ -1,4 +1,4 @@
-import React, { useState ,FC} from "react";
+import { useState, FC } from "react";
 import { Card, Box, Typography } from "@mui/material";
 import "./WhiteCards.css";
 import pluss from "../../../Assets/images/pluss.svg";

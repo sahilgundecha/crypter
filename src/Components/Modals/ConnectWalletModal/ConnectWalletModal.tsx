@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Typography,Button,Box } from "@mui/material";
+import { useState } from "react";
+import { Typography, Button, Box } from "@mui/material";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
@@ -79,11 +79,9 @@ const ConnectWalletModal = () => {
 
               <Box className="buttonBox">
                 <Link to="/connect-wallet" className="linkUnderline">
-                <Button
-                  className="px-4 me-3 rounded-pill startnowbtn"
-                >
-                  Connect wallet
-                </Button>
+                  <Button className="px-4 me-3 rounded-pill startnowbtn">
+                    Connect wallet
+                  </Button>
                 </Link>
                 <Box className="cancelbtnbox">
                   <Button className="rounded-pill cancelbtn">cancel</Button>
