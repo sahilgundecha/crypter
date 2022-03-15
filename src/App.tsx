@@ -7,7 +7,7 @@ import SliderComponent from "./Components/Slider/Slider";
 import { UsersCard } from "./Components/UsersCard/UsersCard";
 import NoResultsPage from "./Pages/NoResultsPage/NoResultsPage";
 import Faq from "./Components/Faq/Faq";
-import Searchbar from "./Components/Searchbar/Searchbar";
+import Searchbar from "./Common/Searchbar/Searchbar";
 import Carosel from "./Components/Bidcard/Carosel";
 import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
