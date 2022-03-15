@@ -14,7 +14,7 @@ import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";
 import "./Upload.css";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     p: true;

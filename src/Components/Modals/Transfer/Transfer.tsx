@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button, Typography, Modal } from "@mui/material";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 import "./Transfer.css";
 import TextField from "@mui/material/TextField";
 import cross from "../../../Assets/images/cross.svg";

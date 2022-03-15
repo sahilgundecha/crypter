@@ -1,7 +1,12 @@
-
 import { useState } from "react";
-import { Box, OutlinedInput, InputAdornment,Typography ,Modal} from "@mui/material";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import {
+  Box,
+  OutlinedInput,
+  InputAdornment,
+  Typography,
+  Modal,
+} from "@mui/material";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 import "./ChangePrice.css";
 
 import cross from "../../../Assets/images/cross.svg";

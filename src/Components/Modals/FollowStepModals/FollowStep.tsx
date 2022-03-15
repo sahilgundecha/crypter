@@ -7,7 +7,7 @@ import pencil from "../../../Assets/images/pencil.svg";
 import upload from "../../../Assets/images/upload.svg";
 import bag from "../../../Assets/images/bag.svg";
 import greentick from "../../../Assets/images/greentick.svg";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

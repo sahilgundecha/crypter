@@ -15,7 +15,7 @@ import {
 import Textfield from "../../Components/Textfield/TextField";
 import { useState } from "react";
 import img1 from "../../Assets/images/bidImg.png";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import CancelTwoToneIcon from "@mui/icons-material/CancelTwoTone";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
