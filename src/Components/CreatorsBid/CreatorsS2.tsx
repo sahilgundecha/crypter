@@ -2,6 +2,7 @@ import { Typography, Box } from "@mui/material";
 import { FC, useState } from "react";
 import Home1 from "../../Assets/images/home1.png";
 import right from "../../Assets/images/r.svg";
+import './CreatorsBid.css';
 import { Link } from "react-router-dom";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 interface Props {
@@ -24,7 +25,7 @@ const CreatorsS2: FC<Props> = ({ CreatorsArray }) => {
   };
   return (
     <>
-    <Link to="/item" className="lineUnderline">
+    <Link to="/item" className="lineUnderlineS2">
       <Box
         sx={styleStack}
         onMouseOver={handleMouseOver}
