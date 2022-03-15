@@ -1,4 +1,4 @@
-import React, { useState,ChangeEvent } from "react";
+import { useState, ChangeEvent } from "react";
 import "./Textfield.css";
 import {
   InputBase,
@@ -27,7 +27,6 @@ const BootstrapInput = styled(InputBase)(({ theme }) => ({
       "background-color",
       "box-shadow",
     ]),
-    // Use the system font instead of the default Roboto font.
     fontFamily: [
       "-apple-system",
       "BlinkMacSystemFont",

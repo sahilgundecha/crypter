@@ -1,4 +1,4 @@
-import React, { useState ,FC} from "react";
+import { useState, FC } from "react";
 import { Card, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./WhiteCards.css";
