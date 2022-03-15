@@ -5,6 +5,7 @@ import downicon from "../../Assets/images/downArrow.svg";
 import upicon from "../../Assets/images/upArrow.svg";
 import { FormControl } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import "./Dropdown.css";
 
 import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";
@@ -21,9 +22,9 @@ const Dropdown = (props: drop) => {
   const [age, setAge] = useState<string>("1");
   const [Clicked, setClicked] = useState<boolean>(true);
   const arr = ["highest price", "average price", "lowest price"];
+
   const isClicked = () => {
-    // setClicked(!Clicked);
-    console.log("touched");
+    setClicked(!Clicked);
   };
   const handleChange = (event: any) => {
     setAge(event.target.value);
@@ -56,9 +57,7 @@ const Dropdown = (props: drop) => {
         onOpen={isClicked}
         onClose={isClicked}
         inputProps={{ "aria-label": "Without label" }}
-        IconComponent={() => (
-          <img src={Clicked ? downicon : upicon} style={{ margin: "10px" }} />
-        )}
+        IconComponent={KeyboardArrowDownIcon}
         sx={{ borderRadius: "12px" }}
       >
         {props.item1 ? <MenuItem value={1}>{props.item1}</MenuItem> : null}
