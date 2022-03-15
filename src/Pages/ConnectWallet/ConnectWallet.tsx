@@ -32,8 +32,8 @@ export const ConnectWallet: FC = () => {
     setDisplay(false);
     setDnone(false);
   };
+  
   const handle2 = () => {
-    console.log("scdc");
     setCImg(true);
   };
 
@@ -69,12 +69,8 @@ export const ConnectWallet: FC = () => {
                 title="Coinbase wallet"
                 img={icon1}
                 Cimg={Right}
-                onClick={() => {
-                  handle1();
-                }}
-                onClick1={() => {
-                  handle2();
-                }}
+                onClick={handle1}
+                onClick1={handle2}
               />
               <WalletName title="MyEtherWallet" img={icon2} />
               <WalletName title="Wallet Connect" img={icon4} />

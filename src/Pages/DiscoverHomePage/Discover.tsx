@@ -1,4 +1,4 @@
-import React, { ReactNode, useState, SetStateAction } from "react";
+import { ReactNode, useState, SetStateAction } from "react";
 import "./Discover.css";
 import {
   Divider,
@@ -51,15 +51,10 @@ function allyProps(index: number) {
 
 const Discover = () => {
   const [value, setvalue] = useState(0);
-  const [search, setSearch] = useState(true);
   const [openFilter, setOpenFilter] = useState(false);
 
   const HandleOpen = () => {
     setOpenFilter(!openFilter);
-  };
-
-  const chnageSearch = () => {
-    setSearch(false);
   };
 
   const handleChange = (event: any, newValue: SetStateAction<number>) => {

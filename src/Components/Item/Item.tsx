@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, SetStateAction } from "react";
+import { useState, ReactNode, SetStateAction } from "react";
 import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -368,7 +368,6 @@ const Item = () => {
             </Grid>
           </Box>
 
-          {/* CARD */}
           <Box>
             <Card
               className="itemCard"

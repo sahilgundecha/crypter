@@ -9,7 +9,6 @@ import {
   CardContent,
   CardActionArea,
 } from "@mui/material";
-import React from "react";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";
@@ -77,7 +76,7 @@ export default function () {
           </Link>
         </Box>
         <Box className="lineStyle">
-          <Link to="/Crypter" className="lineUnderline">
+          <Link to="/Crypter" className="linkUnderline">
             <Typography component="a" sx={textStyle} className="homeStyle">
               Home &gt;
             </Typography>

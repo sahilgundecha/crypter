@@ -18,20 +18,20 @@ export default function EditProfilePage() {
   return (
     <Grid>
       <Paper className="headContainer">
-        <Link to="/profile-page" className="linkUnderline"><Button
-          className="backToProfileBtn"
-        >
-          <span style={{ marginRight: "8px", marginTop: "3px" }}>
-            <KeyboardBackspaceIcon fontSize="small" />
-          </span>
-          Back to profile
-        </Button>
+        <Link to="/profile-page" className="linkUnderline">
+          <Button className="backToProfileBtn">
+            <span style={{ marginRight: "8px", marginTop: "3px" }}>
+              <KeyboardBackspaceIcon fontSize="small" />
+            </span>
+            Back to profile
+          </Button>
         </Link>
         <Grid
           style={{ textTransform: "none", fontSize: "#777E90v" }}
           className="profilespan"
         >
-          <Link to="/profile-page"
+          <Link
+            to="/profile-page"
             style={{ marginRight: "16px" }}
             className="profileLink linkUnderline"
           >
