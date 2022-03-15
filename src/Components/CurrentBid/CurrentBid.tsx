@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./CurrentBid.css";
 import {
   Container,
@@ -253,16 +254,15 @@ const BidCloned: React.FC<currentProps> = ({ bidData }) => {
                 <ConnectWalletModal />
               </Box>
               <Box sx={{ textAlign: "center" }}>
-                <ButtonComponent
-                  styleType="outline"
-                  btnColor={"#000"}
-                  classNames="ButtonClass1"
-                  handleClick={() => {
-                    window.location.href = "/item";
-                  }}
-                >
-                  View item
-                </ButtonComponent>
+                <Link to="/item" className="linkUnderline">
+                  <ButtonComponent
+                    styleType="outline"
+                    btnColor={"#000"}
+                    classNames="ButtonClass1"
+                  >
+                    View item
+                  </ButtonComponent>
+                </Link>
               </Box>
             </Box>
           </Box>
