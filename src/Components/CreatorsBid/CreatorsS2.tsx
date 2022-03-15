@@ -2,6 +2,7 @@ import { Typography, Box } from "@mui/material";
 import { FC, useState } from "react";
 import Home1 from "../../Assets/images/home1.png";
 import right from "../../Assets/images/r.svg";
+import { Link } from "react-router-dom";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 interface Props {
   CreatorsArray: any;
@@ -23,13 +24,11 @@ const CreatorsS2: FC<Props> = ({ CreatorsArray }) => {
   };
   return (
     <>
+    <Link to="/item" className="lineUnderline">
       <Box
         sx={styleStack}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        onClick={() => {
-          window.location.href = "/item";
-        }}
       >
         <Box>
           {show ? (
@@ -62,6 +61,7 @@ const CreatorsS2: FC<Props> = ({ CreatorsArray }) => {
           </Box>
         </Box>
       </Box>
+      </Link>
     </>
   );
 };

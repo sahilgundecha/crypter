@@ -16,6 +16,7 @@ import Right from "../../Assets/images/Righticon.svg";
 import icon1 from "../../Assets/images/icon1.svg";
 import icon2 from "../../Assets/images/icon2.svg";
 import icon4 from "../../Assets/images/icon3.svg";
+import { Link } from "react-router-dom";
 import QR from "../../Assets/images/QRCode.png";
 import QR1 from "../../Assets/images/QRCode1.svg";
 import Wallet from "../../Assets/images/Wallet.png";
@@ -47,15 +48,14 @@ export const ConnectWallet: FC = () => {
       <Container>
         <Box>
           <Typography className="styleHead">
+            <Link to="/Crypter" className="linkUnderline" >
             <span
               className="marginC1"
-              onClick={() => {
-                window.location.href = "./Crypter";
-              }}
             >
               {" "}
               <KeyboardBackspaceIcon></KeyboardBackspaceIcon>
             </span>
+            </Link>
             Connect your wallet
           </Typography>
           <Divider />

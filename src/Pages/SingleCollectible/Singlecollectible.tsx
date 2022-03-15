@@ -119,7 +119,7 @@ export default function SingleCollectible(props: any) {
     alignItems: "center",
   };
   const handleSwitch = () => {
-    window.location.href = "/Single1";
+    window.location.href = "/mutiple";
   };
   const styleCol = {
     display: "flex",

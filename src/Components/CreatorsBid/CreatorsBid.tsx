@@ -5,6 +5,7 @@ import { Container, Box, Grid } from "@mui/material";
 import card1 from "../../Assets/images/HomeImg.png";
 import disIcon from "../../Assets/images/disIcon.svg";
 import plus from "../../Assets/images/rightImg.svg";
+import { Link } from "react-router-dom";
 import user1 from "../../Assets/images/user1.png";
 import CreatorsS2 from "./CreatorsS2";
 import {
@@ -35,19 +36,15 @@ export default function CreatorsBid() {
       <Container>
         <Grid container spacing={3} sx={{ margin: "30px 0px " }}>
           <Grid item md={4} sm={12}>
-            <Box
-              className="container"
-              onClick={() => {
-                window.location.href = "/item";
-              }}
-            >
+            <Link to="/item" className="linkUnderline">
+            <Box className="container">
               <Box className="birdImg zoomDiv">
                 <img className="changeWidth1 image" src={card1} />
                 <Box className="middle">
                   <img src={plus} className="text" />
                 </Box>
               </Box>
-
+            
               <Box sx={styleBT}>
                 <Box sx={styleBT}>
                   <Box>
@@ -66,6 +63,7 @@ export default function CreatorsBid() {
                 </Box>
               </Box>
             </Box>
+            </Link>
           </Grid>
           <Grid item md={5}>
             {CreatorsArray.map((item, index) => (
@@ -81,19 +79,18 @@ export default function CreatorsBid() {
                 <CreatorsS3 CreatorsArray3={item} key={item.id} />
               ))}
             </Box>
+            <Link to="/search-filter" className="linkUnderline">
             <ButtonComponent
               btnColor={"#23262F"}
               styleType={"outline"}
               classNames="StyleDis"
-              handleClick={() => {
-                window.location.href = "/searchfilter";
-              }}
             >
               <span>
-                Discover more
-                <img src={disIcon} />{" "}
+                Discover more {" "}
+                <img src={disIcon} />
               </span>
             </ButtonComponent>
+            </Link>
           </Grid>
         </Grid>
       </Container>

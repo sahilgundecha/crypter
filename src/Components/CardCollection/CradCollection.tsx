@@ -1,9 +1,10 @@
-import * as React from "react";
+import { FC } from "react";
 import "./CardCollection.css";
 import Carousel from "react-elastic-carousel";
 import Data from "../../DB/CardCollection/CardCollectionArray";
 import { Container, Box, Card, Button, Typography } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
+import { Link } from "react-router-dom";
 import rightArrow from "../../Assets/images/RightArrow.svg";
 
 const breakPoints = [
@@ -38,7 +39,7 @@ interface forArrow {
   isEdge?: any;
 }
 
-const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
   const pointer: object =
     type === "PREV" ? (
       <img src={leftArrow} className="leftarrow" />
@@ -90,14 +91,9 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
             cursor: "pointer",
           }}
         >
-          <img
-            className="changeWidth1"
-            src={cardData.mainImg}
-            onClick={() => {
-              window.location.href = "/profilepage";
-            }}
-          />
-
+          <Link to="/profile-page" className="lineUnderline">
+            <img className="changeWidth1" src={cardData.mainImg} />
+          </Link>
           <Box
             sx={{
               marginY: "10px",
@@ -111,48 +107,25 @@ export const CardCollect: React.FC<Props> = ({ cardData }) => {
               pagination={false}
               renderArrow={myArrow}
             >
-              <img
-                className="changeWidth1"
-                src={cardData.img1}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
-              <img
-                className="changeWidth1"
-                src={cardData.img2}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
-              <img
-                className="changeWidth1"
-                src={cardData.img3}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
-              <img
-                className="changeWidth1"
-                src={cardData.img1}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
-              <img
-                className="changeWidth1"
-                src={cardData.img2}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
-              <img
-                className="changeWidth1"
-                src={cardData.img3}
-                onClick={() => {
-                  window.location.href = "/profilepage";
-                }}
-              />
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img1} />
+              </Link>
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img2} />
+              </Link>
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img3} />
+              </Link>
+
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img1} />
+              </Link>
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img2} />
+              </Link>
+              <Link to="/profile-page" className="lineUnderline">
+                <img className="changeWidth1" src={cardData.img3} />
+              </Link>
             </Carousel>
           </Box>
           <Box>
