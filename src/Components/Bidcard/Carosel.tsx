@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Bidcard from "./Bidcard";
 import Data from "../../DB/BidCard/BidcardArray";
 import Carousel from "react-elastic-carousel";

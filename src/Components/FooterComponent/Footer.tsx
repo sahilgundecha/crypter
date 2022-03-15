@@ -1,5 +1,4 @@
 import { Container, Grid, Typography, Box } from "@mui/material";
-import React from "react";
 import { Link } from "react-router-dom";
 import AppIcon from "../../Assets/images/App_Icon.png";
 import { makeStyles } from "@mui/styles";

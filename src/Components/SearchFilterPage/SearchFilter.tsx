@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, SetStateAction } from "react";
+import { useState, ReactNode, SetStateAction } from "react";
 import "./SearchFilter.css";
 import {
   Container,
