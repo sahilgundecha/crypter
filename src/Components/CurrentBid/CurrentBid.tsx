@@ -9,7 +9,7 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import ConnectWalletModal from "../Modals/ConnectWalletModal/ConnectWalletModal";
 
 interface currentProps {

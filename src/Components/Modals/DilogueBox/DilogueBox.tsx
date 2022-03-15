@@ -11,7 +11,7 @@ import facebook from "../../../Assets/images/facebook.svg";
 import insta from "../../../Assets/images/insta.svg";
 import pintrest from "../../../Assets/images/pintrest.svg";
 import twiterrr from "../../../Assets/images/twiterrr.svg";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

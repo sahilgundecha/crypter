@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import downicon from "../../Assets/images/downArrow.svg";
 import upicon from "../../Assets/images/upArrow.svg";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";

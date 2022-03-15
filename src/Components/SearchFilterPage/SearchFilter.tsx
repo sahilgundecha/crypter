@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, SetStateAction } from "react";
+import { useState, ReactNode, SetStateAction } from "react";
 import "./SearchFilter.css";
 import {
   Container,
@@ -13,10 +13,10 @@ import Dropdown from "../Dropdown/Dropdown";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
 import Data from "../../DB/BidCard/BidcardArray";
-import Searchbar from "../Searchbar/Searchbar";
+import Searchbar from "../../Common/Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Bidcard from "../Bidcard/Bidcard";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 interface TabPanelProps {
   children?: ReactNode;

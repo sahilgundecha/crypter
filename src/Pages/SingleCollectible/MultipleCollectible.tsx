@@ -1,4 +1,3 @@
-import React from "react";
 import SingleCollectible from "./Singlecollectible";
 
 export default function MultipleCollectible() {

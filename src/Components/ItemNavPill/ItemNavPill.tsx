@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import "./navpill.css";
 import { Divider, Typography, Box } from "@mui/material";
 interface navPill {

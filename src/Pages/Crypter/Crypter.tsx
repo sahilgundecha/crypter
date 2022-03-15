@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import  { FC } from "react";
 import Carosel from "../../Components/Bidcard/Carosel";
 import { CradCollection } from "../../Components/CardCollection/CradCollection";
 import CreatorsBid from "../../Components/CreatorsBid/CreatorsBid";

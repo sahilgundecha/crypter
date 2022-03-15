@@ -5,7 +5,7 @@ import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import { Link } from "react-router-dom";
 import purple_icon from "../../../Assets/images/purple_icon.svg";
-import ButtonComponent from "../../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     p: true;
