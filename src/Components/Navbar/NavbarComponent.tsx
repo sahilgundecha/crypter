@@ -13,7 +13,7 @@ import {
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
 import Searchbar from "../Searchbar/Searchbar";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
 import { Link } from "react-router-dom";

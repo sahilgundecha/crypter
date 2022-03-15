@@ -16,7 +16,7 @@ import Data from "../../DB/BidCard/BidcardArray";
 import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Bidcard from "../Bidcard/Bidcard";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 interface TabPanelProps {
   children?: ReactNode;

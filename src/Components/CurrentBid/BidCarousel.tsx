@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 import CurrentBidData from "../../DB/CurrentBid/CurrentBidArray";
 import { Button, Container, Box, Typography } from "@mui/material";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import "./CurrentBid.css";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";

@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import QR from "../../Assets/images/QRCode.png";
 import QR1 from "../../Assets/images/QRCode1.svg";
 import Wallet from "../../Assets/images/Wallet.png";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 export const ConnectWallet: FC = () => {
   const [Display, setDisplay] = useState(true);
