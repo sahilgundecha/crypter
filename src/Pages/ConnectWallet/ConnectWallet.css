@@ -1,45 +1,45 @@
-.styleHead{
-    font-size: 48px !important;
-    margin: 50px 0px 20px 0px !important;
-    font-weight: bolder !important;
+.styleHead {
+  font-size: 48px !important;
+  margin: 50px 0px 20px 0px !important;
+  font-weight: bolder !important;
 }
-.marginC1{
+.marginC1 {
   margin-right: 20px !important;
 }
 
-.fontC1{
-    margin-left: 30px !important;
-    font-size: 20px !important;
-    font-weight: bolder !important;
+.fontC1 {
+  margin-left: 30px !important;
+  font-size: 20px !important;
+  font-weight: bolder !important;
 }
-.imgC1{
-    padding:30px;
-    height:400px;
+.imgC1 {
+  padding: 30px;
+  height: 400px;
 }
-.borderC1{
-    border : 1px solid #000;
+.borderC1 {
+  border: 1px solid #000;
 }
-.fontC2{
-    font-size: 40px !important;
+.fontC2 {
+  font-size: 40px !important;
 }
-.fontC3{
-    font-size: 12px !important;
-    color:#777E90;
-    margin-bottom: 20px !important;
+.fontC3 {
+  font-size: 12px !important;
+  color: #777e90;
+  margin-bottom: 20px !important;
 }
-.changeWallet1{
-    padding:10px 20px !important;
-    border-radius: 25px;
-    margin-right: 10px;
+.changeWallet1 {
+  padding: 10px 20px !important;
+  border-radius: 25px;
+  margin-right: 10px;
 }
-.colorB{
-    color: #000;
+.colorB {
+  color: #000;
 }
-.changeWallet{
-    padding:10px 20px !important;
-    border-radius: 25px;
+.changeWallet {
+  padding: 10px 20px !important;
+  border-radius: 25px;
 }
-.changeDo{
-    padding:18px 20px !important;
-    border-radius: 25px;
+.changeDo {
+  padding: 18px 20px !important;
+  border-radius: 25px;
 }

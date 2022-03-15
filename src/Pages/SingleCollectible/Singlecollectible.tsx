@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import {
   Container,
   Grid,
@@ -31,7 +30,6 @@ import plus4 from "../../Assets/images/plus4.svg";
 import buffer from "../../Assets/images/buffer.svg";
 import creator from "../../Assets/images/creatorImg.png";
 import "./SingleCollectible.css";
-
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";

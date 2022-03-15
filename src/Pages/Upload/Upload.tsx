@@ -7,9 +7,8 @@ import {
   Button,
   Card,
   CardContent,
-  CardActionArea
+  CardActionArea,
 } from "@mui/material";
-import React from "react";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";
@@ -68,25 +67,19 @@ export default function () {
       <Box sx={boxStyle}>
         <Box>
           <Link to="/Crypter" className="linkUnderline">
-          <Button
-            sx={ButtonStyle}
-          >
-            <span style={{ marginRight: "8px", marginTop: "3px" }}>
-              <KeyboardBackspaceIcon fontSize="small" />
-            </span>
-            Back to profile
-          </Button>
+            <Button sx={ButtonStyle}>
+              <span style={{ marginRight: "8px", marginTop: "3px" }}>
+                <KeyboardBackspaceIcon fontSize="small" />
+              </span>
+              Back to profile
+            </Button>
           </Link>
         </Box>
         <Box className="lineStyle">
           <Link to="/Crypter" className="lineUnderline">
-          <Typography
-            component="a"
-            sx={textStyle}
-            className="homeStyle"
-          >
-            Home &gt;
-          </Typography>
+            <Typography component="a" sx={textStyle} className="homeStyle">
+              Home &gt;
+            </Typography>
           </Link>
           <Typography component="p" sx={textStyle}>
             Update Items
@@ -111,13 +104,13 @@ export default function () {
               <img className="imgFuild" src={card1} />
               <CardContent className="textCenter">
                 <Link to="/single-collectible" className="linkUnderline">
-                <ButtonComponent
-                  btnColor={"#23262F"}
-                  styleType={"outline"}
-                  classNames="buttonStyle1"
-                >
-                  Create Single
-                </ButtonComponent>
+                  <ButtonComponent
+                    btnColor={"#23262F"}
+                    styleType={"outline"}
+                    classNames="buttonStyle1"
+                  >
+                    Create Single
+                  </ButtonComponent>
                 </Link>
               </CardContent>
             </CardActionArea>
@@ -126,16 +119,15 @@ export default function () {
             <CardActionArea>
               <img className="imgFuild" src={card2} />
               <CardContent>
-              <Link to="/mutiple" className="linkUnderline">
-                <ButtonComponent
-                  btnColor={"#23262F"}
-                  styleType={"outline"}
-                  classNames="buttonStyle1"
-              
-                >
-                  Create Mutiple
-                </ButtonComponent>
-              </Link>
+                <Link to="/mutiple" className="linkUnderline">
+                  <ButtonComponent
+                    btnColor={"#23262F"}
+                    styleType={"outline"}
+                    classNames="buttonStyle1"
+                  >
+                    Create Mutiple
+                  </ButtonComponent>
+                </Link>
               </CardContent>
             </CardActionArea>
           </Card>

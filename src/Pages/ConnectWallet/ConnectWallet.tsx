@@ -32,8 +32,8 @@ export const ConnectWallet: FC = () => {
     setDisplay(false);
     setDnone(false);
   };
+  
   const handle2 = () => {
-    console.log("scdc");
     setCImg(true);
   };
 

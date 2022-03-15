@@ -6,10 +6,8 @@ import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 import SliderComponent from "./Components/Slider/Slider";
 import { UsersCard } from "./Components/UsersCard/UsersCard";
 import NoResultsPage from "./Pages/NoResultsPage/NoResultsPage";
-import WalletCard from "./Components/WalletCard/WalletCard";
 import Faq from "./Components/Faq/Faq";
 import Searchbar from "./Components/Searchbar/Searchbar";
-import Dropdown from "./Components/Dropdown/Dropdown";
 import Carosel from "./Components/Bidcard/Carosel";
 import { NotificationD } from "./Components/Notification/NotificationD";
 import Upload from "./Pages/Upload/Upload";
@@ -75,19 +73,12 @@ const App: FC = () => {
         <Route path="/crypter-end" element={<CrypterEnd />} />
         <Route path="/follow" element={<FollowModal />} />
         <Route path="/creators" element={<CreatorsBid />} />
-        <Route path="/drop-down" element={<Dropdown item1="test" />} />
-
         <Route path="/multiple-collectible" element={<MultipleCollectible />} />
-
         <Route path="/seller-buyer-card" element={<SellerBuyerCard />} />
-
         <Route path="/change-price" element={<ChangePrice />} />
         <Route path="/accept" element={<AcceptBid />} />
         <Route path="/edit-profile-page" element={<EditProfilePage />} />
-        <Route
-          path="/seller-buyer-carousel"
-          element={<SellerBuyerCarousel />}
-        />
+        <Route path="/seller-buyer-carousel" element={<SellerBuyerCarousel />}/>
       </Routes>
       <FooterComponent />
     </div>
