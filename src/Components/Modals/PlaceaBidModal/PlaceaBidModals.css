@@ -4,3 +4,13 @@
   cursor: pointer;
   float: right !important;
 }
+.mybtn {
+  width: 100% !important;
+  border-radius: 25px !important;
+  margin-top: 20px !important;
+  font-weight: bold !important;
+  background-color: rgb(192, 189, 189) !important;
+  color: #ffffff !important;
+  text-align: center;
+  border: none !important;
+}
