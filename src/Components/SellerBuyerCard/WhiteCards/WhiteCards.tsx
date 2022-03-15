@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState ,FC} from "react";
 import { Card, Box, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import "./WhiteCards.css";
 import pluss from "../../../Assets/images/pluss.svg";
 import minuss from "../../../Assets/images/minuss.svg";
@@ -13,7 +14,7 @@ declare module "@mui/material/Typography" {
 interface cardProps {
   whitecardProps: any;
 }
-const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
+const WhiteCards: FC<cardProps> = ({ whitecardProps }) => {
   const [plusimg, changePlusimg] = useState<Boolean>(true);
 
   const onhandleclick = () => {
@@ -85,14 +86,9 @@ const WhiteCards: React.FC<cardProps> = ({ whitecardProps }) => {
                 )}
               </Box>
               <Box>
-                {" "}
-                <img
-                  src={arroww}
-                  className="plusimg"
-                  onClick={() => {
-                    window.location.href = "/profilepage";
-                  }}
-                />
+                <Link to="/profile-page">
+                  <img src={arroww} className="plusimg" />
+                </Link>
               </Box>
             </Box>
           </Box>

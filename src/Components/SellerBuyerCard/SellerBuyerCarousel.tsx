@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState ,FC } from "react";
 import WhiteCards from "./WhiteCards/WhiteCards";
 import Data from "../../DB/SellerBuyerCardArray/SellerBuyersArray";
 import Carousel from "react-elastic-carousel";
@@ -28,7 +28,7 @@ interface forArrow {
   isEdge?: any;
 }
 const SellerBuyerCarosel = () => {
-  const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
+  const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
     const pointer: object =
       type === "PREV" ? (
         <img src={leftArrow} className="leftarrow" />

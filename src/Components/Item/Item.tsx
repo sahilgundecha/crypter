@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,ReactNode ,SetStateAction } from "react";
 import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
@@ -36,7 +36,7 @@ import DilogueBox from "../Modals/DilogueBox/DilogueBox";
 import ChangePrice from "../Modals/ChangePrice/ChangePrice";
 
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   index: number;
   value: number;
 }
@@ -68,11 +68,11 @@ function allyProps(index: number) {
 }
 
 const Item = () => {
-  const [value, setvalue] = React.useState(0);
-  const [search, setSearch] = React.useState(true);
-  const [pink, setPink] = React.useState(false);
-  const [dotPopup, setDotPopup] = React.useState(false);
-  const [sharePopup, setSharePopup] = React.useState(false);
+  const [value, setvalue] = useState(0);
+  const [search, setSearch] = useState(true);
+  const [pink, setPink] = useState(false);
+  const [dotPopup, setDotPopup] = useState(false);
+  const [sharePopup, setSharePopup] = useState(false);
 
   const opendotPopup = () => {
     setDotPopup(!dotPopup);
@@ -93,7 +93,7 @@ const Item = () => {
     setSearch(false);
   };
 
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+  const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
 

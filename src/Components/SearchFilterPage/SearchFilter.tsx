@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState ,ReactNode ,SetStateAction} from "react";
 import "./SearchFilter.css";
 import {
   Container,
@@ -19,7 +19,7 @@ import Bidcard from "../Bidcard/Bidcard";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 
 interface TabPanelProps {
-  children?: React.ReactNode;
+  children?: ReactNode;
   index: number;
   value: number;
 }
@@ -67,9 +67,9 @@ function allyProps(index: number) {
 const SearchFilter = () => {
   const arr = ["highest price", "average price", "lowest price"];
   const arr2 = ["first price", "second price", "lowest price"];
-  const [value, setvalue] = React.useState(0);
-  const [search, setSearch] = React.useState(true);
-  const [loadmore, setLoadmore] = React.useState(true);
+  const [value, setvalue] = useState(0);
+  const [search, setSearch] = useState(true);
+  const [loadmore, setLoadmore] = useState(true);
 
   const LoadMore = () => {
     setLoadmore(false);
@@ -79,7 +79,7 @@ const SearchFilter = () => {
     setSearch(false);
   };
 
-  const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
+  const handleChange = (event: any, newValue:SetStateAction<number>) => {
     setvalue(newValue);
   };
 

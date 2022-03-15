@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, FC } from "react";
 import { Link } from "react-router-dom";
 import "./CurrentBid.css";
 import {
@@ -16,7 +16,7 @@ interface currentProps {
   bidData: any;
 }
 
-const BidCloned: React.FC<currentProps> = ({ bidData }) => {
+const BidCloned: FC<currentProps> = ({ bidData }) => {
   const endDate = bidData.endDate;
   const [hrs, setHrs] = useState<string | number>("00");
   const [mins, setMins] = useState<string | number>("00");

@@ -1,4 +1,4 @@
-import {FC} from "react";
+import { FC } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Textfield from "./Components/Textfield/TextField";
@@ -38,7 +38,7 @@ import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarouse
 import Crypter from "./Pages/Crypter/Crypter";
 import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
-import SingleCollectible1 from "./Pages/SingleCollectible/SingleCollectible1";
+import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
 
 const App: FC = () => {
   return (
@@ -78,14 +78,17 @@ const App: FC = () => {
         <Route path="/creators" element={<CreatorsBid />} />
         <Route path="/drop-down" element={<Dropdown item1="test" />} />
 
-        <Route path="/mutiple" element={<SingleCollectible1 />} />
+        <Route path="/multiple-collectible" element={<MultipleCollectible />} />
 
         <Route path="/seller-buyer-card" element={<SellerBuyerCard />} />
 
         <Route path="/change-price" element={<ChangePrice />} />
         <Route path="/accept" element={<AcceptBid />} />
         <Route path="/edit-profile-page" element={<EditProfilePage />} />
-        <Route path="/seller-buyer-carousel" element={<SellerBuyerCarousel />} />
+        <Route
+          path="/seller-buyer-carousel"
+          element={<SellerBuyerCarousel />}
+        />
       </Routes>
       <FooterComponent />
     </div>

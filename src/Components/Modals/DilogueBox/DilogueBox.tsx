@@ -63,10 +63,10 @@ interface DilogueModalsprops {
 }
 
 const DilogueBox = (props: DilogueModalsprops) => {
-  const [open, setOpen] = React.useState<boolean>(true);
-  const [modal1, setModal1] = React.useState<boolean>(false);
-  const [modal2, setModal2] = React.useState<boolean>(false);
-  const [modal3, setModal3] = React.useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(true);
+  const [modal1, setModal1] = useState<boolean>(false);
+  const [modal2, setModal2] = useState<boolean>(false);
+  const [modal3, setModal3] = useState<boolean>(false);
 
   const handleOpen = () => {
     setOpen(true);

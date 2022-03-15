@@ -83,9 +83,9 @@ const FollowStep = (props: followStepsprops) => {
   const [style2, setStyle2] = useState("startnowbtn");
   const [style3, setStyle3] = useState("startnowbtn");
 
-  const [active1, setActive1] = React.useState<boolean>(true);
-  const [active2, setActive2] = React.useState<boolean>(true);
-  const [active3, setActive3] = React.useState<boolean>(true);
+  const [active1, setActive1] = useState<boolean>(true);
+  const [active2, setActive2] = useState<boolean>(true);
+  const [active3, setActive3] = useState<boolean>(true);
 
   const [buttonText1, setButtonText1] = useState<string>("Start now");
   const [buttonText2, setButtonText2] = useState<string>("Start now");
