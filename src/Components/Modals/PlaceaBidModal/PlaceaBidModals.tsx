@@ -1,18 +1,11 @@
-import Box from "@mui/material/Box";
-// import "../BidModal/Modals/modal.css";
 import "./PlaceaBidModals.css";
-import { Typography } from "@mui/material";
-import Button from "@mui/material/Button";
-import { styled } from "@mui/system";
+import { Typography,Button ,styled, Box } from "@mui/material";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import React, { useState } from "react";
 import ButtonComponent from "../../ButtonComponent/ButtonComponent";
-import FollowStep from "../FollowStepModals/FollowStep";
-
 import pencil from "../../../Assets/images/pencil.svg";
 import upload from "../../../Assets/images/upload.svg";
-
 import bag from "../../../Assets/images/bag.svg";
 import greentick from "../../../Assets/images/greentick.svg";
 declare module "@mui/material/Typography" {

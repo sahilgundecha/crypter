@@ -1,37 +1,36 @@
-.headContainer{
-    padding: 20px;
+.headContainer {
+  padding: 20px;
 }
-.profileLink{
-    text-decoration: none;
-    color: #777E90;
-} 
-.profileLink:hover{
-    color:#3772FF;
+.profileLink {
+  text-decoration: none;
+  color: #777e90;
 }
-.idtextfield{
-    position:relative;
-    height: 55px;
-    padding: 0 14px;
-    width:95%;
-    border-radius: 14px;
-    border: 1.5px solid #c7c9ce;
+.profileLink:hover {
+  color: #3772ff;
+}
+.idtextfield {
+  position: relative;
+  height: 55px;
+  padding: 0 14px;
+  width: 95%;
+  border-radius: 14px;
+  border: 1.5px solid #c7c9ce;
+}
+.idtextfield:hover {
+  border: 1.5px solid #23262f;
+}
+.twitterInput {
+  height: 98%;
+  border: none;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  width: 60%;
+  outline: none !important;
+}
 
-}
-.idtextfield:hover{
-    border: 1.5px solid #23262F;
-}
-.twitterInput{
-    height: 98%;
-    border: none;
-    font-size: 17px;
-    letter-spacing: 0.8px;
-    width: 60%;
-    outline: none  !important;
-}
-
-.verifyButton{
-    width: 37%;
-    margin-top: -3px !important;
+.verifyButton {
+  width: 37%;
+  margin-top: -3px !important;
 }
 
 .updateBtnClass{
@@ -117,22 +116,19 @@
     
 }
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
-    border-radius: 15px !important ;
+  border-radius: 15px !important ;
 }
 .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-    border-radius: 15px !important;
-
+  border-radius: 15px !important;
 }
-@media (max-width:1160px){
-    .EditPageContent{
-        display: block;
-        
-    }
-    .ProfileGrid{
-        width:100%
-
-    }
-    .AccountInfoStyle{
-        width: 100%;
-    } 
+@media (max-width: 1160px) {
+  .EditPageContent {
+    display: block;
+  }
+  .ProfileGrid {
+    width: 100%;
+  }
+  .AccountInfoStyle {
+    width: 100%;
+  }
 }

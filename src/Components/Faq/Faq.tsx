@@ -1,16 +1,18 @@
-import { Container } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Box,
+  Tabs,
+  Tab,
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@mui/material";
 import "./faq.css";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import HomeIcon from "@mui/icons-material/Home";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import { Grid } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import blackimg1 from "../../Assets/images/blackimg1.svg";
 import hosting from "../../Assets/images/hosting.svg";

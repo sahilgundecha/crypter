@@ -1,24 +1,25 @@
 .root {
-    border: 0.5px solid #f4f5f6;
-    padding: 20px;
-   border-radius: 16px;
-   width: 250px !important;
-   box-shadow: 0 8px 40px -12px rgba(0,0,0,0.5);
-   height: 620px;
-   background-color: #fff;
+  border: 0.5px solid #f4f5f6;
+  padding: 20px;
+  border-radius: 16px;
+  width: 250px !important;
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.5);
+  height: 620px;
+  background-color: #fff;
 }
-.iconStyle{
+.iconStyle {
   margin: 10px;
   cursor: default;
-  }
+}
 .iconStyle:hover {
-    cursor: pointer;
-    filter: invert(63%) sepia(72%) saturate(7360%) hue-rotate(214deg) brightness(102%) contrast(100%);
-  }
+  cursor: pointer;
+  filter: invert(63%) sepia(72%) saturate(7360%) hue-rotate(214deg)
+    brightness(102%) contrast(100%);
+}
 @media (max-width: 1020px) {
-       .root{
-        width: 80% !important;
-        height: 570px;
-        padding: 10px;
-       }
-     }
+  .root {
+    width: 80% !important;
+    height: 570px;
+    padding: 10px;
+  }
+}

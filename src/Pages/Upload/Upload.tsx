@@ -5,18 +5,15 @@ import {
   Grid,
   Divider,
   Button,
+  Card,
+  CardContent,
+  CardActionArea
 } from "@mui/material";
-
 import React from "react";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import { CardActionArea } from "@mui/material";
 import card1 from "../../Assets/images/upload1.png";
 import card2 from "../../Assets/images/upload2.png";
 import "./Upload.css";
-import { createRoutesFromChildren } from "react-router-dom";
-
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

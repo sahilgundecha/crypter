@@ -1,8 +1,6 @@
-import React from "react";
 import { Box, Button, Card, Container, Typography } from "@mui/material";
 import "./Notification.css";
 import Dot from "../../Assets/images/dot.png";
-import Right from "../../Assets/images/card.png";
 import { cardData } from "../../DB/Notification/NotificationArray";
 import { useState } from "react";
 const styleRow = {

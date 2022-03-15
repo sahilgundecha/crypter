@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
 import "./modal.css";
-import { Typography } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Typography,Box,Button } from "@mui/material";
 import { styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";

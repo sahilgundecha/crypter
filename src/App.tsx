@@ -1,7 +1,6 @@
 import {FC} from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Test from "./Pages/Test";
 import Textfield from "./Components/Textfield/TextField";
 import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
 import SliderComponent from "./Components/Slider/Slider";

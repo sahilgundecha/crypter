@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
+import  { useState } from "react";
 import "./CreatorsBid.css";
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { Container, Divider } from "@mui/material";
+import { Container, Box, Grid } from "@mui/material";
 import card1 from "../../Assets/images/HomeImg.png";
 import disIcon from "../../Assets/images/disIcon.svg";
 import plus from "../../Assets/images/rightImg.svg";
@@ -25,7 +22,7 @@ const styleBT = {
 };
 
 export default function CreatorsBid() {
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
 
   const handleMouseOver = () => {
     setShow(true);

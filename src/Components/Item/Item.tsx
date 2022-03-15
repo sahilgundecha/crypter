@@ -3,12 +3,18 @@ import "./Item.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import Divider from "@mui/material/Divider";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import {
+  Grid,
+  Container,
+  Divider,
+  Box,
+  Typography,
+  Tabs,
+  Tab,
+  Card,
+  CardContent,
+} from "@mui/material";
 import headImg from "../../Assets/images/itemImg.png";
 import send from "../../Assets/images/popShare.svg";
 import creatorProfile from "../../Assets/images/ProfileImage.jpg";
@@ -18,10 +24,6 @@ import right from "../../Assets/images/itemRight.svg";
 import tweet from "../../Assets/images/twitter.svg";
 import cross from "../../Assets/images/itemCross.svg";
 import fb from "../../Assets/images/fb.svg";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import ItemNavPill from "../ItemNavPill/ItemNavPill";
 import { Info, History, Bids, Owners } from "../../DB/ItemsPage/ItemArray";

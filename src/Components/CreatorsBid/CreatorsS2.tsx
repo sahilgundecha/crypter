@@ -1,9 +1,7 @@
-import { Typography, Button } from "@mui/material";
-import { Box } from "@mui/system";
-import React from "react";
-import userHome from "../../Assets/images/userHome.png";
+import { Typography, Box } from "@mui/material";
+import { FC, useState } from "react";
 import Home1 from "../../Assets/images/home1.png";
-import r from "../../Assets/images/r.svg";
+import right from "../../Assets/images/r.svg";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 interface Props {
   CreatorsArray: any;
@@ -14,8 +12,8 @@ const styleStack = {
   alignItems: "center",
   justifyContent: "space-around",
 };
-const CreatorsS2: React.FC<Props> = ({ CreatorsArray }) => {
-  const [show, setShow] = React.useState(true);
+const CreatorsS2: FC<Props> = ({ CreatorsArray }) => {
+  const [show, setShow] = useState(true);
 
   const handleMouseOver = () => {
     setShow(false);
@@ -37,7 +35,7 @@ const CreatorsS2: React.FC<Props> = ({ CreatorsArray }) => {
           {show ? (
             <img className="widthmax" src={Home1} />
           ) : (
-            <img className="widthmax" src={r} />
+            <img className="widthmax" src={right} />
           )}
         </Box>
         <Box sx={{ margin: "15px 12px" }}>

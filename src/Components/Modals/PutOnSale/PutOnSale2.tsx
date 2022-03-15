@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
-import { Typography } from "@mui/material";
-import Button from "@mui/material/Button";
+import { Typography, Box, Button, Switch } from "@mui/material";
 import { borderBottom, styled } from "@mui/system";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import doller_img from "../../../Assets/images/doller_img.svg";
-import { Switch } from "@mui/material";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {

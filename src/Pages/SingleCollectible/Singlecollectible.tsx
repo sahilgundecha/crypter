@@ -1,13 +1,23 @@
-import { Container, Grid, Paper, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import {
+  Container,
+  Grid,
+  Paper,
+  Typography,
+  Divider,
+  Box,
+  styled,
+  Switch,
+  CardMedia,
+  CardContent,
+  CardHeader,
+  Card,
+} from "@mui/material";
+import Textfield from "../../Components/Textfield/TextField";
 import React from "react";
 import { useState } from "react";
-import Divider from "@mui/material/Divider";
 import img1 from "../../Assets/images/bidImg.png";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
-import Textfield from "../../Components/Textfield/TextField";
 import CancelTwoToneIcon from "@mui/icons-material/CancelTwoTone";
-import Card from "@mui/material/Card";
 import bidIcon from "../../Assets/images/bidIcon.svg";
 import candleStick from "../../Assets/images/candleStick.svg";
 import rod1 from "../../Assets/images/rod1.svg";
@@ -20,18 +30,14 @@ import plus3 from "../../Assets/images/plus3.svg";
 import plus4 from "../../Assets/images/plus4.svg";
 import PutOnSale3 from "../../Components/Modals/PutOnSale/PutOnSale3";
 import buffer from "../../Assets/images/buffer.svg";
-import { styled } from "@mui/material/styles";
 import creator from "../../Assets/images/creatorImg.png";
-import Switch from "@mui/material/Switch";
 import "./SingleCollectible.css";
 import circle from "../../Assets/images/user1.png";
-import { CardMedia, CardContent, CardHeader } from "@mui/material";
 import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
 import Button from "@mui/material/Button";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { FileUploader } from "react-drag-drop-files";
-// import Newbidcard from '../../Components/Bidcard/Newbidcard';
 import FollowStep from "../../Components/Modals/FollowStepModals/FollowStep";
 
 export default function SingleCollectible(props: any) {

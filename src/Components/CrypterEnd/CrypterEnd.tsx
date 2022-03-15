@@ -1,5 +1,4 @@
-import { Container, Typography, Grid, Divider } from "@mui/material";
-import { Box } from "@mui/system";
+import { Container, Typography, Grid, Divider, Box } from "@mui/material";
 import card from "../../Assets/images/CrypterEnd.png";
 import "./CrypterEnd.css";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";

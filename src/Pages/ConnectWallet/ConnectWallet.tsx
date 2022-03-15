@@ -1,28 +1,31 @@
-import React, { useState } from "react";
-import { Container, Typography, Box, Divider, Grid } from "@mui/material";
+import React, { useState, FC } from "react";
+import {
+  Container,
+  Typography,
+  Box,
+  Divider,
+  Grid,
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
+} from "@mui/material";
 import "./ConnectWallet.css";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import WalletCard from "../../Components/WalletCard/WalletCard";
 import WalletName from "./WalletName";
-import card1 from "../../Assets/images/upload1.png";
 import Right from "../../Assets/images/Righticon.svg";
 import icon1 from "../../Assets/images/icon1.svg";
 import icon2 from "../../Assets/images/icon2.svg";
 import icon4 from "../../Assets/images/icon3.svg";
-import icon3 from "../../Assets/images/icon.svg";
 import QR from "../../Assets/images/QRCode.png";
 import QR1 from "../../Assets/images/QRCode1.svg";
 import Wallet from "../../Assets/images/Wallet.png";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 
-export const ConnectWallet: React.FC = () => {
+export const ConnectWallet: FC = () => {
   const [Display, setDisplay] = useState(true);
-  const [CImg, setCImg] = React.useState(false);
-  const [Dnone, setDnone] = React.useState(false);
-  const [showB, setshowB] = React.useState(true);
+  const [CImg, setCImg] = useState(false);
+  const [Dnone, setDnone] = useState(false);
+  const [showB, setshowB] = useState(true);
 
   const handle1 = () => {
     setDisplay(false);

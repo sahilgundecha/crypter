@@ -1,14 +1,14 @@
-.textStyles{
-    font-size:16px !important;
-    color:#23262F;
-     margin-left: 10px !important;
+.textStyles {
+  font-size: 16px !important;
+  color: #23262f;
+  margin-left: 10px !important;
 }
-.boldText{
-    font-size: 22px !important;
-    font-weight: bolder !important;
-    margin-bottom: 5px !important;
+.boldText {
+  font-size: 22px !important;
+  font-weight: bolder !important;
+  margin-bottom: 5px !important;
 }
-.colorDiff{
-    color:#777E90;
-    font-size:14px !important;
+.colorDiff {
+  color: #777e90;
+  font-size: 14px !important;
 }

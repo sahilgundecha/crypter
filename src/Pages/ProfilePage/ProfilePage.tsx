@@ -1,16 +1,12 @@
 import React from "react";
 import "./ProfilePage.css";
-import { Grid, Paper, Button, Box, Typography } from "@mui/material";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
-import CSS from "csstype";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
 import {
   FollowersCard,
   FollowingCard,
 } from "../../Components/FollowersCard/FollowersCard";
-import { AppBar } from "@mui/material";
 import Carosel from "../../Components/Bidcard/Carosel";
 import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";

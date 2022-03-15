@@ -1,18 +1,20 @@
 import React from "react";
 import "./SearchFilter.css";
-import Container from "@mui/material/Container";
+import {
+  Container,
+  Box,
+  Typography,
+  Divider,
+  Grid,
+  Tabs,
+  Tab,
+} from "@mui/material";
 import Dropdown from "../Dropdown/Dropdown";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
-import Grid from "@mui/material/Grid";
 import Data from "../../DB/BidCard/BidcardArray";
 import Searchbar from "../Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Bidcard from "../Bidcard/Bidcard";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 

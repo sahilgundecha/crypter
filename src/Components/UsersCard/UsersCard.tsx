@@ -1,15 +1,20 @@
-import React from "react";
-import { Grid, Button, Typography, Avatar, Box } from "@mui/material";
+import {
+  Grid,
+  Button,
+  Typography,
+  Avatar,
+  Box,
+  useTheme,
+  Link,
+} from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { useTheme } from "@mui/material/styles";
 import twitterIcon from "../../Assets/images/twitterBlack.svg";
 import fbIcon from "../../Assets/images/fbBlackIcon.svg";
 import instaIcon from "../../Assets/images/instaBlackIcon.svg";
 import shareIconUpload from "../../Assets/images/share icon.png";
-import { userInfo } from "../../DB/FollowersCard/FollowersCardArray";
+import { userInfo } from "../../Components/FollowersCard/FollowersCardData";
 import smallCoin from "../../Assets/images/icons-Coins-Filled.svg";
 import shareDotIcon from "../../Assets/images/share-icon.svg";
-import Link from "@mui/material/Link";
 import LanguageSharpIcon from "@mui/icons-material/LanguageSharp";
 import "./UsersCard.css";
 

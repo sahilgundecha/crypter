@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import MenuItem from "@mui/material/MenuItem";
-import Select from "@mui/material/Select";
 import downicon from "../../Assets/images/downArrow.svg";
 import upicon from "../../Assets/images/upArrow.svg";
-import { FormControl } from "@mui/material";
-import Typography from "@mui/material/Typography";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { FormControl, MenuItem, Select, Typography } from "@mui/material";
 import "./Dropdown.css";
 
 import ArrowDropDownCircleOutlinedIcon from "@mui/icons-material/ArrowDropDownCircleOutlined";

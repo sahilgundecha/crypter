@@ -6,17 +6,16 @@ import {
   Grid,
   Divider,
   Button,
-  Card,
+  FormGroup,
+  FormControlLabel,
+  Checkbox,
+  Tabs,
+  Tab,
   Paper,
 } from "@mui/material";
 import "./Activity.css";
-import { cardData } from "../../DB/Activity/ActivityArray";
+import { cardData } from "./ActivityArray";
 import { Notification } from "../../Components/Notification/NotificationD";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";

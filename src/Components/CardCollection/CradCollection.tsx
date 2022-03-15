@@ -1,14 +1,11 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import "./CardCollection.css";
 import Carousel from "react-elastic-carousel";
-import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Container } from "@mui/material";
+import Data from "../../DB/CardCollection/CardCollectionArray";
+import { Container, Box, Card, Button, Typography } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
-import Data from "../../DB/CardCollection/CardCollectionArray";
+
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
@@ -40,6 +37,7 @@ interface forArrow {
   onClick?: any;
   isEdge?: any;
 }
+
 const myArrow: React.FC<forArrow> = ({ type, onClick, isEdge }) => {
   const pointer: object =
     type === "PREV" ? (
