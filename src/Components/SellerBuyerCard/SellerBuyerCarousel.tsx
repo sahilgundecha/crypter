@@ -1,4 +1,4 @@
-import React, { Component, useState ,FC } from "react";
+import { Component, useState ,FC } from "react";
 import WhiteCards from "./WhiteCards/WhiteCards";
 import Data from "../../DB/SellerBuyerCardArray/SellerBuyersArray";
 import Carousel from "react-elastic-carousel";

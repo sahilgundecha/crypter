@@ -1,7 +1,5 @@
 import { Avatar, Grid, Typography, Button } from "@mui/material";
-
 import "./followersCard.css";
-
 import { Data } from "../../DB/FollowersCard/FollowersCardArray";
 
 interface userDataProps {

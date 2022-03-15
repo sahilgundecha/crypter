@@ -14,7 +14,6 @@ import {
 } from "../../DB/CreatorsBid/CreatorsArray";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import LatestUpdates from "./LatestUpdates";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const styleBT = {
   display: "flex",
   justifyContent: "space-between",
