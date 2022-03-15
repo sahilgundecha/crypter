@@ -1,4 +1,4 @@
-import {FC} from "react";
+import { FC } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Textfield from "./Components/Textfield/TextField";
@@ -39,6 +39,12 @@ import Crypter from "./Pages/Crypter/Crypter";
 import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
 import SingleCollectible1 from "./Pages/SingleCollectible/SingleCollectible1";
+import PutOnSale1 from "./Components/Modals/PutOnSale/PutOnSale";
+import PutOnSale2 from "./Components/Modals/PutOnSale/InstantSalePrice";
+import PutOnSale3 from "./Components/Modals/PutOnSale/FollowStepsModal";
+import PutOnSale from "./Components/Modals/PutOnSale/PutOnSale";
+import InstantSalePrice from "./Components/Modals/PutOnSale/InstantSalePrice";
+import FollowStepsModal from "./Components/Modals/PutOnSale/FollowStepsModal";
 
 const App: FC = () => {
   return (
@@ -85,7 +91,16 @@ const App: FC = () => {
         <Route path="/change-price" element={<ChangePrice />} />
         <Route path="/accept" element={<AcceptBid />} />
         <Route path="/edit-profile-page" element={<EditProfilePage />} />
-        <Route path="/seller-buyer-carousel" element={<SellerBuyerCarousel />} />
+        <Route
+          path="/seller-buyer-carousel"
+          element={<SellerBuyerCarousel />}
+        />
+        <Route path="/putonsalemodal" element={<PutOnSale />} />
+        <Route
+          path="/instant-sale-price-modal"
+          element={<InstantSalePrice />}
+        />
+        <Route path="/folow-steps-modal" element={<FollowStepsModal />} />
       </Routes>
       <FooterComponent />
     </div>

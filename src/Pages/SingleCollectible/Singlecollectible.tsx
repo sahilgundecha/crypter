@@ -28,7 +28,7 @@ import plus1 from "../../Assets/images/plus1.svg";
 import plus2 from "../../Assets/images/plus2.svg";
 import plus3 from "../../Assets/images/plus3.svg";
 import plus4 from "../../Assets/images/plus4.svg";
-import PutOnSale3 from "../../Components/Modals/PutOnSale/PutOnSale3";
+import PutOnSale3 from "../../Components/Modals/PutOnSale/FollowStepsModal";
 import buffer from "../../Assets/images/buffer.svg";
 import creator from "../../Assets/images/creatorImg.png";
 import "./SingleCollectible.css";
@@ -348,7 +348,6 @@ export default function SingleCollectible(props: any) {
                   sx={{
                     display: "flex",
                     flexDirection: "row",
-
                     justifyContent: "space-between",
                     padding: "5px",
                   }}
