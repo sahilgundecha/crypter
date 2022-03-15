@@ -1,4 +1,4 @@
-import { useState, ReactNode ,SetStateAction } from "react";
+import { useState, ReactNode, SetStateAction } from "react";
 import {
   Container,
   Box,
@@ -19,7 +19,7 @@ import { Notification } from "../../Components/Notification/NotificationD";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";
-import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 const boxStyle = {
   display: "flex",

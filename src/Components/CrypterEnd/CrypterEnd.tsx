@@ -2,7 +2,7 @@ import { Container, Typography, Grid, Divider, Box } from "@mui/material";
 import card from "../../Assets/images/CrypterEnd.png";
 import "./CrypterEnd.css";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 const alignBox1 = {
   display: "flex",
@@ -28,21 +28,21 @@ const CrypterEnd = () => {
                 </Typography>
                 <Box sx={{ margin: "10px 0px" }}>
                   <Link to="/Upload" className="lineUnderline">
-                  <ButtonComponent
-                    btnColor={"#3772FF"}
-                    classNames="btnStyle1 mR"
-                  >
-                    Create item
-                  </ButtonComponent>
+                    <ButtonComponent
+                      btnColor={"#3772FF"}
+                      classNames="btnStyle1 mR"
+                    >
+                      Create item
+                    </ButtonComponent>
                   </Link>
                   <Link to="/Discover" className="lineUnderline">
-                  <ButtonComponent
-                    btnColor={"#23262F"}
-                    styleType={"outline"}
-                    classNames="btnStyle1"
-                  >
-                    Discover
-                  </ButtonComponent>
+                    <ButtonComponent
+                      btnColor={"#23262F"}
+                      styleType={"outline"}
+                      classNames="btnStyle1"
+                    >
+                      Discover
+                    </ButtonComponent>
                   </Link>
                 </Box>
               </Box>

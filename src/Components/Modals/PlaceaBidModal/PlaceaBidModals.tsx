@@ -1,9 +1,9 @@
 import "./PlaceaBidModals.css";
-import { Typography,Button ,styled, Box } from "@mui/material";
+import { Typography, Button, styled, Box } from "@mui/material";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import React, { useState } from "react";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 import pencil from "../../../Assets/images/pencil.svg";
 import upload from "../../../Assets/images/upload.svg";
 import bag from "../../../Assets/images/bag.svg";

@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent } from "react";
 import { Box, Button, Typography, Modal } from "@mui/material";
 import cross from "../../../Assets/images/cross.svg";
-import ButtonComponent from "../../ButtonComponent/ButtonComponent";
+import ButtonComponent from "../../../Common/ButtonComponent/ButtonComponent";
 import "./Report.css";
 import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 
