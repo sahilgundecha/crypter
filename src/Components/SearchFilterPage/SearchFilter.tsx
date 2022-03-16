@@ -12,7 +12,7 @@ import {
 import Dropdown from "../../Common/Dropdown/Dropdown";
 import SliderComponent from "../Slider/Slider";
 import reset from "../../Assets/images/resetFilter.svg";
-import Data from "../../DB/BidCard/BidcardArray";
+import Data from "../../DB/BidCard/WhiteCardArray";
 import Searchbar from "../../Common/Searchbar/Searchbar";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import Bidcard from "../Bidcard/Bidcard";
@@ -216,7 +216,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -239,7 +239,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
@@ -258,7 +258,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -281,7 +281,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
@@ -300,7 +300,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -323,7 +323,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
@@ -342,7 +342,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -373,7 +373,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
@@ -392,7 +392,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -415,7 +415,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
@@ -434,7 +434,7 @@ const SearchFilter = () => {
               {Data.filter(function (cardData) {
                 return cardData.id <= 6;
               }).map((item, index) => (
-                <Bidcard cardData={item} key={item.id} />
+                <Bidcard cardData={item} key={item.id} whiteCard={true} />
               ))}
             </Grid>
             {loadmore ? (
@@ -457,7 +457,7 @@ const SearchFilter = () => {
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
+                  <Bidcard cardData={item} key={item.id} whiteCard={true} />
                 ))}
               </Grid>
             )}
