@@ -33,7 +33,7 @@
   .discoverDropdownBelow {
     width: 330px;
   }
-  .dispayInTab {
+  .displayInTab {
     display: block;
   }
   .hideInTab {
@@ -41,5 +41,8 @@
   }
   .ItemWrapper {
     justify-content: space-around;
+  }
+  .filterButton {
+    height: 42px;
   }
 }
