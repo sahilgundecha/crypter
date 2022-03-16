@@ -1,5 +1,4 @@
-import { ReactNode, useState, SetStateAction } from "react";
-import "./Discover.css";
+import React, { ReactNode, useState, SetStateAction } from "react";
 import {
   Divider,
   Container,
@@ -10,12 +9,13 @@ import {
   Tab,
   Grid,
 } from "@mui/material";
-import SliderComponent from "../../Components/Slider/Slider";
+import "./Discover.css";
+import Dropdown from "../../Common/Dropdown/Dropdown";
 import filter from "../../Assets/images/filter.svg";
 import cross from "../../Assets/images/filterCross.svg";
-import Dropdown from "../../Common/Dropdown/Dropdown";
 import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
+import SliderComponent from "../../Components/Slider/Slider";
 
 interface TabPanelProps {
   children?: ReactNode;
@@ -48,7 +48,6 @@ function allyProps(index: number) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
-
 const Discover = () => {
   const [value, setvalue] = useState(0);
   const [openFilter, setOpenFilter] = useState(false);
@@ -60,20 +59,26 @@ const Discover = () => {
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
-
   return (
     <>
       <Container>
-        <Box sx={{ marginY: "50px" }}>
+        <Box sx={{ margin: "50px" }}>
           <Typography variant="h3" gutterBottom component="div">
             Discover
           </Typography>
         </Box>
-        <Box className="navBox">
-          <Box className="dropdownWrapper">
-            <Dropdown item1="Recently added" item2="Long added" />
+        <Grid container className="ItemWrapper">
+          <Box className="discoverDropdown">
+            <Dropdown item1="Recently added" item2="Long added"></Dropdown>
           </Box>
-          <Box>
+          <Box className="discoverDropdown displayInTab">
+            <Dropdown
+              item1="Verified only"
+              item2="All"
+              item3="Most liked"
+            ></Dropdown>
+          </Box>
+          <Box className="hideInTab">
             <Grid className="navpillStylingDiscover">
               <Grid className="tabTopGrid_Styling">
                 <Tabs
@@ -118,92 +123,98 @@ const Discover = () => {
               </Grid>
             </Grid>
           </Box>
-          <Box className="dropdownWrapper">
+          <Box>
             <Button
               variant="contained"
               className="filterButton"
               onClick={HandleOpen}
             >
-              Filter{" "}
+              Filter
               <img
                 src={openFilter ? cross : filter}
                 alt="icon"
-                className="bigiImg1"
+                className="filterIcon"
               />
             </Button>
           </Box>
-        </Box>
-      </Container>
-
-      {openFilter ? (
-        <Container>
-          <Divider sx={{ margin: "10px 8px" }} />
-          <Box className="navBox">
-            <Box className="dropdownWrapper">
-              <Dropdown
-                item1="Highest price"
-                item2="The lowest price"
-              ></Dropdown>
-            </Box>
-            <Box className="dropdownWrapper">
-              <Dropdown item1="Most liked" item2="Least Liked"></Dropdown>
-            </Box>
-            <Box className="dropdownWrapper">
-              <Dropdown
-                item1="Verified only"
-                item2="All"
-                item3="Most liked"
-              ></Dropdown>
-            </Box>
-            <Box className="sliderWrapper">
-              <SliderComponent />
-            </Box>
+        </Grid>
+        {openFilter ? (
+          <Box>
+            <Divider sx={{ margin: "30px 8px" }} />
+            <Grid container className="ItemWrapper">
+              <Box className="discoverDropdownBelow">
+                <Dropdown
+                  item1="Highest price"
+                  item2="The lowest price"
+                  label="PRICE"
+                ></Dropdown>
+              </Box>
+              <Box className="discoverDropdownBelow">
+                <Dropdown
+                  item1="Most liked"
+                  item2="Least Liked"
+                  label="LIKES"
+                ></Dropdown>
+              </Box>
+              <Box className="discoverDropdownBelow">
+                <Dropdown
+                  item1="Verified only"
+                  item2="All"
+                  item3="Most liked"
+                  label="CREATOR"
+                ></Dropdown>
+              </Box>
+              <Box className="discoverDropdownBelow">
+                <SliderComponent />
+              </Box>
+            </Grid>
           </Box>
-        </Container>
-      ) : null}
-      <Container className="overflowInSmall">
-        <TabPanel value={value} index={0}>
-          <Grid container className="widthTab">
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          <Grid container>
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          <Grid container>
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          <Grid container>
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          <Grid container>
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={5}>
-          <Grid container>
-            {Data.map((item, index) => (
-              <Bidcard cardData={item} key={item.id} />
-            ))}
-          </Grid>
-        </TabPanel>
+        ) : null}
+
+        <Box>
+          <TabPanel value={value} index={0}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value={value} index={4}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+          <TabPanel value={value} index={5}>
+            <Grid container className="ItemWrapper">
+              {Data.map((item, index) => (
+                <Bidcard cardData={item} key={item.id} />
+              ))}
+            </Grid>
+          </TabPanel>
+        </Box>
       </Container>
     </>
   );
