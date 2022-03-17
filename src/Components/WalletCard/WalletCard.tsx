@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import "./WalletCard.css";
 import smallImg from "../../Assets/images/smallImg.svg";
 import {
@@ -35,11 +35,22 @@ interface walletcardProps {
   ETH?: string | number;
   img?: string;
 }
-const WalletCard = (props: walletcardProps) => {
+interface wall {
+  setConnected?: any;
+  title?: string;
+  name?: string;
+  password?: string;
+  ETH?: string | number;
+  img?: string;
+}
+const WalletCard: FC<wall> = (props, { setConnected }) => {
   const [open, setOpen] = useState<boolean>(false);
 
   const [hover, setHover] = useState<boolean>(false);
-
+  const handleDisconnect = (status: any) => {
+    setConnected(status);
+    console.log("disconnect");
+  };
   const handleMouseIn = () => {
     setHover(true);
   };
@@ -51,9 +62,7 @@ const WalletCard = (props: walletcardProps) => {
   return (
     <>
       <Container>
-        <Card
-          sx={{ width: "300px", boxShadow: "2px 25px 30px 25px #0f0f0f1a" }}
-        >
+        <Card sx={{ width: "300px", border: "none", boxShadow: "none" }}>
           <CardContent>
             <Typography variant="h5" className="marginRight" component="div">
               {props.name ? props.name : "Enrico Cole"}
@@ -204,6 +213,7 @@ const WalletCard = (props: walletcardProps) => {
                 color="text.secondary"
                 component="div"
                 className="btntext"
+                onClick={() => handleDisconnect(false)}
               >
                 Disconnect
               </Typography>

@@ -40,8 +40,10 @@ export const NotificationD = () => {
       <Card className="card" sx={{ borderRadius: "25px" }}>
         <Box sx={styleFlex}>
           <Typography variant="h5">Notification</Typography>
-          <Link to="/Activity " className="lineUnderline">
-            <Button className="styleB" variant="contained">See All</Button>
+          <Link to="/Activity " className="linkUnderline">
+            <Button className="styleB" variant="contained">
+              See All
+            </Button>
           </Link>
         </Box>
         <Notification colData={cardData} />

@@ -1,15 +1,21 @@
-.styleUp{
-    padding:12px 18px !important;
-    margin-right: 10px !important;
+.styleUp {
+  padding: 12px 18px !important;
+  margin-right: 10px !important;
 }
-.styleCw{
-    border-radius: 15px ;
-    padding:12px 18px !important;
+.styleCw {
+  border-radius: 15px;
+  padding: 12px 18px !important;
 }
 
-
-@media (max-width:768px){
-    .styleUp{
-        margin-right: 40px !important;
-    }
+.connected {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 24px;
+  padding: 7px;
+}
+@media (max-width: 768px) {
+  .styleUp {
+    margin-right: 40px !important;
+  }
 }

@@ -21,18 +21,22 @@ import QR from "../../Assets/images/QRCode.png";
 import QR1 from "../../Assets/images/QRCode1.svg";
 import Wallet from "../../Assets/images/Wallet.png";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
-
-export const ConnectWallet: FC = () => {
+interface wallet {
+  setConnected: any;
+}
+export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
   const [Display, setDisplay] = useState(true);
   const [CImg, setCImg] = useState(false);
   const [Dnone, setDnone] = useState(false);
   const [showB, setshowB] = useState(true);
-
+  const handleButtonClick = (status: any) => {
+    setConnected(status);
+  };
   const handle1 = () => {
     setDisplay(false);
     setDnone(false);
   };
-  
+
   const handle2 = () => {
     setCImg(true);
   };
@@ -133,6 +137,7 @@ export const ConnectWallet: FC = () => {
                   <ButtonComponent
                     btnColor={"#3772FF"}
                     classNames="changeWallet"
+                    handleClick={() => handleButtonClick(true)}
                   >
                     Get started now
                   </ButtonComponent>
