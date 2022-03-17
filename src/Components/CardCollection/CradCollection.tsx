@@ -134,11 +134,11 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               flexDirection: "row",
               margin: "10px",
             }}
-          >
-            <Typography sx={{ fontSize: "14px" }} variant="h5" component="p">
-              <img style={{ marginRight: "10px" }} src={cardData.authorImg} />
+          > <span className="rowBox">
+             <img src={cardData.authorImg} />
+            <Typography sx={{ fontSize: "14px" }}    component="p">
               By {cardData.authorName}
-            </Typography>
+            </Typography></span>
             <Button variant="outlined">{cardData.item} items</Button>
           </Box>
         </Card>
