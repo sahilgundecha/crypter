@@ -68,7 +68,8 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
         >
           <Grid item md={6} spacing={3}>
             <Box>
-              <WalletName />
+              <WalletName  onClick={handle1}
+                onClick1={handle2}/>
               <WalletName
                 title="Coinbase wallet"
                 img={icon1}

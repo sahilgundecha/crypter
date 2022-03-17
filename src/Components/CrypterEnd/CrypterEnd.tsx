@@ -27,7 +27,7 @@ const CrypterEnd = () => {
                   A creative agency that lead and inspire
                 </Typography>
                 <Box sx={{ margin: "10px 0px" }}>
-                  <Link to="/Upload" className="lineUnderline">
+                  <Link to="/Upload" className="linkUnderline">
                     <ButtonComponent
                       btnColor={"#3772FF"}
                       classNames="btnStyle1 mR"
@@ -35,7 +35,7 @@ const CrypterEnd = () => {
                       Create item
                     </ButtonComponent>
                   </Link>
-                  <Link to="/Discover" className="lineUnderline">
+                  <Link to="/Discover" className="linkUnderline">
                     <ButtonComponent
                       btnColor={"#23262F"}
                       styleType={"outline"}
