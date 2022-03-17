@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FC, useState } from "react";
 import {
   AppBar,
   Box,
@@ -18,8 +18,10 @@ import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
 import { Link } from "react-router-dom";
 import "./StyleNH.css";
+import ProfileCard from "../../Components/ProfileCard/ProfileCard";
 
 import WalletCard from "../../Components/WalletCard/WalletCard";
+import { NotificationD } from "../../Components/Notification/NotificationD";
 
 const useStyles = makeStyles({
   logo: {
@@ -46,8 +48,10 @@ const useStyles = makeStyles({
     marginLeft: "32px",
   },
 });
-
-const NavbarComponent = () => {
+interface nav {
+  connected: boolean;
+}
+const NavbarComponent: FC<nav> = ({ connected }) => {
   const classes = useStyles();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -113,16 +117,18 @@ const NavbarComponent = () => {
               <Searchbar />
             </Box>
 
-            <IconButton
-              onClick={showNotificationsMenu}
-              size="small"
-              sx={{ mx: 2 }}
-              aria-controls={open ? "notifications-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-            >
-              <img src={NotificationsActive} alt="Notifications-icon"></img>
-            </IconButton>
+            {connected ? (
+              <IconButton
+                onClick={showNotificationsMenu}
+                size="small"
+                sx={{ mx: 2 }}
+                aria-controls={open ? "notifications-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+              >
+                <img src={NotificationsActive} alt="Notifications-icon"></img>
+              </IconButton>
+            ) : null}
 
             <Menu
               anchorEl={anchorEl}
@@ -137,8 +143,8 @@ const NavbarComponent = () => {
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                   mt: 1.5,
                   "& .MuiAvatar-root": {
-                    width: 32,
-                    height: 32,
+                    width: 30,
+                    height: 30,
                     ml: -0.5,
                     mr: 1,
                   },
@@ -162,7 +168,9 @@ const NavbarComponent = () => {
               transformOrigin={{ horizontal: "right", vertical: "top" }}
               anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
             >
-              <Box></Box>
+              <Box>
+                <NotificationD />
+              </Box>
             </Menu>
             <Box
               component="span"
@@ -175,24 +183,34 @@ const NavbarComponent = () => {
               </Link>
             </Box>
 
-            <Box
-              component="span"
-              sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
-              onClick={showConnectWalletMenu}
-              aria-controls={
-                openConnectWallet ? "connect-wallet-menu" : undefined
-              }
-              aria-haspopup="true"
-              aria-expanded={openConnectWallet ? "true" : undefined}
-            >
-              <ButtonComponent
-                btnColor={"#23262F"}
-                styleType={"outline"}
-                classNames="styleCw"
+            {connected ? (
+              <Box
+                sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
+                onClick={showConnectWalletMenu}
+                aria-controls={
+                  openConnectWallet ? "connect-wallet-menu" : undefined
+                }
+                aria-haspopup="true"
+                aria-expanded={openConnectWallet ? "true" : undefined}
               >
-                Connect Wallet
-              </ButtonComponent>
-            </Box>
+                <ProfileCard />
+              </Box>
+            ) : (
+              <Link to="connect-wallet">
+                <Box
+                  component="span"
+                  sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
+                >
+                  <ButtonComponent
+                    btnColor={"#23262F"}
+                    styleType={"outline"}
+                    classNames="styleCw"
+                  >
+                    Connect Wallet
+                  </ButtonComponent>
+                </Box>
+              </Link>
+            )}
 
             <Menu
               anchorEl={anchorElWallet}
@@ -205,7 +223,7 @@ const NavbarComponent = () => {
                 sx: {
                   overflow: "visible",
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-                  mt: 2.0,
+                  mt: 5,
                   "&:before": {
                     content: '""',
                     display: "block",
@@ -293,20 +311,24 @@ const NavbarComponent = () => {
                   sx={{ display: "block", alignSelf: "center", mt: "12px" }}
                 >
                   <Grid container spacing={0}>
-                    <Grid item xs={1} sm={1}>
-                      <IconButton
-                        onClick={showNotificationsMenu}
-                        size="small"
-                        aria-controls={open ? "notifications-menu" : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? "true" : undefined}
-                      >
-                        <img
-                          src={NotificationsActive}
-                          alt="Notifications-icon"
-                        ></img>
-                      </IconButton>
-                    </Grid>
+                    {connected ? (
+                      <Grid item xs={1} sm={1}>
+                        <IconButton
+                          onClick={showNotificationsMenu}
+                          size="small"
+                          aria-controls={
+                            open ? "notifications-menu" : undefined
+                          }
+                          aria-haspopup="true"
+                          aria-expanded={open ? "true" : undefined}
+                        >
+                          <img
+                            src={NotificationsActive}
+                            alt="Notifications-icon"
+                          ></img>
+                        </IconButton>
+                      </Grid>
+                    ) : null}
 
                     <Grid item xs={4} sm={4}>
                       <ButtonComponent
@@ -317,26 +339,55 @@ const NavbarComponent = () => {
                       </ButtonComponent>
                     </Grid>
 
-                    <Grid
-                      item
-                      xs={7}
-                      sm={7}
-                      sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
-                      onClick={showConnectWalletMenu}
-                      aria-controls={
-                        openConnectWallet ? "connect-wallet-menu" : undefined
-                      }
-                      aria-haspopup="true"
-                      aria-expanded={openConnectWallet ? "true" : undefined}
-                    >
-                      <ButtonComponent
-                        btnColor={"#23262F"}
-                        styleType={"outline"}
-                        classNames={"px-3 ms-2 rounded-pill"}
+                    {connected ? (
+                      <Grid
+                        item
+                        xs={7}
+                        sm={7}
+                        sx={{
+                          display: "block",
+                          alignSelf: "center",
+                          m: 0,
+                          p: 0,
+                        }}
+                        onClick={showConnectWalletMenu}
+                        aria-controls={
+                          openConnectWallet ? "connect-wallet-menu" : undefined
+                        }
+                        aria-haspopup="true"
+                        aria-expanded={openConnectWallet ? "true" : undefined}
                       >
-                        Connect Wallet
-                      </ButtonComponent>
-                    </Grid>
+                        <Box>
+                          <ProfileCard />
+                        </Box>
+                      </Grid>
+                    ) : (
+                      <Grid
+                        item
+                        xs={7}
+                        sm={7}
+                        sx={{
+                          display: "block",
+                          alignSelf: "center",
+                          m: 0,
+                          p: 0,
+                        }}
+                        onClick={showConnectWalletMenu}
+                        aria-controls={
+                          openConnectWallet ? "connect-wallet-menu" : undefined
+                        }
+                        aria-haspopup="true"
+                        aria-expanded={openConnectWallet ? "true" : undefined}
+                      >
+                        <ButtonComponent
+                          btnColor={"#23262F"}
+                          styleType={"outline"}
+                          classNames={"px-3 ms-2 rounded-pill"}
+                        >
+                          Connect Wallet
+                        </ButtonComponent>
+                      </Grid>
+                    )}
                   </Grid>
                 </Box>
               </Paper>
