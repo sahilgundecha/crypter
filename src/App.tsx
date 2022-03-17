@@ -39,13 +39,16 @@ import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
 import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
 import WalletCard from "./Components/WalletCard/WalletCard";
 import ProfileCard from "./Components/ProfileCard/ProfileCard";
+import LocalStorage from "./Components/LocalStorage/LocalStorage";
 
 const App: FC = () => {
-  const [connected, setConnected] = useState<boolean>(false);
+  const [connected, setConnected] = LocalStorage("connected", false);
+
   console.log(connected);
+
   return (
     <div>
-      <NavbarComponent connected={connected} />
+      <NavbarComponent connected={connected} setConnected={setConnected} />
       <Routes>
         <Route
           path="/connect-wallet"
