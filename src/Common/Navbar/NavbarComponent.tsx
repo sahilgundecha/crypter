@@ -50,8 +50,9 @@ const useStyles = makeStyles({
 });
 interface nav {
   connected: boolean;
+  setConnected: any;
 }
-const NavbarComponent: FC<nav> = ({ connected }) => {
+const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
   const classes = useStyles();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -196,11 +197,11 @@ const NavbarComponent: FC<nav> = ({ connected }) => {
                 <ProfileCard />
               </Box>
             ) : (
-              <Link to="connect-wallet">
-                <Box
-                  component="span"
-                  sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
-                >
+              <Box
+                component="span"
+                sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
+              >
+                <Link to="connect-wallet" className="linkUnderline">
                   <ButtonComponent
                     btnColor={"#23262F"}
                     styleType={"outline"}
@@ -208,8 +209,8 @@ const NavbarComponent: FC<nav> = ({ connected }) => {
                   >
                     Connect Wallet
                   </ButtonComponent>
-                </Box>
-              </Link>
+                </Link>
+              </Box>
             )}
 
             <Menu
@@ -245,7 +246,7 @@ const NavbarComponent: FC<nav> = ({ connected }) => {
               anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
             >
               <Box>
-                <WalletCard />
+                <WalletCard setConnected={setConnected} />
               </Box>
             </Menu>
           </Box>
