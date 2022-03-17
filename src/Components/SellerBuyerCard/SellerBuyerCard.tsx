@@ -20,13 +20,7 @@ function SellerBuyerCard() {
 
   return (
     <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px" }}>
-      <Box
-        sx={{
-          padding: "40px 85px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <Box className="circularDropdown">
         <Box>
           <Typography
             variant="h5"
@@ -93,16 +87,8 @@ function SellerBuyerCard() {
           {/* <Dropdown item1="Seller" item2="Buyers" /> */}
         </Box>
         <Box width="250px">
-          {/* <Typography
-            sx={{ fontWeight: "bold" }}
-            variant="p"
-            color="text.secondary"
-            component="div"
-          >
-            TIME FRAME
-          </Typography> */}
           <Dropdown
-            label="time frame"
+            label=" TIME FRAME"
             item1="Today"
             item2="Morning"
             item3="Dinner"
