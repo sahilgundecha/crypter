@@ -21,6 +21,13 @@
   height: 415px;
   margin-bottom: 50px;
 }
+.textStyleProfile{
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px !important;
+  font-size: 15px;
+  font-weight: bolder !important;
+}
 .imgCenter {
   height: 30px;
 }
