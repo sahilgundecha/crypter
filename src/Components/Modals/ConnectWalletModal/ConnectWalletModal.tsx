@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Typography, Button, Box } from "@mui/material";
 import { styled } from "@mui/system";
+import "./ConnectWalletModals.css";
 import ModalUnstyled from "@mui/base/ModalUnstyled";
 import cross from "../../../Assets/images/cross.svg";
 import { Link } from "react-router-dom";
@@ -70,7 +71,12 @@ const ConnectWalletModal = () => {
             </Box>
 
             <Box className="modal3">
-              <img onClick={handleClose} src={purple_icon} alt="img" />
+              <img
+                onClick={handleClose}
+                src={purple_icon}
+                alt="img"
+                className="purpleimg"
+              />
 
               <Typography variant="p" className="para1" component="div">
                 You need to connect your wallet first to sign messages and send

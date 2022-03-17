@@ -1,6 +1,10 @@
 .changeWidth1 {
   width: 96%;
 }
+.rowBox{
+  display:flex;
+  flex-direction: row;
+}
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
   border: 1px solid black !important;
   color: black !important;

@@ -119,7 +119,7 @@ export default function () {
             <CardActionArea>
               <img className="imgFuild" src={card2} />
               <CardContent>
-                <Link to="/mutiple" className="linkUnderline">
+                <Link to="/multiple-collectible" className="linkUnderline">
                   <ButtonComponent
                     btnColor={"#23262F"}
                     styleType={"outline"}

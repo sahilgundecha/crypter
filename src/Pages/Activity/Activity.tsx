@@ -38,9 +38,10 @@ const textChange = {
 const textStyle = {
   textDecoration: "none",
   color: "#777E90",
-  marginRight: "10px",
+  marginRight: "20px",
   cursor: "pointer",
   fontSize: "15px",
+  fontWeight:'bold'
 };
 const fBold = {
   fontWeight: "bold",
@@ -102,11 +103,13 @@ export default function Activity() {
           </Link>
         </Box>
         <Box className="lineStyle">
-          <Typography component="a" sx={textStyle}>
-            Home &gt;
+          <Link to="/profile-page" className="linkUnderline">
+          <Typography component="a" sx={textStyle} >
+            Profile &gt;
           </Typography>
-          <Typography component="p" sx={textStyle}>
-            Update Items
+          </Link>
+          <Typography component="p" className="textStyleProfile">
+          Activity
           </Typography>
         </Box>
       </Box>
