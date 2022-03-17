@@ -143,13 +143,15 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                   >
                     cancel
                   </ButtonComponent>
-                  <ButtonComponent
-                    btnColor={"#3772FF"}
-                    classNames="changeWallet"
-                    handleClick={() => handleButtonClick(true)}
-                  >
-                    Get started now
-                  </ButtonComponent>
+                  <Link to="/crypter">
+                    <ButtonComponent
+                      btnColor={"#3772FF"}
+                      classNames="changeWallet"
+                      handleClick={() => handleButtonClick(true)}
+                    >
+                      Get started now
+                    </ButtonComponent>
+                  </Link>
                 </Box>
               </Box>
             ) : null}

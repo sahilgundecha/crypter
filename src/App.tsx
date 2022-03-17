@@ -40,6 +40,7 @@ import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
 import WalletCard from "./Components/WalletCard/WalletCard";
 import ProfileCard from "./Components/ProfileCard/ProfileCard";
 import LocalStorage from "./Components/LocalStorage/LocalStorage";
+import ScrollToTop from "./Components/ScrollTop";
 
 const App: FC = () => {
   const [connected, setConnected] = LocalStorage("connected", false);
@@ -49,6 +50,7 @@ const App: FC = () => {
   return (
     <div>
       <NavbarComponent connected={connected} setConnected={setConnected} />
+      <ScrollToTop />
       <Routes>
         <Route
           path="/connect-wallet"
