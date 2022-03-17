@@ -72,8 +72,10 @@ export const ConnectWallet: FC = () => {
                 onClick={handle1}
                 onClick1={handle2}
               />
-              <WalletName title="MyEtherWallet" img={icon2} />
-              <WalletName title="Wallet Connect" img={icon4} />
+              <WalletName title="MyEtherWallet" img={icon2}  onClick={handle1}
+                onClick1={handle2}/>
+              <WalletName title="Wallet Connect" img={icon4}  onClick={handle1}
+                onClick1={handle2}/>
             </Box>
           </Grid>
           <Grid item md={5}>

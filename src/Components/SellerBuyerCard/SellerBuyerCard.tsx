@@ -19,14 +19,8 @@ function SellerBuyerCard() {
   };
 
   return (
-    <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px" }}>
-      <Box
-        sx={{
-          padding: "25px",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+    <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px",padding:'0px 30px' }}>
+      <Box className="circularDropdown">
         <Box>
           <Typography
             variant="h5"
@@ -47,8 +41,8 @@ function SellerBuyerCard() {
           <FormControl
             className="formcontrol"
             sx={{
-              m: 1,
-              minWidth: 190,
+              minWidth: 150,
+              margin: "0px",
             }}
           >
             <Select
@@ -64,7 +58,7 @@ function SellerBuyerCard() {
                 boxShadow: "none",
                 minWidth: 190,
                 appearance: "none",
-                m: 1,
+                margin: "0px",
               }}
               value={age}
               onChange={handleChange}
@@ -92,16 +86,9 @@ function SellerBuyerCard() {
           </FormControl>
           {/* <Dropdown item1="Seller" item2="Buyers" /> */}
         </Box>
-        <Box>
-          <Typography
-            sx={{ fontWeight: "bold" }}
-            variant="p"
-            color="text.secondary"
-            component="div"
-          >
-            TIME FRAME
-          </Typography>
+        <Box width="250px">
           <Dropdown
+            label=" TIME FRAME"
             item1="Today"
             item2="Morning"
             item3="Dinner"

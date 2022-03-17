@@ -6,6 +6,9 @@
   width: 100%;
   height: 10px;
 }
+.styleB{
+  border-radius: 40px !important;
+}
 .ChangeFont {
   font-size: 15px !important;
   color: #353945;
