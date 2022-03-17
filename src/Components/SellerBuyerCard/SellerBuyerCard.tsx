@@ -19,7 +19,7 @@ function SellerBuyerCard() {
   };
 
   return (
-    <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px" }}>
+    <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px",padding:'0px 30px' }}>
       <Box className="circularDropdown">
         <Box>
           <Typography

@@ -17,7 +17,7 @@ const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
+  { width: 768, itemsToShow: 5 },
   { width: 1200, itemsToShow: 5 },
   { width: 1500, itemsToShow: 5 },
   { width: 2570, itemsToShow: 5 },

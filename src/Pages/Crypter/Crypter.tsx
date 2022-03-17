@@ -6,22 +6,22 @@ import CrypterEnd from "../../Components/CrypterEnd/CrypterEnd";
 import BidCarousel from "../../Components/CurrentBid/BidCarousel";
 import SellerBuyerCard from "../../Components/SellerBuyerCard/SellerBuyerCard";
 import Discover from "../DiscoverHomePage/Discover";
-import { Container } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 const Crypter: FC = () => {
   return (
     <>
-      <Container>
+      <Box sx={{ margin: "0px 60px" }}>
         <BidCarousel />
         <CreatorsBid />
-      </Container>
+      </Box>
       <SellerBuyerCard />
-      <Container>
+      <Box sx={{ margin: "0px 50px" }}>
         <Carosel />
         <CradCollection />
         <Discover />
         <CrypterEnd />
-      </Container>
+      </Box>
     </>
   );
 };
