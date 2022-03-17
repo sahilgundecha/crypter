@@ -92,16 +92,17 @@ function SellerBuyerCard() {
           </FormControl>
           {/* <Dropdown item1="Seller" item2="Buyers" /> */}
         </Box>
-        <Box>
-          <Typography
+        <Box width="250px">
+          {/* <Typography
             sx={{ fontWeight: "bold" }}
             variant="p"
             color="text.secondary"
             component="div"
           >
             TIME FRAME
-          </Typography>
+          </Typography> */}
           <Dropdown
+            label="time frame"
             item1="Today"
             item2="Morning"
             item3="Dinner"
