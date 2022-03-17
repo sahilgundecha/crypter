@@ -28,6 +28,7 @@ export default function WalletName(props: any) {
             alignItems: "center",
             justifyContent: "space-between",
             padding: "30px 30px",
+            cursor:"pointer"
           }}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
