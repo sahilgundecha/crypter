@@ -92,7 +92,7 @@ const NavbarComponent = () => {
               sx={{ my: 2, color: "white", display: "block" }}
             >
               <Link
-                to="/Discover"
+                to="/search-filter"
                 className={`${classes.link} ${classes.linkMargin}`}
               >
                 Discover
@@ -265,7 +265,7 @@ const NavbarComponent = () => {
               <Paper elevation={0} sx={{ padding: 2 }}>
                 <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                   <Link
-                    to="#"
+                    to="/search-filter"
                     className={classes.link}
                     onClick={handleCloseNavMenu}
                   >

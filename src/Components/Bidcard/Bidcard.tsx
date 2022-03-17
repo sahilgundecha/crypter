@@ -9,6 +9,7 @@ import {
   Card,
   Typography,
   Divider,
+  Paper,
 } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
@@ -16,127 +17,254 @@ import PlaceaBidModals from "../Modals/PlaceaBidModal/PlaceaBidModals";
 
 interface Props {
   cardData: any;
+  whiteCard?: boolean;
 }
 
-const Bidcard: FC<Props> = ({ cardData }) => {
+const Bidcard: FC<Props> = ({ cardData }, props) => {
   const [pressed, setPressed] = useState<boolean>(false);
   const pressing = () => {
     setPressed(!pressed);
   };
   return (
     <>
-      <Card
-        style={{
-          boxShadow: "none",
-          width: "max-content",
-        }}
-        className="withMargin"
-      >
-        <Box className="boxwrap">
-          <CardMedia
-            component="img"
-            image={cardData.mainImg}
-            alt="green iguana"
-            className="cardmedia"
-          />
-        </Box>
-        <Box>
-          <PlaceaBidModals bidcard={true} logo={bidIcon} />
-        </Box>
-        <Box
+      {cardData.whiteCard ? (
+        <Paper
           sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            padding: "7px",
+            boxShadow: "0px 64px 64px #1F2F461F",
+            borderRadius: "20px",
+            padding: " 0px",
+            margin: "25px 5px",
           }}
-          className="heartPurchase"
         >
-          <Box>
-            <Typography className="purchase">PURCHASING !</Typography>
-          </Box>
-          <Box>
-            {pressed ? (
-              <FavoriteIcon
-                className="heart"
-                onClick={pressing}
-                style={{ color: "#EF466F" }}
+          <Card
+            style={{
+              boxShadow: "none",
+              width: "max-content",
+            }}
+            className="withMargin"
+          >
+            <Box className="boxwrap">
+              <CardMedia
+                component="img"
+                image={cardData.mainImg}
+                alt="green iguana"
+                className="cardmedia"
               />
-            ) : (
-              <FavoriteBorderIcon className="heart" onClick={pressing} />
-            )}
-          </Box>
-        </Box>
-        <CardContent
-          sx={{
-            display: "flex",
-            flexDirection: "row",
+            </Box>
+            <Box>
+              <PlaceaBidModals bidcard={true} logo={bidIcon} />
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: "7px",
+              }}
+              className="heartPurchase"
+            >
+              <Box>
+                <Typography className="purchase">PURCHASING !</Typography>
+              </Box>
+              <Box>
+                {pressed ? (
+                  <FavoriteIcon
+                    className="heart"
+                    onClick={pressing}
+                    style={{ color: "#EF466F" }}
+                  />
+                ) : (
+                  <FavoriteBorderIcon className="heart" onClick={pressing} />
+                )}
+              </Box>
+            </Box>
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "row",
 
-            justifyContent: "space-between",
-            padding: "5px",
-            cursoe: "pointer",
-          }}
-        >
-          <Box>
-            <Typography variant="h6" color="black">
-              {cardData.artName}
-            </Typography>
-          </Box>
-          <Box>
-            <Typography variant="caption" className="greenText">
-              {cardData.ETH} ETH
-            </Typography>
-          </Box>
-        </CardContent>
-        <CardContent
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            padding: "5px",
-          }}
-        >
-          <Box>
-            {cardData.creator.map((curr: any) => (
-              <img src={curr} className="icons" />
-            ))}
-          </Box>
+                justifyContent: "space-between",
+                padding: "5px",
+                cursoe: "pointer",
+              }}
+            >
+              <Box>
+                <Typography variant="h6" color="black">
+                  {cardData.artName}
+                </Typography>
+              </Box>
+              <Box>
+                <Typography variant="caption" className="greenText">
+                  {cardData.ETH} ETH
+                </Typography>
+              </Box>
+            </CardContent>
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: "5px",
+              }}
+            >
+              <Box>
+                {cardData.creator.map((curr: any) => (
+                  <img src={curr} className="icons" />
+                ))}
+              </Box>
 
-          <Typography variant="caption" className="inStock">
-            {cardData.inStock} in stock
-          </Typography>
-        </CardContent>
-        <Divider sx={{ margin: "5px" }} />
-        <CardContent
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            padding: "5px",
+              <Typography variant="caption" className="inStock">
+                {cardData.inStock} in stock
+              </Typography>
+            </CardContent>
+            <Divider sx={{ margin: "5px" }} />
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                padding: "5px",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <img
+                  src={candleStick}
+                  alt="{creatorImg}"
+                  style={{ marginRight: "5px" }}
+                />
+                <Typography variant="caption" className="bid">
+                  Highest bid{" "}
+                  <span className="eth">{cardData.highestBid} ETH</span>
+                </Typography>
+              </Box>
+
+              <Typography variant="caption" className="newBid">
+                {cardData.bidType}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Paper>
+      ) : (
+        <Card
+          style={{
+            boxShadow: "none",
+            width: "max-content",
           }}
+          className="withMargin"
         >
+          <Box className="boxwrap">
+            <CardMedia
+              component="img"
+              image={cardData.mainImg}
+              alt="green iguana"
+              className="cardmedia"
+            />
+          </Box>
+          <Box>
+            <PlaceaBidModals bidcard={true} logo={bidIcon} />
+          </Box>
           <Box
             sx={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: "7px",
+            }}
+            className="heartPurchase"
+          >
+            <Box>
+              <Typography className="purchase">PURCHASING !</Typography>
+            </Box>
+            <Box>
+              {pressed ? (
+                <FavoriteIcon
+                  className="heart"
+                  onClick={pressing}
+                  style={{ color: "#EF466F" }}
+                />
+              ) : (
+                <FavoriteBorderIcon className="heart" onClick={pressing} />
+              )}
+            </Box>
+          </Box>
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+
+              justifyContent: "space-between",
+              padding: "5px",
+              cursoe: "pointer",
             }}
           >
-            <img
-              src={candleStick}
-              alt="{creatorImg}"
-              style={{ marginRight: "5px" }}
-            />
-            <Typography variant="caption" className="bid">
-              Highest bid <span className="eth">{cardData.highestBid} ETH</span>
-            </Typography>
-          </Box>
+            <Box>
+              <Typography variant="h6" color="black">
+                {cardData.artName}
+              </Typography>
+            </Box>
+            <Box>
+              <Typography variant="caption" className="greenText">
+                {cardData.ETH} ETH
+              </Typography>
+            </Box>
+          </CardContent>
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: "5px",
+            }}
+          >
+            <Box>
+              {cardData.creator.map((curr: any) => (
+                <img src={curr} className="icons" />
+              ))}
+            </Box>
 
-          <Typography variant="caption" className="newBid">
-            {cardData.bidType}
-          </Typography>
-        </CardContent>
-      </Card>
+            <Typography variant="caption" className="inStock">
+              {cardData.inStock} in stock
+            </Typography>
+          </CardContent>
+          <Divider sx={{ margin: "5px" }} />
+          <CardContent
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              padding: "5px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={candleStick}
+                alt="{creatorImg}"
+                style={{ marginRight: "5px" }}
+              />
+              <Typography variant="caption" className="bid">
+                Highest bid{" "}
+                <span className="eth">{cardData.highestBid} ETH</span>
+              </Typography>
+            </Box>
+
+            <Typography variant="caption" className="newBid">
+              {cardData.bidType}
+            </Typography>
+          </CardContent>
+        </Card>
+      )}
     </>
   );
 };

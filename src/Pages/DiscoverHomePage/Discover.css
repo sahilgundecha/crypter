@@ -1,98 +1,46 @@
-.navBox2 {
+/* NEW DISCOVER */
+
+.ItemWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: space-around;
 }
-.navBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.discoverDropdown {
+  width: 250px;
 }
-.innerNavBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.discoverDropdownBelow {
+  width: 250px;
 }
-.mybutton1 {
-  border-radius: 20px !important;
-  background-color: #3772ff !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
-  text-transform: none !important;
-  cursor: pointer !important;
+.displayInTab {
+  display: none;
 }
 .filterButton {
-  border-radius: 20px !important;
-  background-color: #3772ff !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
-  text-transform: none !important;
-  cursor: pointer !important;
-  width: fit-content;
+  border-radius: 24px !important;
 }
-.navpillStylingDiscover {
-  margin-top: 0px;
-  width: 70%;
-  display: flex;
+.filterIcon {
+  margin-left: 5px !important;
 }
-.bigiImg1 {
-  margin-left: 10px !important;
-}
-
 @media (max-width: 1024px) {
-  .tabsStyling {
-    margin-left: 0px;
-    width: 560px;
-  }
-  .innerNavBox {
-    flex-direction: column;
-  }
-  .overflowInSmall {
-    width: 100% !important;
-    overflow-x: scroll;
+  .discoverDropdown {
+    width: 225px;
   }
 }
 @media (max-width: 768px) {
-  .tabsStyling {
-    margin-left: 0px;
-    width: 560px;
-    margin: 10px 0px;
+  .discoverDropdown {
+    width: 280px;
   }
-  .widthTab {
-    width: 850px !important;
+  .discoverDropdownBelow {
+    width: 330px;
   }
-  .filterButton {
-    width: 100%;
-    margin: 10px 20px;
-    padding: 20px;
+  .dispayInTab {
+    display: block;
   }
-  .navBox {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .dropdownWrapper {
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .tabsStyling {
+  .hideInTab {
     display: none;
   }
-  .navpillStylingDiscover {
-    display: none;
-  }
-  .navBox {
-    flex-direction: column;
-  }
-  .overflowInSmall {
-    width: 100% !important;
-    overflow-x: scroll;
+  .ItemWrapper {
+    justify-content: space-around;
   }
 }
  @media (min-width: 600px) {
