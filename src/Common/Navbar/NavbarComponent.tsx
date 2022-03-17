@@ -168,7 +168,7 @@ const NavbarComponent = () => {
               component="span"
               sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
             >
-              <Link to="/upload" className="lineUnderline">
+              <Link to="/upload" className="linkUnderline">
                 <ButtonComponent btnColor={"#3772FF"} classNames="styleUp">
                   Upload
                 </ButtonComponent>

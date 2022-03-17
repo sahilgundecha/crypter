@@ -77,7 +77,7 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
             cursor: "pointer",
           }}
         >
-          <Link to="/profile-page" className="lineUnderline">
+          <Link to="/profile-page" className="linkUnderline">
             <img className="changeWidth1" src={cardData.mainImg} />
           </Link>
           <Box
@@ -93,23 +93,23 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               pagination={false}
               renderArrow={myArrow}
             >
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img1} />
               </Link>
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img2} />
               </Link>
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img3} />
               </Link>
 
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img1} />
               </Link>
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img2} />
               </Link>
-              <Link to="/profile-page" className="lineUnderline">
+              <Link to="/profile-page" className="linkUnderline">
                 <img className="changeWidth1" src={cardData.img3} />
               </Link>
             </Carousel>
