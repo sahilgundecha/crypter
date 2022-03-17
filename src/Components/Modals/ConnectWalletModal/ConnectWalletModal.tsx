@@ -71,12 +71,7 @@ const ConnectWalletModal = () => {
             </Box>
 
             <Box className="modal3">
-              <img
-                onClick={handleClose}
-                src={purple_icon}
-                alt="img"
-                className="purpleimg"
-              />
+              <img src={purple_icon} alt="img" className="purpleimg" />
 
               <Typography variant="p" className="para1" component="div">
                 You need to connect your wallet first to sign messages and send
@@ -90,7 +85,12 @@ const ConnectWalletModal = () => {
                   </Button>
                 </Link>
                 <Box className="cancelbtnbox">
-                  <Button className="rounded-pill cancelbtn">cancel</Button>
+                  <Button
+                    onClick={handleClose}
+                    className="rounded-pill cancelbtn"
+                  >
+                    cancel
+                  </Button>
                 </Box>
               </Box>
             </Box>

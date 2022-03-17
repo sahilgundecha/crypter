@@ -244,7 +244,7 @@ const PlaceaBidModals = (props: placeabidprops) => {
               </Button>
 
               <Box className="cancelbtnbox">
-                <Button className=" rounded-pill cancelbtn">cancel</Button>
+                <Button onClick={handleClose} className=" rounded-pill cancelbtn">cancel</Button>
               </Box>
             </Box>
           </Box>

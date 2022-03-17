@@ -15,6 +15,7 @@ import menu1 from "../../Assets/images/menu1.svg";
 import btn3icon from "../../Assets/images/btn3icon.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
+import { Link } from "react-router-dom";
 
 const styles = {
   borderRadius: "25px",
@@ -136,6 +137,7 @@ const WalletCard: FC<wall> = (props, { setConnected }) => {
               </Box>
             </Card>
 
+            <Link to="/profile-page" className="linkUnderline">
             <Box
               className="wrapper"
               sx={{
@@ -156,6 +158,8 @@ const WalletCard: FC<wall> = (props, { setConnected }) => {
                 My profile
               </Typography>
             </Box>
+            </Link>
+            <Link to="/item" className="linkUnderline">
             <Box
               className="wrapper"
               sx={{
@@ -174,6 +178,7 @@ const WalletCard: FC<wall> = (props, { setConnected }) => {
                 My items
               </Typography>
             </Box>
+            </Link>
             <Box
               className="wrapper"
               sx={{

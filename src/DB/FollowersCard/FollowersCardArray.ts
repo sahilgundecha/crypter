@@ -15,7 +15,7 @@ export const userInfo = {
   text: "0xc4c16a645...b21a",
   description:
     "A wholesome farm owner in Montana. Upcoming gallery solo show in Germany",
-  link: "https://ui8.net",
+  link: "https://cronj.com",
   memberShip: "Member since Mar 15, 2021",
 };
 

@@ -33,7 +33,7 @@ const Searchbar = (props: any) => {
             setsearchedData(event.target.value);
           }}
         />
-        <IconButton type="submit" aria-label="search">
+        <IconButton aria-label="search">
           {props.icon ? props.icon : <SearchIcon />}
         </IconButton>
       </Paper>

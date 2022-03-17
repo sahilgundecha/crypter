@@ -304,7 +304,7 @@ const Item = () => {
           <Box>
             <Typography variant="caption" display="block" className="linkText">
               This NFT Card will give you Access to Special Airdrops. To learn
-              more about UI8 please visit
+              more about please visit
             </Typography>
             <Typography
               variant="caption"
@@ -312,7 +312,7 @@ const Item = () => {
               gutterBottom
               className="link"
             >
-              <a href="">https://ui8.net</a>
+              <a href="">https://cronj.com</a>
             </Typography>
           </Box>
           <Box className="itemNavPills">
