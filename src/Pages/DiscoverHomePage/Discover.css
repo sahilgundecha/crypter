@@ -95,3 +95,9 @@
     overflow-x: scroll;
   }
 }
+ @media (min-width: 600px) {
+.css-1oqqzyl-MuiContainer-root  {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
