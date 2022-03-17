@@ -41,7 +41,9 @@ export const NotificationD = () => {
         <Box sx={styleFlex}>
           <Typography variant="h5">Notification</Typography>
           <Link to="/Activity " className="linkUnderline">
-            <Button className="styleB" variant="contained">See All</Button>
+            <Button className="styleB" variant="contained">
+              See All
+            </Button>
           </Link>
         </Box>
         <Notification colData={cardData} />

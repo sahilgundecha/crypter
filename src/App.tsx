@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Textfield from "./Components/Textfield/TextField";
@@ -37,14 +37,27 @@ import Crypter from "./Pages/Crypter/Crypter";
 import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
 import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
 import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
+import WalletCard from "./Components/WalletCard/WalletCard";
+import ProfileCard from "./Components/ProfileCard/ProfileCard";
 
 const App: FC = () => {
+  const [connected, setConnected] = useState<boolean>(false);
+  console.log(connected);
   return (
     <div>
-      <NavbarComponent />
+      <NavbarComponent connected={connected} />
       <Routes>
+        <Route
+          path="/connect-wallet"
+          element={<ConnectWallet setConnected={setConnected} />}
+        />
+        <Route
+          path="wallet-card"
+          element={<WalletCard setConnected={setConnected} />}
+        />
         <Route path="/" element={<Crypter />} />
         <Route path="/slider" element={<SliderComponent />} />
+        <Route path="/profile" element={<ProfileCard />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
         <Route path="/textfield" element={<Textfield />} />
@@ -69,7 +82,7 @@ const App: FC = () => {
         <Route path="/burn" element={<BurnToken />} />
         <Route path="/report" element={<Report />} />
         <Route path="/crypter" element={<Crypter />} />
-        <Route path="/connect-wallet" element={<ConnectWallet />} />
+
         <Route path="/crypter-end" element={<CrypterEnd />} />
         <Route path="/follow" element={<FollowModal />} />
         <Route path="/creators" element={<CreatorsBid />} />

@@ -62,8 +62,13 @@ const Discover = () => {
   return (
     <>
       <Container>
-        <Box sx={{ margin: "50px" }}>
-          <Typography variant="h3" gutterBottom component="div">
+        <Box sx={{ margin: "50px 30px" }}>
+          <Typography
+            variant="h3"
+            gutterBottom
+            component="div"
+            sx={{ fontWeight: "bold" }}
+          >
             Discover
           </Typography>
         </Box>
