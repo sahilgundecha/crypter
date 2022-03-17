@@ -118,7 +118,9 @@ const PutOnSale1 = () => {
               Continue
             </Button>
             <Box className="cancelbtnbox">
-              <Button className=" rounded-pill cancelbtn">cancel</Button>
+              <Button onClick={handleClose} className=" rounded-pill cancelbtn">
+                cancel
+              </Button>
             </Box>
           </Box>
         </Box>
