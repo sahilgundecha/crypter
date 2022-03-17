@@ -169,7 +169,12 @@ const Modals = (props: modalsprops) => {
                     Connect wallet
                   </Button>
                   <Box className="cancelbtnbox">
-                    <Button className=" rounded-pill cancelbtn">cancel</Button>
+                    <Button
+                      onClick={handleClose}
+                      className=" rounded-pill cancelbtn"
+                    >
+                      cancel
+                    </Button>
                   </Box>
                 </Box>
               </Box>
@@ -275,7 +280,12 @@ const Modals = (props: modalsprops) => {
                 I Understand ,continue
               </Button>
               <Box className="cancelbtnbox">
-                <Button className=" rounded-pill cancelbtn">cancel</Button>
+                <Button
+                  onClick={handleClose}
+                  className=" rounded-pill cancelbtn"
+                >
+                  cancel
+                </Button>
               </Box>
             </Box>
           </Box>

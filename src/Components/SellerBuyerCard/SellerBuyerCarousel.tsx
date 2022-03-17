@@ -1,4 +1,4 @@
-import { Component, useState ,FC } from "react";
+import { Component, useState, FC } from "react";
 import WhiteCards from "./WhiteCards/WhiteCards";
 import Data from "../../DB/SellerBuyerCardArray/SellerBuyersArray";
 import Carousel from "react-elastic-carousel";
@@ -17,10 +17,11 @@ const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 5 },
-  { width: 1200, itemsToShow: 5 },
-  { width: 1500, itemsToShow: 5 },
-  { width: 2570, itemsToShow: 5 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1000, itemsToShow: 4 },
+  { width: 1400, itemsToShow: 5 },
+  { width: 1500, itemsToShow: 6 },
+  { width: 2570, itemsToShow: 6 },
 ];
 interface forArrow {
   type?: any;

@@ -53,7 +53,7 @@ const FooterComponent = () => {
               </Link>
             </Box>
             <Box>
-              <Typography variant="h3" display="block" component="div" mt={4}>
+              <Typography variant="h5" display="block" component="div" mt={4}>
                 The New Creative<br></br>Economy
               </Typography>{" "}
             </Box>
