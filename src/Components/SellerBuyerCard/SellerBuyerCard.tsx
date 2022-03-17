@@ -22,7 +22,7 @@ function SellerBuyerCard() {
     <Box sx={{ background: "#E6E8EC", marginBottom: "50px", height: "640px" }}>
       <Box
         sx={{
-          padding: "25px",
+          padding: "40px 85px",
           display: "flex",
           justifyContent: "space-between",
         }}
@@ -47,8 +47,8 @@ function SellerBuyerCard() {
           <FormControl
             className="formcontrol"
             sx={{
-              m: 1,
-              minWidth: 190,
+              minWidth: 150,
+              margin: "0px",
             }}
           >
             <Select
@@ -64,7 +64,7 @@ function SellerBuyerCard() {
                 boxShadow: "none",
                 minWidth: 190,
                 appearance: "none",
-                m: 1,
+                margin: "0px",
               }}
               value={age}
               onChange={handleChange}

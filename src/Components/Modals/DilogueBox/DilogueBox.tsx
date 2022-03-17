@@ -339,7 +339,7 @@ const DilogueBox = (props: DilogueModalsprops) => {
               width={"35px"}
             />
 
-            <Box className="modal3">
+            <Box className="modal5">
               <Typography variant="h4" component="div">
                 Yay! 🎉
               </Typography>
