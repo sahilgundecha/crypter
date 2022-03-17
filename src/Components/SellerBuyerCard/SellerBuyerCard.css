@@ -9,3 +9,8 @@
   border-style: none;
   box-shadow: none !important;
 }
+.circularDropdown {
+  padding: 40px 85px;
+  display: flex !important;
+  justify-content: space-between;
+}

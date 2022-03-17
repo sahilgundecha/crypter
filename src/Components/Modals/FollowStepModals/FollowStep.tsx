@@ -18,20 +18,6 @@ declare module "@mui/material/Typography" {
 interface followStepsprops {
   value?: number;
   children?: JSX.Element | JSX.Element[] | string[];
-  title?: string;
-  ETHone?: string | number;
-  ETH2two?: string | number;
-  modalhead1?: string;
-  modalpara1?: string;
-  modalnum?: number | string;
-  modalpara2?: string;
-  totalETH?: number;
-  ETH1?: number | string;
-  BoxText1?: string;
-  ETH2?: number | string;
-  BoxText2?: string;
-  ETH3?: number | string;
-  BoxText3?: string;
   head?: string;
   subhead1?: string;
   subhead2?: string;
@@ -211,7 +197,7 @@ const FollowStep = (props: followStepsprops) => {
               }}
             >
               <Typography component="div" variant="h6" className="subhead">
-                {props.subhead1 ? props.subhead1 : "Sign sell order"}
+                {props.subhead2 ? props.subhead2 : "Sign sell order"}
               </Typography>
               <Typography
                 component="div"
@@ -249,7 +235,7 @@ const FollowStep = (props: followStepsprops) => {
               }}
             >
               <Typography component="div" variant="h6" className="subhead">
-                {props.subhead1 ? props.subhead1 : " Sign lock order"}
+                {props.subhead3 ? props.subhead3 : " Sign lock order"}
               </Typography>
               <Typography
                 component="div"
