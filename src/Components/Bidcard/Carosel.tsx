@@ -21,7 +21,9 @@ const breakPoints = [
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 4 },
   { width: 1200, itemsToShow: 4 },
-  { width: 1500, itemsToShow: 4 },
+  { width: 1500, itemsToShow: 6 },
+  { width: 1920, itemsToShow: 4 },
+  { width: 2600, itemsToShow: 5 },
 ];
 interface forArrow {
   type?: any;
@@ -58,7 +60,6 @@ const Carosel = () => {
         </Box>
       </Container>
       <Carousel
-        itemsToShow={4}
         isRTL={false}
         breakPoints={breakPoints}
         pagination={false}
