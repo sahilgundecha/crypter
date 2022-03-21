@@ -18,6 +18,7 @@ import blackimg1 from "../../Assets/images/blackimg1.svg";
 import hosting from "../../Assets/images/hosting.svg";
 import blackimg2 from "../../Assets/images/blackimg2.svg";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
+import Carosel from "../Bidcard/Carosel";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -103,10 +104,11 @@ export default function VerticalTabs() {
             flexGrow: 1,
             bgcolor: "background.paper",
             display: "flex",
+            float: "left",
           }}
         >
           <Grid container spacing={2}>
-            <Grid xs={12} md={2}>
+            <Grid xs={12} sm={4} md={4}>
               <Tabs
                 orientation="vertical"
                 value={value}
@@ -164,7 +166,7 @@ export default function VerticalTabs() {
                 />
               </Tabs>
             </Grid>
-            <Grid md={10}>
+            <Grid md={8} sm={8} xs={12}>
               <TabPanel value={value} index={0}>
                 <Accordion className="hoverText1">
                   <AccordionSummary
@@ -369,7 +371,9 @@ export default function VerticalTabs() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                   >
-                    <Typography>Dose it suppport Dark Mode</Typography>
+                    <Typography className="hoverText">
+                      Dose it suppport Dark Mode
+                    </Typography>
                   </AccordionSummary>
                   <AccordionDetails className="accordionText">
                     <Typography
@@ -831,6 +835,7 @@ export default function VerticalTabs() {
             </Grid>
           </Grid>
         </Box>
+        <Carosel />
       </Container>
     </>
   );
