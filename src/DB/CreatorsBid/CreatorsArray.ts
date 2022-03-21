@@ -11,7 +11,7 @@ export const CreatorsArray = [
     item: "1 of 12",
   },
   {
-    id: 1,
+    id: 2,
     title: "Future Coming Soon",
     mainImg: Home1,
     img1: userHome,
@@ -20,7 +20,7 @@ export const CreatorsArray = [
     item: "1 of 20",
   },
   {
-    id: 1,
+    id: 3,
     title: "Elon Musk silver coin 3d print",
     mainImg: Home1,
     img1: userHome,
@@ -37,17 +37,17 @@ export const LatestUpdatesArray = [
     price: 2.45,
   },
   {
-    id: 1,
+    id: 2,
     title: "Anita Bins",
     price: 2.45,
   },
   {
-    id: 1,
+    id: 3,
     title: "Janna Wackert",
     price: 2.456,
   },
   {
-    id: 1,
+    id: 4,
     title: "Ledner Lorena",
     price: 2.45,
   },

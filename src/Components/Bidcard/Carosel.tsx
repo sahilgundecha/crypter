@@ -66,7 +66,7 @@ const Carosel = () => {
         renderArrow={myArrow}
       >
         {Data.map((item, index) => (
-          <Bidcard cardData={item} key={item.id} />
+          <Bidcard cardData={item} key={index} />
         ))}
       </Carousel>
     </>

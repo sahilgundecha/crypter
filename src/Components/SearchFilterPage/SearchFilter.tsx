@@ -36,7 +36,7 @@ function TabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Grid>{children}</Grid>
         </Box>
       )}
     </div>
@@ -91,7 +91,7 @@ const SearchFilter = () => {
             Type your keywords
           </Typography>
         </Box>
-        <Box className="widthSm">
+        <Box className="widthSm searchbar">
           <Searchbar
             icon={
               <SearchRoundedIcon

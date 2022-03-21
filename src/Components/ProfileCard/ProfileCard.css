@@ -16,10 +16,16 @@
   font-size: 15px !important;
   font-weight: bolder !important;
 }
+.ETHCountDark {
+  color: #fff;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+}
 .greenETH {
   color: #45b26b;
   font-size: 15px !important;
 }
+
 .profileImg {
   margin-right: 15px !important;
   width: 30px;

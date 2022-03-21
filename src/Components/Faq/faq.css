@@ -16,8 +16,6 @@
   color: #777e90;
   font-size: 16px !important;
   font-weight: 600 !important;
-
-  font-family: "Poppins-Regular" !important;
 }
 .blueText {
   color: #3772ff;
@@ -28,7 +26,6 @@
 .hoverText {
   box-shadow: none !important;
   font-weight: 600 !important;
-  font-family: "Poppins-Regular" !important;
 }
 .hoverText1 {
   box-shadow: none !important;
@@ -65,6 +62,6 @@
 }
 .css-n1j79u-MuiButtonBase-root-MuiTab-root {
   font-size: 14px !important;
-  font-family: "DMSans-Bold" !important;
+
   font-weight: bold !important;
 }
