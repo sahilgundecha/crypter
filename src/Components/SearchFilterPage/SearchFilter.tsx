@@ -91,7 +91,7 @@ const SearchFilter = () => {
             Type your keywords
           </Typography>
         </Box>
-        <Box className="widthSm">
+        <Box className="widthSm searchbar">
           <Searchbar
             icon={
               <SearchRoundedIcon

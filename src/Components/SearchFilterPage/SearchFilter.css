@@ -6,8 +6,11 @@
 .customWidth {
   width: 240px !important;
 }
+.searchbar {
+  margin-right: 35px;
+}
 .dropdownWrapper {
-  width: 240px;
+  width: 235px;
 }
 .sliderWrapper {
   width: 240px;
@@ -45,9 +48,19 @@
   .sliderWrapper {
     width: 100%;
   }
+  .searchbar {
+    margin-right: 0px;
+  }
 }
 @media (max-width: 500px) {
   .widthSm .tabTopGrid_Styling {
     width: 300px !important;
   }
+}
+
+.firstBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
