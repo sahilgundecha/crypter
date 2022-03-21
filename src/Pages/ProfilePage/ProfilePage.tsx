@@ -156,6 +156,7 @@ export default function ProfilePage() {
             </Tabs>
 
             <TabPanel value={value} index={0}>
+              <Grid className="tabPanelSection-Style">
               <Grid
                 container
                 spacing={2}
@@ -171,8 +172,10 @@ export default function ProfilePage() {
                   <Bidcard cardData={item} key={item.id} />
                 ))}
               </Grid>
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
+            <Grid className="tabPanelSection-Style">
               <Grid
                 container
                 spacing={2}
@@ -188,8 +191,10 @@ export default function ProfilePage() {
                   <Bidcard cardData={item} key={item.id} />
                 ))}
               </Grid>
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={2}>
+            <Grid className="tabPanelSection-Style">
               <Grid
                 container
                 spacing={2}
@@ -205,8 +210,10 @@ export default function ProfilePage() {
                   <Bidcard cardData={item} key={item.id} />
                 ))}
               </Grid>
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={3}>
+            <Grid className="tabPanelSection-Style">
               <Grid
                 container
                 spacing={2}
@@ -222,12 +229,15 @@ export default function ProfilePage() {
                   <Bidcard cardData={item} key={item.id} />
                 ))}
               </Grid>
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={4}>
+              <Grid className="tabPanelSection2-Style">
               <FollowingCard />
+              </Grid>
             </TabPanel>
             <TabPanel value={value} index={5}>
-              <Grid container>
+              <Grid className="tabPanelSection2-Style">
                 <FollowersCard />
               </Grid>
             </TabPanel>
