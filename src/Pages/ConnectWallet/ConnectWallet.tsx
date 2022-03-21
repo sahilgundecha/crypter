@@ -29,6 +29,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
   const [CImg, setCImg] = useState(false);
   const [Dnone, setDnone] = useState(false);
   const [showB, setshowB] = useState(true);
+
   const handleButtonClick = (status: any) => {
     setConnected(status);
   };
@@ -68,8 +69,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
         >
           <Grid item md={6} spacing={3}>
             <Box>
-              <WalletName  onClick={handle1}
-                onClick1={handle2}/>
+              <WalletName onClick={handle1} onClick1={handle2} />
               <WalletName
                 title="Coinbase wallet"
                 img={icon1}
@@ -77,10 +77,18 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                 onClick={handle1}
                 onClick1={handle2}
               />
-              <WalletName title="MyEtherWallet" img={icon2}  onClick={handle1}
-                onClick1={handle2}/>
-              <WalletName title="Wallet Connect" img={icon4}  onClick={handle1}
-                onClick1={handle2}/>
+              <WalletName
+                title="MyEtherWallet"
+                img={icon2}
+                onClick={handle1}
+                onClick1={handle2}
+              />
+              <WalletName
+                title="Wallet Connect"
+                img={icon4}
+                onClick={handle1}
+                onClick1={handle2}
+              />
             </Box>
           </Grid>
           <Grid item md={5}>
@@ -135,13 +143,15 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                   >
                     cancel
                   </ButtonComponent>
-                  <ButtonComponent
-                    btnColor={"#3772FF"}
-                    classNames="changeWallet"
-                    handleClick={() => handleButtonClick(true)}
-                  >
-                    Get started now
-                  </ButtonComponent>
+                  <Link to="/crypter">
+                    <ButtonComponent
+                      btnColor={"#3772FF"}
+                      classNames="changeWallet"
+                      handleClick={() => handleButtonClick(true)}
+                    >
+                      Get started now
+                    </ButtonComponent>
+                  </Link>
                 </Box>
               </Box>
             ) : null}

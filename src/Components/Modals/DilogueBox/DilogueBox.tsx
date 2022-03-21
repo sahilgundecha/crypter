@@ -219,7 +219,12 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 I Understand ,continue
               </Button>
               <Box className="cancelbtnbox">
-                <Button className=" rounded-pill cancelbtn ">cancel</Button>
+                <Button
+                  onClick={handleClose}
+                  className=" rounded-pill cancelbtn "
+                >
+                  cancel
+                </Button>
               </Box>
             </Box>
           </Box>
@@ -317,7 +322,12 @@ const DilogueBox = (props: DilogueModalsprops) => {
                 I understand, continue
               </Button>
               <Box className="cancelbtnbox">
-                <Button className=" rounded-pill cancelbtn ">cancel</Button>
+                <Button
+                  onClick={handleClose}
+                  className=" rounded-pill cancelbtn "
+                >
+                  cancel
+                </Button>
               </Box>
             </Box>
           </Box>

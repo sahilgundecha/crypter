@@ -15,6 +15,7 @@ import menu1 from "../../Assets/images/menu1.svg";
 import btn3icon from "../../Assets/images/btn3icon.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
+import { Link } from "react-router-dom";
 
 const styles = {
   borderRadius: "25px",
@@ -43,13 +44,11 @@ interface wall {
   ETH?: string | number;
   img?: string;
 }
-const WalletCard: FC<wall> = (props, { setConnected }) => {
+const WalletCard: FC<wall> = (props) => {
   const [open, setOpen] = useState<boolean>(false);
-
   const [hover, setHover] = useState<boolean>(false);
   const handleDisconnect = (status: any) => {
-    setConnected(status);
-    console.log("disconnect");
+    props.setConnected(status);
   };
   const handleMouseIn = () => {
     setHover(true);
@@ -136,44 +135,48 @@ const WalletCard: FC<wall> = (props, { setConnected }) => {
               </Box>
             </Card>
 
-            <Box
-              className="wrapper"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                borderBottom: "1px solid #777E90",
-                padding: "10px 0px",
-                marginTop: "15px",
-              }}
-            >
-              <img src={menu1} alt="img" className="menu_img" />
+            <Link to="/profile-page" className="linkUnderline">
+              <Box
+                className="wrapper"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  borderBottom: "1px solid #777E90",
+                  padding: "10px 0px",
+                  marginTop: "15px",
+                }}
+              >
+                <img src={menu1} alt="img" className="menu_img" />
 
-              <Typography
-                color="text.secondary"
-                component="div"
-                className="btntext"
+                <Typography
+                  color="text.secondary"
+                  component="div"
+                  className="btntext"
+                >
+                  My profile
+                </Typography>
+              </Box>
+            </Link>
+            <Link to="/item" className="linkUnderline">
+              <Box
+                className="wrapper"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  borderBottom: "1px solid #777E90",
+                  padding: "10px 0px",
+                }}
               >
-                My profile
-              </Typography>
-            </Box>
-            <Box
-              className="wrapper"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                borderBottom: "1px solid #777E90",
-                padding: "10px 0px",
-              }}
-            >
-              <img className="menu_img" src={btn2icon} alt="img" />
-              <Typography
-                color="text.secondary"
-                component="div"
-                className="btntext"
-              >
-                My items
-              </Typography>
-            </Box>
+                <img className="menu_img" src={btn2icon} alt="img" />
+                <Typography
+                  color="text.secondary"
+                  component="div"
+                  className="btntext"
+                >
+                  My items
+                </Typography>
+              </Box>
+            </Link>
             <Box
               className="wrapper"
               sx={{
