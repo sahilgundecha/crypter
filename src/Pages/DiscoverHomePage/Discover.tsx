@@ -60,7 +60,7 @@ const Discover = () => {
     setvalue(newValue);
   };
   return (
-    <Container>
+    <Box>
       <Box sx={{ margin: "50px 30px" }}>
         <Typography
           variant="h3"
@@ -219,7 +219,7 @@ const Discover = () => {
           </Grid>
         </TabPanel>
       </Box>
-    </Container>
+    </Box>
   );
 };
 
