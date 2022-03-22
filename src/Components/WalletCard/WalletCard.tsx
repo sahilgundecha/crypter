@@ -20,13 +20,13 @@ import { Link } from "react-router-dom";
 const styles = {
   borderRadius: "25px",
   color: "black",
-  border: "1px solid #777E90",
+  border: "2px solid #E6E8EC",
 };
 const styles1 = {
   color: "#ffffff",
   backgroundColor: "#3772FF",
   borderRadius: "25px",
-  border: "1px solid #3772FF",
+  border: "2px solid #E6E8EC",
 };
 
 interface walletcardProps {
@@ -73,7 +73,7 @@ const WalletCard: FC<wall> = (props) => {
               }}
             >
               <Typography
-                sx={{ fontSize: 14 }}
+                sx={{ fontSize: "14px", fontWeight: "bold" }}
                 color="text.secondary"
                 gutterBottom
               >
@@ -82,7 +82,12 @@ const WalletCard: FC<wall> = (props) => {
 
               <img src={smallImg} alt="img" width={"15px"} className="pswimg" />
             </Box>
-            <Card sx={{ boxShadow: "0px 7px 5px 6px #0F0F0F1A" }}>
+            <Card
+              sx={{
+                boxShadow: "0px 7px 5px 6px #0F0F0F1A",
+                borderRadius: "15px",
+              }}
+            >
               <Box
                 sx={{
                   display: "flex",
@@ -111,7 +116,11 @@ const WalletCard: FC<wall> = (props) => {
                     >
                       {props.title ? props.title : "Balance"}
                     </Typography>
-                    <Typography component="div" variant="h5">
+                    <Typography
+                      component="div"
+                      variant="h5"
+                      fontWeight={"bold"}
+                    >
                       {props.ETH ? props.ETH : "4.689"} ETH
                     </Typography>
                   </CardContent>

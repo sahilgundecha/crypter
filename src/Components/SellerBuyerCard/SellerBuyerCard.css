@@ -4,6 +4,32 @@
   margin-bottom: 54px;
   padding: 10px 100px;
 }
+.setdropdown {
+  background-color: #ffffff;
+  min-width: max-content;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 40px;
+}
+.dropdown2 {
+  width: 250px;
+}
+.select {
+  margin-left: -24px;
+
+  background-color: #e6e8ec;
+  min-width: 190px;
+  margin: 0px;
+  outline: none !important;
+  border: none !important;
+}
+.setdropdown {
+  margin-left: -24px;
+
+  background-color: #ffffff;
+  min-width: 190px;
+  margin: 0px;
+}
 .graydiv {
   background: #e6e8ec;
   padding-bottom: 150px;
@@ -25,5 +51,6 @@
   }
   .dropdown2 {
     margin-right: auto;
+    width: 90%;
   }
 }

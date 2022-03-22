@@ -46,9 +46,22 @@
     height: 42px;
   }
 }
- @media (min-width: 600px) {
-.css-1oqqzyl-MuiContainer-root  {
+@media (max-width: 500px) {
+  .css-1oqqzyl-MuiContainer-root {
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+  .discoverDropdown,
+  .filterButton {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .filterBox {
+    width: 99%;
+    text-align: center;
+  }
+  .filterButton {
+    height: 45px;
+    font-size: 20px;
   }
 }
