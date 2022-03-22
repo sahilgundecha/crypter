@@ -79,7 +79,9 @@ function SellerBuyerCard() {
                     }}
                     value=""
                   >
-                    <em> Seller</em>
+                    <em style={{ fontSize: "30px", fontWeight: "bold" }}>
+                      Seller
+                    </em>
                   </MenuItem>
 
                   <MenuItem
@@ -90,7 +92,9 @@ function SellerBuyerCard() {
                       borderRadius: "40px",
                     }}
                   >
-                    Buyers
+                    <em style={{ fontSize: "30px", fontWeight: "bold" }}>
+                      Buyers
+                    </em>
                   </MenuItem>
                 </Select>
               </FormControl>
