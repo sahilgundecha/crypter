@@ -1,6 +1,7 @@
 .css-nnbavb {
   float: right !important;
 }
+
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
   background-color: #f4f5f6 !important;
 }
@@ -21,11 +22,4 @@
 
 .css-j8hg7e-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   height: 45px !important;
-}
-@media (max-width: 768px) {
-  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-    min-width: 90% !important;
-    margin-left: 10px !important;
-    border-radius: 10px !important;
-  }
 }
