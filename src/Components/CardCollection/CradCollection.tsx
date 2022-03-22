@@ -9,7 +9,7 @@ import rightArrow from "../../Assets/images/RightArrow.svg";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 480, itemsToShow: 1 },
+  { width: 480, itemsToShow: 2 },
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 2 },
   { width: 1024, itemsToShow: 3 },

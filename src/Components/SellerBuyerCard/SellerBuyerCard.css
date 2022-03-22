@@ -1,16 +1,29 @@
-.select:active {
-  box-shadow: none !important;
-  outline: none !important;
-}
-.formcontrol {
-  background-color: transparent;
-  outline: none !important;
-  border: none !important;
-  border-style: none;
-  box-shadow: none !important;
-}
 .circularDropdown {
-  padding: 40px 85px;
-  display: flex !important;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+  padding: 10px 100px;
+}
+.graydiv {
+  background: #e6e8ec;
+  padding-bottom: 150px;
+  height: 640px;
+  padding: 70px 0px;
+}
+@media (max-width: 768px) {
+  .circularDropdown {
+    padding: 10px 70px;
+  }
+}
+@media (max-width: 465px) {
+  .circularDropdown {
+    padding: 35px 0px;
+    flex-direction: column;
+  }
+  .graydiv {
+    padding: 100px 0px;
+  }
+  .dropdown2 {
+    margin-right: auto;
+  }
 }
