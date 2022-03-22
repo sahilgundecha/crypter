@@ -1,5 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import dot from "../../Assets/images/dot.png";
+ const stylePointer = {
+   cursor:'pointer'
+ }
 
 interface cardProps {
   mainImg: string;
@@ -11,7 +14,7 @@ interface cardProps {
 export default function NotificationBlock(props: cardProps) {
   return (
     <>
-      <Box>
+      <Box sx={stylePointer}>
         <img className="change1" src={props.mainImg} />
         <Box sx={{ marginLeft: "20px" }}>
           <Typography>{props.ethPrice}</Typography>

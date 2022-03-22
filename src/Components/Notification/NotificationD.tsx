@@ -17,6 +17,7 @@ const styleEnd = {
 const styleFlex = {
   display: "flex",
   justifyContent: "space-between",
+  cursor:'pointer'
 };
 
 interface cardProps {

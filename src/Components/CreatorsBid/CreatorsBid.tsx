@@ -33,7 +33,7 @@ export default function CreatorsBid() {
   return (
     <>
       <Container>
-        <Grid container spacing={3} sx={{ margin: "30px 0px " }}>
+        <Grid container spacing={3} sx={{ margin: "30px 0px " ,overflowY:'hidden' }} >
           <Grid item md={4} sm={12}>
             <Link to="/item" className="firstSection">
               <Box className="container">
@@ -48,7 +48,7 @@ export default function CreatorsBid() {
                   <Box sx={styleBT}>
                     <Box>
                       <img
-                        width={50}
+                        width={30}
                         style={{ marginTop: "10px" }}
                         src={user1}
                       />
@@ -68,12 +68,12 @@ export default function CreatorsBid() {
               </Box>
             </Link>
           </Grid>
-          <Grid item md={5}>
+          <Grid item md={5} sm={7}>
             {CreatorsArray.map((item, index) => (
               <CreatorsItems CreatorsArray={item} key={item.id} />
             ))}
           </Grid>
-          <Grid item md={3}>
+          <Grid item md={3} sm={4}>
             <Typography className="fontC5">
               Latest upload from creators 🔥
             </Typography>

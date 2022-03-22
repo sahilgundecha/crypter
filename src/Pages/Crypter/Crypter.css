@@ -1,0 +1,8 @@
+.crypterBox1{
+    margin :0px 50px;
+}
+@media(max-width:1024){
+    .crypterBox1{
+        margin :0px 0px;
+    }
+    }
