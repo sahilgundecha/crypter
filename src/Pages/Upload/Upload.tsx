@@ -34,12 +34,7 @@ const ImageFlex = {
   alignItems: "center",
   marginTop: "80px",
 };
-const boxStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  padding: "10px",
-  margin: "7px 120px",
-};
+
 const cardStyle = {
   maxWidth: 345,
   marginRight: "20px",
@@ -64,7 +59,7 @@ const textStyle = {
 export default function () {
   return (
     <>
-      <Box sx={boxStyle}>
+      <Box className="boxStyle">
         <Box>
           <Link to="/Crypter" className="linkUnderline">
             <Button sx={ButtonStyle}>
@@ -75,7 +70,7 @@ export default function () {
             </Button>
           </Link>
         </Box>
-        <Box className="lineStyle">
+        <Box className="lineStyle hideContent">
           <Link to="/Crypter" className="linkUnderline">
             <Typography component="a" sx={textStyle} className="homeStyle">
               Home &gt;

@@ -238,6 +238,10 @@
   .itemCard {
     margin-right: 30px;
   }
+  .itemImage {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .itemBlueBtn {

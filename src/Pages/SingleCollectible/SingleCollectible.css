@@ -36,7 +36,9 @@
   font-weight: bolder;
   font-size: 20px;
 }
-
+.hidden {
+  display: none;
+}
 .btnStyle1 {
   border-radius: 50px !important;
   padding: 15px 20px !important ;
@@ -52,7 +54,9 @@
   margin-right: 10px;
 }
 .gIfIEN {
+  width: 100% !important;
   margin: 20px 0px;
+  min-width: 260px !important;
   max-width: 100% !important;
   height: 100px !important;
   border: 1px solid #f4f5f6 !important;
@@ -65,4 +69,48 @@
   white-space: unset !important;
   text-overflow: unset !important;
   max-width: unset !important;
+}
+@media (max-width: 768px) {
+  .adjustingPadding {
+    margin: 0px 30px !important;
+  }
+  .changePadding {
+    padding: 0px 0px !important;
+  }
+  .hidden {
+    display: flex;
+    margin-right: 10px !important;
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  .padding300 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .columnStyle {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start !important;
+  }
+  .switchStyleP {
+    padding: 11px 10px !important;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .adjustingPadding {
+    margin: 0px 0px !important;
+  }
+  .gIfIEN {
+    width: 310px !important;
+  }
+}
+@media (max-width: 320px) {
+  .gIfIEN {
+    width: 0% !important;
+  }
+  .widthP {
+    padding: 15px 4px !important;
+  }
 }

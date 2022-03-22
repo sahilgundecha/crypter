@@ -3,7 +3,12 @@
   color: #777e90;
   font-size: 18px !important;
 }
-
+.boxStyle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 7px 120px;
+}
 .updatFont {
   font-size: 48px;
   font-weight: bold;
@@ -42,8 +47,16 @@
     text-align: center !important;
   }
 }
+@media (max-width: 768px) {
+  .boxStyle {
+      margin: 7px 20px;
+  }
+}
 @media (max-width: 500px) and (min-width: 300px) {
   .cardStyle {
     margin-bottom: 30px;
+  }
+  .hideContent{
+    display:none;
   }
 }

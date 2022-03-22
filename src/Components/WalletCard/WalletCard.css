@@ -28,6 +28,7 @@
 }
 .marginRight {
   text-align: left;
+  font-weight: bold !important;
 }
 .menu_img {
   width: 20px !important;

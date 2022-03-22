@@ -52,7 +52,7 @@ const Dropdown = (props: drop) => {
         onClose={isClicked}
         inputProps={{ "aria-label": "Without label" }}
         IconComponent={KeyboardArrowDownIcon}
-        sx={{ borderRadius: "12px", background: "#ffffff" }}
+        sx={{ borderRadius: "12px", backgroundColor: "#ffffff" }}
       >
         {props.item1 ? <MenuItem value={1}>{props.item1}</MenuItem> : null}
         {props.item2 ? <MenuItem value={2}>{props.item2}</MenuItem> : null}

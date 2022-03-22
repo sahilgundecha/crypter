@@ -19,17 +19,13 @@ import { Notification } from "../../Components/Notification/NotificationD";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";
+import filter from "../../Assets/images/arroww.svg";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
-const boxStyle = {
-  display: "flex",
-  justifyContent: "space-between",
-  padding: "10px",
-  margin: "7px 120px",
-};
 const boxStyle1 = {
   display: "flex",
   justifyContent: "space-between",
+  marginBottom:'40px'
 };
 const textChange = {
   textTransform: "none",
@@ -41,7 +37,11 @@ const textStyle = {
   marginRight: "20px",
   cursor: "pointer",
   fontSize: "15px",
-  fontWeight:'bold'
+  fontWeight: "bold",
+};
+const buttonCol = {
+  display: "flex",
+  flexDirection: "row",
 };
 const fBold = {
   fontWeight: "bold",
@@ -85,13 +85,17 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 export default function Activity() {
+  const [Boxes, setBox] = useState(false);
   const [value, setvalue] = useState(0);
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
   };
+  const showBox = () => {
+    setBox(!Boxes);
+  };
   return (
     <>
-      <Box sx={boxStyle}>
+      <Box className="boxStyle">
         <Box>
           <Link to="/Crypter" className="linkUnderline">
             <Button sx={ButtonStyle}>
@@ -104,12 +108,12 @@ export default function Activity() {
         </Box>
         <Box className="lineStyle">
           <Link to="/profile-page" className="linkUnderline">
-          <Typography component="a" sx={textStyle} >
-            Profile &gt;
-          </Typography>
+            <Typography component="a" sx={textStyle}>
+              Profile &gt;
+            </Typography>
           </Link>
           <Typography component="p" className="textStyleProfile">
-          Activity
+            Activity
           </Typography>
         </Box>
       </Box>
@@ -133,16 +137,90 @@ export default function Activity() {
                 </Tabs>
                 <TabPanel value={value} index={0}>
                   <Box sx={boxStyle1}>
-                    <Typography variant="h4" sx={fBold}>
-                      Activity{" "}
-                    </Typography>
-                    <ButtonComponent
-                      btnColor={"#23262F"}
-                      styleType={"outline"}
-                      classNames="btnStyle1"
-                    >
-                      Mark as all read
-                    </ButtonComponent>
+                    <Box>
+                      <Typography variant="h4" sx={fBold}>
+                        Activity{" "}
+                      </Typography>
+                    </Box>
+                    <Box sx={buttonCol}>
+                      <ButtonComponent
+                        btnColor={"#23262F"}
+                        styleType={"outline"}
+                        classNames="btnStyle1"
+                      >
+                        Mark as all read
+                      </ButtonComponent>
+                      <Box sx={{ display: { sm: "block", md: "none" } }}>
+                        <img src={filter} onClick={showBox}></img>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box>
+                    {Boxes ? (
+                      <Grid
+                        item
+                        md={12}
+                        sx={{ display: { sm: "block", md: "none" }}}
+                        className="alignCard"
+                      >
+                        <Paper className="stylePaper">
+                          <Typography variant="h6" sx={fBold}>
+                            Filters
+                          </Typography>
+                          <FormGroup>
+                            <FormControlLabel
+                              control={<Checkbox defaultChecked />}
+                              label="Sales"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox />}
+                              label="listings"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox />}
+                              label="Bids"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox defaultChecked />}
+                              label="Burns"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox />}
+                              label="Followings"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox defaultChecked />}
+                              label="Likes"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox />}
+                              label="Purchase"
+                            />
+                            <FormControlLabel
+                              control={<Checkbox defaultChecked />}
+                              label="Transfers"
+                            />
+                          </FormGroup>
+                          <Divider />
+                          <Box sx={{ margin: "10px 20px" }}>
+                            <ButtonComponent
+                              btnColor={"#23262F"}
+                              styleType={"outline"}
+                              classNames="btnStyle2"
+                            >
+                              Select
+                            </ButtonComponent>
+                            <ButtonComponent
+                              btnColor={"#23262F"}
+                              styleType={"outline"}
+                              classNames="btnStyle2"
+                            >
+                              Unselect
+                            </ButtonComponent>
+                          </Box>
+                        </Paper>
+                      </Grid>
+                    ) : null}
                   </Box>
                   <Box>
                     <Notification colData={cardData} />
@@ -157,7 +235,13 @@ export default function Activity() {
             </Grid>
           </Grid>
           <Grid item md={1}></Grid>
-          <Grid item md={4} sm={12} className="alignCard">
+
+          <Grid
+            item
+            md={4}
+            sx={{ display: { sm: "none", md: "flex" ,xs:'none'} }}
+            className="alignCard"
+          >
             <Paper className="stylePaper">
               <Typography variant="h6" sx={fBold}>
                 Filters

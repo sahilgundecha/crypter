@@ -3,15 +3,21 @@
   color: #777e90;
   font-weight: bold !important;
 }
+.hiddenBox {
+  display: none;
+}
 .heading2 {
   font-size: 48px !important;
   color: #000000;
+  font-weight: bold !important;
 }
 .heading3 {
   font-size: 16px !important;
   color: #353945;
   font-weight: bold !important;
+  margin: 15px !important;
 }
+
 .accordionText {
   color: #777e90;
   font-size: 16px !important;
@@ -64,4 +70,12 @@
   font-size: 14px !important;
 
   font-weight: bold !important;
+}
+@media (max-width: 468px) {
+  .hiddenBox {
+    display: block;
+  }
+  .visibleTab {
+    display: none !important;
+  }
 }

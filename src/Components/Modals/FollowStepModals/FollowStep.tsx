@@ -99,9 +99,9 @@ const FollowStep = (props: followStepsprops) => {
           customStyle={{ display: "flex", alignItem: "center" }}
           handleClick={handleOpen}
           btnColor={"#3772FF"}
-          classNames="btnStyle1"
+          classNames="btnStyle1 width300 widthP"
         >
-          Create item <ArrowRightAltSharpIcon></ArrowRightAltSharpIcon>
+          Create item 
         </ButtonComponent>
       ) : (
         <Button
