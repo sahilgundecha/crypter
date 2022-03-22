@@ -35,6 +35,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { FileUploader } from "react-drag-drop-files";
 import FollowStep from "../../Components/Modals/FollowStepModals/FollowStep";
+import PreviewModal from "../../Components/Modals/PreviewModal/PreviewModal";
 
 export default function SingleCollectible(props: any) {
   const [Picture, setPicture] = useState(true);
@@ -112,7 +113,8 @@ export default function SingleCollectible(props: any) {
   const styleDirection = {
     display: "flex",
     justifyContent: "space-between",
-    alignItems: "center",
+   
+
   };
 
   const styleCol = {
@@ -138,7 +140,7 @@ export default function SingleCollectible(props: any) {
       <Container >
         <Grid container spacing={10} className="marginChange">
           <Grid item sm={11} xs={12} md={8} className="adjustingPadding">
-            <Box sx={styleDirection}>
+            <Box sx={styleDirection} className="columnStyle">
               <Box>
                 <Typography variant="h4">
                   {props.tittle ? props.tittle : "Create single collectible"}
@@ -149,7 +151,7 @@ export default function SingleCollectible(props: any) {
                   <ButtonComponent
                     btnColor={"#23262F"}
                     styleType={"outline"}
-                    classNames="btnStyle1"
+                    classNames="btnStyle1 switchStyleP"
                   >
                     Switch to {props.switch ? props.switch : "mutiple"}
                   </ButtonComponent>
@@ -273,8 +275,9 @@ export default function SingleCollectible(props: any) {
               </Grid>
             </Grid>
             <Box sx={styleDirection} className="paddingChange">
-              <Box>
-                <FollowStep viewItem={true} />
+              <Box sx={{display:'flex',flexDirection:'row'}}  className="padding300">
+              <PreviewModal />
+              <FollowStep viewItem={true} />
               </Box>
               <Box>
                 <Typography variant="p">
@@ -284,7 +287,7 @@ export default function SingleCollectible(props: any) {
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Paper className="changePadding">
+            <Paper sx={{display :{ md:'flex' ,sm:'none',xs:'none'} }}className="changePadding">
               <Typography variant="p" className="font2">
                 Preview
               </Typography>

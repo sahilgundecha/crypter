@@ -70,7 +70,7 @@ export default function () {
             </Button>
           </Link>
         </Box>
-        <Box className="lineStyle">
+        <Box className="lineStyle hideContent">
           <Link to="/Crypter" className="linkUnderline">
             <Typography component="a" sx={textStyle} className="homeStyle">
               Home &gt;

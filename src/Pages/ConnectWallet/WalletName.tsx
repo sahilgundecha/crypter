@@ -22,18 +22,10 @@ export default function WalletName(props: any) {
     <>
       <Box onClick={props.onClickBox ? props.onClickBox : handleBox}>
         <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "30px 30px",
-            cursor:"pointer"
-          }}
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
           onClick={props.onClick ? props.onClick : null}
-          className="impHover"
+          className="walletStyle impHover"
         >
           <Box
             sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}

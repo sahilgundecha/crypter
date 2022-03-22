@@ -25,6 +25,7 @@ import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 const boxStyle1 = {
   display: "flex",
   justifyContent: "space-between",
+  marginBottom:'40px'
 };
 const textChange = {
   textTransform: "none",
@@ -141,7 +142,7 @@ export default function Activity() {
                         Activity{" "}
                       </Typography>
                     </Box>
-                    <Box>
+                    <Box sx={buttonCol}>
                       <ButtonComponent
                         btnColor={"#23262F"}
                         styleType={"outline"}
@@ -159,7 +160,7 @@ export default function Activity() {
                       <Grid
                         item
                         md={12}
-                        sx={{ display: { sm: "block", md: "none" } }}
+                        sx={{ display: { sm: "block", md: "none" }}}
                         className="alignCard"
                       >
                         <Paper className="stylePaper">
@@ -238,7 +239,7 @@ export default function Activity() {
           <Grid
             item
             md={4}
-            sx={{ display: { sm: "none", md: "flex" } }}
+            sx={{ display: { sm: "none", md: "flex" ,xs:'none'} }}
             className="alignCard"
           >
             <Paper className="stylePaper">
