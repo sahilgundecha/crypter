@@ -33,8 +33,8 @@ export default function CreatorsBid() {
   return (
     <>
       <Container>
-        <Grid container spacing={3} sx={{ margin: "30px 0px " ,overflowY:'hidden' }} >
-          <Grid item md={4} sm={12}>
+        <Grid container sx={{ margin: "30px 0px " ,overflowY:'hidden' }} >
+          <Grid item md={4} sm={12} xs={12}>
             <Link to="/item" className="firstSection">
               <Box className="container">
                 <Box className="birdImg zoomDiv">
@@ -54,10 +54,10 @@ export default function CreatorsBid() {
                       />
                     </Box>
                     <Box sx={{ padding: "0px 10px" }}>
-                      <Typography sx={{ fontSize: "14px" }}>
+                      <Typography sx={{fontWeight:'bolder'}}>
                         The Future of ETH®
-                      </Typography>
-                      <Typography>18 in stock</Typography>
+                      </Typography >
+                      <Typography sx={{ fontSize: "14px" }}>18 in stock</Typography>
                     </Box>
                   </Box>
                   <Box>
@@ -68,12 +68,12 @@ export default function CreatorsBid() {
               </Box>
             </Link>
           </Grid>
-          <Grid item md={5} sm={7}>
+          <Grid item md={5} sm={7} xs={12} className="styleHidden">
             {CreatorsArray.map((item, index) => (
               <CreatorsItems CreatorsArray={item} key={item.id} />
             ))}
           </Grid>
-          <Grid item md={3} sm={4}>
+          <Grid item md={3} sm={4} xs={12} className="latestStyle">
             <Typography className="fontC5">
               Latest upload from creators 🔥
             </Typography>

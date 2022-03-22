@@ -66,3 +66,11 @@
   text-overflow: unset !important;
   max-width: unset !important;
 }
+@media (max-width:768px) {
+  .adjustingPadding{
+    margin:0px 30px !important;
+  }
+  .changePadding {
+    padding: 0px 0px !important;
+  }
+}
