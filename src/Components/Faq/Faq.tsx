@@ -19,6 +19,7 @@ import hosting from "../../Assets/images/hosting.svg";
 import blackimg2 from "../../Assets/images/blackimg2.svg";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 import Carosel from "../Bidcard/Carosel";
+import Dropdown from "../../Common/Dropdown/Dropdown";
 
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
@@ -109,7 +110,13 @@ export default function VerticalTabs() {
         >
           <Grid container spacing={2}>
             <Grid xs={12} sm={4} md={4}>
+              <Box className="hiddenBox">
+                <Box sx={{ width: "100%" }}>
+                  <Dropdown item1="test1" />
+                </Box>
+              </Box>
               <Tabs
+                className="visibleTab"
                 orientation="vertical"
                 value={value}
                 onChange={handleChange}
@@ -168,6 +175,7 @@ export default function VerticalTabs() {
             </Grid>
             <Grid md={8} sm={8} xs={12}>
               <TabPanel value={value} index={0}>
+                <Box></Box>
                 <Accordion className="hoverText1">
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}

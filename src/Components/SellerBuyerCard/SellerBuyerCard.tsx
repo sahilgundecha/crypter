@@ -13,6 +13,10 @@ import {
 
 function SellerBuyerCard() {
   const [age, setAge] = useState("");
+  const [circulardrp, setcirculardrp] = useState<boolean>(true);
+  const circulardrpfunc = () => {
+    setcirculardrp(!circulardrp);
+  };
 
   const handleChange = (event: SelectChangeEvent) => {
     setAge(event.target.value);
@@ -30,6 +34,7 @@ function SellerBuyerCard() {
           <Box sx={{ marginRight: "auto" }}>
             <Typography
               variant="h5"
+              fontWeight={"bold"}
               style={{ color: "#777E90", marginLeft: "15px" }}
               component="div"
             >
@@ -44,59 +49,56 @@ function SellerBuyerCard() {
           >
             Popular
           </Typography> */}
-            <FormControl
-              className="formcontrol"
-              sx={{
-                minWidth: 150,
-                margin: "0px",
-              }}
-            >
-              <Select
-                className="select"
+            <Box>
+              <FormControl
+                className="formcontrol"
                 sx={{
-                  marginLeft: "-24px",
-                  borderRadius: "40px",
-                  fontSize: "25px",
-                  borderColor: "transparent",
-                  background: "#E6E8EC",
-                  borderStyle: "none",
-                  outline: "none",
-                  border: "none",
-                  minWidth: 190,
-                  appearance: "none",
+                  minWidth: 150,
                   margin: "0px",
                 }}
-                value={age}
-                onChange={handleChange}
-                displayEmpty
-                inputProps={{ "aria-label": "Without label" }}
               >
-                <MenuItem
-                  style={{
-                    minWidth: "max-content",
-                    fontSize: "30px",
-                    fontWeight: "bold",
+                <Select
+                  className={circulardrp ? "select" : "setdropdown"}
+                  onOpen={circulardrpfunc}
+                  onClose={circulardrpfunc}
+                  sx={{
                     borderRadius: "40px",
+                    fontSize: "25px",
                   }}
-                  value=""
+                  value={age}
+                  onChange={handleChange}
+                  displayEmpty
+                  inputProps={{ "aria-label": "Without label" }}
                 >
-                  <em> Seller</em>
-                </MenuItem>
+                  <MenuItem
+                    style={{
+                      minWidth: "max-content",
+                      fontSize: "30px",
+                      fontWeight: "bold",
+                      borderRadius: "40px",
+                    }}
+                    value=""
+                  >
+                    <em> Seller</em>
+                  </MenuItem>
 
-                <MenuItem
-                  style={{
-                    width: "170px",
-                    fontSize: "30px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Buyers
-                </MenuItem>
-              </Select>
-            </FormControl>
+                  <MenuItem
+                    style={{
+                      minWidth: "max-content",
+                      fontSize: "30px",
+                      fontWeight: "bold",
+                      borderRadius: "40px",
+                    }}
+                  >
+                    Buyers
+                  </MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
+
             {/* <Dropdown item1="Seller" item2="Buyers" /> */}
           </Box>
-          <Box width="250px" className="dropdown2">
+          <Box className="dropdown2">
             <Dropdown
               label=" TIME FRAME"
               item1="Today"
