@@ -127,7 +127,7 @@ const Discover = () => {
             </Grid>
           </Grid>
         </Box>
-        <Box>
+        <Box className="filterBox">
           <Button
             variant="contained"
             className="filterButton"
@@ -175,7 +175,7 @@ const Discover = () => {
         </Box>
       ) : null}
 
-      <Box>
+      <Box className="bidcardDiv">
         <TabPanel value={value} index={0}>
           <Grid container className="ItemWrapper">
             {Data.map((item, index) => (

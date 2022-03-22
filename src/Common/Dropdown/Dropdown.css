@@ -1,20 +1,10 @@
-.css-nnbavb {
+/* .css-nnbavb {
   float: right !important;
 }
 
-.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
-  background-color: #f4f5f6 !important;
-}
-.dropdownLabel {
-  color: #b1b5c3;
-  font-size: 13px !important;
-  font-weight: bolder !important;
-  margin: 0px 0px 10px 2px !important;
-}
-.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-  min-width: 240px !important;
-  border-radius: 10px !important;
-}
+
+
+
 
 .css-1869usk-MuiFormControl-root {
   min-width: 100% !important;
@@ -22,4 +12,15 @@
 
 .css-j8hg7e-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
   height: 45px !important;
+} */
+
+/* NEWER CODE */
+.dropdownLabel {
+  color: #b1b5c3;
+  font-size: 13px !important;
+  font-weight: bolder !important;
+  margin: 5px 0px 5px 2px !important;
+}
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  border-radius: 14px !important;
 }
