@@ -190,9 +190,9 @@ const SocialMediaIcon = () => {
   return (
     <Grid className={useStyles().iconbox}>
       <Box>
-        <img src={twitterIcon} className="iconStyle" />
-        <img src={instaIcon} className="iconStyle" />
-        <img src={fbIcon} className="iconStyle" />
+       <Link href="https://twitter.com/ui8"> <img src={twitterIcon} className="iconStyle"/></Link>
+       <Link href="https://www.instagram.com/ui8net/"> <img src={instaIcon} className="iconStyle" /></Link>
+        <Link href="https://www.facebook.com/ui8.net/"><img src={fbIcon} className="iconStyle" /></Link>
       </Box>
     </Grid>
   );

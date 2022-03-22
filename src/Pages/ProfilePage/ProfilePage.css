@@ -55,11 +55,50 @@
     display: block;
   }
   .navpill_Styling {
-    width: 100%;
+    width: 60%;
+    display: flex;
+    margin-left: 30px;
+  }
+  .tabPanelSection-Style{
+    margin-left: 60px;
+  }
+  .tabPanelSection2-Style{
+    width: 80%;
   }
 }
 @media (max-width: 700px) {
   .tabs_Styling {
-    width: 50%;
+    width: 100%;
   }
+  .tabPanelSection-Style{
+    margin-left: 10px;
+  }
+  .tabTopGrid_Styling{
+    width:100%;
+  }
+  .navpill_Styling {
+    width: 70%;
+    display: flex;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tabs_Styling {
+    width: 100%;
+  }
+  .tabPanelSection-Style{
+    margin-left: 0px;
+  }
+  .tabPanelSection2-Style{
+   margin-left: 20px;
+  }
+  .tabTopGrid_Styling{
+    width:115%;
+  }
+  .navpill_Styling {
+    width: 65%;
+    margin-left: 20px;
+  }
+  
 }

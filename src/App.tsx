@@ -45,8 +45,6 @@ import ScrollToTop from "./Components/ScrollTop";
 const App: FC = () => {
   const [connected, setConnected] = LocalStorage("connected", false);
 
-  console.log(connected);
-
   return (
     <div>
       <NavbarComponent connected={connected} setConnected={setConnected} />
@@ -62,6 +60,7 @@ const App: FC = () => {
         />
         <Route path="/" element={<Crypter />} />
         <Route path="/slider" element={<SliderComponent />} />
+
         <Route path="/profile" element={<ProfileCard />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />

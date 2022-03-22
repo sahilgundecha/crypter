@@ -108,8 +108,8 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
               }}
             >
               <Box>
-                {cardData.creator.map((curr: any) => (
-                  <img src={curr} className="icons" />
+                {cardData.creator.map((curr: any, index: number) => (
+                  <img src={curr} className="icons" key={index} />
                 ))}
               </Box>
 
@@ -117,7 +117,9 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
                 {cardData.inStock} in stock
               </Typography>
             </CardContent>
-            <Divider sx={{ margin: "5px" }} />
+            <Box>
+              <Divider />
+            </Box>
             <CardContent
               sx={{
                 display: "flex",
@@ -223,8 +225,8 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
             }}
           >
             <Box>
-              {cardData.creator.map((curr: any) => (
-                <img src={curr} className="icons" />
+              {cardData.creator.map((curr: any, index: number) => (
+                <img src={curr} className="icons" key={index} />
               ))}
             </Box>
 
@@ -232,7 +234,9 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
               {cardData.inStock} in stock
             </Typography>
           </CardContent>
-          <Divider sx={{ margin: "5px" }} />
+          <Box>
+            <Divider />
+          </Box>
           <CardContent
             sx={{
               display: "flex",
