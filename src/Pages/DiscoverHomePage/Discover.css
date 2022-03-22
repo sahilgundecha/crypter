@@ -28,7 +28,7 @@
 }
 @media (max-width: 768px) {
   .discoverDropdown {
-    width: 280px;
+    width: 250px;
   }
   .discoverDropdownBelow {
     width: 330px;
