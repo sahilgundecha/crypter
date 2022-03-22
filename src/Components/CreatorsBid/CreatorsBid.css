@@ -67,6 +67,7 @@
 }
 .image {
   transition: transform 0.7s;
+  width:100% !important;
 }
 .text {
   width: 100px;
@@ -79,11 +80,14 @@
 
 @media (max-width: 1024px) {
   .priceBor {
-    padding: 0px 0px;
-    font-size: 14px !important;
-  }
+    padding: 1px 3px;
+    font-size: 11px !important;
+}
   .image {
     width:100% !important;
+  }
+  .container {
+    margin-top: 70px;
   }
 }
 @media (max-width: 768px) {
@@ -96,4 +100,16 @@
   .container {
     width: 96% !important;
   }
+}
+@media (max-width:500px) and (min-width:300px){
+.styleHidden {
+   display:none;
+}
+.latestStyle{
+  margin-top: 30px !important;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center ;
+
+}
 }

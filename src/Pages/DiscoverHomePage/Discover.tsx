@@ -60,7 +60,7 @@ const Discover = () => {
     setvalue(newValue);
   };
   return (
-    <Container>
+    <Box>
       <Box sx={{ margin: "50px 30px" }}>
         <Typography
           variant="h3"
@@ -127,7 +127,7 @@ const Discover = () => {
             </Grid>
           </Grid>
         </Box>
-        <Box>
+        <Box className="filterBox">
           <Button
             variant="contained"
             className="filterButton"
@@ -175,7 +175,7 @@ const Discover = () => {
         </Box>
       ) : null}
 
-      <Box>
+      <Box className="bidcardDiv">
         <TabPanel value={value} index={0}>
           <Grid container className="ItemWrapper">
             {Data.map((item, index) => (
@@ -219,7 +219,7 @@ const Discover = () => {
           </Grid>
         </TabPanel>
       </Box>
-    </Container>
+    </Box>
   );
 };
 

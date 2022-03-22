@@ -12,17 +12,17 @@ import { Container, Box } from "@mui/material";
 const Crypter: FC = () => {
   return (
     <>
-      <Box className="crypterBox1">
+      <Container sx={{overflowX:'hidden'}}>
         <BidCarousel />
         <CreatorsBid />
-      </Box>
+        </Container>
       <SellerBuyerCard />
-      <Box  className="crypterBox1">
+      <Container sx={{overflowX:'hidden'}}>
         <Carosel />
         <CradCollection />
         <Discover />
         <CrypterEnd />
-      </Box>
+      </Container>
     </>
   );
 };

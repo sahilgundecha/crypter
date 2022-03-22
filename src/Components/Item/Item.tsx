@@ -100,7 +100,7 @@ const Item = () => {
     <Container>
       <Grid container sx={{ margin: "50px 0px" }}>
         <Grid item xs={12} xl={7} md={7} lg={7} sm={12} className="relativeDiv">
-          <Box>
+          <Box className="itemImage">
             <img src={headImg} alt="bidImage" style={{ width: "95%" }} />
           </Box>
           <Box className="artWrapper">

@@ -19,11 +19,12 @@ const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 4 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1000, itemsToShow: 4 },
   { width: 1200, itemsToShow: 4 },
-  { width: 1500, itemsToShow: 6 },
+  { width: 1500, itemsToShow: 4 },
   { width: 1920, itemsToShow: 4 },
-  { width: 2600, itemsToShow: 5 },
+  { width: 2600, itemsToShow: 4 },
 ];
 interface forArrow {
   type?: any;
