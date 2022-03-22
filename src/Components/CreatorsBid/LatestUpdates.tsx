@@ -10,12 +10,13 @@ const gridStyle = {
   flexDirection: "row",
   alignItems: "center",
   padding: "10px 0px",
+  width:'100% !important'
 };
 
 const CreatorsS3: FC<Props> = ({ CreatorsArray3 }) => {
   return (
     <>
-      <Box sx={gridStyle}>
+      <Box sx={gridStyle} className="changeSize">
         <Box>
           <img src={homeS3} />
         </Box>

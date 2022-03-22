@@ -11,7 +11,8 @@ const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
   { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1024, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
   { width: 1500, itemsToShow: 4 },
 ];
@@ -75,10 +76,11 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
             textAlign: "center",
             boxShadow: "none",
             cursor: "pointer",
+            margin: "0px 10px"
           }}
         >
           <Link to="/profile-page" className="linkUnderline">
-            <img className="changeWidth1" src={cardData.mainImg} />
+            <img className="changewidth1" src={cardData.mainImg} />
           </Link>
           <Box
             sx={{
@@ -94,23 +96,23 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               renderArrow={myArrow}
             >
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img1} />
+                <img className="changewidth1" src={cardData.img1} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img2} />
+                <img className="changewidth1" src={cardData.img2} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img3} />
+                <img className="changewidth1" src={cardData.img3} />
               </Link>
 
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img1} />
+                <img className="changewidth1" src={cardData.img1} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img2} />
+                <img className="changewidth1" src={cardData.img2} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changeWidth1" src={cardData.img3} />
+                <img className="changewidth1" src={cardData.img3} />
               </Link>
             </Carousel>
           </Box>

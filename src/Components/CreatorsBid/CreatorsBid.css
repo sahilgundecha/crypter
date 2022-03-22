@@ -1,6 +1,9 @@
 .changeM {
   margin: 10px 0px !important;
 }
+.changeSize{
+  width:100% !important;
+}
 .moveRight {
   margin-right: 15px !important;
 }
@@ -37,6 +40,10 @@
   text-decoration: none !important;
   color:black !important;
 }
+/* .css-z1hl9e-MuiGrid-root  {
+  width: calc(100% + 0px) !important;
+ margin:0px !important;
+} */
 .lineUnderlineS2{
   text-decoration: none !important;
   color:black !important;
@@ -74,6 +81,9 @@
   .priceBor {
     padding: 0px 0px;
     font-size: 14px !important;
+  }
+  .image {
+    width:100% !important;
   }
 }
 @media (max-width: 768px) {
