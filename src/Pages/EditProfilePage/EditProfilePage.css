@@ -80,7 +80,7 @@
 .headDiv {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 .profilePicstyle {
@@ -96,7 +96,6 @@
 .AccountInfoStyle {
   width: 50%;
   padding-left: 20px;
-  display: flex;
 }
 .profilespan {
   display: flex;
@@ -121,6 +120,16 @@
 .css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 15px !important;
 }
+
+.width_in_formControl{
+  margin-bottom: 40px;
+}
+
+.textField_styling{
+  width: 95%;
+   border-radius: 20px !important;
+   margin-top: 0px !important;
+}
 @media (max-width: 1160px) {
   .EditPageContent {
     display: block;
@@ -128,7 +137,62 @@
   .ProfileGrid {
     width: 100%;
   }
-  .AccountInfoStyle {
-    width: 100%;
-  }
+  .tst{
+    display: flex;
+    }
+    .AccountInfoStyle {
+      width: 100%;
+      padding-left: 20px;
+      display: flex;
+    }
+    .width_in_formControl{
+      width:50%;
+    }
 }
+@media (max-width: 820px) {
+  .headDiv {
+    width: 92%;
+  }
+  }
+
+  @media (max-width: 700px) {
+    .headDiv {
+      width: 85%;
+    }
+    .tst{
+      display: block;
+      }
+      .width_in_formControl{
+        width:100%;
+      }
+      .profilePicstyle {
+        width: 80px !important;
+        height: 80px !important;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+      .profilespan {
+        display: none;
+      }
+    }
+
+
+    @media (max-width: 400px) {
+      .css-qlne83-MuiButtonBase-root-MuiButton-root{
+        padding:3px !important;
+      }
+      .idtextfield{
+        padding:6px;
+        width: 100%;
+      }
+      .textField_styling{
+        width: 100%;
+      }
+      .profilePicstyle{
+        width: 60px !important;
+        height: 60px !important;
+        margin-right: 15px;
+        margin-top: 25px;
+      }
+
+    }

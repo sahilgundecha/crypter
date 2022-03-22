@@ -1,3 +1,4 @@
+
 .buttonStlye {
   margin: 5px 10px;
   padding: 4px 12px;
@@ -42,6 +43,38 @@
   min-height: 40px !important;
 }
 
+@media (min-width:1980px){
+  .outerGrid_style{
+    width: 60% !important;
+    margin: auto !important;
+  }
+  .button_div {
+    padding-right: 28%;
+  }
+}
+@media (min-width:1760px) and (max-width:1979px){
+  .outerGrid_style{
+    width: 68% !important;
+    margin: auto !important;
+  }
+  .button_div {
+    padding-right: 20%;
+  }
+}
+@media (max-width:1759px) and (min-width:1550px){
+  .outerGrid_style{
+    width: 78% !important;
+    margin: auto !important;
+  }
+  .button_div {
+    padding-right: 15%;
+  }
+}
+@media (max-width: 1100px) {
+  .usercardGrid_Styling{
+    padding-right: 0px;
+  }
+}
 @media (max-width: 1020px) {
   .button_div {
     margin-bottom: 80px;
@@ -57,29 +90,36 @@
   .navpill_Styling {
     width: 60%;
     display: flex;
-    margin-left: 30px;
+    margin-left: 40px;
   }
   .tabPanelSection-Style{
     margin-left: 60px;
   }
   .tabPanelSection2-Style{
-    width: 80%;
+    width: 94%;
+    margin-left: -60px;
+  }
+}
+@media (max-width: 780px) {
+  .tabPanelSection-Style{
+    margin-left: 40px;
   }
 }
 @media (max-width: 700px) {
   .tabs_Styling {
     width: 100%;
+    margin-left: 0px;
   }
   .tabPanelSection-Style{
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .tabTopGrid_Styling{
     width:100%;
   }
   .navpill_Styling {
-    width: 70%;
+    width: 80%;
     display: flex;
-    margin-left: 20px;
+    margin: 20px auto;
   }
 }
 
@@ -88,17 +128,20 @@
     width: 100%;
   }
   .tabPanelSection-Style{
-    margin-left: 0px;
+    margin-left: -20px;
   }
-  .tabPanelSection2-Style{
-   margin-left: 20px;
-  }
-  .tabTopGrid_Styling{
-    width:115%;
-  }
-  .navpill_Styling {
-    width: 65%;
-    margin-left: 20px;
+  .button_div {
+    margin-bottom: 80px;
+    padding-right: 40px;
   }
   
+}
+@media (max-width: 330px) {
+  .button_div {
+    margin-bottom: 80px;
+    padding-right: 16px;
+  }
+  .css-19kzrtu {
+    padding:10px 0px !important;
+  }
 }
