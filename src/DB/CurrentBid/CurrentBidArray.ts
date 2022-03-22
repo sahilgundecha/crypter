@@ -16,7 +16,7 @@ const CurrentBidData = [
     ETHPrice: 3.5,
     CurrentBidETH: "1.00",
     Dollar: 3618.6,
-    endDate: "March 20, 2022",
+    endDate: "March 20, 2023",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const CurrentBidData = [
     ETHPrice: 3.5,
     CurrentBidETH: "1.00",
     Dollar: 3618.6,
-    endDate: "March 21, 2022",
+    endDate: "March 21, 2023",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const CurrentBidData = [
     ETHPrice: 3.5,
     CurrentBidETH: "1.00",
     Dollar: 3618.6,
-    endDate: "March 22, 2022",
+    endDate: "March 22, 2023",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const CurrentBidData = [
     ETHPrice: 3.5,
     CurrentBidETH: "1.00",
     Dollar: 3618.6,
-    endDate: "March 23, 2022",
+    endDate: "March 23, 2023",
   },
 ];
 

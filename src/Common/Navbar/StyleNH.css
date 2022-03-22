@@ -18,4 +18,9 @@
   .styleUp {
     margin-right: 40px !important;
   }
+  .tabSection {
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
 }

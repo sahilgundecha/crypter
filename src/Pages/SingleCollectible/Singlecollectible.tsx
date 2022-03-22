@@ -135,9 +135,9 @@ export default function SingleCollectible(props: any) {
   const fileTypes = ["PNG", "GIF", "WEBP", "MP3", "Max1GB"];
   return (
     <>
-      <Container>
+      <Container >
         <Grid container spacing={10} className="marginChange">
-          <Grid item sm={12} xs={12} md={8}>
+          <Grid item sm={11} xs={12} md={8} className="adjustingPadding">
             <Box sx={styleDirection}>
               <Box>
                 <Typography variant="h4">
