@@ -16,12 +16,11 @@ interface cardProps {
 const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1000, itemsToShow: 4 },
-  { width: 1400, itemsToShow: 5 },
-  { width: 1500, itemsToShow: 6 },
-  { width: 2570, itemsToShow: 6 },
+  { width: 600, itemsToShow: 3 },
+  { width: 800, itemsToShow: 4 },
+  { width: 1200, itemsToShow: 5 },
+  { width: 1536, itemsToShow: 6 },
+  { width: 2560, itemsToShow: 6 },
 ];
 interface forArrow {
   type?: any;

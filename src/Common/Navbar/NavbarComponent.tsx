@@ -90,7 +90,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
           <Link to="/Crypter">
             <img src={AppIcon} alt="logo" className={`${classes.logo}`} />
           </Link>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none",  md: "flex" } }}>
             <Typography
               variant="h6"
               component="div"
@@ -110,10 +110,10 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               </Link>
             </Typography>
           </Box>
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: "none",sm:'flex', md: "flex" } ,margin:'0px auto'}}>
             <Box
               component="span"
-              sx={{ display: "block", alignSelf: "center", mx: "6px" }}
+              sx={{ display: { xs: "none",sm:'none', md: "block" }, alignSelf: "center", mx: "6px" }}
             >
               <Searchbar />
             </Box>
@@ -250,7 +250,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               </Box>
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex",sm:"none", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"

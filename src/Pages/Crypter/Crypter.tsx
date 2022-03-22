@@ -6,17 +6,18 @@ import CrypterEnd from "../../Components/CrypterEnd/CrypterEnd";
 import BidCarousel from "../../Components/CurrentBid/BidCarousel";
 import SellerBuyerCard from "../../Components/SellerBuyerCard/SellerBuyerCard";
 import Discover from "../DiscoverHomePage/Discover";
+import "./Crypter.css"
 import { Container, Box } from "@mui/material";
 
 const Crypter: FC = () => {
   return (
     <>
-      <Box sx={{ margin: "0px 60px" }}>
+      <Box className="crypterBox1">
         <BidCarousel />
         <CreatorsBid />
       </Box>
       <SellerBuyerCard />
-      <Box sx={{ margin: "0px 50px" }}>
+      <Box  className="crypterBox1">
         <Carosel />
         <CradCollection />
         <Discover />
