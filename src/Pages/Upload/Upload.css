@@ -56,4 +56,7 @@
   .cardStyle {
     margin-bottom: 30px;
   }
+  .hideContent{
+    display:none;
+  }
 }

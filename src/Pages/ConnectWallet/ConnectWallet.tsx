@@ -67,7 +67,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
           container
           sx={{ margin: "50px 0px", display: "flex", alignItems: "center" }}
         >
-          <Grid item md={6} spacing={3}>
+          <Grid item md={6} sm={6} xs={12} >
             <Box>
               <WalletName onClick={handle1} onClick1={handle2} />
               <WalletName
@@ -91,10 +91,10 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
               />
             </Box>
           </Grid>
-          <Grid item md={5}>
+         
             {Display ? (
               <Box sx={{ display: showB ? "block" : "none" }} className="DNone">
-                <img className="imgC1" src={QR} />
+                <img className="imgC1 maxWidth" src={QR} />
               </Box>
             ) : (
               <Box className="CNone">
@@ -102,7 +102,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                 <Typography className="fontC3">
                   Powered by UI8.Wallet
                 </Typography>
-                <img src={QR1} />
+                <img src={QR1} className="maxWidth"/>
                 <Box sx={{ margin: "10px 0px" }}>
                   <ButtonComponent
                     btnColor={"#23262F"}
@@ -115,6 +115,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                 </Box>
               </Box>
             )}
+            <Grid item md={5} sm={6} xs={12} >
             {Dnone ? (
               <Box>
                 <Typography className="fontC2">Terms of Service</Typography>
@@ -124,7 +125,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                   continue, you’ll need to accept the terms of services by
                   checking the boxes.
                 </Typography>
-                <img src={Wallet} />
+                <img src={Wallet} className="maxWidth"/>
                 <FormGroup>
                   <FormControlLabel
                     control={<Checkbox defaultChecked />}
@@ -155,8 +156,9 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                 </Box>
               </Box>
             ) : null}
+            </Grid>
           </Grid>
-        </Grid>
+       
       </Container>
     </>
   );

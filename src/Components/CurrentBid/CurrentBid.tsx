@@ -57,7 +57,7 @@ const BidCloned: FC<currentProps> = ({ bidData }) => {
         <Grid item xs={12} xl={7} md={7} lg={7} sm={12}>
           <img src={bidData.headimg} alt="bidImage" style={{ width: "100%" }} />
         </Grid>
-        <Grid item xs={12} xl={5} md={5} lg={5} sm={12}>
+        <Grid item xs={12} xl={4} md={4} lg={4} sm={12}>
           <Box>
             <Typography variant="h2" component="div">
               {bidData.name}

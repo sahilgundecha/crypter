@@ -210,7 +210,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
@@ -252,7 +252,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
@@ -294,7 +294,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
@@ -336,7 +336,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
@@ -367,7 +367,7 @@ const SearchFilter = () => {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  justifyContent: "space-between",
+                  justifyContent: "space-around",
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -386,7 +386,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
@@ -428,7 +428,7 @@ const SearchFilter = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                justifyContent: "space-between",
+                justifyContent: "space-around",
               }}
             >
               {Data.filter(function (cardData) {
