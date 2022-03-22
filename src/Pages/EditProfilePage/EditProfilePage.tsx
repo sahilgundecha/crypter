@@ -78,7 +78,8 @@ export default function EditProfilePage() {
               </Grid>
             </Grid>
             <FormControl className="AccountInfoStyle">
-              <Grid>
+              <Grid className="tst">
+              <Grid className="width_in_formControl">
                 <p
                   style={{
                     fontSize: "16px",
@@ -93,14 +94,14 @@ export default function EditProfilePage() {
                 </p>
                 <TextField
                   label="Enter your display name"
-                  sx={{ width: "95%", borderRadius: "20px !important" }}
+                  className="textField_styling"
                 />
                 <p className="labelStyling" style={{ marginTop: "30px" }}>
                   CUSTOM URL
                 </p>
                 <TextField
                   label="ui8.net/Your custom URL"
-                  sx={{ width: "95%", borderRadius: "20px !important" }}
+                  className="textField_styling"
                 />
                 <p className="labelStyling" style={{ marginTop: "30px" }}>
                   BIO
@@ -109,16 +110,15 @@ export default function EditProfilePage() {
                   label="About yourselt in a few words"
                   multiline
                   rows={3}
-                  sx={{ width: "95%", borderRadius: "20px !important" }}
+                  className="textField_styling"
                 />
               </Grid>
-              <Grid>
+              <Grid className="width_in_formControl">
                 <p
                   style={{
                     fontSize: "16px",
                     fontWeight: "600",
                     marginBottom: "0px",
-                    marginTop: "40px",
                   }}
                 >
                   Social
@@ -128,7 +128,7 @@ export default function EditProfilePage() {
                 </p>
                 <TextField
                   label="Enter URL"
-                  sx={{ width: "95%", borderRadius: "20px !important" }}
+                  className="textField_styling"
                 />
                 <p className="labelStyling" style={{ marginTop: "30px" }}>
                   TWITTER
@@ -173,7 +173,11 @@ export default function EditProfilePage() {
                   </span>{" "}
                   Add more social account
                 </Button>
-                <p style={{ color: "#777E90", fontSize: "14px", width: "80%" }}>
+                
+              </Grid>
+              </Grid>
+              <Grid className="buttom_grid">
+              <p style={{ color: "#777E90", fontSize: "14px", width: "80%" }}>
                   To update your settings you should sign message through your
                   wallet. Click 'Update profile' then sign the message
                 </p>
@@ -214,7 +218,9 @@ export default function EditProfilePage() {
                 </Grid>
               </Grid>
             </FormControl>
+            
           </Grid>
+          
         </Grid>
       </Grid>
     </Grid>

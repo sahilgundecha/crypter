@@ -4,6 +4,12 @@
   box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.05);
   max-width: 750px;
 }
+.profile_img{
+width: 88px !important;
+height: 88px !important;
+margin: 14px 20px !important;
+}
+
 .followersCard_media {
   display: flex;
 }
@@ -72,8 +78,24 @@
     max-width: 650px;
   }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 768px){
+  .coverImgStyle {
+    overflow-x: auto;
+    margin-left: 20px;
+  }
+  .followersCardImg_style {
+    width: 70%;
+  }
+  .rootStyle {
+    max-width: 650px;
+  }
+}
+@media (max-width: 760px) {
+  .profile_img{
+    width: 74px !important;
+    height: 74px !important;
+    margin: 14px 25px !important;
+    }
   .coverImgStyle {
     margin-left: 20px;
   }
@@ -88,10 +110,13 @@
     width: 300px;
     display: flex;
     justify-content: end;
+    margin-top: 15px;
   }
   .nameStyling {
     width: 150px;
     align-items: center;
+    padding-top: 25px;
+    margin-left: -23px;
   }
 }
 @media (max-width: 700px) {
@@ -99,7 +124,6 @@
     width: 300px;
   }
   .profileStyle {
-    display: block;
     width: 60%;
   }
   .buttonin768 {
@@ -107,12 +131,23 @@
   }
 }
 @media (max-width: 400px){
-  .rootStyle{
-    margin-left: -30px;
+  
+  .nameStyling {
+    width: 150px;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: -55px;
+  }
+  .buttonin768 {
+    width: 90px;
   }
 }
 @media (max-width: 350px){
-  .rootStyle{
-    margin-left: -65px;
+  
+  .buttonin768 {
+    width: 60px;
+  }
+  .profile_img{
+    margin: 14px 30px !important;
   }
 }

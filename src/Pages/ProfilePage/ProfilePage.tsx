@@ -72,10 +72,10 @@ export default function ProfilePage() {
               textTransform: "none",
               borderRadius: "20px",
               color: "#fff",
-              border: "1.5px solid #fff",
-              padding: "5px 12px",
+              padding: "7px 12px",
               margin: "12px",
               fontSize: "12px",
+              boxShadow:" 0 0 0 2px #777e90 inset"
             }}
           >
             Edit cover photo
@@ -92,10 +92,10 @@ export default function ProfilePage() {
                 textTransform: "none",
                 borderRadius: "20px",
                 color: "#fff",
-                border: "1.5px solid #fff",
-                padding: "5px 12px",
+                padding: "7px 12px",
                 margin: "12px",
                 fontSize: "12px",
+                boxShadow:" 0 0 0 2px #777e90 inset"
               }}
             >
               Edit profile
@@ -109,7 +109,7 @@ export default function ProfilePage() {
           </Link>
         </Box>
       </Paper>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} className="outerGrid_style">
         <Grid className="usercardGrid_Styling">
           <UsersCard />
         </Grid>
