@@ -197,11 +197,12 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
-                  return cardData.id <= 5;
+                  return cardData.id <= 6;
                 }).map((item, index) => (
                   <Bidcard cardData={item} key={item.id} />
                 ))}

@@ -153,6 +153,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                   overflow: "visible",
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                   mt: 1.5,
+                  // display:{xs:"none"},
                   "& .MuiAvatar-root": {
                     width: 30,
                     height: 30,
@@ -172,7 +173,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 19.5,
+                  ml: 24,
                   borderRadius: 5,
                 },
               }}
@@ -248,7 +249,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 7.5,
+                  ml: 3.5,
                   borderRadius: 5,
                 },
               }}
