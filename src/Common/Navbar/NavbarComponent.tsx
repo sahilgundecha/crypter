@@ -238,7 +238,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     xl: "none",
                   },
                   overflow: "visible",
-                  filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                  // filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                   mt: 5.5,
                   // display:{xs:"none"},
                   "& .MuiAvatar-root": {
