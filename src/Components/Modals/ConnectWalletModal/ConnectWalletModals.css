@@ -13,3 +13,7 @@
   margin-left: 30px;
   margin-top: 30px;
 }
+.crossimg:hover {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%)
+    hue-rotate(18deg) brightness(115%) contrast(115%);
+}
