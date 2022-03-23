@@ -5,6 +5,9 @@
 .userrcard2 {
   width: 60px;
 }
+.ethText {
+  color: gray !important;
+}
 .WhiteCard:hover .userrcard2 {
   width: 80px;
 }

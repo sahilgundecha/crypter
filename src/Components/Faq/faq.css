@@ -3,9 +3,10 @@
   color: #777e90;
   font-weight: bold !important;
 }
-.hiddenBox {
+/* .hiddenBox {
   display: none;
-}
+  align-items: center;
+} */
 .heading2 {
   font-size: 48px !important;
   color: #000000;
@@ -72,10 +73,10 @@
   font-weight: bold !important;
 }
 @media (max-width: 468px) {
-  .hiddenBox {
+  /* .hiddenBox {
     display: block;
-  }
-  .visibleTab {
+  } */
+  /* .visibleTab {
     display: none !important;
-  }
+  } */
 }

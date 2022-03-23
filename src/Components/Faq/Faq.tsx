@@ -110,11 +110,16 @@ export default function VerticalTabs() {
         >
           <Grid container spacing={2}>
             <Grid xs={12} sm={4} md={4}>
-              <Box className="hiddenBox">
-                <Box sx={{ width: "100%" }}>
-                  <Dropdown item1="test1" />
+              {/* <Box className="hiddenBox">
+                <Box sx={{ width: "90%", marginLeft: "20px" }}>
+                  <Dropdown
+                    item1="General"
+                    item2="Support"
+                    item3="Hosting"
+                    item4="Product"
+                  />
                 </Box>
-              </Box>
+              </Box> */}
               <Tabs
                 className="visibleTab"
                 orientation="vertical"
