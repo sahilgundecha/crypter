@@ -5,6 +5,7 @@ import Carousel from "react-elastic-carousel";
 import { Button, Container, Typography, Box } from "@mui/material";
 import leftArrow from "../../Assets/images/Left.svg";
 import rightArrow from "../../Assets/images/RightArrow.svg";
+import "./bidcard.css";
 
 interface cardProps {
   id: number;
@@ -65,6 +66,7 @@ const Carosel = () => {
         breakPoints={breakPoints}
         pagination={false}
         renderArrow={myArrow}
+        className="bidcardCarosel"
       >
         {Data.map((item, index) => (
           <Bidcard cardData={item} key={index} />

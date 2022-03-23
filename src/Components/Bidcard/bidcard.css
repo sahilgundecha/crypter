@@ -96,7 +96,8 @@
 .heartPurchase {
   position: absolute;
   top: 0%;
-  width: 242px;
+  /* width: 233px; */
+  width: 95%;
   cursor: pointer;
   padding-left: 0px;
   display: none !important;
@@ -106,6 +107,8 @@
 }
 .withMargin:hover .heartPurchase {
   display: flex !important;
+  align-items: center;
+  justify-content: space-between;
 }
 .withMargin:hover .cardmedia {
   transform: scale(1.1);
@@ -144,5 +147,11 @@
 @media (max-width: 768px) {
   .withMargin {
     margin: 10px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .bidcardCarosel .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    display: none !important;
   }
 }
