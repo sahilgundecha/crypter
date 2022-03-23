@@ -19,7 +19,7 @@ const Data = [
     colr: "#3772FF",
   },
   {
-    name: "Payton Harris",
+    name: "Odell Hane",
     numbers: "#2",
     userimgg: userrr2,
     ETHnum: 2.456,
@@ -28,7 +28,7 @@ const Data = [
   },
 
   {
-    name: "Payton Harris",
+    name: "Marlee Kuphal",
     numbers: "#3",
     userimgg: usser3,
     ETHnum: 2.456,
@@ -36,7 +36,7 @@ const Data = [
     colr: "#45B26B",
   },
   {
-    name: "Payton Harris",
+    name: "Payton Kunde",
     numbers: "#4",
     userimgg: usser4,
     ETHnum: 2.456,
@@ -44,7 +44,7 @@ const Data = [
     colr: "#000000",
   },
   {
-    name: "Payton Harris",
+    name: "Payton Buckridge",
     numbers: "#5",
     userimgg: usser5,
     ETHnum: 2.456,

@@ -98,8 +98,8 @@ const WhiteCards: FC<cardProps> = ({ whitecardProps }) => {
               <Typography variant="h6" component="div">
                 {whitecardProps.name}
               </Typography>
-              <Typography variant="p" component="div">
-                {whitecardProps.ETHnum}ETH
+              <Typography variant="p" component="div" fontWeight={"bold"}>
+                {whitecardProps.ETHnum} <span className="ethText">ETH</span>
               </Typography>
             </Box>
           </Box>
