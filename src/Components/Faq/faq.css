@@ -75,8 +75,8 @@
 @media (max-width: 468px) {
   /* .hiddenBox {
     display: block;
-  } */
-  /* .visibleTab {
+  }
+  .visibleTab {
     display: none !important;
   } */
 }
