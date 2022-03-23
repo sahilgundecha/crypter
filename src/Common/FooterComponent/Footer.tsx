@@ -35,10 +35,11 @@ const FooterComponent = () => {
 
   return (
     <Box
+
       sx={{
         flexGrow: 0,
         display: { xs: "flex", md: "flex" },
-        py: 4,
+        p:2,
         my: 4,
         borderTop: 1,
         borderColor: "#E6E8EC",

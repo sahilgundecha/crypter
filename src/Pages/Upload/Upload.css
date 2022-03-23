@@ -51,10 +51,17 @@
   .boxStyle {
       margin: 7px 20px;
   }
+  .cardHover{
+    width:280px !important;
+  }
 }
 @media (max-width: 500px) and (min-width: 300px) {
   .cardStyle {
     margin-bottom: 30px;
+  }
+  .cardHover{
+   width:280px !important;
+   margin-right: 0px !important;
   }
   .hideContent{
     display:none;

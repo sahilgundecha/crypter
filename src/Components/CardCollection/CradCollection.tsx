@@ -97,23 +97,23 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               renderArrow={myArrow}
             >
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img1} />
+                <img className="changewidth1 cWidth" src={cardData.img1} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img2} />
+                <img className="changewidth1 cWidth" src={cardData.img2} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img3} />
+                <img className="changewidth1 cWidth" src={cardData.img3} />
               </Link>
 
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img1} />
+                <img className="changewidth1 cWidth" src={cardData.img1} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img2} />
+                <img className="changewidth1 cWidth" src={cardData.img2} />
               </Link>
               <Link to="/profile-page" className="linkUnderline">
-                <img className="changewidth1" src={cardData.img3} />
+                <img className="changewidth1 cWidth" src={cardData.img3} />
               </Link>
             </Carousel>
           </Box>

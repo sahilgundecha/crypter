@@ -97,14 +97,15 @@
   .changeWidth {
     width: 100%;
   }
-  .widthC .rightarrow {
-    display: none;
-  }
-  .widthC .leftarrow {
-    display: none;
+  
+  .widthC .css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
+    display: none !important;
   }
   .changeWidth2 {
     width: 100%;
+  }
+  .cWidth{
+    width:100px !important;
   }
   .autImg{
     width:15px !important;
@@ -116,5 +117,18 @@
   }
   .autItem{
     padding:5px 5px !important;
+  }
+}
+@media (max-width:375px){
+  .cWidth{
+    width:90px !important;
+  }
+}
+@media (max-width:320px){
+  .cWidth{
+    width:73px !important;
+  }
+  .css-1maxati-MuiTypography-root {
+    font-size: 30px !important;
   }
 }
