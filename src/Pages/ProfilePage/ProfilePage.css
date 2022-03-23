@@ -93,6 +93,9 @@
   .button_div {
     padding-right: 28%;
   }
+  .tabPanelSection-Style{
+    margin-left: -30px ;
+  }
 }
 @media (min-width:1760px) and (max-width:1979px){
   .outerGrid_style{
@@ -101,6 +104,9 @@
   }
   .button_div {
     padding-right: 20%;
+  }
+  .tabPanelSection-Style{
+    margin-left: 0px ;
   }
 }
 @media (max-width:1759px) and (min-width:1550px){
@@ -111,13 +117,26 @@
   .button_div {
     padding-right: 15%;
   }
+  .tabPanelSection-Style{
+    margin-left: 0px ;
+  }
 }
-@media (max-width: 1100px) {
+@media (min-width:1478px) and (max-width:1550px){
+  .tabPanelSection-Style{
+    margin-left: -20px ;
+  }
+}
+@media (max-width: 1150px) {
   .usercardGrid_Styling{
     padding-right: 0px;
   }
   .tabPanelSection-Style{
-    margin-left: -60px ;
+    margin-left: -10px ;
+  }
+}
+@media (max-width: 1024px){
+  .tabPanelSection-Style{
+    margin-left: -40px ;
   }
 }
 @media (max-width: 1020px) {
@@ -147,14 +166,13 @@ margin-top: -65px;
     margin-left: 40px;
   }
   .tabPanelSection-Style{
-    margin-left: 20px ;
+    margin-left: 30px ;
   }
   .tabPanelSection2-Style{
     width: 97%;
     margin-left: -40px;
   }
 }
-
 @media (max-width: 700px) {
   .DragAndDropText{
     font-size: 18px !important;
@@ -172,7 +190,7 @@ margin-top: -65px;
     margin-left: 0px;
   }
   .tabPanelSection-Style{
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .tabPanelSection2-Style{
     width: 94%;

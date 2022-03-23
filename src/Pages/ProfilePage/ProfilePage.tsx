@@ -217,7 +217,8 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -236,11 +237,12 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
-                  return cardData.id <= 3;
+                  return cardData.id <= 2;
                 }).map((item, index) => (
                   <Bidcard cardData={item} key={item.id} />
                 ))}
@@ -255,7 +257,8 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
