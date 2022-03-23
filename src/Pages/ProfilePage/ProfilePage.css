@@ -82,6 +82,9 @@
 .tabPanelSection2-Style{
   margin-left: -30px ;
 }
+.tabPanelSection-Style{
+  margin-left: -50px ;
+}
 @media (min-width:1980px){
   .outerGrid_style{
     width: 60% !important;
@@ -114,7 +117,7 @@
     padding-right: 0px;
   }
   .tabPanelSection-Style{
-    margin-left: 20px ;
+    margin-left: -60px ;
   }
 }
 @media (max-width: 1020px) {
@@ -144,7 +147,7 @@ margin-top: -65px;
     margin-left: 40px;
   }
   .tabPanelSection-Style{
-    margin-left: 0px ;
+    margin-left: 20px ;
   }
   .tabPanelSection2-Style{
     width: 97%;
