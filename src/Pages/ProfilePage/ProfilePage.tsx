@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
+import Upload_Icon from "../../Assets/images/Upload_Icon.svg"
 import {
   FollowersCard,
   FollowingCard,
@@ -82,6 +83,7 @@ export default function ProfilePage() {
         <Grid className="upload_Grid" component="label"> 
         <input type="file" hidden/>
         <Box>
+          <img src={Upload_Icon} className="Upload_Icon_style"/>
           <Typography className="DragAndDropText">Drag and drop your photo here</Typography>
           <Typography className="Browsetext">or click to browse</Typography>
           </Box> 
@@ -217,7 +219,8 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -236,11 +239,12 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
-                  return cardData.id <= 3;
+                  return cardData.id <= 2;
                 }).map((item, index) => (
                   <Bidcard cardData={item} key={item.id} />
                 ))}
@@ -255,7 +259,8 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft:"0px"
+                  marginLeft:"0px",
+                  justifyContent:"space-evenly"
                 }}
               >
                 {Data.filter(function (cardData) {
