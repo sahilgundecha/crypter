@@ -17,7 +17,6 @@ interface drop {
 const Dropdown = (props: drop) => {
   const [age, setAge] = useState<string>("1");
   const [Clicked, setClicked] = useState<boolean>(true);
-  const arr = ["highest price", "average price", "lowest price"];
 
   const isClicked = () => {
     setClicked(!Clicked);
@@ -59,6 +58,7 @@ const Dropdown = (props: drop) => {
         {props.item3 ? <MenuItem value={3}>{props.item3}</MenuItem> : null}
         {props.item4 ? <MenuItem value={4}>{props.item4}</MenuItem> : null}
         {props.item5 ? <MenuItem value={5}>{props.item5}</MenuItem> : null}
+        {props.item6 ? <MenuItem value={6}>{props.item6}</MenuItem> : null}
       </Select>
     </FormControl>
   );

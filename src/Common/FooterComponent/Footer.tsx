@@ -65,17 +65,17 @@ const FooterComponent = () => {
               </Typography>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/search-filter"} className={`${classes.link}`}>
                 Discover
               </Link>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/connect-wallet"} className={`${classes.link}`}>
                 Connect wallet
               </Link>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/Upload"} className={`${classes.link}`}>
                 Create item
               </Link>
             </Box>
