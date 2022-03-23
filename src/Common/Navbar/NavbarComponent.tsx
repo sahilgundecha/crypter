@@ -132,8 +132,38 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               <IconButton
                 onClick={showNotificationsMenu}
                 size="small"
-                sx={{ mx: 2 }}
+                sx={{
+                  mx: 2,
+                  display: {
+                    xs: "none",
+                    sm: "block",
+                    md: "block",
+                    lg: "block",
+                    xl: "block",
+                  },
+                }}
                 aria-controls={open ? "notifications-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+              >
+                <img src={NotificationsActive} alt="Notifications-icon"></img>
+              </IconButton>
+            ) : null}
+            {connected ? (
+              <IconButton
+                onClick={showNotificationsMenu}
+                size="small"
+                sx={{
+                  mx: 2,
+                  display: {
+                    xs: "block",
+                    sm: "none",
+                    md: "none",
+                    lg: "none",
+                    xl: "none",
+                  },
+                }}
+                aria-controls={open ? "notifications-menu-xs" : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
               >
@@ -150,9 +180,17 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               PaperProps={{
                 elevation: 0,
                 sx: {
+                  display: {
+                    xs: "none",
+                    sm: "block",
+                    md: "block",
+                    lg: "block",
+                    xl: "block",
+                  },
                   overflow: "visible",
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                   mt: 1.5,
+                  // display:{xs:"none"},
                   "& .MuiAvatar-root": {
                     width: 30,
                     height: 30,
@@ -172,7 +210,57 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 19.5,
+                  ml: 14,
+                  borderRadius: 5,
+                },
+              }}
+              transformOrigin={{ horizontal: "right", vertical: "top" }}
+              anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+            >
+              <Box>
+                <NotificationD />
+              </Box>
+            </Menu>
+            <Menu
+              anchorEl={anchorEl}
+              id="notifications-menu-xs"
+              open={open}
+              onClose={handleClose}
+              onClick={handleClose}
+              PaperProps={{
+                elevation: 0,
+                sx: {
+                  display: {
+                    xs: "block",
+                    sm: "none",
+                    md: "none",
+                    lg: "none",
+                    xl: "none",
+                  },
+                  overflow: "visible",
+                  // filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                  mt: 5.5,
+                  // display:{xs:"none"},
+                  "& .MuiAvatar-root": {
+                    width: 30,
+                    height: 30,
+                    ml: -0.5,
+                    mr: 1,
+                  },
+                  "&:before": {
+                    content: '""',
+                    display: "block",
+                    position: "absolute",
+                    top: 2,
+                    left: "11.6rem",
+                    width: 25,
+                    height: 25,
+                    bgcolor: "background.paper",
+                    transform: "translateY(-50%) rotate(45deg)",
+                    zIndex: 0,
+                    borderRadius: "6px",
+                  },
+                  ml: 0,
                   borderRadius: 5,
                 },
               }}
@@ -248,7 +336,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 7.5,
+                  ml: 3.5,
                   borderRadius: 5,
                 },
               }}
@@ -347,13 +435,13 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     ) : null}
 
                     <Grid item xs={4} sm={4}>
-                    <Link to="/upload" className="linkUnderline">
-                      <ButtonComponent
-                        btnColor={"#3772FF"}
-                        classNames="uploadRight"
-                      >
-                        Upload
-                      </ButtonComponent>
+                      <Link to="/upload" className="linkUnderline">
+                        <ButtonComponent
+                          btnColor={"#3772FF"}
+                          classNames="uploadRight"
+                        >
+                          Upload
+                        </ButtonComponent>
                       </Link>
                     </Grid>
 

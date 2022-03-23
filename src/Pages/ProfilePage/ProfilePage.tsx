@@ -1,9 +1,10 @@
-import  { useState ,ReactNode ,SetStateAction} from "react";
+import { useState, ReactNode, SetStateAction } from "react";
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
+import Upload_Icon from "../../Assets/images/Upload_Icon.svg";
 import {
   FollowersCard,
   FollowingCard,
@@ -54,7 +55,7 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",
-    padding:"10px"
+    padding: "10px",
   },
 };
 function allyProps(index: number) {
@@ -68,8 +69,8 @@ export default function ProfilePage() {
   const [uploadImage, setUploadImage] = useState(false);
 
   const handleUploadImage = () => {
-    setUploadImage(!uploadImage)
-  }
+    setUploadImage(!uploadImage);
+  };
 
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
@@ -77,50 +78,37 @@ export default function ProfilePage() {
 
   return (
     <Grid>
-     { uploadImage ? <Grid style={styles.paperContainerUpload} className="paper_height">
-        <Grid className="dashedBorderGrid">
-        <Grid className="upload_Grid" component="label"> 
-        <input type="file" hidden/>
-        <Box>
-          <Typography className="DragAndDropText">Drag and drop your photo here</Typography>
-          <Typography className="Browsetext">or click to browse</Typography>
-          </Box> 
+      {uploadImage ? (
+        <Grid style={styles.paperContainerUpload} className="paper_height">
+          <Grid className="dashedBorderGrid">
+            <Grid className="upload_Grid" component="label">
+              <input type="file" hidden />
+              <Box>
+                <img src={Upload_Icon} className="Upload_Icon_style" />
+                <Typography className="DragAndDropText">
+                  Drag and drop your photo here
+                </Typography>
+                <Typography className="Browsetext">
+                  or click to browse
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid className="SavePhotoBtn_grid">
+              <ButtonComponent
+                handleClick={handleUploadImage}
+                btnColor={"#3772FF"}
+                classNames="savePhoto_btn"
+              >
+                Save Photo
+              </ButtonComponent>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid className="SavePhotoBtn_grid">
-        <ButtonComponent
-                        handleClick={handleUploadImage}
-                        btnColor={"#3772FF"}
-                        classNames="savePhoto_btn"
-                      >
-                        Save Photo
-                      </ButtonComponent>
-                      </Grid>
-                      </Grid>
-      </Grid > :
+      ) : (
         <Paper style={styles.paperContainer} className="paper_height">
-        <Box className="button_div">
-          <Button
-          onClick={handleUploadImage}
-            sx={{
-              textTransform: "none",
-              borderRadius: "20px",
-              color: "#fff",
-              padding: "7px 12px",
-              margin: "12px",
-              fontSize: "12px",
-              boxShadow:" 0 0 0 2px #777e90 inset"
-            }}
-          >
-            Edit cover photo
-            <span>
-              <img
-                src={iconStar}
-                style={{ width: "12px", marginLeft: "8px" }}
-              />
-            </span>
-          </Button>
-          <Link to="/edit-profile-page" className="linkUnderline">
+          <Box className="button_div">
             <Button
+              onClick={handleUploadImage}
               sx={{
                 textTransform: "none",
                 borderRadius: "20px",
@@ -128,21 +116,42 @@ export default function ProfilePage() {
                 padding: "7px 12px",
                 margin: "12px",
                 fontSize: "12px",
-                boxShadow:" 0 0 0 2px #777e90 inset"
+                boxShadow: " 0 0 0 2px #777e90 inset",
               }}
             >
-              Edit profile
+              Edit cover photo
               <span>
                 <img
-                  src={iconEdit}
+                  src={iconStar}
                   style={{ width: "12px", marginLeft: "8px" }}
                 />
               </span>
             </Button>
-          </Link>
-        </Box>
-      </Paper> }
-       
+            <Link to="/edit-profile-page" className="linkUnderline">
+              <Button
+                sx={{
+                  textTransform: "none",
+                  borderRadius: "20px",
+                  color: "#fff",
+                  padding: "7px 12px",
+                  margin: "12px",
+                  fontSize: "12px",
+                  boxShadow: " 0 0 0 2px #777e90 inset",
+                }}
+              >
+                Edit profile
+                <span>
+                  <img
+                    src={iconEdit}
+                    style={{ width: "12px", marginLeft: "8px" }}
+                  />
+                </span>
+              </Button>
+            </Link>
+          </Box>
+        </Paper>
+      )}
+
       <Grid container spacing={2} className="outerGrid_style">
         <Grid className="usercardGrid_Styling">
           <UsersCard />
@@ -191,83 +200,87 @@ export default function ProfilePage() {
 
             <TabPanel value={value} index={0}>
               <Grid className="tabPanelSection-Style">
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  marginLeft:"0px"
-                }}
-              >
-                {Data.filter(function (cardData) {
-                  return cardData.id <= 5;
-                }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+                <Grid
+                  container
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginLeft: "0px",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  {Data.filter(function (cardData) {
+                    return cardData.id <= 6;
+                  }).map((item, index) => (
+                    <Bidcard cardData={item} key={item.id} />
+                  ))}
+                </Grid>
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <Grid className="tabPanelSection-Style">
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  marginLeft:"0px"
-                }}
-              >
-                {Data.filter(function (cardData) {
-                  return cardData.id <= 4;
-                }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+              <Grid className="tabPanelSection-Style">
+                <Grid
+                  container
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginLeft: "0px",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  {Data.filter(function (cardData) {
+                    return cardData.id <= 4;
+                  }).map((item, index) => (
+                    <Bidcard cardData={item} key={item.id} />
+                  ))}
+                </Grid>
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <Grid className="tabPanelSection-Style">
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  marginLeft:"0px"
-                }}
-              >
-                {Data.filter(function (cardData) {
-                  return cardData.id <= 3;
-                }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+              <Grid className="tabPanelSection-Style">
+                <Grid
+                  container
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginLeft: "0px",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  {Data.filter(function (cardData) {
+                    return cardData.id <= 2;
+                  }).map((item, index) => (
+                    <Bidcard cardData={item} key={item.id} />
+                  ))}
+                </Grid>
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={3}>
-            <Grid className="tabPanelSection-Style">
-              <Grid
-                container
-                spacing={2}
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-                  marginLeft:"0px"
-                }}
-              >
-                {Data.filter(function (cardData) {
-                  return cardData.id <= 4;
-                }).map((item, index) => (
-                  <Bidcard cardData={item} key={item.id} />
-                ))}
-              </Grid>
+              <Grid className="tabPanelSection-Style">
+                <Grid
+                  container
+                  spacing={2}
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    marginLeft: "0px",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  {Data.filter(function (cardData) {
+                    return cardData.id <= 4;
+                  }).map((item, index) => (
+                    <Bidcard cardData={item} key={item.id} />
+                  ))}
+                </Grid>
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={4}>
               <Grid className="tabPanelSection2-Style">
-              <FollowingCard />
+                <FollowingCard />
               </Grid>
             </TabPanel>
             <TabPanel value={value} index={5}>
