@@ -93,11 +93,11 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
           </Grid>
          
             {Display ? (
-              <Box sx={{ display: showB ? "block" : "none" }} className="DNone">
+              <Box sx={{ display: showB ? "block" : "none" }} className="DNone ">
                 <img className="imgC1 maxWidth" src={QR} />
               </Box>
             ) : (
-              <Box className="CNone">
+              <Box className="CNone padding300">
                 <Typography className="fontC2">Scan to connect</Typography>
                 <Typography className="fontC3">
                   Powered by UI8.Wallet
@@ -117,7 +117,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
             )}
             <Grid item md={5} sm={6} xs={12} >
             {Dnone ? (
-              <Box>
+              <Box className="padding300">
                 <Typography className="fontC2">Terms of Service</Typography>
                 <Typography className="fontC3">
                   Please take a few minutes to read and understand{" "}

@@ -10,6 +10,11 @@
   color: black !important;
   font-size: 11px !important;
 }
+.autImg{
+  width:23px;
+  height:23px;
+  margin-right: 5px !important;
+}
 .diffClass .rec.rec-arrow {
   box-sizing: border-box;
   -webkit-transition: all 0.1s ease;
@@ -75,7 +80,15 @@
     outline: none;
   }
 }
-
+@media (max-width:768px){
+  .widthC .rightarrow {
+    width:30px
+  }
+  .widthC .leftarrow {
+    width:30px
+  }
+ 
+}
 @media (max-width: 500px) and (min-width: 300px) {
   .changewidth1 {
     width: 100%;
@@ -84,7 +97,38 @@
   .changeWidth {
     width: 100%;
   }
+  
+  .widthC .css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
+    display: none !important;
+  }
   .changeWidth2 {
     width: 100%;
+  }
+  .cWidth{
+    width:100px !important;
+  }
+  .autImg{
+    width:15px !important;
+    height:15px !important;
+    margin-right: 0px !important;
+  }
+  .autName{
+    font-size: 17px !important;
+  }
+  .autItem{
+    padding:5px 5px !important;
+  }
+}
+@media (max-width:375px){
+  .cWidth{
+    width:90px !important;
+  }
+}
+@media (max-width:320px){
+  .cWidth{
+    width:73px !important;
+  }
+  .css-1maxati-MuiTypography-root {
+    font-size: 30px !important;
   }
 }

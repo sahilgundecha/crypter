@@ -100,7 +100,7 @@
 }
 @media (max-width: 375px) {
   .adjustingPadding {
-    margin: 0px 0px !important;
+    margin: 0px 9px !important;
   }
   .gIfIEN {
     width: 310px !important;

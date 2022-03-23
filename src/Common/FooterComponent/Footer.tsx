@@ -35,10 +35,11 @@ const FooterComponent = () => {
 
   return (
     <Box
+
       sx={{
         flexGrow: 0,
         display: { xs: "flex", md: "flex" },
-        py: 4,
+        p:2,
         my: 4,
         borderTop: 1,
         borderColor: "#E6E8EC",
@@ -65,17 +66,17 @@ const FooterComponent = () => {
               </Typography>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/search-filter"} className={`${classes.link}`}>
                 Discover
               </Link>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/connect-wallet"} className={`${classes.link}`}>
                 Connect wallet
               </Link>
             </Box>
             <Box sx={{ mb: 2 }}>
-              <Link to={"/"} className={`${classes.link}`}>
+              <Link to={"/Upload"} className={`${classes.link}`}>
                 Create item
               </Link>
             </Box>
