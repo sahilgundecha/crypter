@@ -87,7 +87,7 @@
     width:100% !important;
   }
   .container {
-    margin-top: 70px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -99,6 +99,7 @@
   }
   .container {
     width: 96% !important;
+    margin-bottom: 30px;
   }
 }
 @media (max-width:500px) and (min-width:300px){

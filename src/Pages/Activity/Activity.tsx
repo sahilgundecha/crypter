@@ -19,7 +19,7 @@ import { Notification } from "../../Components/Notification/NotificationD";
 import { Link } from "react-router-dom";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import buffer from "../../Assets/images/buffer.svg";
-import filter from "../../Assets/images/arroww.svg";
+import filter from "../../Assets/images/filterActity.svg";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 const boxStyle1 = {
@@ -106,7 +106,7 @@ export default function Activity() {
             </Button>
           </Link>
         </Box>
-        <Box className="lineStyle">
+        <Box className="lineStyle hideContent">
           <Link to="/profile-page" className="linkUnderline">
             <Typography component="a" sx={textStyle}>
               Profile &gt;
@@ -150,7 +150,7 @@ export default function Activity() {
                       >
                         Mark as all read
                       </ButtonComponent>
-                      <Box sx={{ display: { sm: "block", md: "none" } }}>
+                      <Box sx={{ display: { sm: "block", md: "none" },marginLeft:'10px',marginTop:'4px' }}>
                         <img src={filter} onClick={showBox}></img>
                       </Box>
                     </Box>

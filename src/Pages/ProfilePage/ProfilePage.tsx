@@ -12,6 +12,7 @@ import iconStar from "../../Assets/images/icons-Star-Filled-Copy.png";
 import iconEdit from "../../Assets/images/icons-Edit-Line.png";
 import Data from "../../DB/BidCard/BidcardArray";
 import Bidcard from "../../Components/Bidcard/Bidcard";
+import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
 
 interface TabPanelProps {
   children?: ReactNode;
@@ -44,10 +45,16 @@ const styles = {
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     width: "100%",
-    height: "350px",
     display: "flex",
     justifyContent: "flex-end",
     alignItems: "flex-end",
+  },
+  paperContainerUpload: {
+    backgroundImage: `url(${coverDemoImg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+    width: "100%",
+    padding:"10px"
   },
 };
 function allyProps(index: number) {
@@ -58,6 +65,11 @@ function allyProps(index: number) {
 }
 export default function ProfilePage() {
   const [value, setvalue] = useState(0);
+  const [uploadImage, setUploadImage] = useState(false);
+
+  const handleUploadImage = () => {
+    setUploadImage(!uploadImage)
+  }
 
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
     setvalue(newValue);
@@ -65,9 +77,30 @@ export default function ProfilePage() {
 
   return (
     <Grid>
-      <Paper style={styles.paperContainer}>
+     { uploadImage ? <Grid style={styles.paperContainerUpload} className="paper_height">
+        <Grid className="dashedBorderGrid">
+        <Grid className="upload_Grid" component="label"> 
+        <input type="file" hidden/>
+        <Box>
+          <Typography className="DragAndDropText">Drag and drop your photo here</Typography>
+          <Typography className="Browsetext">or click to browse</Typography>
+          </Box> 
+        </Grid>
+        <Grid className="SavePhotoBtn_grid">
+        <ButtonComponent
+                        handleClick={handleUploadImage}
+                        btnColor={"#3772FF"}
+                        classNames="savePhoto_btn"
+                      >
+                        Save Photo
+                      </ButtonComponent>
+                      </Grid>
+                      </Grid>
+      </Grid > :
+        <Paper style={styles.paperContainer} className="paper_height">
         <Box className="button_div">
           <Button
+          onClick={handleUploadImage}
             sx={{
               textTransform: "none",
               borderRadius: "20px",
@@ -108,7 +141,8 @@ export default function ProfilePage() {
             </Button>
           </Link>
         </Box>
-      </Paper>
+      </Paper> }
+       
       <Grid container spacing={2} className="outerGrid_style">
         <Grid className="usercardGrid_Styling">
           <UsersCard />
@@ -163,7 +197,7 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft: "20px !important",
+                  marginLeft:"0px"
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -182,7 +216,7 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft: "20px !important",
+                  marginLeft:"0px"
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -201,7 +235,7 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft: "20px !important",
+                  marginLeft:"0px"
                 }}
               >
                 {Data.filter(function (cardData) {
@@ -220,7 +254,7 @@ export default function ProfilePage() {
                 sx={{
                   display: "flex",
                   flexDirection: "row",
-                  marginLeft: "20px !important",
+                  marginLeft:"0px"
                 }}
               >
                 {Data.filter(function (cardData) {
