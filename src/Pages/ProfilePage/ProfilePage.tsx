@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
-import Upload_Icon from "../../Assets/images/upload.svg";
+import Upload_Icon from "../../Assets/images/Upload_Icon.svg";
 import {
   FollowersCard,
   FollowingCard,
