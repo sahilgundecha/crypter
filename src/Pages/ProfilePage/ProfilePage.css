@@ -85,6 +85,9 @@
 .tabPanelSection-Style{
   margin-left: -50px ;
 }
+.Upload_Icon_style{
+  width: 38px;
+}
 @media (min-width:1980px){
   .outerGrid_style{
     width: 60% !important;
@@ -172,8 +175,18 @@ margin-top: -65px;
     width: 97%;
     margin-left: -40px;
   }
+  .Upload_Icon_style{
+    width: 32px;
+  }
 }
 @media (max-width: 700px) {
+  .upload_Grid{
+    height: 60%;
+    
+  }
+  .Upload_Icon_style{
+    width: 24px;
+  }
   .DragAndDropText{
     font-size: 18px !important;
   }
@@ -183,6 +196,7 @@ margin-top: -65px;
     font-weight: 500 !important;
   }
   .SavePhotoBtn_grid{
+    margin-top: -20px;
     justify-content: center !important;
       }
   .tabs_Styling {
