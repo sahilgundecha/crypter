@@ -10,6 +10,9 @@
 .userFollower {
   display: flex;
 }
+.paper_height{
+  height: 350px;
+}
 .linkUnderline {
   text-decoration: none;
 }
@@ -42,7 +45,43 @@
 .tabTopGrid_Styling .css-16s6g47-MuiButtonBase-root-MuiTab-root {
   min-height: 40px !important;
 }
-
+.savePhoto_btn{
+  padding: 13px 15px;
+}
+.SavePhotoBtn_grid{
+  display: flex !important;
+    justify-content:flex-end !important;
+    align-items: flex-end !important;
+    padding-right: 20px;
+    
+}
+.dashedBorderGrid{
+  border: 2px dashed #fff;
+  border-radius: 16px;
+  height: 330px;
+}
+.upload_Grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  text-align: center;
+}
+.DragAndDropText{
+  font-size: 28px !important;
+    line-height: 1.33333;
+    font-weight: 700 !important;
+    color: #fff;
+}
+.Browsetext{
+  font-size: 18px !important;
+    line-height: 1.33333;
+    font-weight: 600 !important;
+    color: #fff;
+}
+.tabPanelSection2-Style{
+  margin-left: -30px ;
+}
 @media (min-width:1980px){
   .outerGrid_style{
     width: 60% !important;
@@ -74,8 +113,20 @@
   .usercardGrid_Styling{
     padding-right: 0px;
   }
+  .tabPanelSection-Style{
+    margin-left: 20px ;
+  }
 }
 @media (max-width: 1020px) {
+.SavePhotoBtn_grid{
+margin-top: -65px;
+  }
+  .paper_height{
+    height: 260px;
+  }
+  .dashedBorderGrid{
+    height: 240px;
+  }
   .button_div {
     margin-bottom: 80px;
   }
@@ -93,25 +144,36 @@
     margin-left: 40px;
   }
   .tabPanelSection-Style{
-    margin-left: 60px;
+    margin-left: 70px ;
   }
   .tabPanelSection2-Style{
-    width: 94%;
-    margin-left: -60px;
+    width: 97%;
+    margin-left: -40px;
   }
 }
-@media (max-width: 780px) {
-  .tabPanelSection-Style{
-    margin-left: 40px;
-  }
-}
+
 @media (max-width: 700px) {
+  .DragAndDropText{
+    font-size: 18px !important;
+  }
+  .Browsetext{
+    font-size: 14px !important;
+    margin-bottom: 15px !important;
+    font-weight: 500 !important;
+  }
+  .SavePhotoBtn_grid{
+    justify-content: center !important;
+      }
   .tabs_Styling {
     width: 100%;
     margin-left: 0px;
   }
   .tabPanelSection-Style{
-    margin-left: 0px;
+    margin-left: 20px;
+  }
+  .tabPanelSection2-Style{
+    width: 94%;
+    margin-left: -70px;
   }
   .tabTopGrid_Styling{
     width:100%;
@@ -128,7 +190,7 @@
     width: 100%;
   }
   .tabPanelSection-Style{
-    margin-left: -20px;
+    margin-left: 0px;
   }
   .button_div {
     margin-bottom: 80px;
@@ -143,5 +205,9 @@
   }
   .css-19kzrtu {
     padding:10px 0px !important;
+  }
+  .tabPanelSection2-Style{
+    width: 94%;
+    margin-left: -55px;
   }
 }
