@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Grid, Paper, Button, Box, Typography, Tabs, Tab } from "@mui/material";
 import coverDemoImg from "../../Assets/images/bg_CoverImg.png";
 import { UsersCard } from "../../Components/UsersCard/UsersCard";
+import Upload_Icon from "../../Assets/images/Upload_Icon.svg"
 import {
   FollowersCard,
   FollowingCard,
@@ -82,6 +83,7 @@ export default function ProfilePage() {
         <Grid className="upload_Grid" component="label"> 
         <input type="file" hidden/>
         <Box>
+          <img src={Upload_Icon} className="Upload_Icon_style"/>
           <Typography className="DragAndDropText">Drag and drop your photo here</Typography>
           <Typography className="Browsetext">or click to browse</Typography>
           </Box> 
