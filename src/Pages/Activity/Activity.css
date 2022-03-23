@@ -44,3 +44,9 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) and (min-width: 300px) {
+
+  .hideContent{
+    display:none;
+  }
+}

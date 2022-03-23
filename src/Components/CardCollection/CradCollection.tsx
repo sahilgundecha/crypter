@@ -10,7 +10,7 @@ import rightArrow from "../../Assets/images/RightArrow.svg";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 480, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
+  { width: 550, itemsToShow: 1 },
   { width: 768, itemsToShow: 2 },
   { width: 1024, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
@@ -58,6 +58,7 @@ export const CradCollection = () => {
         breakPoints={breakPoints}
         pagination={false}
         renderArrow={myArrow}
+        className="widthC"
       >
         {Data.map((item, index) => (
           <CardCollect cardData={item} key={item.id} />
@@ -125,6 +126,7 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
                 marginLeft: "10px",
               }}
               component="p"
+              className="autName"
             >
               Awesome collections
             </Typography>
@@ -138,10 +140,10 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
             }}
           > <span className="rowBox">
              <img src={cardData.authorImg} />
-            <Typography sx={{ fontSize: "14px" }}    component="p">
+            <Typography sx={{ fontSize: "14px" }} component="p" >
               By {cardData.authorName}
             </Typography></span>
-            <Button variant="outlined">{cardData.item} items</Button>
+            <Button variant="outlined" className="autItem">{cardData.item} items</Button>
           </Box>
         </Card>
       </Container>

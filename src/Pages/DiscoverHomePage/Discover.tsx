@@ -77,9 +77,11 @@ const Discover = () => {
         </Box>
         <Box className="discoverDropdown displayInTab">
           <Dropdown
-            item1="Verified only"
-            item2="All"
-            item3="Most liked"
+            item1="All items"
+            item2="Art"
+            item3="Game"
+            item4="Photo"
+            item5="Video"
           ></Dropdown>
         </Box>
         <Box className="hideInTab">

@@ -38,8 +38,8 @@ const UsersCard = (props: userDataProps) => {
           <Grid className="followersCardTopBlock" key={x.id}>
             <Grid className="followersCard_media">
               <Avatar
+              className="profile_img"
                 alt="Nat Geo"
-                sx={{ width: "88px", height: "88px", margin: "14px 20px" }}
                 src={x.img}
               />
               <Grid className="profileStyle">

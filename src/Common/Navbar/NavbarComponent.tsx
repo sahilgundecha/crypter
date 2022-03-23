@@ -347,12 +347,14 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     ) : null}
 
                     <Grid item xs={4} sm={4}>
+                    <Link to="/upload" className="linkUnderline">
                       <ButtonComponent
                         btnColor={"#3772FF"}
-                        classNames={"px-3 mx-3"}
+                        classNames="uploadRight"
                       >
                         Upload
                       </ButtonComponent>
+                      </Link>
                     </Grid>
 
                     {connected ? (
