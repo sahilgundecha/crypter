@@ -15,7 +15,7 @@ interface cardProps {
 }
 const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
-  { width: 480, itemsToShow: 1 },
+  { width: 480, itemsToShow: 2 },
   { width: 600, itemsToShow: 3 },
   { width: 800, itemsToShow: 4 },
   { width: 1200, itemsToShow: 5 },
