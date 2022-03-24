@@ -175,7 +175,7 @@
     width: 100% !important;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .bidcardCarosel .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
     display: none !important;
   }
