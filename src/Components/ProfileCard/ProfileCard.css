@@ -30,3 +30,14 @@
   margin-right: 15px !important;
   width: 30px;
 }
+@media (max-width:500px ) and (min-width:300px){
+  .profileWrapper {
+    border: none;
+  }
+  .profileImg {
+    margin-right: 0px !important;
+  }
+  .profileWrapper:hover {
+    border: none;
+  }
+}

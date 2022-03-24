@@ -64,7 +64,7 @@ export const Notification = (props: cardCss) => {
             <Box sx={styleFlex} className="impHover">
               <Box sx={styleRow} key={props.id}>
                 <img className="change1" src={props.mainImg} />
-                <Box sx={{ marginLeft: "20px" }}>
+                <Box className="styleRec">
                   <Typography className="fontInc">{props.ethPrice}</Typography>
                   <Typography className="ChangeFont">
                     {props.ethRecieved}

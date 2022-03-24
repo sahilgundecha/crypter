@@ -13,7 +13,7 @@ import {
 } from "@mui/material";
 import avatar from "../../Assets/images/profileAvatar.svg";
 
-const ProfileCard = () => {
+const ProfileCard = (props:any) => {
   return (
     <>
       <Box className="profileWrapper">
@@ -22,7 +22,7 @@ const ProfileCard = () => {
         </Box>
         <Box>
           <Typography variant="h6" component="span" className="ETHCount">
-            7.00698 <span className="greenETH">ETH</span>
+           {props.price? props.price : null }
           </Typography>
         </Box>
       </Box>
