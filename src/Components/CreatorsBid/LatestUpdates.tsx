@@ -21,9 +21,9 @@ const CreatorsS3: FC<Props> = ({ CreatorsArray3 }) => {
           <img src={homeS3} />
         </Box>
         <Box sx={{ margin: "0px 20px" }}>
-          <Typography className="fontC4">{CreatorsArray3.title}</Typography>
-          <Typography className="fontC4">
-            {CreatorsArray3.price} <span className="fontC5">ETH</span>
+          <Typography className="fontC4 flexTitle">{CreatorsArray3.title}</Typography>
+          <Typography className="flexTitle styleETH">
+            {CreatorsArray3.price} {" "}ETH
           </Typography>
         </Box>
       </Box>
