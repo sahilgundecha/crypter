@@ -36,6 +36,7 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
             padding: " 0px",
             margin: "25px 5px",
           }}
+          className="cardPaper"
         >
           <Card
             style={{
