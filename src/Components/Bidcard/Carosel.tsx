@@ -17,8 +17,8 @@ interface cardProps {
   bidtype: string;
 }
 const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 480, itemsToShow: 1 },
+  { width: 1, itemsToShow: 1.2 },
+  { width: 380, itemsToShow: 2 },
   { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },
   { width: 1000, itemsToShow: 4 },
