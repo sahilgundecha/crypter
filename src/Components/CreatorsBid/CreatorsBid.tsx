@@ -70,10 +70,11 @@ export default function CreatorsBid() {
             <CreatorsItems CreatorsArray={item} key={item.id} />
           ))}
         </Grid>
-        <Grid item md={3} sm={4} xs={12} className="latestStyle">
+        <Grid item md={3} sm={12} xs={12} className="latestStyle">
           <Typography className="fontC5 styleCreators">
             Latest upload from creators 🔥
           </Typography>
+
           <Box className="flexRow">
             {LatestUpdatesArray.map((item) => (
               <LatestUpdates CreatorsArray3={item} key={item.id} />
