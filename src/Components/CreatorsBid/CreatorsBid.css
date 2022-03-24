@@ -1,8 +1,8 @@
 .changeM {
   margin: 10px 0px !important;
 }
-.changeSize{
-  width:100% !important;
+.changeSize {
+  width: 100% !important;
 }
 .moveRight {
   margin-right: 15px !important;
@@ -10,6 +10,16 @@
 .borderC {
   border-radius: 33px;
   padding: 12px 17px !important;
+}
+.styleETH {
+  border: 1px solid green;
+  color: green;
+  border-radius: 6px;
+  font-size: 11px !important;
+  font-weight: bolder !important;
+  text-align: center;
+  width: 63px !important;
+  padding-top: 3px;
 }
 .widthmax {
   width: 100% !important;
@@ -24,39 +34,34 @@
 .priceBor {
   border: 1px solid green;
   color: green;
-  padding: 1px 5px;
+  padding: 3px 5px;
   font-weight: bold !important;
   border-radius: 5px;
+  text-align: center;
 }
-.fontC4 {
-  font-size: 14pxx !important;
-  font-weight: bold !important;
+.styleFuture {
+  font-weight: bolder !important;
 }
 .fontC5 {
   color: #777e90;
-  
+  font-size: 13px !important;
+  font-weight: bolder !important;
 }
-.firstSection{
+.firstSection {
   text-decoration: none !important;
-  color:black !important;
+  color: black !important;
 }
-/* .css-z1hl9e-MuiGrid-root  {
-  width: calc(100% + 0px) !important;
- margin:0px !important;
-} */
-.lineUnderlineS2{
+.lineUnderlineS2 {
   text-decoration: none !important;
-  color:black !important;
+  color: black !important;
 }
 .conatiner {
-  width: max-content;
+  width: fit-content;
   position: relative;
   height: fit-content;
 }
 .middle {
   display: none;
-  position: absolute;
-  margin: -193px -26px -27px 124px;
 }
 .zoomDiv {
   overflow: hidden;
@@ -67,10 +72,7 @@
 }
 .image {
   transition: transform 0.7s;
-  width:100% !important;
-}
-.text {
-  width: 100px;
+  width: 100% !important;
 }
 
 .container:hover .middle {
@@ -82,35 +84,45 @@
   .priceBor {
     padding: 1px 3px;
     font-size: 11px !important;
-}
+  }
   .image {
-    width:100% !important;
+    width: 100% !important;
   }
   .container {
-    margin-top: 40px;
+    margin-top: 30px !important;
   }
 }
 @media (max-width: 768px) {
-  .middle {
-    margin: -193px -26px -27px 124px;
+  .styleCreators {
+    font-weight: bolder !important;
+    font-size: 12px !important;
+  }
+  .styleBird {
+    margin-left: 20px !important ;
+  }
+  .changeSize {
+    margin: 30px 0px !important;
   }
   .changeWidth1 {
     width: 100%;
+  }
+  .styleHidden {
+    display: none;
+  }
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+  }
+  .flexTitle {
+    width: 110px;
   }
   .container {
     width: 96% !important;
     margin-bottom: 30px;
   }
 }
-@media (max-width:500px) and (min-width:300px){
-.styleHidden {
-   display:none;
-}
-.latestStyle{
-  margin-top: 30px !important;
-  display: flex;
-  flex-direction: column !important;
-  align-items: center ;
-
-}
+@media (max-width: 500px) and (min-width: 300px) {
+  .latestStyle {
+    margin-top: 30px !important;
+  }
 }

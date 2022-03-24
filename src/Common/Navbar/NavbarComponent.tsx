@@ -6,6 +6,7 @@ import {
   IconButton,
   Typography,
   Menu,
+  Card,
   Container,
   Paper,
   Grid,
@@ -38,6 +39,7 @@ const useStyles = makeStyles({
     lineHeight: "40px",
     color: "#777E90",
     transition: "color .2s",
+    fontWeight:'bolder',
     "&:hover": {
       color: "#3772ff",
       borderBottom: "1px solid white",
@@ -238,17 +240,14 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     xl: "none",
                   },
                   overflow: "visible",
-                  // filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-                  mt: 5.5,
-                  // display:{xs:"none"},
+                  filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                  mt: 7,
                   "& .MuiAvatar-root": {
                     width: 30,
                     height: 30,
-                    ml: -0.5,
-                    mr: 1,
+                   
                   },
                   "&:before": {
-                    content: '""',
                     display: "block",
                     position: "absolute",
                     top: 2,
@@ -260,7 +259,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 0,
+                  
                   borderRadius: 5,
                 },
               }}
@@ -292,7 +291,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 aria-haspopup="true"
                 aria-expanded={openConnectWallet ? "true" : undefined}
               >
-                <ProfileCard />
+                <ProfileCard price="7.7565 ETH" />
               </Box>
             ) : (
               <Box
@@ -322,12 +321,11 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 sx: {
                   overflow: "visible",
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-                  mt: 5,
+                  mt: 7,
                   "&:before": {
-                    content: '""',
                     display: "block",
                     position: "absolute",
-                    top: 2,
+                    top: 10,
                     left: "11.6rem",
                     width: 25,
                     height: 25,
@@ -336,7 +334,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  ml: 3.5,
+                  
                   borderRadius: 5,
                 },
               }}
@@ -354,6 +352,35 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               display: { xs: "flex", sm: "none", md: "none" },
             }}
           >
+            {connected ? (
+              <Box sx={{display:'flex',flexDirection:'row',marginLeft: "auto"}}>
+                <IconButton
+                  onClick={showNotificationsMenu}
+                  size="small"
+                  aria-controls={open ? "notifications-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                >
+                  <img src={NotificationsActive} alt="Notifications-icon"></img>
+                </IconButton>
+                <Box
+                  sx={{
+                    display: "block",
+                    alignSelf: "center",
+                  }}
+                  onClick={showConnectWalletMenu}
+                  aria-controls={
+                    openConnectWallet ? "connect-wallet-menu" : undefined
+                  }
+                  aria-haspopup="true"
+                  aria-expanded={openConnectWallet ? "true" : undefined}
+                >
+                  <Box>
+                    <ProfileCard />
+                  </Box>
+                </Box>
+              </Box>
+            ) : null}
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -361,7 +388,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ marginLeft: "auto" }}
+             
             >
               <DragHandleIcon sx={{ color: "black" }} />
             </IconButton>
@@ -385,23 +412,98 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               }}
             >
               <Paper elevation={0} sx={{ padding: 2 }}>
-                <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                  <Link
-                    to="/search-filter"
-                    className={classes.link}
-                    onClick={handleCloseNavMenu}
-                  >
-                    Discover
-                  </Link>
-                </Box>
-                <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-                  <Link
-                    to="#"
-                    className={classes.link}
-                    onClick={handleCloseNavMenu}
-                  >
-                    How it works
-                  </Link>
+                <Box>
+                  {connected ? (
+                    <Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="/search-filter"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          Discover
+                        </Link>
+                      </Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="#"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          How it works
+                        </Link>
+                      </Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="/search-filter"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          Create item
+                        </Link>
+                      </Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="/search-filter"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          Profile
+                        </Link>
+                      </Box>
+                    </Box>
+                  ) : (
+                    <Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="/search-filter"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          Discover
+                        </Link>
+                      </Box>
+                      <Box
+                        sx={{
+                          flexGrow: 1,
+                          display: { xs: "flex", md: "none" },
+                        }}
+                      >
+                        <Link
+                          to="#"
+                          className={classes.link}
+                          onClick={handleCloseNavMenu}
+                        >
+                          How it works
+                        </Link>
+                      </Box>
+                    </Box>
+                  )}
                 </Box>
                 <Box
                   component="span"
@@ -414,87 +516,39 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                   component="span"
                   sx={{ display: "block", alignSelf: "center", mt: "12px" }}
                 >
-                  <Grid container spacing={0}>
-                    {connected ? (
-                      <Grid item xs={1} sm={1}>
-                        <IconButton
-                          onClick={showNotificationsMenu}
-                          size="small"
-                          aria-controls={
-                            open ? "notifications-menu" : undefined
-                          }
-                          aria-haspopup="true"
-                          aria-expanded={open ? "true" : undefined}
-                        >
-                          <img
-                            src={NotificationsActive}
-                            alt="Notifications-icon"
-                          ></img>
-                        </IconButton>
-                      </Grid>
-                    ) : null}
-
-                    <Grid item xs={4} sm={4}>
-                      <Link to="/upload" className="linkUnderline">
-                        <ButtonComponent
-                          btnColor={"#3772FF"}
-                          classNames="uploadRight"
-                        >
-                          Upload
-                        </ButtonComponent>
-                      </Link>
-                    </Grid>
-
-                    {connected ? (
-                      <Grid
-                        item
-                        xs={7}
-                        sm={7}
-                        sx={{
-                          display: "block",
-                          alignSelf: "center",
-                          m: 0,
-                          p: 0,
-                        }}
-                        onClick={showConnectWalletMenu}
-                        aria-controls={
-                          openConnectWallet ? "connect-wallet-menu" : undefined
-                        }
-                        aria-haspopup="true"
-                        aria-expanded={openConnectWallet ? "true" : undefined}
+                  <Box>
+                    <Link to="/upload" className="linkUnderline">
+                      <ButtonComponent
+                        btnColor={"#3772FF"}
+                        classNames="uploadRight"
                       >
-                        <Box>
-                          <ProfileCard />
-                        </Box>
-                      </Grid>
+                        Upload
+                      </ButtonComponent>
+                    </Link>
+
+                    {connected ? (
+                      <Box></Box>
                     ) : (
-                      <Grid
-                        item
-                        xs={7}
-                        sm={7}
+                      <Box
                         sx={{
                           display: "block",
                           alignSelf: "center",
                           m: 0,
                           p: 0,
                         }}
-                        onClick={showConnectWalletMenu}
-                        aria-controls={
-                          openConnectWallet ? "connect-wallet-menu" : undefined
-                        }
-                        aria-haspopup="true"
-                        aria-expanded={openConnectWallet ? "true" : undefined}
                       >
-                        <ButtonComponent
-                          btnColor={"#23262F"}
-                          styleType={"outline"}
-                          classNames={"px-3 ms-2 rounded-pill"}
-                        >
-                          Connect Wallet
-                        </ButtonComponent>
-                      </Grid>
+                        <Link to="/connect-wallet" className="linkUnderline">
+                          <ButtonComponent
+                            btnColor={"#23262F"}
+                            styleType={"outline"}
+                            classNames="ConnectStyle"
+                          >
+                            Connect Wallet
+                          </ButtonComponent>
+                        </Link>
+                      </Box>
                     )}
-                  </Grid>
+                  </Box>
                 </Box>
               </Paper>
             </Menu>

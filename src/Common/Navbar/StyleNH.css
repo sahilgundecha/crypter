@@ -7,7 +7,14 @@
   padding: 12px 18px !important;
 }
 .uploadRight{
-  margin-left: 20px !important;
+ width:100% !important;
+font-weight: bolder !important;
+}
+.ConnectStyle{
+  width:100% !important;
+  border-radius: 25px !important;
+  margin-top: 10px !important;
+  font-weight: bolder !important;
 }
 .connected {
   display: flex;

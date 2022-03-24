@@ -91,7 +91,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
               />
             </Box>
           </Grid>
-         
+          <Grid item md={5} sm={6} xs={12} >
             {Display ? (
               <Box sx={{ display: showB ? "block" : "none" }} className="DNone ">
                 <img className="imgC1 maxWidth" src={QR} />
@@ -115,7 +115,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                 </Box>
               </Box>
             )}
-            <Grid item md={5} sm={6} xs={12} >
+           
             {Dnone ? (
               <Box className="padding300">
                 <Typography className="fontC2">Terms of Service</Typography>
