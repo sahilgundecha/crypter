@@ -25,9 +25,10 @@
   cursor: pointer;
   float: right;
 }
+
 .crossimg:hover {
-  filter: invert(52%) sepia(51%) saturate(6758%) hue-rotate(211deg)
-    brightness(98%) contrast(109%);
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7500%)
+    hue-rotate(18deg) brightness(115%) contrast(115%);
 }
 
 .cancelbtn {
