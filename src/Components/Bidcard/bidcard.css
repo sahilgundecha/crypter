@@ -145,11 +145,36 @@
 }
 
 @media (max-width: 768px) {
-  .withMargin {
-    margin: 10px !important;
+  .searchCardDiv .cardPaper {
+    width: 45% !important;
+    margin: 10px 0px !important;
+    padding: 10px !important;
+    display: flex;
+    align-items: center;
+    background-color: #fff !important;
+  }
+  .searchCardDiv .withMargin,
+  .ItemWrapper1 .withMargin {
+    width: 100% !important;
+    background-color: transparent !important;
+  }
+  .ItemWrapper1 .withMargin {
+    width: 47% !important;
+    background-color: transparent !important;
   }
 }
-
+@media (max-width: 600px) {
+  .searchCardDiv .cardPaper {
+    width: 100% !important;
+    margin: 10px 0px !important;
+    padding: 10px !important;
+    display: flex;
+    align-items: center;
+  }
+  .searchCardDiv .withMargin {
+    width: 100% !important;
+  }
+}
 @media (max-width: 320px) {
   .bidcardCarosel .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
     display: none !important;

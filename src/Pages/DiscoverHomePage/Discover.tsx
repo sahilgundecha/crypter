@@ -179,42 +179,42 @@ const Discover = () => {
 
       <Box className="bidcardDiv">
         <TabPanel value={value} index={0}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={4}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={5}>
-          <Grid container className="ItemWrapper">
+          <Grid container className="ItemWrapper1">
             {Data.map((item, index) => (
               <Bidcard cardData={item} key={item.id} />
             ))}

@@ -202,7 +202,7 @@ const SearchFilter = () => {
           </Box>
         </Grid>
 
-        <Grid item md={9}>
+        <Grid item md={9} className="searchCardDiv">
           <TabPanel value={value} index={0}>
             <Grid
               container
@@ -230,12 +230,21 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
@@ -272,12 +281,21 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
@@ -314,12 +332,21 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
@@ -356,6 +383,7 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
@@ -406,12 +434,21 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
@@ -448,12 +485,21 @@ const SearchFilter = () => {
                   classNames="headButton"
                   btnColor="#23262F"
                   handleClick={LoadMore}
+                  customStyle={{ marginTop: "20px" }}
                 >
                   Load more
                 </ButtonComponent>
               </Grid>
             ) : (
-              <Grid container spacing={2}>
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
                 {Data.filter(function (cardData) {
                   return cardData.id >= 7;
                 }).map((item, index) => (
