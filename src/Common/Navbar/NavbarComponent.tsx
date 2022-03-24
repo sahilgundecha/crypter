@@ -39,7 +39,7 @@ const useStyles = makeStyles({
     lineHeight: "40px",
     color: "#777E90",
     transition: "color .2s",
-    fontWeight:'bolder',
+    fontWeight: "bolder",
     "&:hover": {
       color: "#3772ff",
       borderBottom: "1px solid white",
@@ -245,7 +245,6 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                   "& .MuiAvatar-root": {
                     width: 30,
                     height: 30,
-                   
                   },
                   "&:before": {
                     display: "block",
@@ -259,7 +258,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  
+
                   borderRadius: 5,
                 },
               }}
@@ -334,7 +333,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     zIndex: 0,
                     borderRadius: "6px",
                   },
-                  
+
                   borderRadius: 5,
                 },
               }}
@@ -353,7 +352,15 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
             }}
           >
             {connected ? (
-              <Box sx={{display:'flex',flexDirection:'row',marginLeft: "auto"}}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+
+                  width: "100%",
+                  justifyContent: "flex-end",
+                }}
+              >
                 <IconButton
                   onClick={showNotificationsMenu}
                   size="small"
@@ -388,7 +395,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-             
+              sx={{ marginLeft: "auto" }}
             >
               <DragHandleIcon sx={{ color: "black" }} />
             </IconButton>
@@ -436,7 +443,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                         }}
                       >
                         <Link
-                          to="#"
+                          to="/faq"
                           className={classes.link}
                           onClick={handleCloseNavMenu}
                         >
@@ -450,7 +457,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                         }}
                       >
                         <Link
-                          to="/search-filter"
+                          to="/Upload"
                           className={classes.link}
                           onClick={handleCloseNavMenu}
                         >
@@ -464,7 +471,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                         }}
                       >
                         <Link
-                          to="/search-filter"
+                          to="/profile-page"
                           className={classes.link}
                           onClick={handleCloseNavMenu}
                         >

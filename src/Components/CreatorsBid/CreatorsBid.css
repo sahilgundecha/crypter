@@ -112,6 +112,8 @@
   .flexRow {
     display: flex;
     flex-direction: row;
+    width: max-content !important;
+    overflow: scroll !important;
   }
   .flexTitle {
     width: 110px;
