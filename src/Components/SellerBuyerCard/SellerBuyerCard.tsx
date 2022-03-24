@@ -9,6 +9,7 @@ import {
   Typography,
   Select,
   SelectChangeEvent,
+  Container,
 } from "@mui/material";
 
 function SellerBuyerCard() {
@@ -24,99 +25,91 @@ function SellerBuyerCard() {
 
   return (
     <Box className="graydiv">
-      <Box
-        sx={{
-          width: "100%",
-          margin: "0px auto",
-        }}
-      >
-        <Box className="circularDropdown">
-          <Box sx={{ marginRight: "auto" }}>
-            <Typography
-              variant="h5"
-              fontWeight={"bold"}
-              style={{ color: "#777E90", marginLeft: "15px" }}
-              component="div"
-            >
-              Popular
-            </Typography>
-
-            {/* <Dropdown item1="Seller" item2="Buyers" />
-          <Typography
-            variant="h5"
-            style={{ color: "#777E90", marginLeft: "20px" }}
-            component="div"
-          >
-            Popular
-          </Typography> */}
-            <Box>
-              <FormControl
-                className="formcontrol"
-                sx={{
-                  minWidth: 150,
-                  margin: "0px",
-                }}
+      <Container>
+        <Box
+          sx={{
+            width: "100%",
+            margin: "0px 0px",
+          }}
+        >
+          <Box className="circularDropdown">
+            <Box sx={{ marginRight: "auto" }}>
+              <Typography
+                variant="h5"
+                fontWeight={"bold"}
+                style={{ color: "#777E90", marginLeft: "15px" }}
+                component="div"
               >
-                <Select
-                  className={circulardrp ? "select" : "setdropdown"}
-                  onOpen={circulardrpfunc}
-                  onClose={circulardrpfunc}
+                Popular
+              </Typography>
+
+              <Box>
+                <FormControl
+                  className="formcontrol"
                   sx={{
-                    borderRadius: "40px",
-                    fontSize: "25px",
+                    minWidth: 150,
+                    margin: "0px",
                   }}
-                  value={age}
-                  onChange={handleChange}
-                  displayEmpty
-                  inputProps={{ "aria-label": "Without label" }}
                 >
-                  <MenuItem
-                    style={{
-                      minWidth: "max-content",
-                      fontSize: "30px",
-                      fontWeight: "bold",
+                  <Select
+                    className={circulardrp ? "select" : "setdropdown"}
+                    onOpen={circulardrpfunc}
+                    onClose={circulardrpfunc}
+                    sx={{
                       borderRadius: "40px",
+                      fontSize: "25px",
                     }}
-                    value=""
+                    value={age}
+                    onChange={handleChange}
+                    displayEmpty
+                    inputProps={{ "aria-label": "Without label" }}
                   >
-                    <em style={{ fontSize: "30px", fontWeight: "bold" }}>
-                      Seller
-                    </em>
-                  </MenuItem>
+                    <MenuItem
+                      style={{
+                        minWidth: "max-content",
+                        fontSize: "30px",
+                        fontWeight: "bold",
+                        borderRadius: "40px",
+                      }}
+                      value=""
+                    >
+                      <em style={{ fontSize: "30px", fontWeight: "bold" }}>
+                        Seller
+                      </em>
+                    </MenuItem>
 
-                  <MenuItem
-                    style={{
-                      minWidth: "max-content",
-                      fontSize: "30px",
-                      fontWeight: "bold",
-                      borderRadius: "40px",
-                    }}
-                  >
-                    <em style={{ fontSize: "30px", fontWeight: "bold" }}>
-                      Buyers
-                    </em>
-                  </MenuItem>
-                </Select>
-              </FormControl>
+                    <MenuItem
+                      style={{
+                        minWidth: "max-content",
+                        fontSize: "30px",
+                        fontWeight: "bold",
+                        borderRadius: "40px",
+                      }}
+                    >
+                      <em style={{ fontSize: "30px", fontWeight: "bold" }}>
+                        Buyers
+                      </em>
+                    </MenuItem>
+                  </Select>
+                </FormControl>
+              </Box>
             </Box>
-
-            {/* <Dropdown item1="Seller" item2="Buyers" /> */}
-          </Box>
-          <Box className="dropdown2">
-            <Dropdown
-              label=" TIME FRAME"
-              item1="Today"
-              item2="Morning"
-              item3="Dinner"
-              item4="Evening"
-            />
+            <Box className="dropdown2">
+              <Dropdown
+                label=" TIME FRAME"
+                item1="Today"
+                item2="Morning"
+                item3="Dinner"
+                item4="Evening"
+              />
+            </Box>
           </Box>
         </Box>
-      </Box>
 
-      <Box>
-        <SellerBuyerCarousel />
-      </Box>
+        <Box>
+          <SellerBuyerCarousel />
+        </Box>
+      </Container>
     </Box>
   );
 }
