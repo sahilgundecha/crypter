@@ -225,6 +225,19 @@
     bottom: 20%;
     left: 33%;
   }
+  .buttonGroup {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .itemBlueBtn {
+    margin-bottom: 10px;
+    width: 100% !important;
+    margin-right: 0px;
+  }
+  .ItemWhiteBtn {
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
 }
 @media (max-width: 768px) {
   .popoverWrapper {
@@ -246,6 +259,7 @@
 @media (max-width: 500px) {
   .itemBlueBtn {
     margin-right: 0px;
+    width: 80%;
   }
   .popoverWrapper {
     bottom: 10%;
@@ -260,5 +274,8 @@
   }
   .ETH {
     font-size: 25px !important;
+  }
+  .rightDiv {
+    margin-left: 10px;
   }
 }

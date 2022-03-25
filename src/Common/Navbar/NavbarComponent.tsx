@@ -502,7 +502,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                         }}
                       >
                         <Link
-                          to="#"
+                          to="/faq"
                           className={classes.link}
                           onClick={handleCloseNavMenu}
                         >
