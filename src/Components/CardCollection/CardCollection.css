@@ -5,6 +5,9 @@
   display:flex;
   flex-direction: row;
 }
+.collectionStyle{
+  margin: 50px 50px 50px 60px;
+}
 .css-1rwt2y5-MuiButtonBase-root-MuiButton-root {
   border: 1px solid black !important;
   color: black !important;
@@ -90,6 +93,10 @@
  
 }
 @media (max-width: 500px) and (min-width: 300px) {
+  .collectionStyle{
+    margin:0px 0px 30px 20px !important;
+
+  }
   .changewidth1 {
     width: 100%;
     margin-left: 3px;
@@ -97,7 +104,10 @@
   .changeWidth {
     width: 100%;
   }
-  
+  .hotStyling{
+    font-weight: bolder !important;
+    font-size: 40px !important;
+  }
   .widthC .css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
     display: none !important;
   }
@@ -123,12 +133,13 @@
   .cWidth{
     width:90px !important;
   }
+  .css-1maxati-MuiTypography-root {
+    font-size: 33px !important;
+  }
 }
 @media (max-width:320px){
   .cWidth{
     width:73px !important;
   }
-  .css-1maxati-MuiTypography-root {
-    font-size: 30px !important;
-  }
+  
 }

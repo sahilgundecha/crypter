@@ -54,7 +54,7 @@
 }
 @media (max-width: 500px) {
   .widthSm .tabTopGrid_Styling {
-    width: 300px !important;
+    width: 100% !important;
   }
 }
 

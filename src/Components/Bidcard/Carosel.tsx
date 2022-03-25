@@ -50,7 +50,7 @@ const Carosel = () => {
   return (
     <>
       <Container maxWidth="xl">
-        <Box sx={{ marginY: "60px", marginLeft: "30px" }}>
+        <Box className="headText">
           <Typography
             variant="h3"
             gutterBottom

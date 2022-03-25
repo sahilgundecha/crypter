@@ -210,7 +210,7 @@ export default function EditProfilePage() {
                     <span>
                       <CancelOutlinedIcon
                         fontSize="small"
-                        sx={{ marginRight: "7px" }}
+                        sx={{ marginRight: "7px",marginTop:"5px" }}
                       />
                     </span>
                     Clear all

@@ -10,10 +10,12 @@ import {
   Container,
   Paper,
   Grid,
+  Drawer,
 } from "@mui/material";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
 import Searchbar from "../Searchbar/Searchbar";
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
@@ -233,7 +235,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 elevation: 0,
                 sx: {
                   display: {
-                    xs: "block",
+                    xs: "flex",
                     sm: "none",
                     md: "none",
                     lg: "none",
@@ -399,26 +401,73 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
             >
               <DragHandleIcon sx={{ color: "black" }} />
             </IconButton>
-            <Menu
+            <Drawer
               id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
+              anchor="top"
+            
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                padding: "5px",
+                padding: "5px",mt:7
               }}
             >
               <Paper elevation={0} sx={{ padding: 2 }}>
+                <Box sx={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
+                <Link to="/Crypter">
+            <img src={AppIcon} alt="logo" className={`${classes.logo}`} />
+          </Link>
+              
+               <Box sx={{display:'flex',flexDirection:'row',alignItems:'center'}}>
+               {connected ? (
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+
+                  width: "100%",
+                  justifyContent: "flex-end",
+                }}
+              >
+                <IconButton
+                  onClick={showNotificationsMenu}
+                  size="small"
+                  aria-controls={open ? "notifications-menu" : undefined}
+                  aria-haspopup="true"
+                  aria-expanded={open ? "true" : undefined}
+                >
+                  <img src={NotificationsActive} alt="Notifications-icon"></img>
+                </IconButton>
+                <Box
+                  sx={{
+                    display: "block",
+                    alignSelf: "center",
+                  }}
+                  onClick={showConnectWalletMenu}
+                  aria-controls={
+                    openConnectWallet ? "connect-wallet-menu" : undefined
+                  }
+                  aria-haspopup="true"
+                  aria-expanded={openConnectWallet ? "true" : undefined}
+                >
+                  <Box>
+                    <ProfileCard />
+                  </Box>
+                </Box>
+              </Box>
+            ) : null}
+               <IconButton
+              size="large"
+            
+            onClick={handleCloseNavMenu}
+              color="inherit"
+              sx={{ marginLeft: "auto" }}
+            >
+              <CloseOutlinedIcon sx={{ color: "black" }} />
+            </IconButton>
+               </Box>
+                </Box>
+                
                 <Box>
                   {connected ? (
                     <Box>
@@ -558,7 +607,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                   </Box>
                 </Box>
               </Paper>
-            </Menu>
+            </Drawer  >
           </Box>
         </Toolbar>
       </Container>

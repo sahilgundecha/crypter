@@ -43,7 +43,7 @@ const CreatorsS2: FC<Props> = ({ CreatorsArray }) => {
             <Box sx={styleStack} className="changeM">
               <img className="moveRight" src={CreatorsArray.img1} />
               <img className="moveRight" src={CreatorsArray.img2} />
-              <Typography className="priceBor moveRight">
+              <Typography className="priceBor moveRight styleETH">
                 {" "}
                 {CreatorsArray.price} ETH
               </Typography>
