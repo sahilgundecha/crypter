@@ -233,7 +233,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 elevation: 0,
                 sx: {
                   display: {
-                    xs: "block",
+                    xs: "flex",
                     sm: "none",
                     md: "none",
                     lg: "none",
@@ -418,7 +418,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 padding: "5px",
               }}
             >
-              <Paper elevation={0} sx={{ padding: 2 }}>
+              <Box sx={{ padding: 2}}>
                 <Box>
                   {connected ? (
                     <Box>
@@ -557,7 +557,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                     )}
                   </Box>
                 </Box>
-              </Paper>
+              </Box>
             </Menu>
           </Box>
         </Toolbar>

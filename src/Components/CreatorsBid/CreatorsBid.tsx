@@ -39,7 +39,6 @@ export default function CreatorsBid() {
               <Box className="birdImg zoomDiv">
                 <img className="changeWidth1 image" src={card1} />
                 <Box className="middle">
-                  <img src={plus} className="text" />
                 </Box>
               </Box>
 
@@ -52,7 +51,7 @@ export default function CreatorsBid() {
                     <Typography className="styleFuture">
                       The Future of ETH®
                     </Typography>
-                    <Typography sx={{ fontSize: "14px" }}>
+                    <Typography sx={{ fontSize: "13px" }}>
                       18 in stock
                     </Typography>
                   </Box>

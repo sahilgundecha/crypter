@@ -42,7 +42,7 @@ const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
 export const CradCollection = () => {
   return (
     <>
-      <Box sx={{ marginY: "50px", marginLeft: "60px" }}>
+      <Box className="collectionStyle">
         <Typography
           variant="h3"
           gutterBottom

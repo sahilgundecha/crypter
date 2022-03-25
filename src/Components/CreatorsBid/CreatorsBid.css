@@ -127,4 +127,7 @@
   .latestStyle {
     margin-top: 30px !important;
   }
+  .styleFuture {
+    font-size: 13px !important;
+  }
 }
