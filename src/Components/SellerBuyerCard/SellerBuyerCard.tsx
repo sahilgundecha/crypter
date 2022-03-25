@@ -37,7 +37,7 @@ function SellerBuyerCard() {
               <Typography
                 variant="h5"
                 fontWeight={"bold"}
-                style={{ color: "#777E90", marginLeft: "15px" }}
+                className="popularText"
                 component="div"
               >
                 Popular

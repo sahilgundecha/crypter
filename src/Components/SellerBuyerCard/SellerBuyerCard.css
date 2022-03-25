@@ -11,6 +11,10 @@
   font-weight: bold;
   border-radius: 40px;
 }
+.popularText {
+  color: #777e90;
+  margin-left: 15px !important;
+}
 .dropdown2 {
   width: 250px;
 }
@@ -45,6 +49,9 @@
   .circularDropdown {
     padding: 35px 0px;
     flex-direction: column;
+  }
+  .popularText {
+    margin-bottom: 10px !important;
   }
   .graydiv {
     padding: 100px 0px;
