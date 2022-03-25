@@ -30,7 +30,7 @@
   margin-right: 15px !important;
   width: 30px;
 }
-@media (max-width:500px ) and (min-width:300px){
+@media (max-width:600px ) and (min-width:300px){
   .profileWrapper {
     border: none;
   }
