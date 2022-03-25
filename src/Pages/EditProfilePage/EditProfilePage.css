@@ -196,8 +196,8 @@
       }
 
     }
-    @media (max-width: 350px) {
+    @media (max-width: 320px) {
       .idtextfield{
-        padding:2px;
+        padding:1px !important;
       }
     }
