@@ -277,12 +277,13 @@ const Item = () => {
           </Box>
         </Grid>
         <Grid item xs={12} xl={4} md={4} lg={4} sm={12}>
-          <Box>
+          <Box className="rightDiv">
             <Typography variant="h3" gutterBottom component="div">
               The amazing art
             </Typography>
           </Box>
           <Box
+            className="rightDiv"
             sx={{ display: "flex", flexDirection: "row", marginBottom: "25px" }}
           >
             <Box sx={{ marginRight: "5px" }}>
@@ -301,7 +302,7 @@ const Item = () => {
               </Typography>
             </Box>
           </Box>
-          <Box>
+          <Box className="rightDiv">
             <Typography variant="caption" display="block" className="linkText">
               This NFT Card will give you Access to Special Airdrops. To learn
               more about please visit
@@ -442,6 +443,7 @@ const Item = () => {
                     alignItems: "center",
                     margin: "10px",
                   }}
+                  className="buttonGroup"
                 >
                   <DilogueBox />
 
