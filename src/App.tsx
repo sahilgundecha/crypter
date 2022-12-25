@@ -1,107 +1,60 @@
-import { FC, useState } from "react";
+import { FC, lazy } from "react";
+import { Provider } from "react-redux";
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import Textfield from "./Components/Textfield/TextField";
-import { FollowersCard } from "./Components/FollowersCard/FollowersCard";
-import SliderComponent from "./Components/Slider/Slider";
-import { UsersCard } from "./Components/UsersCard/UsersCard";
-import NoResultsPage from "./Pages/NoResultsPage/NoResultsPage";
-import Faq from "./Components/Faq/Faq";
-import Searchbar from "./Common/Searchbar/Searchbar";
-import Carosel from "./Components/Bidcard/Carosel";
-import { NotificationD } from "./Components/Notification/NotificationD";
-import Upload from "./Pages/Upload/Upload";
-import { CradCollection } from "./Components/CardCollection/CradCollection";
-import ProfilePage from "./Pages/ProfilePage/ProfilePage";
-import SingleCollectible from "./Pages/SingleCollectible/Singlecollectible";
-import Activity from "./Pages/Activity/Activity";
-import SearchFilter from "./Components/SearchFilterPage/SearchFilter";
-import Item from "./Components/Item/Item";
-import BidCarousel from "./Components/CurrentBid/BidCarousel";
-import Discover from "./Pages/DiscoverHomePage/Discover";
-import Remove from "./Components/Modals/Remove/Remove";
-import Transfer from "./Components/Modals/Transfer/Transfer";
-import BurnToken from "./Components/Modals/BurnToken/BurnToken";
-import Report from "./Components/Modals/Report/Report";
+import { Route, Routes } from "react-router-dom";
 import FooterComponent from "./Common/FooterComponent/Footer";
-import FollowModal from "./Components/Modals/FollowModal/FollowModal";
-import NavbarComponent from "./Common/Navbar/NavbarComponent";
-import { AcceptBid } from "./Components/Modals/FollowModal/AcceptBid";
-import EditProfilePage from "./Pages/EditProfilePage/EditProfilePage";
-import { ConnectWallet } from "./Pages/ConnectWallet/ConnectWallet";
-import WalletName from "./Pages/ConnectWallet/WalletName";
-import CreatorsBid from "./Components/CreatorsBid/CreatorsBid";
-import SellerBuyerCard from "./Components/SellerBuyerCard/SellerBuyerCard";
-import SellerBuyerCarousel from "./Components/SellerBuyerCard/SellerBuyerCarousel";
 import Crypter from "./Pages/Crypter/Crypter";
-import ChangePrice from "./Components/Modals/ChangePrice/ChangePrice";
-import CrypterEnd from "./Components/CrypterEnd/CrypterEnd";
-import MultipleCollectible from "./Pages/SingleCollectible/MultipleCollectible";
-import WalletCard from "./Components/WalletCard/WalletCard";
-import ProfileCard from "./Components/ProfileCard/ProfileCard";
-import LocalStorage from "./Components/LocalStorage/LocalStorage";
 import ScrollToTop from "./Components/ScrollTop";
+import NavbarComponent from "./Common/Navbar/NavbarComponent";
+import { store } from "./redux/store/Store";
+import Carosel from "./Components/Bidcard/Carosel";
+const NoResultsPage = lazy(() => import("./Pages/NoResultsPage/NoResultsPage"));
+const Faq = lazy(() => import("./Components/Faq/Faq"));
+const Upload = lazy(() => import("./Pages/Upload/Upload"));
+const ProfilePage = lazy(() => import("./Pages/ProfilePage/ProfilePage"));
+const SingleCollectible = lazy(
+  () => import("./Pages/SingleCollectible/Singlecollectible")
+);
+const Activity = lazy(() => import("./Pages/Activity/Activity"));
+const SearchFilter = lazy(
+  () => import("./Components/SearchFilterPage/SearchFilter")
+);
+const Item = lazy(() => import("./Components/Item/Item"));
+const Discover = lazy(() => import("./Pages/DiscoverHomePage/Discover"));
+const EditProfilePage = lazy(
+  () => import("./Pages/EditProfilePage/EditProfilePage")
+);
+const WalletName = lazy(() => import("./Pages/ConnectWallet/WalletName"));
+const MultipleCollectible = lazy(
+  () => import("./Pages/SingleCollectible/MultipleCollectible")
+);
+const ConnectWallet = lazy(() => import("./Pages/ConnectWallet/ConnectWallet"));
 
 const App: FC = () => {
-  const [connected, setConnected] = LocalStorage("connected", false);
-
   return (
-    <div>
-      <NavbarComponent connected={connected} setConnected={setConnected} />
+    <Provider store={store}>
+      <NavbarComponent />
       <ScrollToTop />
       <Routes>
-        <Route
-          path="/connect-wallet"
-          element={<ConnectWallet setConnected={setConnected} />}
-        />
-        <Route
-          path="wallet-card"
-          element={<WalletCard setConnected={setConnected} />}
-        />
+        <Route path="/connect-wallet" element={<ConnectWallet />} />
         <Route path="/" element={<Crypter />} />
-        <Route path="/slider" element={<SliderComponent />} />
-
-        <Route path="/profile" element={<ProfileCard />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/item" element={<Item />} />
-        <Route path="/textfield" element={<Textfield />} />
-        <Route path="/users-card" element={<UsersCard />} />
         <Route path="/no-results-page" element={<NoResultsPage />} />
         <Route path="/single-collectible" element={<SingleCollectible />} />
-        <Route path="/searchbar" element={<Searchbar />} />
         <Route path="/carosel" element={<Carosel />} />
-        <Route path="/followers-card" element={<FollowersCard />} />
-        <Route path="/notification-display" element={<NotificationD />} />
         <Route path="/upload" element={<Upload />} />
-        <Route path="/card-collection" element={<CradCollection />} />
         <Route path="/profile-page" element={<ProfilePage />} />
         <Route path="/activity" element={<Activity />} />
         <Route path="/search-filter" element={<SearchFilter />} />
-        <Route path="/home-page" element={<BidCarousel />} />
-        <Route path="/current-bid" element={<BidCarousel />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/wallet-name" element={<WalletName />} />
-        <Route path="/remove" element={<Remove />} />
-        <Route path="/transfer" element={<Transfer />} />
-        <Route path="/burn" element={<BurnToken />} />
-        <Route path="/report" element={<Report />} />
         <Route path="/crypter" element={<Crypter />} />
-
-        <Route path="/crypter-end" element={<CrypterEnd />} />
-        <Route path="/follow" element={<FollowModal />} />
-        <Route path="/creators" element={<CreatorsBid />} />
         <Route path="/multiple-collectible" element={<MultipleCollectible />} />
-        <Route path="/seller-buyer-card" element={<SellerBuyerCard />} />
-        <Route path="/change-price" element={<ChangePrice />} />
-        <Route path="/accept" element={<AcceptBid />} />
         <Route path="/edit-profile-page" element={<EditProfilePage />} />
-        <Route
-          path="/seller-buyer-carousel"
-          element={<SellerBuyerCarousel />}
-        />
       </Routes>
       <FooterComponent />
-    </div>
+    </Provider>
   );
 };
 

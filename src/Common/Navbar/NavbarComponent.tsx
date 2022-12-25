@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import {
   AppBar,
   Box,
@@ -15,7 +15,7 @@ import {
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { makeStyles } from "@mui/styles";
 import Searchbar from "../Searchbar/Searchbar";
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import AppIcon from "../../Assets/StaticImages/App_Icon.png";
 import NotificationsActive from "../../Assets/StaticImages/NotificationsActive.svg";
@@ -25,6 +25,7 @@ import ProfileCard from "../../Components/ProfileCard/ProfileCard";
 
 import WalletCard from "../../Components/WalletCard/WalletCard";
 import { NotificationD } from "../../Components/Notification/NotificationD";
+import { useSelector } from "react-redux";
 
 const useStyles = makeStyles({
   logo: {
@@ -52,11 +53,18 @@ const useStyles = makeStyles({
     marginLeft: "32px",
   },
 });
-interface nav {
-  connected: boolean;
-  setConnected: any;
+interface state {
+  user: {
+    isLoggedIn: Boolean;
+  };
 }
-const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
+const NavbarComponent = () => {
+  const userInfo = useSelector((state: state) => state.user);
+  
+  useEffect(() => {
+    console.warn(userInfo);
+  }, [userInfo]);
+
   const classes = useStyles();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -132,7 +140,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               <Searchbar />
             </Box>
 
-            {connected ? (
+            {userInfo?.isLoggedIn ? (
               <IconButton
                 onClick={showNotificationsMenu}
                 size="small"
@@ -153,7 +161,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                 <img src={NotificationsActive} alt="Notifications-icon"></img>
               </IconButton>
             ) : null}
-            {connected ? (
+            {userInfo?.isLoggedIn ? (
               <IconButton
                 onClick={showNotificationsMenu}
                 size="small"
@@ -282,7 +290,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               </Link>
             </Box>
 
-            {connected ? (
+            {userInfo?.isLoggedIn ? (
               <Box
                 sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}
                 onClick={showConnectWalletMenu}
@@ -343,7 +351,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
             >
               <Box>
-                <WalletCard setConnected={setConnected} />
+                <WalletCard />
               </Box>
             </Menu>
           </Box>
@@ -353,7 +361,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
               display: { xs: "flex", sm: "none", md: "none" },
             }}
           >
-            {connected ? (
+            {userInfo?.isLoggedIn ? (
               <Box
                 sx={{
                   display: "flex",
@@ -404,72 +412,95 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
             <Drawer
               id="menu-appbar"
               anchor="top"
-            
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                padding: "5px",mt:7
+                padding: "5px",
+                mt: 7,
               }}
             >
               <Paper elevation={0} sx={{ padding: 2 }}>
-                <Box sx={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center'}}>
-                <Link to="/Crypter">
-            <img src={AppIcon} alt="logo" className={`${classes.logo}`} />
-          </Link>
-              
-               <Box sx={{display:'flex',flexDirection:'row',alignItems:'center'}}>
-               {connected ? (
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "row",
-
-                  width: "100%",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <IconButton
-                  onClick={showNotificationsMenu}
-                  size="small"
-                  aria-controls={open ? "notifications-menu" : undefined}
-                  aria-haspopup="true"
-                  aria-expanded={open ? "true" : undefined}
-                >
-                  <img src={NotificationsActive} alt="Notifications-icon"></img>
-                </IconButton>
                 <Box
                   sx={{
-                    display: "block",
-                    alignSelf: "center",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
                   }}
-                  onClick={showConnectWalletMenu}
-                  aria-controls={
-                    openConnectWallet ? "connect-wallet-menu" : undefined
-                  }
-                  aria-haspopup="true"
-                  aria-expanded={openConnectWallet ? "true" : undefined}
                 >
-                  <Box>
-                    <ProfileCard />
+                  <Link to="/Crypter">
+                    <img
+                      src={AppIcon}
+                      alt="logo"
+                      className={`${classes.logo}`}
+                    />
+                  </Link>
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    {userInfo?.isLoggedIn ? (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexDirection: "row",
+
+                          width: "100%",
+                          justifyContent: "flex-end",
+                        }}
+                      >
+                        <IconButton
+                          onClick={showNotificationsMenu}
+                          size="small"
+                          aria-controls={
+                            open ? "notifications-menu" : undefined
+                          }
+                          aria-haspopup="true"
+                          aria-expanded={open ? "true" : undefined}
+                        >
+                          <img
+                            src={NotificationsActive}
+                            alt="Notifications-icon"
+                          ></img>
+                        </IconButton>
+                        <Box
+                          sx={{
+                            display: "block",
+                            alignSelf: "center",
+                          }}
+                          onClick={showConnectWalletMenu}
+                          aria-controls={
+                            openConnectWallet
+                              ? "connect-wallet-menu"
+                              : undefined
+                          }
+                          aria-haspopup="true"
+                          aria-expanded={openConnectWallet ? "true" : undefined}
+                        >
+                          <Box>
+                            <ProfileCard />
+                          </Box>
+                        </Box>
+                      </Box>
+                    ) : null}
+                    <IconButton
+                      size="large"
+                      onClick={handleCloseNavMenu}
+                      color="inherit"
+                      sx={{ marginLeft: "auto" }}
+                    >
+                      <CloseOutlinedIcon sx={{ color: "black" }} />
+                    </IconButton>
                   </Box>
                 </Box>
-              </Box>
-            ) : null}
-               <IconButton
-              size="large"
-            
-            onClick={handleCloseNavMenu}
-              color="inherit"
-              sx={{ marginLeft: "auto" }}
-            >
-              <CloseOutlinedIcon sx={{ color: "black" }} />
-            </IconButton>
-               </Box>
-                </Box>
-                
+
                 <Box>
-                  {connected ? (
+                  {userInfo?.isLoggedIn ? (
                     <Box>
                       <Box
                         sx={{
@@ -582,7 +613,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                       </ButtonComponent>
                     </Link>
 
-                    {connected ? (
+                    {userInfo?.isLoggedIn ? (
                       <Box></Box>
                     ) : (
                       <Box
@@ -607,7 +638,7 @@ const NavbarComponent: FC<nav> = ({ connected, setConnected }) => {
                   </Box>
                 </Box>
               </Paper>
-            </Drawer  >
+            </Drawer>
           </Box>
         </Toolbar>
       </Container>

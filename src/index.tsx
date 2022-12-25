@@ -1,13 +1,16 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Spinner from "./Common/Spinner/Spinner";
 
 ReactDOM.render(
   <BrowserRouter>
+  <Suspense fallback={<Spinner/>}>
     <App />
+    </Suspense>
   </BrowserRouter>,
   document.getElementById("root")
 );

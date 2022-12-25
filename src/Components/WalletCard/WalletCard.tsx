@@ -16,6 +16,9 @@ import btn3icon from "../../Assets/images/btn3icon.svg";
 import btn4icon from "../../Assets/images/btn4icon.svg";
 import btn2icon from "../../Assets/images/btn2icon.svg";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {logOut} from "../../redux/slices/userSlice"
+
 
 const styles = {
   borderRadius: "25px",
@@ -37,7 +40,6 @@ interface walletcardProps {
   img?: string;
 }
 interface wall {
-  setConnected?: any;
   title?: string;
   name?: string;
   password?: string;
@@ -45,10 +47,11 @@ interface wall {
   img?: string;
 }
 const WalletCard: FC<wall> = (props) => {
-  const [open, setOpen] = useState<boolean>(false);
   const [hover, setHover] = useState<boolean>(false);
-  const handleDisconnect = (status: any) => {
-    props.setConnected(status);
+  const dispatch=useDispatch()
+
+  const handleDisconnect = () => {
+    dispatch(logOut())
   };
   const handleMouseIn = () => {
     setHover(true);
@@ -225,7 +228,7 @@ const WalletCard: FC<wall> = (props) => {
                 color="text.secondary"
                 component="div"
                 className="btntext"
-                onClick={() => handleDisconnect(false)}
+                onClick={handleDisconnect}
               >
                 Disconnect
               </Typography>

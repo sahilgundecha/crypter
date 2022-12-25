@@ -21,17 +21,18 @@ import QR from "../../Assets/images/QRCode.png";
 import QR1 from "../../Assets/images/QRCode1.svg";
 import Wallet from "../../Assets/images/Wallet.png";
 import ButtonComponent from "../../Common/ButtonComponent/ButtonComponent";
-interface wallet {
-  setConnected: any;
-}
-export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
+import { useDispatch } from "react-redux";
+import { logIn } from "../../redux/slices/userSlice";
+
+
+const ConnectWallet = () => {
   const [Display, setDisplay] = useState(true);
   const [CImg, setCImg] = useState(false);
   const [Dnone, setDnone] = useState(false);
   const [showB, setshowB] = useState(true);
-
-  const handleButtonClick = (status: any) => {
-    setConnected(status);
+const dispatch=useDispatch()
+  const handleButtonClick = () => {
+    dispatch(logIn())
   };
   const handle1 = () => {
     setDisplay(false);
@@ -148,7 +149,7 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
                     <ButtonComponent
                       btnColor={"#3772FF"}
                       classNames="changeWallet"
-                      handleClick={() => handleButtonClick(true)}
+                      handleClick={ handleButtonClick}
                     >
                       Get started now
                     </ButtonComponent>
@@ -163,3 +164,4 @@ export const ConnectWallet: FC<wallet> = ({ setConnected }) => {
     </>
   );
 };
+ export default ConnectWallet;
