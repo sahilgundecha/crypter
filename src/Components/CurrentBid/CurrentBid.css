@@ -30,7 +30,7 @@
   font-weight: bold;
 }
 @media (max-width: 500px) {
-  .carouselWrapper .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  .carouselWrapper button {
     display: none !important;
   }
 }

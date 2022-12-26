@@ -14,21 +14,20 @@ interface forArrow {
   onClick?: any;
   isEdge?: any;
 }
-
-const BidCarousel = (props: any) => {
-  const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
-    const pointer: object =
-      type === "PREV" ? (
-        <img src={leftArrow} className="leftarrow" />
-      ) : (
-        <img src={rightArrow} className="rightarrow" />
-      );
-    return (
-      <Button onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </Button>
+const myArrow: FC<forArrow> = ({ type, onClick, isEdge }) => {
+  const pointer: object =
+    type === "PREV" ? (
+      <img src={leftArrow} className="leftarrow" />
+    ) : (
+      <img src={rightArrow} className="rightarrow" />
     );
-  };
+  return (
+    <Button onClick={onClick} disabled={isEdge}>
+      {pointer}
+    </Button>
+  );
+};
+const BidCarousel = (props: any) => {
   return (
     <>
       <Container
