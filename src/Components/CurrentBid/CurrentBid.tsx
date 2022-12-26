@@ -147,6 +147,7 @@ const BidCloned: FC<currentProps> = ({ bidData }) => {
                 borderRadius: "24px",
                 border: "2px solid #E6E8EC",
                 margin: "20px 0px",
+                textAlign:"center"
               }}
             >
               <CardContent>
