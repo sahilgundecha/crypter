@@ -31,7 +31,10 @@
 }
 @media (max-width: 500px) {
   .carouselWrapper button {
-    display: none !important;
+    display: none ;
+  }
+  .ButtonClass1,.ButtonClass{
+    display: inline-block !important;
   }
 }
 .ButtonClass {

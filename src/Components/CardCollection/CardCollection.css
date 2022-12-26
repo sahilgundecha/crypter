@@ -113,7 +113,10 @@
     font-weight: bolder !important;
     font-size: 40px !important;
   }
-  .widthC .css-1e6y48t-MuiButtonBase-root-MuiButton-root  {
+  .widthC button  {
+    display: none !important;
+  }
+  .cardCollectionCarousel button {
     display: none !important;
   }
   .changeWidth2 {

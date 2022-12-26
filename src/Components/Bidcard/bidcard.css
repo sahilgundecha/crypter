@@ -177,9 +177,15 @@
   .searchCardDiv .withMargin {
     width: 100% !important;
   }
+  .greenText{
+    font-size: 10px !important;
+  }
+  .artName{
+    font-size: 14px !important;
+  }
 }
 @media (max-width: 420px) {
-  .bidcardCarosel .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  .bidcardCarosel button {
     display: none !important;
   }
 }

@@ -92,7 +92,7 @@ const Bidcard: FC<Props> = ({ cardData }, props) => {
                 }}
               >
                 <Box>
-                  <Typography variant="h6" color="black">
+                  <Typography variant="h6" color="black" className="artName">
                     {cardData.artName}
                   </Typography>
                 </Box>

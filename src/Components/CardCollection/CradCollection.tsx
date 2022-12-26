@@ -95,6 +95,7 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               isRTL={false}
               pagination={false}
               renderArrow={myArrow}
+              className="cardCollectionCarousel"
             >
               <Link to="/profile-page" className="linkUnderline">
                 <img className="changewidth1 cWidth" src={cardData.img1} />
