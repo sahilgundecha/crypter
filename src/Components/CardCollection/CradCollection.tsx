@@ -139,7 +139,7 @@ export const CardCollect: FC<Props> = ({ cardData }) => {
               margin: "10px",
             }}
           > <span className="rowBox">
-             <img src={cardData.authorImg} />
+             <img src={cardData.authorImg} className="creatorProfile"/>
             <Typography sx={{ fontSize: "14px" }} component="p" >
               By {cardData.authorName}
             </Typography></span>
