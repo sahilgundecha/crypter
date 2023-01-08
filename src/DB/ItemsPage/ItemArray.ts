@@ -4,7 +4,7 @@ import selina from "../../Assets/images/selina.jpg";
 import adah from "../../Assets/images/adah.jpg";
 import lady from "../../Assets/images/lady.jpg";
 import avatar from "../../Assets/images/avatar-2.jpg";
-import badge from "../../Assets/images/badge.svg";
+import badge from "../../Assets/images/bb.svg";
 const Info = [
   {
     id: 1,

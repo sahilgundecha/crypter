@@ -73,15 +73,20 @@ const Discover = () => {
       </Box>
       <Grid container className="ItemWrapper">
         <Box className="discoverDropdown">
-          <Dropdown item1="Recently added" item2="Long added"></Dropdown>
+          <Dropdown options={[
+            { value: "recently_added", lable: "Recently added" },
+            { value: "long_added", lable: "Long added" },
+          ]}></Dropdown>
         </Box>
         <Box className="discoverDropdown displayInTab">
           <Dropdown
-            item1="All items"
-            item2="Art"
-            item3="Game"
-            item4="Photo"
-            item5="Video"
+           options={[
+            { value: "All_items", lable: "All items" },
+            { value: "Art", lable: "Art" },
+            { value: "Game", lable: "Game" },
+            { value: "Photo", lable: "Photo" },
+            { value: "Video", lable: "Video" },
+          ]}
           ></Dropdown>
         </Box>
         <Box className="hideInTab">
@@ -150,23 +155,30 @@ const Discover = () => {
           <Grid container className="ItemWrapper">
             <Box className="discoverDropdownBelow">
               <Dropdown
-                item1="Highest price"
-                item2="The lowest price"
+               options={[
+                { value: "highest_price", lable: "Highest price" },
+                { value: "lowest_price", lable: "The lowest price" }
+              ]}
                 label="PRICE"
               ></Dropdown>
             </Box>
             <Box className="discoverDropdownBelow">
               <Dropdown
-                item1="Most liked"
-                item2="Least Liked"
+              options={[
+                { value: "most_liked", lable: "Most liked" },
+                { value: "least-liked", lable: "Least Liked" }
+              ]}
+                
                 label="LIKES"
               ></Dropdown>
             </Box>
             <Box className="discoverDropdownBelow">
               <Dropdown
-                item1="Verified only"
-                item2="All"
-                item3="Most liked"
+              options={[
+                { value: "verified_only", lable: "Verified only" },
+                { value: "all", lable: "All" },
+                { value: "most_liked", lable: "Most liked" },
+              ]}
                 label="CREATOR"
               ></Dropdown>
             </Box>

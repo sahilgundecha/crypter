@@ -60,7 +60,7 @@ interface state {
 }
 const NavbarComponent = () => {
   const userInfo = useSelector((state: state) => state.user);
-  
+
   useEffect(() => {
     console.warn(userInfo);
   }, [userInfo]);
@@ -88,15 +88,17 @@ const NavbarComponent = () => {
 
   const [anchorElWallet, setAnchorElWallet] = useState(null);
   const openConnectWallet = Boolean(anchorElWallet);
+
   const showConnectWalletMenu = (event: any) => {
     setAnchorElWallet(event.currentTarget);
   };
+
   const handleCloseWalletMenu = () => {
     setAnchorElWallet(null);
   };
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "white" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "white", top: "0px" }}>
       <Container>
         <Toolbar disableGutters>
           <Link to="/Crypter">
@@ -289,7 +291,7 @@ const NavbarComponent = () => {
                 </ButtonComponent>
               </Link>
             </Box>
-
+            
             {userInfo?.isLoggedIn ? (
               <Box
                 sx={{ display: "block", alignSelf: "center", m: 0, p: 0 }}

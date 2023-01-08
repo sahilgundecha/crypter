@@ -8,6 +8,7 @@ import ScrollToTop from "./Components/ScrollTop";
 import NavbarComponent from "./Common/Navbar/NavbarComponent";
 import { store } from "./redux/store/Store";
 import Carosel from "./Components/Bidcard/Carosel";
+import Spinner from "./Common/Spinner/Spinner";
 const NoResultsPage = lazy(() => import("./Pages/NoResultsPage/NoResultsPage"));
 const Faq = lazy(() => import("./Components/Faq/Faq"));
 const Upload = lazy(() => import("./Pages/Upload/Upload"));

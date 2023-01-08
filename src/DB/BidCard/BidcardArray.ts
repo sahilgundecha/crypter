@@ -1,8 +1,8 @@
-import img1 from "../../Assets/images/bidImg.png";
-import img2 from "../../Assets/images/productimg2.png";
-import img3 from "../../Assets/images/productimg3.png";
-import img4 from "../../Assets/images/productimg5.png";
-import img5 from "../../Assets/images/productimg6.png";
+import img1 from "../../Assets/images/bidImg.webp";
+import img2 from "../../Assets/images/productimg2.webp";
+import img3 from "../../Assets/images/productimg3.webp";
+import img4 from "../../Assets/images/productimg5.webp";
+import img5 from "../../Assets/images/productimg6.webp";
 import creator1 from "../../Assets/images/creator1.png";
 import creator2 from "../../Assets/images/creator2.png";
 

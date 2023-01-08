@@ -111,7 +111,12 @@ const SearchFilter = () => {
       <Divider sx={{ margin: "30px 0px" }} />
       <Box className="searchDiv widthSm">
         <Box className="dropdownWrapper">
-          <Dropdown item1="Newest" item2="Oldest" />
+          <Dropdown
+            options={[
+              { value: "Newest", lable: "Newest" },
+              { value: "Oldest", lable: "Oldest" },
+            ]}
+          />
         </Box>
         <Box className="widthSm" sx={{ marginRight: "20px" }}>
           <Grid className="navpill_Styling">
@@ -166,23 +171,35 @@ const SearchFilter = () => {
           </Box>
 
           <Box className="dropdownWrapper">
-            <Dropdown item1="Most Liked" item2="Least Liked" label="PRICE" />
+            <Dropdown
+              options={[
+                { value: "most-liked", lable: "Most Liked" },
+                { value: "least-liked", lable: "Least Liked" },
+              ]}
+              label="PRICE"
+            />
           </Box>
           <Box className="dropdownWrapper">
             <Dropdown
-              item1="All Colors"
-              item2="Black"
-              item3="Green"
-              item4="Pink"
-              item5="Purple"
+              options={[
+                { value: "most-liked", lable: "All Colors" },
+                { value: "Green", lable: "Green" },
+                { value: "Green", lable: "Green" },
+                { value: "Green", lable: "Green" },
+                { value: "Purple", lable: "Purple" },
+              ]}
               label="COLOR"
             />
           </Box>
           <Box className="dropdownWrapper">
             <Dropdown
-              item1="Verified olny"
-              item2="All"
-              item3="Most liked"
+            options={[
+              { value: "verified_only", lable: "Verified olny" },
+              { value: "All", lable: "All" },
+              { value: "Most_liked", lable: "Most liked" },
+              { value: "Green", lable: "Green" },
+              { value: "Purple", lable: "Purple" },
+            ]}
               label="CREATOR"
             />
           </Box>

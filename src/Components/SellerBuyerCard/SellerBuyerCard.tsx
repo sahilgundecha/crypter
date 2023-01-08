@@ -96,11 +96,14 @@ function SellerBuyerCard() {
             </Box>
             <Box className="dropdown2">
               <Dropdown
-                label=" TIME FRAME"
-                item1="Today"
-                item2="Morning"
-                item3="Dinner"
-                item4="Evening"
+              options={[
+                { value: "Today", lable: "Today" },
+                { value: "Morning", lable: "Morning" },
+                { value: "Dinner", lable: "Dinner" },
+                { value: "Evening", lable: "Evening" }
+              ]}
+                label="TIME FRAME"
+
               />
             </Box>
           </Box>

@@ -1,21 +1,14 @@
 import { useState } from "react";
-import downicon from "../../Assets/images/downArrow.svg";
-import upicon from "../../Assets/images/upArrow.svg";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { FormControl, MenuItem, Select, Typography } from "@mui/material";
 import "./Dropdown.css";
 
 interface drop {
-  item1?: string;
-  item2?: string;
-  item3?: string;
-  item4?: string;
-  item5?: string;
-  item6?: string;
+  options: { value: string | number; lable: string | number }[];
   label?: string;
 }
 const Dropdown = (props: drop) => {
-  const [age, setAge] = useState<string>("1");
+  const [age, setAge] = useState<string | number>(props.options[0].value?props.options[0].value:props.options[0].lable);
   const [Clicked, setClicked] = useState<boolean>(true);
 
   const isClicked = () => {
@@ -45,7 +38,7 @@ const Dropdown = (props: drop) => {
         </Typography>
       ) : null}
       <Select
-        value={age}
+      value={age}
         onChange={handleChange}
         onOpen={isClicked}
         onClose={isClicked}
@@ -53,12 +46,9 @@ const Dropdown = (props: drop) => {
         IconComponent={KeyboardArrowDownIcon}
         sx={{ borderRadius: "12px", backgroundColor: "#ffffff" }}
       >
-        {props.item1 ? <MenuItem value={1}>{props.item1}</MenuItem> : null}
-        {props.item2 ? <MenuItem value={2}>{props.item2}</MenuItem> : null}
-        {props.item3 ? <MenuItem value={3}>{props.item3}</MenuItem> : null}
-        {props.item4 ? <MenuItem value={4}>{props.item4}</MenuItem> : null}
-        {props.item5 ? <MenuItem value={5}>{props.item5}</MenuItem> : null}
-        {props.item6 ? <MenuItem value={6}>{props.item6}</MenuItem> : null}
+        {props.options.map((option) => {
+          return <MenuItem value={option.value?option.value:option.lable}>{option.lable}</MenuItem>;
+        })}
       </Select>
     </FormControl>
   );

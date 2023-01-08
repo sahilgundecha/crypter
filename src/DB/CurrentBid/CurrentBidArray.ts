@@ -1,7 +1,7 @@
-import img1 from "../../Assets/images/Video.png";
-import img2 from "../../Assets/images/Video2.png";
-import img3 from "../../Assets/images/Video3.png";
-import img4 from "../../Assets/images/Video4.png";
+import img1 from "../../Assets/images/Video.webp";
+import img2 from "../../Assets/images/Video2.webp";
+import img3 from "../../Assets/images/Video3.webp";
+import img4 from "../../Assets/images/Video4.webp";
 import profile from "../../Assets/images/creator1.png";
 import green from "../../Assets/images/greenSquare.svg";
 
